@@ -1,0 +1,268 @@
+---
+title: "Assignment 4 -- Brad Stenger"
+---
+
+### 1. An event occurs in average once every 5 years. Compute the following probabilities:
+
+#### a. The event occurs once in any given year.
+
+1/5 matches rate, $\lambda = 0.2$
+
+#### b. 2 events occur in a 5-year period
+
+$\lambda = 1$
+
+```{r}
+dpois(2, 1)
+```
+
+#### c. 5 events occur in a 5-year period
+
+```{r}
+dpois(5,1)
+```
+
+#### d. No events occur in a 10-year period
+
+```{r}
+dpois(0,1)*dpois(0,1)
+```
+
+#### e. No events occur in a 20-year period
+
+```{r}
+dpois(0,1)^4
+```
+
+#### f. 1 event occurs in a 50-year period
+
+```{r}
+0.2*(dpois(0,1)^9)
+```
+
+### 2. What is the probability that a 100-year flood occurs twice in one decade?
+
+$1 - p(\mathrm{1\ or\ 0\ floods\ occur})$
+
+```{r}
+1 - ppois(0.1, 0.01)
+```
+
+### 3. The probability of occurrence (*p*) of a certain event is most likely around 0.10, but you are not sure and you estimate that it could be as low as 0.02 and as high as 0.30. If you observe 2 occurrences in 10 trials, what does that tell you about *p*. What is the probability that *p* is between 0.15 and 0.25?
+
+$\mathrm{Beta\ distribution\ for\ prior,\ } \mu = 0.10 = \frac{\alpha}{\alpha + \beta}$
+
+$\beta = 0.9\alpha \mathrm{,\ as\ integers\ } \beta = 18 \mathrm{\ and\ } \alpha = 2$
+
+```{r}
+plot.new()
+curve(dbeta(x, shape1=2, shape2=18), from=0, to=1)
+```
+
+Posterior for Beta distribution
+
+$\alpha' = 2 + 2 = 4 \mathrm{\ and\ } \beta' = 18 + 10 - 2 = 26$
+
+```{r}
+plot.new()
+curve(dbeta(x, shape1=2, shape2=18), from=0, to=1)
+curve(dbeta(x, shape1=4, shape2=26), from=0, to=1, col='red', add=TRUE)
+```
+
+$\mu' = \frac{\alpha'}{\alpha' + \beta'} = \frac{4}{4 + 26}$
+
+```{r}
+integrate(dbeta, 0.15, 0.25, shape1=4, shape2=26)
+```
+
+```{r}
+x_values <- seq(0,1,length.out = 100)
+beta_densities <- dbeta(x_values, shape1=4, shape2=26)
+plot.new()
+curve(dbeta(x, shape1=2, shape2=18), from=0, to=1)
+curve(dbeta(x, shape1=4, shape2=26), from=0, to=1, col='red', add=TRUE)
+shade_indices <- which(x_values >= 0.15 & x_values <= 0.25)
+polygon(c(x_values[shade_indices], rev(x_values[shade_indices])), c(beta_densities[shade_indices], rep(0, length(shade_indices))), col="red", border=NA)
+```
+
+### 4. Do a literature search determine the probability that 2 hurricanes category 4 or larger hit the eastern U.S. on any single year.
+
+In 2017 Hurricane Harvey (Texas) and Hurricane Irma (Florida) made landfall in the eastern U.S.
+
+Since 2000 there have been 61 Atlantic Basin hurricanes reaching Category 4 or Category 5. Most hurricanes do not make landfall. An even smaller percentage of hurricanes that make landfall hit the U.S.
+
+| Year | Cat 4-5 | Landfall | LF USA |
+|------|---------|----------|--------|
+| 2000 | 2       | 0        | 0      |
+| 2001 | 2       | 2        | 0      |
+| 2002 | 1       | 0        | 0      |
+| 2003 | 2       | 0        | 0      |
+| 2004 | 4       | 1        | 1      |
+| 2005 | 5       | 3        | 0      |
+| 2006 | 0       | 0        | 0      |
+| 2007 | 2       | 2        | 0      |
+| 2008 | 4       | 2        | 0      |
+| 2009 | 1       | 0        | 0      |
+| 2010 | 4       | 0        | 0      |
+| 2011 | 2       | 0        | 0      |
+| 2012 | 0       | 0        | 0      |
+| 2013 | 0       | 0        | 0      |
+| 2014 | 1       | 0        | 0      |
+| 2015 | 1       | 1        | 0      |
+| 2016 | 2       | 1        | 0      |
+| 2017 | 4       | 3        | 2      |
+| 2018 | 2       | 1        | 1      |
+| 2019 | 2       | 1        | 0      |
+| 2020 | 5       | 3        | 1      |
+| 2021 | 2       | 1        | 1      |
+| 2022 | 2       | 1        | 1      |
+| 2023 | 3       | 0        | 0      |
+| 2024 | 4       | 2        | 1      |
+| 2025 | 4       | 1        | 0      |
+
+13/28 of Category 4-5 hurricanes made landfall since 2017, and 7/13 Category 4-5 hurricanes that have made landfall hit the U.S.
+
+$\lambda = 7 \mathrm{\ hurricanes}/9 \mathrm{\ years} = 0.78$
+
+```{r}
+dpois(2,7/9)
+```
+
+### 5. How many magnitude 6.0 (or larger) earthquakes have occurred in the state of California in the last 100 years. Based on this number determine the probability of seeing zero magnitude 6.0 (or larger) in a period of 20 years.
+
+According to https://www.conservation.ca.gov/cgs/earthquakes/big there have been 49 earthquake in or near the state of California since 1925.
+
+$\lambda = 49 \mathrm{\ earthquakes}/100 \mathrm{\ years} = 0.49$
+
+So, for 1 year and for 20 consecutive years
+
+```{r}
+dpois(0, 0.49)
+```
+
+```{r}
+dpois(0, 0.49)^20
+```
+
+### 6. Define the PDF of a Gaussian random variable with zero mean and variance of 4 and then find the PDF of a Laplacian random variable which has the same mean and variance as the Gaussian. Plot your results and comment on their behavior close to the mean and far away from the mean.
+
+```{r}
+library(greybox)
+```
+
+```{r}
+x <- seq(-10,10,length.out=1000)
+pdf_g <- dnorm(x, 0, 2)
+plot(x, pdf_g, type="l")
+scale = sqrt(2)
+pdf_l <- dlaplace(x, 0, scale)
+par(new=T)
+plot(x, pdf_l, type="l", col="red")
+
+```
+
+
+### 7. Generate 10 samples of a Gaussian random variable with mean 10 and variance of 4. Assume you know the mean precisely. Use Bayesian estimation to estimate its variance. Use a uniform prior between 0 and 10.
+
+```{r}
+library(pracma)
+```
+
+```{r}
+#uniform distribution
+sigma <- seq(0,10, length.out=10)
+fl <- dunif(sigma, 0, 10)
+plot(sigma,fl,type="l")
+
+variance = 4
+sd = sqrt(variance)
+samples <- rnorm(10, 10, sd)
+for (sample in samples) {
+  likelihood <- (1/sqrt(2*pi*(sigma^2)))*exp(-((sample^2)/(2*(sigma^2))))
+  posterior <- likelihood * fl
+  evidence <- trapz(posterior)*0.1
+  post <- posterior/evidence
+  par(new=T)
+  plot(sigma, posterior,type="l")
+  fl = posterior
+}
+par(new=T)
+plot(sigma,posterior,type="l",col="red")
+```
+
+
+### 8. Generate 10 samples of an exponential random variable with $\lambda = 2$. Use Bayesian estimation to estimate $\lambda$. Use a uniform prior between 0 and 5. Compare your answer with just using basic statistics.
+
+```{r}
+library(pracma)
+```
+
+```{r}
+#uniform distribution
+lambda <- seq(0,5, length.out=10)
+prior <- c(dunif(lambda, 0, 5)[1:5],dunif(lambda, 0, 5)[1:5])
+plot(lambda,prior,type="l")
+
+rate = 2
+samples <- rexp(10,rate)
+for (sample in samples) {
+  likelihood <- lambda*exp(-lambda*sample)
+  evidence <- trapz(likelihood*prior)*0.2
+  posterior <- likelihood*prior/evidence
+  par(new=T)
+  plot(lambda,prior,type="l", xlim=c(0,5))
+  prior <- posterior
+}
+par(new=T)
+plot(lambda,posterior,type="l", xlim=c(0,5), col="red")
+```
+
+```{r}
+summary(samples)
+```
+
+```{r}
+summary(posterior)
+```
+
+### 9. Generate 10 samples of uniform random variable with $a = 0$ and $b = 1$. Assume $a$ is known, use Bayesian estimation to estimate $b$. Use a Gaussian prior for $b$ with a mean of 1.5 and variance of 0.25.
+
+```{r}
+library(pracma)
+```
+
+```{r}
+samples = runif(10)
+prior = rnorm(10, 1.5, 0.5)
+a = 0
+b = max(prior)
+plot(0, b, xlim=c(0,10), ylim=c(0,4))
+
+for (i in 1:length(samples)) {
+  likelihood <- 1/(b-a)
+  evidence <- ((1/samples[i]) + (1/(b-a)))/2
+  posterior <- likelihood*prior/evidence
+  b <- max(posterior)
+  prior <- posterior
+  par(new=T)
+  plot(i, b, xlim=c(0,10), ylim=c(0,4))
+}
+```
+
+```{r}
+samples = runif(10)
+prior = rnorm(10, 1.5, 0.5)
+a = 0
+b = max(prior)
+plot(0, b, xlim=c(0,10), ylim=c(0,4))
+
+for (i in 1:length(samples)) {
+  likelihood <- 1/(b-a)
+  evidence <- ((1/samples[i]) + (1/(b-a)))/2
+  posterior <- likelihood*prior/evidence
+  b <- max(posterior)
+  prior <- posterior
+  par(new=T)
+  plot(i, b, xlim=c(0,10), ylim=c(0,4))
+}
+```
