@@ -54,3 +54,5 @@ rsconnect/
 .RData
 .Ruserdata
 >>>>>>> 7251417 (first remote commit)
+
+/.quarto/
