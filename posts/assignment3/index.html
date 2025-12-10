@@ -205,7 +205,12 @@ window.Quarto = {
 <section id="create-a-problem-in-your-field-similar-to-the-one-that-starts-on-page-46-fig.-2.1.11-in-class-handout-2" class="level3">
 <h3 class="anchored" data-anchor-id="create-a-problem-in-your-field-similar-to-the-one-that-starts-on-page-46-fig.-2.1.11-in-class-handout-2">1-2. Create a problem in your field similar to the one that starts on page 46 (Fig. 2.1.11) in Class Handout #2</h3>
 <p>“The probability of the occurrence of either one event or another or both is the sum of their individual probabilities minus the probability of their joint occurrence.”</p>
-<p>The throw in football passing plays are either shorter or longer than the distance required for a first down. - <span class="math inline">\(\mathrm{prob\ of\ catch\ when\ } xyac_{fd} &gt; 0.99 =&gt; who\)</span> - <span class="math inline">\(\mathrm{prob\ of\ catch\ when\ } xyac_{fd} &lt; 0.99 * prob\ expected_{fd}\)</span> - <span class="math inline">\(x:play_type == "pass" &amp;&amp; \mathrm{prob\ of\ negative\ epa\ } (epa &lt; 0)\)</span></p>
+<p>The throw in football passing plays are either shorter or longer than the distance required for a first down.</p>
+<ul>
+<li><span class="math inline">\(\mathrm{prob\ of\ catch\ when\ } xyac_{fd} &gt; 0.99 =&gt; who\)</span></li>
+<li><span class="math inline">\(\mathrm{prob\ of\ catch\ when\ } xyac_{fd} &lt; 0.99 * prob\ expected_{fd}\)</span></li>
+<li><span class="math inline">\(x:play\_type == pass \ \&amp;\&amp; \ \mathrm{prob\ of\ negative\ epa\ } (epa &lt; 0)\)</span></li>
+</ul>
 <p>The quarterback of a football has up to six eligible receivers on a passing play. There are also two distinct scenarios on a passing play. Throw past the first down distance so that a catch ensures a first down. Or throw short of first down distance and leave the receiver work to do (in the form of yards after catch, yac) to gain the first down. Each receiver has a probability for getting a first down when the throw distance is less than first down distance (lt_fd) and another probability when the throw distance is greater than first down distance (gt_fd). These probabilities are mutually exclusive but not independent and the added probabilities (pr_gt_fd + pr_lt_fd) is the net probability for a targeted receiver getting a first down.</p>
 <p>The probability of a fumble by the receiver after a catch is, however, independent. Lost fumble turnovers are rare but costly occurrences for the football offense. The best NFL teams, in many cases, minimize their turnovers.</p>
 <div class="cell">
@@ -244,23 +249,23 @@ window.Quarto = {
 using the `.groups` argument.</code></pre>
 </div>
 <div class="cell-output-display">
-<div id="xmwhwbhsxp" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#xmwhwbhsxp table {
+<div id="yzvtpdscfy" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#yzvtpdscfy table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#xmwhwbhsxp thead, #xmwhwbhsxp tbody, #xmwhwbhsxp tfoot, #xmwhwbhsxp tr, #xmwhwbhsxp td, #xmwhwbhsxp th {
+#yzvtpdscfy thead, #yzvtpdscfy tbody, #yzvtpdscfy tfoot, #yzvtpdscfy tr, #yzvtpdscfy td, #yzvtpdscfy th {
   border-style: none;
 }
 
-#xmwhwbhsxp p {
+#yzvtpdscfy p {
   margin: 0;
   padding: 0;
 }
 
-#xmwhwbhsxp .gt_table {
+#yzvtpdscfy .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -286,12 +291,12 @@ using the `.groups` argument.</code></pre>
   border-left-color: #D3D3D3;
 }
 
-#xmwhwbhsxp .gt_caption {
+#yzvtpdscfy .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#xmwhwbhsxp .gt_title {
+#yzvtpdscfy .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -303,7 +308,7 @@ using the `.groups` argument.</code></pre>
   border-bottom-width: 0;
 }
 
-#xmwhwbhsxp .gt_subtitle {
+#yzvtpdscfy .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -315,7 +320,7 @@ using the `.groups` argument.</code></pre>
   border-top-width: 0;
 }
 
-#xmwhwbhsxp .gt_heading {
+#yzvtpdscfy .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -327,13 +332,13 @@ using the `.groups` argument.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#xmwhwbhsxp .gt_bottom_border {
+#yzvtpdscfy .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#xmwhwbhsxp .gt_col_headings {
+#yzvtpdscfy .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -348,7 +353,7 @@ using the `.groups` argument.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#xmwhwbhsxp .gt_col_heading {
+#yzvtpdscfy .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -368,7 +373,7 @@ using the `.groups` argument.</code></pre>
   overflow-x: hidden;
 }
 
-#xmwhwbhsxp .gt_column_spanner_outer {
+#yzvtpdscfy .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -380,15 +385,15 @@ using the `.groups` argument.</code></pre>
   padding-right: 4px;
 }
 
-#xmwhwbhsxp .gt_column_spanner_outer:first-child {
+#yzvtpdscfy .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#xmwhwbhsxp .gt_column_spanner_outer:last-child {
+#yzvtpdscfy .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#xmwhwbhsxp .gt_column_spanner {
+#yzvtpdscfy .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -400,11 +405,11 @@ using the `.groups` argument.</code></pre>
   width: 100%;
 }
 
-#xmwhwbhsxp .gt_spanner_row {
+#yzvtpdscfy .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#xmwhwbhsxp .gt_group_heading {
+#yzvtpdscfy .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -430,7 +435,7 @@ using the `.groups` argument.</code></pre>
   text-align: left;
 }
 
-#xmwhwbhsxp .gt_empty_group_heading {
+#yzvtpdscfy .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -445,15 +450,15 @@ using the `.groups` argument.</code></pre>
   vertical-align: middle;
 }
 
-#xmwhwbhsxp .gt_from_md > :first-child {
+#yzvtpdscfy .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#xmwhwbhsxp .gt_from_md > :last-child {
+#yzvtpdscfy .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#xmwhwbhsxp .gt_row {
+#yzvtpdscfy .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -472,7 +477,7 @@ using the `.groups` argument.</code></pre>
   overflow-x: hidden;
 }
 
-#xmwhwbhsxp .gt_stub {
+#yzvtpdscfy .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -485,7 +490,7 @@ using the `.groups` argument.</code></pre>
   padding-right: 5px;
 }
 
-#xmwhwbhsxp .gt_stub_row_group {
+#yzvtpdscfy .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -499,15 +504,15 @@ using the `.groups` argument.</code></pre>
   vertical-align: top;
 }
 
-#xmwhwbhsxp .gt_row_group_first td {
+#yzvtpdscfy .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#xmwhwbhsxp .gt_row_group_first th {
+#yzvtpdscfy .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#xmwhwbhsxp .gt_summary_row {
+#yzvtpdscfy .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -517,16 +522,16 @@ using the `.groups` argument.</code></pre>
   padding-right: 5px;
 }
 
-#xmwhwbhsxp .gt_first_summary_row {
+#yzvtpdscfy .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#xmwhwbhsxp .gt_first_summary_row.thick {
+#yzvtpdscfy .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#xmwhwbhsxp .gt_last_summary_row {
+#yzvtpdscfy .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -536,7 +541,7 @@ using the `.groups` argument.</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#xmwhwbhsxp .gt_grand_summary_row {
+#yzvtpdscfy .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -546,7 +551,7 @@ using the `.groups` argument.</code></pre>
   padding-right: 5px;
 }
 
-#xmwhwbhsxp .gt_first_grand_summary_row {
+#yzvtpdscfy .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -556,7 +561,7 @@ using the `.groups` argument.</code></pre>
   border-top-color: #D3D3D3;
 }
 
-#xmwhwbhsxp .gt_last_grand_summary_row_top {
+#yzvtpdscfy .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -566,11 +571,11 @@ using the `.groups` argument.</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#xmwhwbhsxp .gt_striped {
+#yzvtpdscfy .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#xmwhwbhsxp .gt_table_body {
+#yzvtpdscfy .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -579,7 +584,7 @@ using the `.groups` argument.</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#xmwhwbhsxp .gt_footnotes {
+#yzvtpdscfy .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -593,7 +598,7 @@ using the `.groups` argument.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#xmwhwbhsxp .gt_footnote {
+#yzvtpdscfy .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -602,7 +607,7 @@ using the `.groups` argument.</code></pre>
   padding-right: 5px;
 }
 
-#xmwhwbhsxp .gt_sourcenotes {
+#yzvtpdscfy .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -616,7 +621,7 @@ using the `.groups` argument.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#xmwhwbhsxp .gt_sourcenote {
+#yzvtpdscfy .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -624,72 +629,72 @@ using the `.groups` argument.</code></pre>
   padding-right: 5px;
 }
 
-#xmwhwbhsxp .gt_left {
+#yzvtpdscfy .gt_left {
   text-align: left;
 }
 
-#xmwhwbhsxp .gt_center {
+#yzvtpdscfy .gt_center {
   text-align: center;
 }
 
-#xmwhwbhsxp .gt_right {
+#yzvtpdscfy .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#xmwhwbhsxp .gt_font_normal {
+#yzvtpdscfy .gt_font_normal {
   font-weight: normal;
 }
 
-#xmwhwbhsxp .gt_font_bold {
+#yzvtpdscfy .gt_font_bold {
   font-weight: bold;
 }
 
-#xmwhwbhsxp .gt_font_italic {
+#yzvtpdscfy .gt_font_italic {
   font-style: italic;
 }
 
-#xmwhwbhsxp .gt_super {
+#yzvtpdscfy .gt_super {
   font-size: 65%;
 }
 
-#xmwhwbhsxp .gt_footnote_marks {
+#yzvtpdscfy .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#xmwhwbhsxp .gt_asterisk {
+#yzvtpdscfy .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#xmwhwbhsxp .gt_indent_1 {
+#yzvtpdscfy .gt_indent_1 {
   text-indent: 5px;
 }
 
-#xmwhwbhsxp .gt_indent_2 {
+#yzvtpdscfy .gt_indent_2 {
   text-indent: 10px;
 }
 
-#xmwhwbhsxp .gt_indent_3 {
+#yzvtpdscfy .gt_indent_3 {
   text-indent: 15px;
 }
 
-#xmwhwbhsxp .gt_indent_4 {
+#yzvtpdscfy .gt_indent_4 {
   text-indent: 20px;
 }
 
-#xmwhwbhsxp .gt_indent_5 {
+#yzvtpdscfy .gt_indent_5 {
   text-indent: 25px;
 }
 
-#xmwhwbhsxp .katex-display {
+#yzvtpdscfy .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#xmwhwbhsxp div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#yzvtpdscfy div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -713,121 +718,163 @@ using the `.groups` argument.</code></pre>
 </thead>
 <tbody class="gt_table_body">
 <tr class="odd">
-<td class="gt_row gt_left" headers="receiver">A.St. Brown</td>
+<td class="gt_row gt_left" headers="receiver">A.Firkser</td>
 <td class="gt_row gt_left" headers="posteam">DET</td>
-<td class="gt_row gt_right" headers="passes">57</td>
-<td class="gt_row gt_right" headers="neg_pct">0.03508772</td>
-<td class="gt_row gt_right" headers="gt_com">17</td>
-<td class="gt_row gt_right" headers="gt_fd">24</td>
-<td class="gt_row gt_right" headers="actual_gt_fd">17</td>
-<td class="gt_row gt_right" headers="gt_fd_pct">0.7083333</td>
-<td class="gt_row gt_right" headers="lt_com">30</td>
-<td class="gt_row gt_right" headers="lt_fd">33</td>
-<td class="gt_row gt_right" headers="actual_lt_fd">11</td>
-<td class="gt_row gt_right" headers="lt_fd_pct">0.3333333</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="receiver">B.Wright</td>
-<td class="gt_row gt_left" headers="posteam">DET</td>
-<td class="gt_row gt_right" headers="passes">8</td>
+<td class="gt_row gt_right" headers="passes">2</td>
 <td class="gt_row gt_right" headers="neg_pct">0.00000000</td>
 <td class="gt_row gt_right" headers="gt_com">0</td>
 <td class="gt_row gt_right" headers="gt_fd">0</td>
 <td class="gt_row gt_right" headers="actual_gt_fd">0</td>
 <td class="gt_row gt_right" headers="gt_fd_pct">NaN</td>
-<td class="gt_row gt_right" headers="lt_com">7</td>
-<td class="gt_row gt_right" headers="lt_fd">8</td>
-<td class="gt_row gt_right" headers="actual_lt_fd">3</td>
-<td class="gt_row gt_right" headers="lt_fd_pct">0.3750000</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="receiver">D.Montgomery</td>
-<td class="gt_row gt_left" headers="posteam">DET</td>
-<td class="gt_row gt_right" headers="passes">13</td>
-<td class="gt_row gt_right" headers="neg_pct">0.00000000</td>
-<td class="gt_row gt_right" headers="gt_com">2</td>
-<td class="gt_row gt_right" headers="gt_fd">2</td>
-<td class="gt_row gt_right" headers="actual_gt_fd">2</td>
-<td class="gt_row gt_right" headers="gt_fd_pct">1.0000000</td>
-<td class="gt_row gt_right" headers="lt_com">9</td>
-<td class="gt_row gt_right" headers="lt_fd">11</td>
-<td class="gt_row gt_right" headers="actual_lt_fd">4</td>
-<td class="gt_row gt_right" headers="lt_fd_pct">0.3636364</td>
+<td class="gt_row gt_right" headers="lt_com">2</td>
+<td class="gt_row gt_right" headers="lt_fd">2</td>
+<td class="gt_row gt_right" headers="actual_lt_fd">1</td>
+<td class="gt_row gt_right" headers="lt_fd_pct">0.5000000</td>
 </tr>
 <tr class="even">
+<td class="gt_row gt_left" headers="receiver">A.St. Brown</td>
+<td class="gt_row gt_left" headers="posteam">DET</td>
+<td class="gt_row gt_right" headers="passes">110</td>
+<td class="gt_row gt_right" headers="neg_pct">0.02727273</td>
+<td class="gt_row gt_right" headers="gt_com">26</td>
+<td class="gt_row gt_right" headers="gt_fd">46</td>
+<td class="gt_row gt_right" headers="actual_gt_fd">26</td>
+<td class="gt_row gt_right" headers="gt_fd_pct">0.5652174</td>
+<td class="gt_row gt_right" headers="lt_com">52</td>
+<td class="gt_row gt_right" headers="lt_fd">64</td>
+<td class="gt_row gt_right" headers="actual_lt_fd">18</td>
+<td class="gt_row gt_right" headers="lt_fd_pct">0.2812500</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="receiver">B.Wright</td>
+<td class="gt_row gt_left" headers="posteam">DET</td>
+<td class="gt_row gt_right" headers="passes">21</td>
+<td class="gt_row gt_right" headers="neg_pct">0.04761905</td>
+<td class="gt_row gt_right" headers="gt_com">0</td>
+<td class="gt_row gt_right" headers="gt_fd">0</td>
+<td class="gt_row gt_right" headers="actual_gt_fd">0</td>
+<td class="gt_row gt_right" headers="gt_fd_pct">NaN</td>
+<td class="gt_row gt_right" headers="lt_com">13</td>
+<td class="gt_row gt_right" headers="lt_fd">21</td>
+<td class="gt_row gt_right" headers="actual_lt_fd">6</td>
+<td class="gt_row gt_right" headers="lt_fd_pct">0.2857143</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="receiver">D.Montgomery</td>
+<td class="gt_row gt_left" headers="posteam">DET</td>
+<td class="gt_row gt_right" headers="passes">25</td>
+<td class="gt_row gt_right" headers="neg_pct">0.00000000</td>
+<td class="gt_row gt_right" headers="gt_com">2</td>
+<td class="gt_row gt_right" headers="gt_fd">3</td>
+<td class="gt_row gt_right" headers="actual_gt_fd">2</td>
+<td class="gt_row gt_right" headers="gt_fd_pct">0.6666667</td>
+<td class="gt_row gt_right" headers="lt_com">19</td>
+<td class="gt_row gt_right" headers="lt_fd">22</td>
+<td class="gt_row gt_right" headers="actual_lt_fd">7</td>
+<td class="gt_row gt_right" headers="lt_fd_pct">0.3181818</td>
+</tr>
+<tr class="odd">
 <td class="gt_row gt_left" headers="receiver">I.TeSlaa</td>
 <td class="gt_row gt_left" headers="posteam">DET</td>
-<td class="gt_row gt_right" headers="passes">3</td>
+<td class="gt_row gt_right" headers="passes">8</td>
 <td class="gt_row gt_right" headers="neg_pct">0.00000000</td>
-<td class="gt_row gt_right" headers="gt_com">1</td>
-<td class="gt_row gt_right" headers="gt_fd">2</td>
-<td class="gt_row gt_right" headers="actual_gt_fd">1</td>
+<td class="gt_row gt_right" headers="gt_com">3</td>
+<td class="gt_row gt_right" headers="gt_fd">6</td>
+<td class="gt_row gt_right" headers="actual_gt_fd">3</td>
 <td class="gt_row gt_right" headers="gt_fd_pct">0.5000000</td>
-<td class="gt_row gt_right" headers="lt_com">0</td>
-<td class="gt_row gt_right" headers="lt_fd">1</td>
+<td class="gt_row gt_right" headers="lt_com">1</td>
+<td class="gt_row gt_right" headers="lt_fd">2</td>
 <td class="gt_row gt_right" headers="actual_lt_fd">0</td>
 <td class="gt_row gt_right" headers="lt_fd_pct">0.0000000</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="receiver">J.Gibbs</td>
 <td class="gt_row gt_left" headers="posteam">DET</td>
-<td class="gt_row gt_right" headers="passes">28</td>
+<td class="gt_row gt_right" headers="passes">66</td>
 <td class="gt_row gt_right" headers="neg_pct">0.00000000</td>
-<td class="gt_row gt_right" headers="gt_com">1</td>
-<td class="gt_row gt_right" headers="gt_fd">3</td>
-<td class="gt_row gt_right" headers="actual_gt_fd">1</td>
-<td class="gt_row gt_right" headers="gt_fd_pct">0.3333333</td>
-<td class="gt_row gt_right" headers="lt_com">25</td>
-<td class="gt_row gt_right" headers="lt_fd">25</td>
-<td class="gt_row gt_right" headers="actual_lt_fd">7</td>
-<td class="gt_row gt_right" headers="lt_fd_pct">0.2800000</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="receiver">J.Williams</td>
-<td class="gt_row gt_left" headers="posteam">DET</td>
-<td class="gt_row gt_right" headers="passes">30</td>
-<td class="gt_row gt_right" headers="neg_pct">0.03333333</td>
-<td class="gt_row gt_right" headers="gt_com">9</td>
-<td class="gt_row gt_right" headers="gt_fd">21</td>
-<td class="gt_row gt_right" headers="actual_gt_fd">9</td>
+<td class="gt_row gt_right" headers="gt_com">3</td>
+<td class="gt_row gt_right" headers="gt_fd">7</td>
+<td class="gt_row gt_right" headers="actual_gt_fd">3</td>
 <td class="gt_row gt_right" headers="gt_fd_pct">0.4285714</td>
-<td class="gt_row gt_right" headers="lt_com">8</td>
-<td class="gt_row gt_right" headers="lt_fd">9</td>
-<td class="gt_row gt_right" headers="actual_lt_fd">5</td>
-<td class="gt_row gt_right" headers="lt_fd_pct">0.5555556</td>
+<td class="gt_row gt_right" headers="lt_com">55</td>
+<td class="gt_row gt_right" headers="lt_fd">59</td>
+<td class="gt_row gt_right" headers="actual_lt_fd">19</td>
+<td class="gt_row gt_right" headers="lt_fd_pct">0.3220339</td>
 </tr>
 <tr class="odd">
+<td class="gt_row gt_left" headers="receiver">J.Williams</td>
+<td class="gt_row gt_left" headers="posteam">DET</td>
+<td class="gt_row gt_right" headers="passes">71</td>
+<td class="gt_row gt_right" headers="neg_pct">0.01408451</td>
+<td class="gt_row gt_right" headers="gt_com">26</td>
+<td class="gt_row gt_right" headers="gt_fd">44</td>
+<td class="gt_row gt_right" headers="actual_gt_fd">26</td>
+<td class="gt_row gt_right" headers="gt_fd_pct">0.5909091</td>
+<td class="gt_row gt_right" headers="lt_com">19</td>
+<td class="gt_row gt_right" headers="lt_fd">27</td>
+<td class="gt_row gt_right" headers="actual_lt_fd">9</td>
+<td class="gt_row gt_right" headers="lt_fd_pct">0.3333333</td>
+</tr>
+<tr class="even">
 <td class="gt_row gt_left" headers="receiver">K.Raymond</td>
 <td class="gt_row gt_left" headers="posteam">DET</td>
-<td class="gt_row gt_right" headers="passes">12</td>
+<td class="gt_row gt_right" headers="passes">19</td>
 <td class="gt_row gt_right" headers="neg_pct">0.00000000</td>
-<td class="gt_row gt_right" headers="gt_com">1</td>
-<td class="gt_row gt_right" headers="gt_fd">2</td>
-<td class="gt_row gt_right" headers="actual_gt_fd">1</td>
-<td class="gt_row gt_right" headers="gt_fd_pct">0.5000000</td>
-<td class="gt_row gt_right" headers="lt_com">8</td>
-<td class="gt_row gt_right" headers="lt_fd">10</td>
-<td class="gt_row gt_right" headers="actual_lt_fd">2</td>
-<td class="gt_row gt_right" headers="lt_fd_pct">0.2000000</td>
+<td class="gt_row gt_right" headers="gt_com">4</td>
+<td class="gt_row gt_right" headers="gt_fd">5</td>
+<td class="gt_row gt_right" headers="actual_gt_fd">4</td>
+<td class="gt_row gt_right" headers="gt_fd_pct">0.8000000</td>
+<td class="gt_row gt_right" headers="lt_com">11</td>
+<td class="gt_row gt_right" headers="lt_fd">14</td>
+<td class="gt_row gt_right" headers="actual_lt_fd">3</td>
+<td class="gt_row gt_right" headers="lt_fd_pct">0.2142857</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="receiver">R.Dwelley</td>
+<td class="gt_row gt_left" headers="posteam">DET</td>
+<td class="gt_row gt_right" headers="passes">4</td>
+<td class="gt_row gt_right" headers="neg_pct">0.00000000</td>
+<td class="gt_row gt_right" headers="gt_com">0</td>
+<td class="gt_row gt_right" headers="gt_fd">0</td>
+<td class="gt_row gt_right" headers="actual_gt_fd">0</td>
+<td class="gt_row gt_right" headers="gt_fd_pct">NaN</td>
+<td class="gt_row gt_right" headers="lt_com">2</td>
+<td class="gt_row gt_right" headers="lt_fd">4</td>
+<td class="gt_row gt_right" headers="actual_lt_fd">0</td>
+<td class="gt_row gt_right" headers="lt_fd_pct">0.0000000</td>
 </tr>
 <tr class="even">
 <td class="gt_row gt_left" headers="receiver">S.LaPorta</td>
 <td class="gt_row gt_left" headers="posteam">DET</td>
-<td class="gt_row gt_right" headers="passes">35</td>
+<td class="gt_row gt_right" headers="passes">48</td>
 <td class="gt_row gt_right" headers="neg_pct">0.00000000</td>
-<td class="gt_row gt_right" headers="gt_com">10</td>
-<td class="gt_row gt_right" headers="gt_fd">14</td>
-<td class="gt_row gt_right" headers="actual_gt_fd">10</td>
-<td class="gt_row gt_right" headers="gt_fd_pct">0.7142857</td>
-<td class="gt_row gt_right" headers="lt_com">18</td>
-<td class="gt_row gt_right" headers="lt_fd">21</td>
-<td class="gt_row gt_right" headers="actual_lt_fd">5</td>
-<td class="gt_row gt_right" headers="lt_fd_pct">0.2380952</td>
+<td class="gt_row gt_right" headers="gt_com">12</td>
+<td class="gt_row gt_right" headers="gt_fd">17</td>
+<td class="gt_row gt_right" headers="actual_gt_fd">12</td>
+<td class="gt_row gt_right" headers="gt_fd_pct">0.7058824</td>
+<td class="gt_row gt_right" headers="lt_com">27</td>
+<td class="gt_row gt_right" headers="lt_fd">31</td>
+<td class="gt_row gt_right" headers="actual_lt_fd">10</td>
+<td class="gt_row gt_right" headers="lt_fd_pct">0.3225806</td>
 </tr>
 <tr class="odd">
+<td class="gt_row gt_left" headers="receiver">T.Kennedy</td>
+<td class="gt_row gt_left" headers="posteam">DET</td>
+<td class="gt_row gt_right" headers="passes">4</td>
+<td class="gt_row gt_right" headers="neg_pct">0.00000000</td>
+<td class="gt_row gt_right" headers="gt_com">1</td>
+<td class="gt_row gt_right" headers="gt_fd">1</td>
+<td class="gt_row gt_right" headers="actual_gt_fd">1</td>
+<td class="gt_row gt_right" headers="gt_fd_pct">1.0000000</td>
+<td class="gt_row gt_right" headers="lt_com">3</td>
+<td class="gt_row gt_right" headers="lt_fd">3</td>
+<td class="gt_row gt_right" headers="actual_lt_fd">1</td>
+<td class="gt_row gt_right" headers="lt_fd_pct">0.3333333</td>
+</tr>
+<tr class="even">
 <td class="gt_row gt_left" headers="receiver">NA</td>
 <td class="gt_row gt_left" headers="posteam">DET</td>
-<td class="gt_row gt_right" headers="passes">9</td>
+<td class="gt_row gt_right" headers="passes">18</td>
 <td class="gt_row gt_right" headers="neg_pct">0.00000000</td>
 <td class="gt_row gt_right" headers="gt_com">NA</td>
 <td class="gt_row gt_right" headers="gt_fd">0</td>
@@ -849,23 +896,23 @@ using the `.groups` argument.</code></pre>
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">data.frame</span>( <span class="at">receiver =</span> <span class="fu">c</span>(<span class="st">"A.St.Brown"</span>,<span class="st">"J.Gibbs"</span>,<span class="st">"J.Williams"</span>,<span class="st">"S.LaPorta"</span>), <span class="at">abbrev =</span> <span class="fu">c</span>(<span class="st">"ASB"</span>, <span class="st">"JG"</span>, <span class="st">"JW"</span>, <span class="st">"SLP"</span>), <span class="at">gt_fd =</span> <span class="fu">c</span>(<span class="fl">0.79</span>, <span class="fl">0.33</span>, <span class="fl">0.47</span>, <span class="fl">0.69</span>), <span class="at">lt_fd =</span> <span class="fu">c</span>(<span class="fl">0.35</span>, <span class="fl">0.18</span>, <span class="fl">0.55</span>, <span class="fl">0.26</span>), <span class="at">fumble =</span> <span class="fu">c</span>(<span class="fl">0.02</span>, <span class="dv">0</span>, <span class="fl">0.03</span>, <span class="dv">0</span>) ) <span class="sc">|&gt;</span> </span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div id="tiymindvjx" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#tiymindvjx table {
+<div id="sqbvxrfywq" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#sqbvxrfywq table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#tiymindvjx thead, #tiymindvjx tbody, #tiymindvjx tfoot, #tiymindvjx tr, #tiymindvjx td, #tiymindvjx th {
+#sqbvxrfywq thead, #sqbvxrfywq tbody, #sqbvxrfywq tfoot, #sqbvxrfywq tr, #sqbvxrfywq td, #sqbvxrfywq th {
   border-style: none;
 }
 
-#tiymindvjx p {
+#sqbvxrfywq p {
   margin: 0;
   padding: 0;
 }
 
-#tiymindvjx .gt_table {
+#sqbvxrfywq .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -891,12 +938,12 @@ using the `.groups` argument.</code></pre>
   border-left-color: #D3D3D3;
 }
 
-#tiymindvjx .gt_caption {
+#sqbvxrfywq .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#tiymindvjx .gt_title {
+#sqbvxrfywq .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -908,7 +955,7 @@ using the `.groups` argument.</code></pre>
   border-bottom-width: 0;
 }
 
-#tiymindvjx .gt_subtitle {
+#sqbvxrfywq .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -920,7 +967,7 @@ using the `.groups` argument.</code></pre>
   border-top-width: 0;
 }
 
-#tiymindvjx .gt_heading {
+#sqbvxrfywq .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -932,13 +979,13 @@ using the `.groups` argument.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#tiymindvjx .gt_bottom_border {
+#sqbvxrfywq .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#tiymindvjx .gt_col_headings {
+#sqbvxrfywq .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -953,7 +1000,7 @@ using the `.groups` argument.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#tiymindvjx .gt_col_heading {
+#sqbvxrfywq .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -973,7 +1020,7 @@ using the `.groups` argument.</code></pre>
   overflow-x: hidden;
 }
 
-#tiymindvjx .gt_column_spanner_outer {
+#sqbvxrfywq .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -985,15 +1032,15 @@ using the `.groups` argument.</code></pre>
   padding-right: 4px;
 }
 
-#tiymindvjx .gt_column_spanner_outer:first-child {
+#sqbvxrfywq .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#tiymindvjx .gt_column_spanner_outer:last-child {
+#sqbvxrfywq .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#tiymindvjx .gt_column_spanner {
+#sqbvxrfywq .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1005,11 +1052,11 @@ using the `.groups` argument.</code></pre>
   width: 100%;
 }
 
-#tiymindvjx .gt_spanner_row {
+#sqbvxrfywq .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#tiymindvjx .gt_group_heading {
+#sqbvxrfywq .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1035,7 +1082,7 @@ using the `.groups` argument.</code></pre>
   text-align: left;
 }
 
-#tiymindvjx .gt_empty_group_heading {
+#sqbvxrfywq .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1050,15 +1097,15 @@ using the `.groups` argument.</code></pre>
   vertical-align: middle;
 }
 
-#tiymindvjx .gt_from_md > :first-child {
+#sqbvxrfywq .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#tiymindvjx .gt_from_md > :last-child {
+#sqbvxrfywq .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#tiymindvjx .gt_row {
+#sqbvxrfywq .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1077,7 +1124,7 @@ using the `.groups` argument.</code></pre>
   overflow-x: hidden;
 }
 
-#tiymindvjx .gt_stub {
+#sqbvxrfywq .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1090,7 +1137,7 @@ using the `.groups` argument.</code></pre>
   padding-right: 5px;
 }
 
-#tiymindvjx .gt_stub_row_group {
+#sqbvxrfywq .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1104,15 +1151,15 @@ using the `.groups` argument.</code></pre>
   vertical-align: top;
 }
 
-#tiymindvjx .gt_row_group_first td {
+#sqbvxrfywq .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#tiymindvjx .gt_row_group_first th {
+#sqbvxrfywq .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#tiymindvjx .gt_summary_row {
+#sqbvxrfywq .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1122,16 +1169,16 @@ using the `.groups` argument.</code></pre>
   padding-right: 5px;
 }
 
-#tiymindvjx .gt_first_summary_row {
+#sqbvxrfywq .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#tiymindvjx .gt_first_summary_row.thick {
+#sqbvxrfywq .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#tiymindvjx .gt_last_summary_row {
+#sqbvxrfywq .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1141,7 +1188,7 @@ using the `.groups` argument.</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#tiymindvjx .gt_grand_summary_row {
+#sqbvxrfywq .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1151,7 +1198,7 @@ using the `.groups` argument.</code></pre>
   padding-right: 5px;
 }
 
-#tiymindvjx .gt_first_grand_summary_row {
+#sqbvxrfywq .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1161,7 +1208,7 @@ using the `.groups` argument.</code></pre>
   border-top-color: #D3D3D3;
 }
 
-#tiymindvjx .gt_last_grand_summary_row_top {
+#sqbvxrfywq .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1171,11 +1218,11 @@ using the `.groups` argument.</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#tiymindvjx .gt_striped {
+#sqbvxrfywq .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#tiymindvjx .gt_table_body {
+#sqbvxrfywq .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1184,7 +1231,7 @@ using the `.groups` argument.</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#tiymindvjx .gt_footnotes {
+#sqbvxrfywq .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1198,7 +1245,7 @@ using the `.groups` argument.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#tiymindvjx .gt_footnote {
+#sqbvxrfywq .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1207,7 +1254,7 @@ using the `.groups` argument.</code></pre>
   padding-right: 5px;
 }
 
-#tiymindvjx .gt_sourcenotes {
+#sqbvxrfywq .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1221,7 +1268,7 @@ using the `.groups` argument.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#tiymindvjx .gt_sourcenote {
+#sqbvxrfywq .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1229,72 +1276,72 @@ using the `.groups` argument.</code></pre>
   padding-right: 5px;
 }
 
-#tiymindvjx .gt_left {
+#sqbvxrfywq .gt_left {
   text-align: left;
 }
 
-#tiymindvjx .gt_center {
+#sqbvxrfywq .gt_center {
   text-align: center;
 }
 
-#tiymindvjx .gt_right {
+#sqbvxrfywq .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#tiymindvjx .gt_font_normal {
+#sqbvxrfywq .gt_font_normal {
   font-weight: normal;
 }
 
-#tiymindvjx .gt_font_bold {
+#sqbvxrfywq .gt_font_bold {
   font-weight: bold;
 }
 
-#tiymindvjx .gt_font_italic {
+#sqbvxrfywq .gt_font_italic {
   font-style: italic;
 }
 
-#tiymindvjx .gt_super {
+#sqbvxrfywq .gt_super {
   font-size: 65%;
 }
 
-#tiymindvjx .gt_footnote_marks {
+#sqbvxrfywq .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#tiymindvjx .gt_asterisk {
+#sqbvxrfywq .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#tiymindvjx .gt_indent_1 {
+#sqbvxrfywq .gt_indent_1 {
   text-indent: 5px;
 }
 
-#tiymindvjx .gt_indent_2 {
+#sqbvxrfywq .gt_indent_2 {
   text-indent: 10px;
 }
 
-#tiymindvjx .gt_indent_3 {
+#sqbvxrfywq .gt_indent_3 {
   text-indent: 15px;
 }
 
-#tiymindvjx .gt_indent_4 {
+#sqbvxrfywq .gt_indent_4 {
   text-indent: 20px;
 }
 
-#tiymindvjx .gt_indent_5 {
+#sqbvxrfywq .gt_indent_5 {
   text-indent: 25px;
 }
 
-#tiymindvjx .katex-display {
+#sqbvxrfywq .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#tiymindvjx div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#sqbvxrfywq div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1351,23 +1398,23 @@ using the `.groups` argument.</code></pre>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">summarize</span>( <span class="at">epa_fumble =</span> <span class="fu">sum</span>(epa <span class="sc">*</span> fumble_lost) <span class="sc">/</span> <span class="fu">sum</span>(fumble_lost), <span class="at">epa_fd =</span> <span class="fu">sum</span>(epa<span class="sc">*</span> first_down) <span class="sc">/</span> <span class="fu">sum</span>(first_down)) <span class="sc">|&gt;</span> </span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div id="rpdustkewv" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#rpdustkewv table {
+<div id="eqwnxnvwft" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#eqwnxnvwft table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#rpdustkewv thead, #rpdustkewv tbody, #rpdustkewv tfoot, #rpdustkewv tr, #rpdustkewv td, #rpdustkewv th {
+#eqwnxnvwft thead, #eqwnxnvwft tbody, #eqwnxnvwft tfoot, #eqwnxnvwft tr, #eqwnxnvwft td, #eqwnxnvwft th {
   border-style: none;
 }
 
-#rpdustkewv p {
+#eqwnxnvwft p {
   margin: 0;
   padding: 0;
 }
 
-#rpdustkewv .gt_table {
+#eqwnxnvwft .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1393,12 +1440,12 @@ using the `.groups` argument.</code></pre>
   border-left-color: #D3D3D3;
 }
 
-#rpdustkewv .gt_caption {
+#eqwnxnvwft .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#rpdustkewv .gt_title {
+#eqwnxnvwft .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1410,7 +1457,7 @@ using the `.groups` argument.</code></pre>
   border-bottom-width: 0;
 }
 
-#rpdustkewv .gt_subtitle {
+#eqwnxnvwft .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1422,7 +1469,7 @@ using the `.groups` argument.</code></pre>
   border-top-width: 0;
 }
 
-#rpdustkewv .gt_heading {
+#eqwnxnvwft .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1434,13 +1481,13 @@ using the `.groups` argument.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#rpdustkewv .gt_bottom_border {
+#eqwnxnvwft .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#rpdustkewv .gt_col_headings {
+#eqwnxnvwft .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1455,7 +1502,7 @@ using the `.groups` argument.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#rpdustkewv .gt_col_heading {
+#eqwnxnvwft .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1475,7 +1522,7 @@ using the `.groups` argument.</code></pre>
   overflow-x: hidden;
 }
 
-#rpdustkewv .gt_column_spanner_outer {
+#eqwnxnvwft .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1487,15 +1534,15 @@ using the `.groups` argument.</code></pre>
   padding-right: 4px;
 }
 
-#rpdustkewv .gt_column_spanner_outer:first-child {
+#eqwnxnvwft .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#rpdustkewv .gt_column_spanner_outer:last-child {
+#eqwnxnvwft .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#rpdustkewv .gt_column_spanner {
+#eqwnxnvwft .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1507,11 +1554,11 @@ using the `.groups` argument.</code></pre>
   width: 100%;
 }
 
-#rpdustkewv .gt_spanner_row {
+#eqwnxnvwft .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#rpdustkewv .gt_group_heading {
+#eqwnxnvwft .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1537,7 +1584,7 @@ using the `.groups` argument.</code></pre>
   text-align: left;
 }
 
-#rpdustkewv .gt_empty_group_heading {
+#eqwnxnvwft .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1552,15 +1599,15 @@ using the `.groups` argument.</code></pre>
   vertical-align: middle;
 }
 
-#rpdustkewv .gt_from_md > :first-child {
+#eqwnxnvwft .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#rpdustkewv .gt_from_md > :last-child {
+#eqwnxnvwft .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#rpdustkewv .gt_row {
+#eqwnxnvwft .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1579,7 +1626,7 @@ using the `.groups` argument.</code></pre>
   overflow-x: hidden;
 }
 
-#rpdustkewv .gt_stub {
+#eqwnxnvwft .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1592,7 +1639,7 @@ using the `.groups` argument.</code></pre>
   padding-right: 5px;
 }
 
-#rpdustkewv .gt_stub_row_group {
+#eqwnxnvwft .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1606,15 +1653,15 @@ using the `.groups` argument.</code></pre>
   vertical-align: top;
 }
 
-#rpdustkewv .gt_row_group_first td {
+#eqwnxnvwft .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#rpdustkewv .gt_row_group_first th {
+#eqwnxnvwft .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#rpdustkewv .gt_summary_row {
+#eqwnxnvwft .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1624,16 +1671,16 @@ using the `.groups` argument.</code></pre>
   padding-right: 5px;
 }
 
-#rpdustkewv .gt_first_summary_row {
+#eqwnxnvwft .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#rpdustkewv .gt_first_summary_row.thick {
+#eqwnxnvwft .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#rpdustkewv .gt_last_summary_row {
+#eqwnxnvwft .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1643,7 +1690,7 @@ using the `.groups` argument.</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#rpdustkewv .gt_grand_summary_row {
+#eqwnxnvwft .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1653,7 +1700,7 @@ using the `.groups` argument.</code></pre>
   padding-right: 5px;
 }
 
-#rpdustkewv .gt_first_grand_summary_row {
+#eqwnxnvwft .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1663,7 +1710,7 @@ using the `.groups` argument.</code></pre>
   border-top-color: #D3D3D3;
 }
 
-#rpdustkewv .gt_last_grand_summary_row_top {
+#eqwnxnvwft .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1673,11 +1720,11 @@ using the `.groups` argument.</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#rpdustkewv .gt_striped {
+#eqwnxnvwft .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#rpdustkewv .gt_table_body {
+#eqwnxnvwft .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1686,7 +1733,7 @@ using the `.groups` argument.</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#rpdustkewv .gt_footnotes {
+#eqwnxnvwft .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1700,7 +1747,7 @@ using the `.groups` argument.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#rpdustkewv .gt_footnote {
+#eqwnxnvwft .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1709,7 +1756,7 @@ using the `.groups` argument.</code></pre>
   padding-right: 5px;
 }
 
-#rpdustkewv .gt_sourcenotes {
+#eqwnxnvwft .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1723,7 +1770,7 @@ using the `.groups` argument.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#rpdustkewv .gt_sourcenote {
+#eqwnxnvwft .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1731,72 +1778,72 @@ using the `.groups` argument.</code></pre>
   padding-right: 5px;
 }
 
-#rpdustkewv .gt_left {
+#eqwnxnvwft .gt_left {
   text-align: left;
 }
 
-#rpdustkewv .gt_center {
+#eqwnxnvwft .gt_center {
   text-align: center;
 }
 
-#rpdustkewv .gt_right {
+#eqwnxnvwft .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#rpdustkewv .gt_font_normal {
+#eqwnxnvwft .gt_font_normal {
   font-weight: normal;
 }
 
-#rpdustkewv .gt_font_bold {
+#eqwnxnvwft .gt_font_bold {
   font-weight: bold;
 }
 
-#rpdustkewv .gt_font_italic {
+#eqwnxnvwft .gt_font_italic {
   font-style: italic;
 }
 
-#rpdustkewv .gt_super {
+#eqwnxnvwft .gt_super {
   font-size: 65%;
 }
 
-#rpdustkewv .gt_footnote_marks {
+#eqwnxnvwft .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#rpdustkewv .gt_asterisk {
+#eqwnxnvwft .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#rpdustkewv .gt_indent_1 {
+#eqwnxnvwft .gt_indent_1 {
   text-indent: 5px;
 }
 
-#rpdustkewv .gt_indent_2 {
+#eqwnxnvwft .gt_indent_2 {
   text-indent: 10px;
 }
 
-#rpdustkewv .gt_indent_3 {
+#eqwnxnvwft .gt_indent_3 {
   text-indent: 15px;
 }
 
-#rpdustkewv .gt_indent_4 {
+#eqwnxnvwft .gt_indent_4 {
   text-indent: 20px;
 }
 
-#rpdustkewv .gt_indent_5 {
+#eqwnxnvwft .gt_indent_5 {
   text-indent: 25px;
 }
 
-#rpdustkewv .katex-display {
+#eqwnxnvwft .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#rpdustkewv div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#eqwnxnvwft div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1810,8 +1857,8 @@ using the `.groups` argument.</code></pre>
 </thead>
 <tbody class="gt_table_body">
 <tr class="odd">
-<td class="gt_row gt_right" headers="epa_fumble">-3.958972</td>
-<td class="gt_row gt_right" headers="epa_fd">1.616477</td>
+<td class="gt_row gt_right" headers="epa_fumble">-4.046483</td>
+<td class="gt_row gt_right" headers="epa_fd">1.631217</td>
 </tr>
 </tbody>
 </table>
@@ -1819,10 +1866,10 @@ using the `.groups` argument.</code></pre>
 </div>
 </div>
 </div>
-<p><span class="math display">\[
-  \mathrm{expected\ return\ on\ throw\ beyond\ first\ down} = P[\mathrm{gt\_fd}] * epa_{fd} + P[\mathrm{fumble}] * epa_{fumble} \\
-  \mathrm{expected\ return\ on\ throw\ short\ of\ first\ down} = P[\mathrm{lt\_fd}] * epa_{fd} + P[\mathrm{fumble}] * epa_{fumble}
-\]</span></p>
+<ul>
+<li><span class="math inline">\(\mathrm{expected\ return\ on\ throw\ beyond\ first\ down} = P[\mathrm{gt\_fd}] * epa_{fd} + P[\mathrm{fumble}] * epa_{fumble}\)</span></li>
+<li><span class="math inline">\(\mathrm{expected\ return\ on\ throw\ short\ of\ first\ down} = P[\mathrm{lt\_fd}] * epa_{fd} + P[\mathrm{fumble}] * epa_{fumble}\)</span></li>
+</ul>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -1861,42 +1908,66 @@ using the `.groups` argument.</code></pre>
 <p>The application of survival analysis in sports does not use a time-based probability of occurrence like the class example does.</p>
 <p>https://www.nature.com/articles/s41598-021-87920-6, “Temporal trends in incidence of time-loss injuries in four male professional North American sports over 13 seasons”</p>
 <p>64.7 injuries for 1000 exposures in NFL games during one NFL team 10-year pre-season totals (https://journals.sagepub.com/doi/10.1177/0363546508316021, Epidemiology of National Football League Training Camp Injuries from 1998 to 2007)</p>
-<p>44.8 injuries for 1000 exposures for NCAA Division 1 football games between 2014-15 and 2018-19 (https://pubmed.ncbi.nlm.nih.gov/34280281/, Epidemiology of Injuries in National Collegiate Athletic Association Men’s Football: 2014-2015 Through 2018-2019)</p>
-<p>One NFL game counts as one injury exposure, so a rough estimate for a single player experiencing an injury in a game is approximately 0.5%</p>
-<p>https://mrrelevantdotcom1.wordpress.com/2014/09/16/average-nfl-career-of-three-seasons-is-completely-wrong/</p>
-<p>Estimates vary for NFL players’ career length. An old but still often-used figure is 3.3 years across all players. Sports participation and achievement is often governed by Pareto (80-20) or Pareto-like distributions. Depending on player ability, the careers of quality NFL players is more likely 8, 12 or 15 years long. Obsolescence would not seem to be well represented by retirement in professional NFL football.</p>
-<p>https://www.pff.com/news/nfl-investigating-positional-aging-curves-with-pff-war</p>
-<p>An alternative is to estimate the peak performance years for NFL players and then use aging curves to describe players’ post-peak decline. Pro Football Focus analyst Timo Riske describes the peak value years for NFL players (averaged across positions) is 26-28 before player values drops at more rapid rates. This sets up a survivor model where the two events are (1.) injury and (2.) rapid post-peak decline. Like the class example, each event is a distinct path to the same endpoint, which is the end of a professional football playing career.</p>
+<p>44.8 injuries for 1000 exposures for NCAA Division 1 football games between 2014-15 and 2018-19 based on<a href="https://pubmed.ncbi.nlm.nih.gov/34280281/"><em>Epidemiology of Injuries in National Collegiate Athletic Association Men’s Football: 2014-2015 Through 2018-2019</em></a> in <strong>Journal of Athletic Training</strong> (July 2021).</p>
+<p>One NFL game counts as one injury exposure, so a rough estimate for a single player experiencing an injury in a game is approximately is 0.005 or 0.5%.</p>
+<p><a href="https://mrrelevantdotcom1.wordpress.com/2014/09/16/average-nfl-career-of-three-seasons-is-completely-wrong/">Estimates vary</a> for NFL players’ career length. An old but still often-used figure is 3.3 years across all players. Sports participation and achievement is often governed by Pareto (80-20) or Pareto-like distributions. Depending on player ability, the careers of quality NFL players is more likely 8, 12 or 15 years long. Obsolescence would not seem to be well represented by retirement in professional NFL football.</p>
+<p>An alternative is to estimate the peak performance years for NFL players and then use aging curves to describe players’ post-peak decline. Pro Football Focus analyst Timo Riske <a href="https://www.pff.com/news/nfl-investigating-positional-aging-curves-with-pff-war">describes</a> the peak value years for NFL players (averaged across positions) is 26-28 before player values drops at more rapid rates. This sets up a survivor model where the two events are (1.) injury and (2.) rapid post-peak decline. Like the class example, each event is a distinct path to the same endpoint, which is the end of a professional football playing career.</p>
 <p>The model has:</p>
 <ol type="1">
-<li><p>Initial value based on talent projection based on draft round or salary</p></li>
+<li><p>Initial value based on talent projection based on draft round or salary (though NFL draft position <a href="https://faculty.wharton.upenn.edu/wp-content/uploads/2013/08/massey---thaler---losers-curse---management-science-july-2013.pdf">has been shown</a> to be an inaccurate indicator of a football player’s realized value.)</p></li>
 <li><p><em>A<sub>i</sub></em> = [injury occurs in game <em>i</em>] =&gt;</p>
 <p><span class="math display">\[
 p = 0.005
 \]</span></p></li>
-<li><p><em>B<sub>i</sub></em> = [positive or negative player development or decline in game <em>i</em>] =&gt; <em>r</em> … positive development (negative decline) more likely during early-career and less likely during late-career … so start at Game 50</p>
+<li><p><em>B<sub>i</sub></em> = [positive or negative player development or decline in game <em>i</em>] =&gt; <em>r</em> … positive development (negative decline) more likely during early-career and less likely during late-career … so start at Game 70, which is 4-5 seasons into an NFL career.</p>
 <p><span class="math display">\[
 r_i = 1 - e^{-0.001i}
 \]</span></p></li>
 </ol>
 <p><span class="math display">\[ P[\mathrm{development/decline\ through}\ j] = (1-p)^{i} \prod_{i=1}^{j-1}(1-r_{i}) \]</span></p>
 <p><span class="math display">\[ P[\mathrm{career\ ends\ in\ game}\ j] = [p + r_j - pr_j](1-p)^{i} \prod_{i=1}^{j-1}(1-r_{i}) \]</span></p>
+<p>First, let’s inspect the probability for a player’s decline that comes after their initial early-career development period.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>J <span class="ot">&lt;-</span> <span class="dv">50</span><span class="sc">:</span>(<span class="dv">50</span> <span class="sc">+</span> (<span class="dv">5</span><span class="sc">*</span><span class="dv">17</span>)) </span>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>J <span class="ot">&lt;-</span> <span class="dv">70</span><span class="sc">:</span>(<span class="dv">70</span> <span class="sc">+</span> (<span class="dv">6</span><span class="sc">*</span><span class="dv">17</span>)) </span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>games <span class="ot">&lt;-</span> <span class="fu">c</span>() </span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>surv <span class="ot">&lt;-</span> <span class="fu">c</span>() </span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (j <span class="cf">in</span> J) { </span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  game <span class="ot">&lt;-</span> j <span class="sc">-</span> <span class="dv">49</span> </span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  game <span class="ot">&lt;-</span> j <span class="sc">-</span> <span class="dv">69</span> </span>
 <span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  games <span class="ot">&lt;-</span> <span class="fu">c</span>(games, game) </span>
 <span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  prob <span class="ot">&lt;-</span> (<span class="dv">1</span> <span class="sc">-</span> <span class="fl">0.995</span><span class="sc">*</span><span class="fu">exp</span>(<span class="sc">-</span><span class="fl">0.001</span><span class="sc">*</span>game))<span class="sc">*</span>(<span class="fl">0.995</span><span class="sc">^</span>(game<span class="dv">-1</span>))<span class="sc">*</span><span class="fu">prod</span>(<span class="fu">exp</span>(<span class="sc">-</span><span class="fl">0.001</span><span class="sc">*</span>games)) </span>
 <span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>  surv <span class="ot">&lt;-</span> <span class="fu">c</span>(surv, prob) </span>
 <span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>} </span>
 <span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>chart_data <span class="ot">&lt;-</span> <span class="fu">rbind</span>(surv) </span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="fu">barplot</span>(chart_data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="fu">barplot</span>(chart_data, <span class="at">names.arg =</span> games, <span class="at">xlab =</span> <span class="st">"Games Played"</span>, <span class="at">ylab =</span> <span class="st">"P(development/decline)"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
 <p><img src="index_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>The barplot is consistent with this 2023 graph of aging curves based on players’ fantasy football scoring <a href="https://www.washingtonpost.com/sports/2023/08/24/fantasy-football-risk-rankings/">by The Washington Post</a>.</p>
+<p><a href="https://www.washingtonpost.com/sports/2023/08/24/fantasy-football-risk-rankings/"><img src="football_aging_curves.png" class="img-fluid"></a></p>
+<p>Second, the probabilities in an injury occurrence survival analysis during the same games sequence shows tiny probabilities.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>J <span class="ot">&lt;-</span> <span class="dv">70</span><span class="sc">:</span>(<span class="dv">70</span> <span class="sc">+</span> (<span class="dv">6</span><span class="sc">*</span><span class="dv">17</span>)) </span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>games <span class="ot">&lt;-</span> <span class="fu">c</span>() </span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>surv <span class="ot">&lt;-</span> <span class="fu">c</span>() </span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>chart_data <span class="ot">&lt;-</span> <span class="fu">c</span>()</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (j <span class="cf">in</span> J) { </span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>  game <span class="ot">&lt;-</span> j <span class="sc">-</span> <span class="dv">69</span> </span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>  games <span class="ot">&lt;-</span> <span class="fu">c</span>(games, game) </span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>  prob <span class="ot">&lt;-</span> ((<span class="fl">0.005</span> <span class="sc">+</span> (<span class="dv">1</span><span class="sc">-</span><span class="fu">exp</span>(<span class="sc">-</span><span class="fl">0.001</span><span class="sc">*</span><span class="fu">max</span>(J)))<span class="sc">-</span>(<span class="fl">0.005</span>)<span class="sc">*</span>(<span class="dv">1</span><span class="sc">-</span><span class="fu">exp</span>(<span class="sc">-</span><span class="fl">0.001</span><span class="sc">*</span><span class="fu">max</span>(J))))<span class="sc">^</span>game)<span class="sc">*</span>(<span class="dv">1</span><span class="sc">-</span><span class="fu">exp</span>(<span class="sc">-</span><span class="fl">0.001</span><span class="sc">*</span>game))</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>  surv <span class="ot">&lt;-</span> <span class="fu">c</span>(surv, prob) </span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>chart_data <span class="ot">&lt;-</span> <span class="fu">rbind</span>(surv) </span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a><span class="co">#barplot(chart_data)</span></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a><span class="fu">barplot</span>(chart_data, <span class="at">names.arg =</span> games, <span class="at">xlab =</span> <span class="st">"Games Played"</span>, <span class="at">ylab =</span> <span class="st">"P(injury)"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -1978,7 +2049,7 @@ r_i = 1 - e^{-0.001i}
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/DrivingWheelProjects\.github\.io\/analysis\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

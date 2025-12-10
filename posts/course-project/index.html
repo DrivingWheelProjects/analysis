@@ -1,0 +1,2581 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.24">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Brad Stenger">
+
+<title>project – analysis</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-a37c72dd2dbac68997fcdc15a3622e78.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-f5335b53e4b0d1517419e942bb81aa0a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script type="module" src="../../site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+<link href="../../site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">analysis</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com"> <i class="bi bi-twitter" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">project</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Brad Stenger </p>
+            </div>
+    </div>
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<section id="survival-analysis-and-athlete-aging-curves" class="level3">
+<h3 class="anchored" data-anchor-id="survival-analysis-and-athlete-aging-curves">Survival analysis and athlete aging curves</h3>
+<p>The application of survival analysis in sports does not use a time-based probability of occurrence like many engineering risk examples do. A <a href="https://www.nature.com/articles/s41598-021-87920-6">study by Bullock et al.</a> in <strong>Nature Scientific Reports</strong> (April 2021) counted injuries where athletes missed games in the four major U.S. professional sports (baseball, basketball, football, hockey) between 2007-2019. They found for 54,944 total injuries there were an average of 62.49 injuries per 100 players per season.</p>
+<p>More often injury occurrences are counted by exposures where a single exposure is either a practice or game. Other reputable papers count 64.7 injuries for 1000 exposures in NFL games during one NFL team 10-year pre-season totals in <a href="https://journals.sagepub.com/doi/10.1177/0363546508316021"><em>Epidemiology of National Football League Training Camp Injuries from 1998 to 2007</em></a> in <strong>The American Journal o f Sports Medicine</strong> (April 2008). There were 44.8 injuries for 1000 exposures for NCAA Division 1 football games between 2014-15 and 2018-19 based on<a href="https://pubmed.ncbi.nlm.nih.gov/34280281/"><em>Epidemiology of Injuries in National Collegiate Athletic Association Men’s Football: 2014-2015 Through 2018-2019</em></a> in <strong>Journal of Athletic Training</strong> in (July 2021).</p>
+<p>One NFL game counts as one injury exposure, so a rough estimate for a single player experiencing an injury in a game is approximately is 0.005 or 0.5%.</p>
+<p><a href="https://mrrelevantdotcom1.wordpress.com/2014/09/16/average-nfl-career-of-three-seasons-is-completely-wrong/">Estimates vary</a> for NFL players’ career length. An old but still often-used figure is 3.3 years across all players. Sports participation and achievement is often governed by Pareto (80-20) or Pareto-like distributions. Depending on player ability, the careers of quality NFL players is more likely 8, 12 or 15 years long. Obsolescence would not seem to be well represented by retirement in professional NFL football.</p>
+<p>An alternative is to estimate the peak performance years for NFL players and then use aging curves to describe players’ post-peak decline. Pro Football Focus analyst Timo Riske <a href="https://www.pff.com/news/nfl-investigating-positional-aging-curves-with-pff-war">describes</a> the peak value years for NFL players (averaged across positions) is 26-28 before player values drops at more rapid rates. This sets up a survivor model where the two events are (1.) injury and (2.) rapid post-peak decline. Like the class example, each event is a distinct path to the same endpoint, which is the end of a professional football playing career.</p>
+<p>The model has:</p>
+<ol type="1">
+<li><p>Initial value based on talent projection based on draft round or salary (though NFL draft position <a href="https://faculty.wharton.upenn.edu/wp-content/uploads/2013/08/massey---thaler---losers-curse---management-science-july-2013.pdf">has been shown</a> to be an inaccurate indicator of a football player’s realized value.)</p></li>
+<li><p><em>A<sub>i</sub></em> = [injury occurs in game <em>i</em>] =&gt;</p>
+<p><span class="math display">\[
+p = 0.005
+\]</span></p></li>
+<li><p><em>B<sub>i</sub></em> = [positive or negative player development or decline in game <em>i</em>] =&gt; <em>r</em> … positive development (negative decline) more likely during early-career and less likely during late-career … so start at Game 70, which is 4-5 seasons into an NFL career.</p>
+<p><span class="math display">\[
+r_i = 1 - e^{-0.001i}
+\]</span></p></li>
+</ol>
+<p><span class="math display">\[ P[\mathrm{development/decline\ through}\ j] = (1-p)^{i} \prod_{i=1}^{j-1}(1-r_{i}) \]</span></p>
+<p><span class="math display">\[ P[\mathrm{career\ ends\ in\ game}\ j] = [p + r_j - pr_j](1-p)^{i} \prod_{i=1}^{j-1}(1-r_{i}) \]</span></p>
+<p>First, let’s inspect the probability for a player’s decline that comes after their initial early-career development period.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>J <span class="ot">&lt;-</span> <span class="dv">70</span><span class="sc">:</span>(<span class="dv">70</span> <span class="sc">+</span> (<span class="dv">6</span><span class="sc">*</span><span class="dv">17</span>)) </span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>games <span class="ot">&lt;-</span> <span class="fu">c</span>() </span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>surv <span class="ot">&lt;-</span> <span class="fu">c</span>() </span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (j <span class="cf">in</span> J) { </span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  game <span class="ot">&lt;-</span> j <span class="sc">-</span> <span class="dv">69</span> </span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  games <span class="ot">&lt;-</span> <span class="fu">c</span>(games, game) </span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  prob <span class="ot">&lt;-</span> (<span class="dv">1</span> <span class="sc">-</span> <span class="fl">0.995</span><span class="sc">*</span><span class="fu">exp</span>(<span class="sc">-</span><span class="fl">0.001</span><span class="sc">*</span>game))<span class="sc">*</span>(<span class="fl">0.995</span><span class="sc">^</span>(game<span class="dv">-1</span>))<span class="sc">*</span><span class="fu">prod</span>(<span class="fu">exp</span>(<span class="sc">-</span><span class="fl">0.001</span><span class="sc">*</span>games)) </span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  surv <span class="ot">&lt;-</span> <span class="fu">c</span>(surv, prob) </span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>} </span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>chart_data <span class="ot">&lt;-</span> <span class="fu">rbind</span>(surv) </span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">barplot</span>(chart_data, <span class="at">names.arg =</span> games, <span class="at">xlab =</span> <span class="st">"Games Played"</span>, <span class="at">ylab =</span> <span class="st">"P(development/decline)"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>The barplot is consistent with this 2023 graph of aging curves based on players’ fantasy football scoring <a href="https://www.washingtonpost.com/sports/2023/08/24/fantasy-football-risk-rankings/">by The Washington Post</a>.</p>
+<p><a href="https://www.washingtonpost.com/sports/2023/08/24/fantasy-football-risk-rankings/"><img src="football_aging_curves.png" class="img-fluid"></a></p>
+<p>Second, the probabilities in an injury occurrence survival analysis during the same games sequence shows tiny probabilities.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>J <span class="ot">&lt;-</span> <span class="dv">70</span><span class="sc">:</span>(<span class="dv">70</span> <span class="sc">+</span> (<span class="dv">6</span><span class="sc">*</span><span class="dv">17</span>)) </span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>games <span class="ot">&lt;-</span> <span class="fu">c</span>() </span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>surv <span class="ot">&lt;-</span> <span class="fu">c</span>() </span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>chart_data <span class="ot">&lt;-</span> <span class="fu">c</span>()</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (j <span class="cf">in</span> J) { </span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  game <span class="ot">&lt;-</span> j <span class="sc">-</span> <span class="dv">69</span> </span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  games <span class="ot">&lt;-</span> <span class="fu">c</span>(games, game) </span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  prob <span class="ot">&lt;-</span> ((<span class="fl">0.005</span> <span class="sc">+</span> (<span class="dv">1</span><span class="sc">-</span><span class="fu">exp</span>(<span class="sc">-</span><span class="fl">0.001</span><span class="sc">*</span><span class="fu">max</span>(J)))<span class="sc">-</span>(<span class="fl">0.005</span>)<span class="sc">*</span>(<span class="dv">1</span><span class="sc">-</span><span class="fu">exp</span>(<span class="sc">-</span><span class="fl">0.001</span><span class="sc">*</span><span class="fu">max</span>(J))))<span class="sc">^</span>game)<span class="sc">*</span>(<span class="dv">1</span><span class="sc">-</span><span class="fu">exp</span>(<span class="sc">-</span><span class="fl">0.001</span><span class="sc">*</span>game))</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  surv <span class="ot">&lt;-</span> <span class="fu">c</span>(surv, prob) </span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>chart_data <span class="ot">&lt;-</span> <span class="fu">rbind</span>(surv) </span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="co">#barplot(chart_data)</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="fu">barplot</span>(chart_data, <span class="at">names.arg =</span> games, <span class="at">xlab =</span> <span class="st">"Games Played"</span>, <span class="at">ylab =</span> <span class="st">"P(injury)"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="demand-to-capacity-model-capacity" class="level3">
+<h3 class="anchored" data-anchor-id="demand-to-capacity-model-capacity">Demand-to-Capacity Model: Capacity</h3>
+<p>Athletes, regardless of sport, age, or size have a finite Capacity. Repetive stresses wear down soft tissues. Collisions have the potential to further compromise soft tissues. Exercise scientists at the University of North Carolina <a href="https://arxiv.org/abs/2503.11815">published methodology</a> to measure accumulated wear and tear on athletes based on player tracking data. Player tracking uses GPS or, if indoor, radio tracking to capture an X-Y position for every player on the court or field location, taking measurements at 10-30 frames per second.</p>
+<p>Many college and professional sports gather <a href="https://www.annualreviews.org/content/journals/10.1146/annurev-statistics-033021-110117">player tracking data</a>. The NFL has gathered this type of data for years. The NFL also organizes an annual data science analytics competition called the <a href="https://operations.nfl.com/gameday/analytics/big-data-bowl/">Big Data Bowl</a> which asks the sports data science community to contribute insights based on football player tracking data.</p>
+<p>The original method for gauging athlete Capacity is a measurement called “training load.” The number that training load represents is an indication of the accumulated work by an athlete during a day of sports training, practice or competition. By itself the work by athlete in a single day is not very useful. Sports, especially at its highest levels, involves repetitive stresses, like with running but encompassing a wide range of movement patterns necessary for a particular sport. The preferred method for determining when training load is approaching Capacity is something called Acute-Chronic Workload Ratio (ACWR), putting the short-term training load in the numerator (acute) and the longer-term training load in the denominator (chronic). A <a href="https://www.lukebornn.com/papers/impellizzeri_jospt_2020a.pdf">2020 commentary</a> by Impellizzeri et al.&nbsp;in <strong>Journal of Orthopaedic &amp; Sports Physical Therapy</strong> debunked the practice, writing that higher training loads increased the number of injury exposures (remember from before) and there was no causal evidence for more injuries from higher training loads in the numerator of a high ACWR.</p>
+<p>The opportunity to get a handle on athletic Capacity goes through player tracking, merited in part by the attention given to the recent UNC paper. Theoretically, visualizing player tracking data stands to produce a biomechanical movement signature. The insight of the UNC paper is that changes in direction, accurately captured with player tracking, are substantially more wear and tear than unencumbered straight-ahead running. The collisions that are also present in football player tracking data should also be additive in terms of athlete wear and tear.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3" data-startfrom="88" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 87;"><span id="cb3-88"><a href="#cb3-88" aria-hidden="true" tabindex="-1"></a>d3 <span class="op">=</span> <span class="pp">require</span>(<span class="st">"d3@7"</span>)</span>
+<span id="cb3-89"><a href="#cb3-89" aria-hidden="true" tabindex="-1"></a>receivers <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"receivers.json"</span>)<span class="op">.</span><span class="fu">json</span>()</span>
+<span id="cb3-90"><a href="#cb3-90" aria-hidden="true" tabindex="-1"></a>receivers_offset <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"receivers_offset.json"</span>)<span class="op">.</span><span class="fu">json</span>()</span>
+<span id="cb3-91"><a href="#cb3-91" aria-hidden="true" tabindex="-1"></a>r_offset <span class="op">=</span> d3<span class="op">.</span><span class="fu">group</span>(</span>
+<span id="cb3-92"><a href="#cb3-92" aria-hidden="true" tabindex="-1"></a>  receivers_offset<span class="op">,</span></span>
+<span id="cb3-93"><a href="#cb3-93" aria-hidden="true" tabindex="-1"></a>  (d) <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">nfl_id</span><span class="op">,</span></span>
+<span id="cb3-94"><a href="#cb3-94" aria-hidden="true" tabindex="-1"></a>  (d) <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">play_id</span></span>
+<span id="cb3-95"><a href="#cb3-95" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb3-96"><a href="#cb3-96" aria-hidden="true" tabindex="-1"></a>collisions <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"collisions.json"</span>)<span class="op">.</span><span class="fu">json</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-3" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-4" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-5" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4" data-startfrom="100" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 99;"><span id="cb4-100"><a href="#cb4-100" aria-hidden="true" tabindex="-1"></a>chart <span class="op">=</span> {</span>
+<span id="cb4-101"><a href="#cb4-101" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Declare the chart dimensions and margins.</span></span>
+<span id="cb4-102"><a href="#cb4-102" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> marginTop <span class="op">=</span> <span class="dv">20</span><span class="op">;</span></span>
+<span id="cb4-103"><a href="#cb4-103" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> marginRight <span class="op">=</span> <span class="dv">1</span><span class="op">;</span></span>
+<span id="cb4-104"><a href="#cb4-104" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> marginBottom <span class="op">=</span> <span class="dv">40</span><span class="op">;</span></span>
+<span id="cb4-105"><a href="#cb4-105" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> marginLeft <span class="op">=</span> <span class="dv">40</span><span class="op">;</span></span>
+<span id="cb4-106"><a href="#cb4-106" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> rowHeight <span class="op">=</span> <span class="dv">22</span><span class="op">;</span></span>
+<span id="cb4-107"><a href="#cb4-107" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> width <span class="op">=</span> <span class="dv">1200</span><span class="op">;</span></span>
+<span id="cb4-108"><a href="#cb4-108" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> height <span class="op">=</span></span>
+<span id="cb4-109"><a href="#cb4-109" aria-hidden="true" tabindex="-1"></a>    rowHeight <span class="op">*</span> <span class="bu">Array</span><span class="op">.</span><span class="fu">from</span>(<span class="kw">new</span> <span class="bu">Set</span>(d3<span class="op">.</span><span class="fu">map</span>(receivers<span class="op">,</span> (d) <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">nfl_id</span>)))<span class="op">.</span><span class="at">length</span> <span class="op">+</span></span>
+<span id="cb4-110"><a href="#cb4-110" aria-hidden="true" tabindex="-1"></a>    marginTop <span class="op">+</span></span>
+<span id="cb4-111"><a href="#cb4-111" aria-hidden="true" tabindex="-1"></a>    marginBottom<span class="op">;</span></span>
+<span id="cb4-112"><a href="#cb4-112" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-113"><a href="#cb4-113" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Create the scales.</span></span>
+<span id="cb4-114"><a href="#cb4-114" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> x <span class="op">=</span> d3</span>
+<span id="cb4-115"><a href="#cb4-115" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">scaleLinear</span>()</span>
+<span id="cb4-116"><a href="#cb4-116" aria-hidden="true" tabindex="-1"></a>    <span class="co">// max value from receievers_offset.csum</span></span>
+<span id="cb4-117"><a href="#cb4-117" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">domain</span>([<span class="dv">1</span><span class="op">,</span> d3<span class="op">.</span><span class="fu">max</span>(receivers_offset<span class="op">,</span> (d) <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">csum</span>)])</span>
+<span id="cb4-118"><a href="#cb4-118" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">rangeRound</span>([marginLeft<span class="op">,</span> width <span class="op">-</span> marginRight])<span class="op">;</span></span>
+<span id="cb4-119"><a href="#cb4-119" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-120"><a href="#cb4-120" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> y <span class="op">=</span> d3</span>
+<span id="cb4-121"><a href="#cb4-121" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">scaleBand</span>()</span>
+<span id="cb4-122"><a href="#cb4-122" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">domain</span>(<span class="bu">Array</span><span class="op">.</span><span class="fu">from</span>(<span class="kw">new</span> <span class="bu">Set</span>(d3<span class="op">.</span><span class="fu">map</span>(receivers<span class="op">,</span> (d) <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">nfl_id</span>))))</span>
+<span id="cb4-123"><a href="#cb4-123" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">rangeRound</span>([marginTop<span class="op">,</span> height <span class="op">-</span> marginBottom])<span class="op">;</span></span>
+<span id="cb4-124"><a href="#cb4-124" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-125"><a href="#cb4-125" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> color <span class="op">=</span> d3<span class="op">.</span><span class="fu">scaleSequentialSqrt</span>(</span>
+<span id="cb4-126"><a href="#cb4-126" aria-hidden="true" tabindex="-1"></a>    [<span class="dv">0</span><span class="op">,</span> d3<span class="op">.</span><span class="fu">max</span>(receivers<span class="op">,</span> (d) <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">dist</span>)]<span class="op">,</span></span>
+<span id="cb4-127"><a href="#cb4-127" aria-hidden="true" tabindex="-1"></a>    d3<span class="op">.</span><span class="fu">interpolateHsl</span>(<span class="st">"#ddd"</span><span class="op">,</span> <span class="st">"red"</span>)</span>
+<span id="cb4-128"><a href="#cb4-128" aria-hidden="true" tabindex="-1"></a>  )<span class="op">;</span></span>
+<span id="cb4-129"><a href="#cb4-129" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-130"><a href="#cb4-130" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Create the SVG container.</span></span>
+<span id="cb4-131"><a href="#cb4-131" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> svg <span class="op">=</span> d3</span>
+<span id="cb4-132"><a href="#cb4-132" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">create</span>(<span class="st">"svg"</span>)</span>
+<span id="cb4-133"><a href="#cb4-133" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"viewBox"</span><span class="op">,</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">0</span><span class="op">,</span> width<span class="op">,</span> height])</span>
+<span id="cb4-134"><a href="#cb4-134" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"viewBox"</span><span class="op">,</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">0</span><span class="op">,</span> width<span class="op">,</span> height])</span>
+<span id="cb4-135"><a href="#cb4-135" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"width"</span><span class="op">,</span> width)</span>
+<span id="cb4-136"><a href="#cb4-136" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"height"</span><span class="op">,</span> height)</span>
+<span id="cb4-137"><a href="#cb4-137" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"style"</span><span class="op">,</span> <span class="st">"max-width: 100%; height: auto;"</span>)<span class="op">;</span></span>
+<span id="cb4-138"><a href="#cb4-138" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-139"><a href="#cb4-139" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Append the axes.</span></span>
+<span id="cb4-140"><a href="#cb4-140" aria-hidden="true" tabindex="-1"></a>  svg</span>
+<span id="cb4-141"><a href="#cb4-141" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">append</span>(<span class="st">"g"</span>)</span>
+<span id="cb4-142"><a href="#cb4-142" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"transform"</span><span class="op">,</span> <span class="vs">`translate(0,</span><span class="sc">${</span>height <span class="op">-</span> marginBottom<span class="sc">}</span><span class="vs">)`</span>)</span>
+<span id="cb4-143"><a href="#cb4-143" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">call</span>(d3<span class="op">.</span><span class="fu">axisBottom</span>(x)<span class="op">.</span><span class="fu">ticks</span>(width <span class="op">/</span> <span class="dv">80</span>))</span>
+<span id="cb4-144"><a href="#cb4-144" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">call</span>((g) <span class="kw">=&gt;</span> g<span class="op">.</span><span class="fu">select</span>(<span class="st">".domain"</span>)<span class="op">.</span><span class="fu">remove</span>())</span>
+<span id="cb4-145"><a href="#cb4-145" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">call</span>((g) <span class="kw">=&gt;</span></span>
+<span id="cb4-146"><a href="#cb4-146" aria-hidden="true" tabindex="-1"></a>      g</span>
+<span id="cb4-147"><a href="#cb4-147" aria-hidden="true" tabindex="-1"></a>        <span class="op">.</span><span class="fu">append</span>(<span class="st">"text"</span>)</span>
+<span id="cb4-148"><a href="#cb4-148" aria-hidden="true" tabindex="-1"></a>        <span class="op">.</span><span class="fu">attr</span>(<span class="st">"x"</span><span class="op">,</span> width)</span>
+<span id="cb4-149"><a href="#cb4-149" aria-hidden="true" tabindex="-1"></a>        <span class="op">.</span><span class="fu">attr</span>(<span class="st">"y"</span><span class="op">,</span> marginBottom <span class="op">-</span> <span class="dv">4</span>)</span>
+<span id="cb4-150"><a href="#cb4-150" aria-hidden="true" tabindex="-1"></a>        <span class="op">.</span><span class="fu">attr</span>(<span class="st">"fill"</span><span class="op">,</span> <span class="st">"currentColor"</span>)</span>
+<span id="cb4-151"><a href="#cb4-151" aria-hidden="true" tabindex="-1"></a>        <span class="op">.</span><span class="fu">attr</span>(<span class="st">"text-anchor"</span><span class="op">,</span> <span class="st">"end"</span>)</span>
+<span id="cb4-152"><a href="#cb4-152" aria-hidden="true" tabindex="-1"></a>        <span class="op">.</span><span class="fu">text</span>(<span class="st">"frame →"</span>)</span>
+<span id="cb4-153"><a href="#cb4-153" aria-hidden="true" tabindex="-1"></a>    )<span class="op">;</span></span>
+<span id="cb4-154"><a href="#cb4-154" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-155"><a href="#cb4-155" aria-hidden="true" tabindex="-1"></a>  svg</span>
+<span id="cb4-156"><a href="#cb4-156" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">append</span>(<span class="st">"g"</span>)</span>
+<span id="cb4-157"><a href="#cb4-157" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"class"</span><span class="op">,</span> <span class="st">"grid"</span>)</span>
+<span id="cb4-158"><a href="#cb4-158" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"transform"</span><span class="op">,</span> <span class="vs">`translate(</span><span class="sc">${</span>marginLeft<span class="sc">}</span><span class="vs">,0)`</span>)</span>
+<span id="cb4-159"><a href="#cb4-159" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">call</span>(d3<span class="op">.</span><span class="fu">axisLeft</span>(y)<span class="op">.</span><span class="fu">tickSize</span>(<span class="op">-</span>width))</span>
+<span id="cb4-160"><a href="#cb4-160" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">call</span>((g) <span class="kw">=&gt;</span> g<span class="op">.</span><span class="fu">select</span>(<span class="st">".domain"</span>)<span class="op">.</span><span class="fu">remove</span>())</span>
+<span id="cb4-161"><a href="#cb4-161" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">call</span>((g) <span class="kw">=&gt;</span></span>
+<span id="cb4-162"><a href="#cb4-162" aria-hidden="true" tabindex="-1"></a>      g</span>
+<span id="cb4-163"><a href="#cb4-163" aria-hidden="true" tabindex="-1"></a>        <span class="op">.</span><span class="fu">append</span>(<span class="st">"text"</span>)</span>
+<span id="cb4-164"><a href="#cb4-164" aria-hidden="true" tabindex="-1"></a>        <span class="op">.</span><span class="fu">attr</span>(<span class="st">"x"</span><span class="op">,</span> <span class="op">-</span>marginLeft)</span>
+<span id="cb4-165"><a href="#cb4-165" aria-hidden="true" tabindex="-1"></a>        <span class="op">.</span><span class="fu">attr</span>(<span class="st">"y"</span><span class="op">,</span> <span class="dv">10</span>)</span>
+<span id="cb4-166"><a href="#cb4-166" aria-hidden="true" tabindex="-1"></a>        <span class="op">.</span><span class="fu">attr</span>(<span class="st">"fill"</span><span class="op">,</span> <span class="st">"currentColor"</span>)</span>
+<span id="cb4-167"><a href="#cb4-167" aria-hidden="true" tabindex="-1"></a>        <span class="op">.</span><span class="fu">attr</span>(<span class="st">"text-anchor"</span><span class="op">,</span> <span class="st">"start"</span>)</span>
+<span id="cb4-168"><a href="#cb4-168" aria-hidden="true" tabindex="-1"></a>        <span class="op">.</span><span class="fu">text</span>(<span class="st">"↑ player"</span>)</span>
+<span id="cb4-169"><a href="#cb4-169" aria-hidden="true" tabindex="-1"></a>    )<span class="op">;</span></span>
+<span id="cb4-170"><a href="#cb4-170" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-171"><a href="#cb4-171" aria-hidden="true" tabindex="-1"></a>  <span class="co">// visuals</span></span>
+<span id="cb4-172"><a href="#cb4-172" aria-hidden="true" tabindex="-1"></a>  <span class="co">// tracking paths with velocity as grey-red gradient</span></span>
+<span id="cb4-173"><a href="#cb4-173" aria-hidden="true" tabindex="-1"></a>  svg</span>
+<span id="cb4-174"><a href="#cb4-174" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">append</span>(<span class="st">"g"</span>)</span>
+<span id="cb4-175"><a href="#cb4-175" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">selectAll</span>(<span class="st">"path"</span>)</span>
+<span id="cb4-176"><a href="#cb4-176" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">data</span>(receivers)</span>
+<span id="cb4-177"><a href="#cb4-177" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">join</span>(<span class="st">"path"</span>)</span>
+<span id="cb4-178"><a href="#cb4-178" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"transform"</span><span class="op">,</span> (d) <span class="kw">=&gt;</span></span>
+<span id="cb4-179"><a href="#cb4-179" aria-hidden="true" tabindex="-1"></a>      <span class="pp">isNaN</span>(d<span class="op">.</span><span class="at">dist</span>)</span>
+<span id="cb4-180"><a href="#cb4-180" aria-hidden="true" tabindex="-1"></a>        <span class="op">?</span> <span class="vs">`translate(</span><span class="sc">${</span><span class="fu">x</span>(</span>
+<span id="cb4-181"><a href="#cb4-181" aria-hidden="true" tabindex="-1"></a>            d<span class="op">.</span><span class="at">frame_id</span> <span class="op">+</span> r_offset<span class="op">.</span><span class="fu">get</span>(d<span class="op">.</span><span class="at">nfl_id</span>)<span class="op">.</span><span class="fu">get</span>(d<span class="op">.</span><span class="at">play_id</span>)[<span class="dv">0</span>]<span class="op">.</span><span class="at">offset</span></span>
+<span id="cb4-182"><a href="#cb4-182" aria-hidden="true" tabindex="-1"></a>          )<span class="sc">}</span><span class="vs">, </span><span class="sc">${</span><span class="fu">y</span>(d<span class="op">.</span><span class="at">nfl_id</span>)<span class="sc">}</span><span class="vs">) scale(0.1,3)`</span></span>
+<span id="cb4-183"><a href="#cb4-183" aria-hidden="true" tabindex="-1"></a>        <span class="op">:</span> <span class="vs">`translate(</span><span class="sc">${</span><span class="fu">x</span>(</span>
+<span id="cb4-184"><a href="#cb4-184" aria-hidden="true" tabindex="-1"></a>            d<span class="op">.</span><span class="at">frame_id</span> <span class="op">+</span> r_offset<span class="op">.</span><span class="fu">get</span>(d<span class="op">.</span><span class="at">nfl_id</span>)<span class="op">.</span><span class="fu">get</span>(d<span class="op">.</span><span class="at">play_id</span>)[<span class="dv">0</span>]<span class="op">.</span><span class="at">offset</span></span>
+<span id="cb4-185"><a href="#cb4-185" aria-hidden="true" tabindex="-1"></a>          )<span class="sc">}</span><span class="vs">, </span><span class="sc">${</span><span class="fu">y</span>(d<span class="op">.</span><span class="at">nfl_id</span>)<span class="sc">}</span><span class="vs">) rotate(</span><span class="sc">${</span>d<span class="op">.</span><span class="at">dir</span><span class="sc">}</span><span class="vs">) scale(</span><span class="sc">${</span><span class="fl">0.2</span> <span class="op">+</span> d<span class="op">.</span><span class="at">dx</span><span class="sc">}</span><span class="vs">,</span><span class="sc">${</span><span class="dv">1</span> <span class="op">+</span> d<span class="op">.</span><span class="at">dy</span><span class="sc">}</span><span class="vs">)`</span></span>
+<span id="cb4-186"><a href="#cb4-186" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb4-187"><a href="#cb4-187" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"fill"</span><span class="op">,</span> (d) <span class="kw">=&gt;</span></span>
+<span id="cb4-188"><a href="#cb4-188" aria-hidden="true" tabindex="-1"></a>      <span class="pp">isNaN</span>(d<span class="op">.</span><span class="at">dist</span>) <span class="op">?</span> <span class="st">"#000"</span> <span class="op">:</span> <span class="fu">color</span>(d<span class="op">.</span><span class="at">dist</span>)</span>
+<span id="cb4-189"><a href="#cb4-189" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb4-190"><a href="#cb4-190" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"d"</span><span class="op">,</span> d3<span class="op">.</span><span class="fu">symbol</span>(d3<span class="op">.</span><span class="at">symbolTriangle</span>))<span class="op">;</span></span>
+<span id="cb4-191"><a href="#cb4-191" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-192"><a href="#cb4-192" aria-hidden="true" tabindex="-1"></a>  <span class="co">// collisions with black filled circles</span></span>
+<span id="cb4-193"><a href="#cb4-193" aria-hidden="true" tabindex="-1"></a>  svg</span>
+<span id="cb4-194"><a href="#cb4-194" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">append</span>(<span class="st">"g"</span>)</span>
+<span id="cb4-195"><a href="#cb4-195" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">selectAll</span>(<span class="st">"path"</span>)</span>
+<span id="cb4-196"><a href="#cb4-196" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">data</span>(collisions)</span>
+<span id="cb4-197"><a href="#cb4-197" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">join</span>(<span class="st">"path"</span>)</span>
+<span id="cb4-198"><a href="#cb4-198" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">attr</span>(</span>
+<span id="cb4-199"><a href="#cb4-199" aria-hidden="true" tabindex="-1"></a>      <span class="st">"transform"</span><span class="op">,</span></span>
+<span id="cb4-200"><a href="#cb4-200" aria-hidden="true" tabindex="-1"></a>      (d) <span class="kw">=&gt;</span></span>
+<span id="cb4-201"><a href="#cb4-201" aria-hidden="true" tabindex="-1"></a>        <span class="vs">`translate(</span><span class="sc">${</span><span class="fu">x</span>(</span>
+<span id="cb4-202"><a href="#cb4-202" aria-hidden="true" tabindex="-1"></a>          d<span class="op">.</span><span class="at">frame_id</span> <span class="op">+</span> r_offset<span class="op">.</span><span class="fu">get</span>(d<span class="op">.</span><span class="at">nfl_id</span>)<span class="op">.</span><span class="fu">get</span>(d<span class="op">.</span><span class="at">play_id</span>)[<span class="dv">0</span>]<span class="op">.</span><span class="at">offset</span></span>
+<span id="cb4-203"><a href="#cb4-203" aria-hidden="true" tabindex="-1"></a>        )<span class="sc">}</span><span class="vs">, </span><span class="sc">${</span><span class="fu">y</span>(d<span class="op">.</span><span class="at">nfl_id</span>)<span class="sc">}</span><span class="vs">) scale(0.5,0.5)`</span></span>
+<span id="cb4-204"><a href="#cb4-204" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb4-205"><a href="#cb4-205" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"fill"</span><span class="op">,</span> <span class="st">"#000"</span>)</span>
+<span id="cb4-206"><a href="#cb4-206" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"d"</span><span class="op">,</span> d3<span class="op">.</span><span class="fu">symbol</span>(d3<span class="op">.</span><span class="at">symbolCircle</span>))<span class="op">;</span></span>
+<span id="cb4-207"><a href="#cb4-207" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-208"><a href="#cb4-208" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> svg<span class="op">.</span><span class="fu">node</span>()<span class="op">;</span></span>
+<span id="cb4-209"><a href="#cb4-209" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<p>The graph shows the 60 most used receivers in games during the first NFL weekend of 2017. Blobs are bright red when the players are running full speed (or close to it). Blobs are narrow when players run primarily straight ahead (X-axis in the data) and the blobs get wider as player run across the field (Y-axis in the data). Collisions, or more accurately close contacts, between offense and defense players occur when plays occupy the same X,Y coordinate in the data. Vertical bars separate plays. The graph’s Y-axis shows players’ “nfl_id.” The graph’s X-axis shows the frame count. The player tracking operates at 10 frames per second.</p>
+<p>These are single game snapshots of player activity. As with training load, one day’s information is not very useful. Work remains to generate multi-game graphs for players. It is also important to note how Player Capacity can fluctuate.</p>
+<p>Player Capacity increases with physical preparation training. There is a dose-response relationship between training and Capacity. Like medicine, the exercise that occurs during training is helpful and promotes resilience, but only to a point. Too much training can result in overuse, diminishing Capacity and increasing injury risk.</p>
+</section>
+<section id="demand-to-capacity-model-demand" class="level3">
+<h3 class="anchored" data-anchor-id="demand-to-capacity-model-demand">Demand-to-Capacity Model: Demand</h3>
+<p>Game Demand is mostly under the control of coaches and team management who are in charge of a team’s Game Model and Game Plans. The Game Model refers to a team’s architecture and how they plan to use a player, in large part based on the player’s ability and skill set. Player value is reflected in the salary a player is paid. Game Plans are game-to-game refinements of the Game Model directed at the strengths and weakness of the opponent competition.</p>
+<p>Post-hoc Game Model and Plan analysis can be accomplished by looking at the play-by-play data from games. For example, the throw in football passing plays are either shorter or longer than the distance required for a first down. Receivers are targeted based their ability to get first downs, either via shorter or longer throws.</p>
+<ul>
+<li><span class="math inline">\(\mathrm{prob\ of\ catch\ when\ } xyac_{fd} &gt; 0.99 =&gt; who\)</span></li>
+<li><span class="math inline">\(\mathrm{prob\ of\ catch\ when\ } xyac_{fd} &lt; 0.99 * prob\ expected_{fd}\)</span></li>
+<li><span class="math inline">\(x:play\_type == pass \ \&amp;\&amp; \ \mathrm{prob\ of\ negative\ epa\ } (epa &lt; 0)\)</span></li>
+</ul>
+<p>The quarterback of a football has up to six eligible receivers on a passing play. There are also two distinct scenarios on a passing play. Throw past the first down distance so that a catch ensures a first down. Or throw short of first down distance and leave the receiver work to do (in the form of yards after catch, yac) to gain the first down. Each receiver has a probability for getting a first down when the throw distance is less than first down distance (lt_fd) and another probability when the throw distance is greater than first down distance (gt_fd). These probabilities are mutually exclusive but not independent and the added probabilities (pr_gt_fd + pr_lt_fd) is the net probability for a targeted receiver getting a first down.</p>
+<p>The probability of a fumble by the receiver after a catch is, however, independent. Lost fumble turnovers are rare but costly occurrences for the football offense. The best NFL teams, in many cases, minimize their turnovers.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gt)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">#\| nflfastr</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>nflfastR<span class="sc">::</span><span class="fu">load_pbp</span>(<span class="dv">2025</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">group_by</span>(receiver, receiver_id, posteam) <span class="sc">|&gt;</span> </span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(play_type <span class="sc">==</span> <span class="st">"pass"</span>, air_yards <span class="sc">&lt;</span> yardline_100, posteam <span class="sc">==</span> <span class="st">"DET"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">neg_play =</span> <span class="fu">ifelse</span>(</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    sack <span class="sc">==</span> <span class="dv">1</span>, <span class="dv">1</span>, <span class="fu">ifelse</span>(</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>      fumble_lost <span class="sc">==</span> <span class="dv">1</span>, <span class="dv">1</span>, <span class="fu">ifelse</span>(</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>        interception <span class="sc">==</span> <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">0</span>)))) <span class="sc">|&gt;</span> </span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">exp_fd =</span> <span class="fu">ifelse</span>(xyac_fd <span class="sc">&gt;=</span> <span class="fl">0.99</span>, <span class="dv">1</span>, <span class="dv">0</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">actual_exp_fd =</span> <span class="fu">ifelse</span>(xyac_fd <span class="sc">&gt;=</span> <span class="fl">0.99</span> <span class="sc">&amp;</span> first_down, <span class="dv">1</span>, <span class="dv">0</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">not_fd =</span> <span class="fu">ifelse</span>(xyac_fd <span class="sc">&lt;</span> <span class="fl">0.99</span>, <span class="dv">1</span>, <span class="dv">0</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">actual_not_fd =</span> <span class="fu">ifelse</span>(xyac_fd <span class="sc">&lt;</span> <span class="fl">0.99</span> <span class="sc">&amp;</span> first_down, <span class="dv">1</span>, <span class="dv">0</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">summarize</span>( </span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">passes =</span> dplyr<span class="sc">::</span><span class="fu">n</span>(), </span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">neg_pct =</span> <span class="fu">sum</span>(neg_play) <span class="sc">/</span> dplyr<span class="sc">::</span><span class="fu">n</span>(), </span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">gt_com =</span> <span class="fu">sum</span>(exp_fd<span class="sc">*</span>(complete_pass)), </span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">gt_fd =</span> <span class="fu">sum</span>(exp_fd, <span class="at">na.rm=</span><span class="cn">TRUE</span>), </span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>    <span class="at">actual_gt_fd =</span> <span class="fu">sum</span>(actual_exp_fd, <span class="at">na.rm=</span><span class="cn">TRUE</span>), </span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>    <span class="at">gt_fd_pct =</span> actual_gt_fd <span class="sc">/</span> gt_fd, </span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>    <span class="at">lt_com =</span> <span class="fu">sum</span>(not_fd<span class="sc">*</span>(complete_pass)), </span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">lt_fd =</span> <span class="fu">sum</span>(not_fd, <span class="at">na.rm=</span><span class="cn">TRUE</span>), </span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">actual_lt_fd =</span> <span class="fu">sum</span>(actual_not_fd, <span class="at">na.rm=</span><span class="cn">TRUE</span>), </span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a>    <span class="at">lt_fd_pct =</span> actual_lt_fd <span class="sc">/</span> lt_fd ) <span class="sc">|&gt;</span> </span>
+<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">ungroup</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(receiver, posteam, passes, neg_pct, gt_com, gt_fd, actual_gt_fd, gt_fd_pct, lt_com, lt_fd, actual_lt_fd, lt_fd_pct) <span class="sc">|&gt;</span> </span>
+<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`summarise()` has grouped output by 'receiver', 'receiver_id'. You can override
+using the `.groups` argument.</code></pre>
+</div>
+<div class="cell-output-display">
+<div id="wyaazzrwah" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#wyaazzrwah table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#wyaazzrwah thead, #wyaazzrwah tbody, #wyaazzrwah tfoot, #wyaazzrwah tr, #wyaazzrwah td, #wyaazzrwah th {
+  border-style: none;
+}
+
+#wyaazzrwah p {
+  margin: 0;
+  padding: 0;
+}
+
+#wyaazzrwah .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#wyaazzrwah .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#wyaazzrwah .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#wyaazzrwah .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#wyaazzrwah .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#wyaazzrwah .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#wyaazzrwah .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#wyaazzrwah .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#wyaazzrwah .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#wyaazzrwah .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#wyaazzrwah .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#wyaazzrwah .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#wyaazzrwah .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#wyaazzrwah .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#wyaazzrwah .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#wyaazzrwah .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#wyaazzrwah .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#wyaazzrwah .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#wyaazzrwah .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#wyaazzrwah .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#wyaazzrwah .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#wyaazzrwah .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#wyaazzrwah .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#wyaazzrwah .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#wyaazzrwah .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#wyaazzrwah .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#wyaazzrwah .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#wyaazzrwah .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#wyaazzrwah .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#wyaazzrwah .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#wyaazzrwah .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#wyaazzrwah .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#wyaazzrwah .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#wyaazzrwah .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#wyaazzrwah .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#wyaazzrwah .gt_left {
+  text-align: left;
+}
+
+#wyaazzrwah .gt_center {
+  text-align: center;
+}
+
+#wyaazzrwah .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#wyaazzrwah .gt_font_normal {
+  font-weight: normal;
+}
+
+#wyaazzrwah .gt_font_bold {
+  font-weight: bold;
+}
+
+#wyaazzrwah .gt_font_italic {
+  font-style: italic;
+}
+
+#wyaazzrwah .gt_super {
+  font-size: 65%;
+}
+
+#wyaazzrwah .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#wyaazzrwah .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#wyaazzrwah .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#wyaazzrwah .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#wyaazzrwah .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#wyaazzrwah .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#wyaazzrwah .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#wyaazzrwah .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#wyaazzrwah div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<thead>
+<tr class="gt_col_headings header">
+<th id="receiver" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">receiver</th>
+<th id="posteam" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">posteam</th>
+<th id="passes" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">passes</th>
+<th id="neg_pct" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">neg_pct</th>
+<th id="gt_com" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">gt_com</th>
+<th id="gt_fd" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">gt_fd</th>
+<th id="actual_gt_fd" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">actual_gt_fd</th>
+<th id="gt_fd_pct" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">gt_fd_pct</th>
+<th id="lt_com" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">lt_com</th>
+<th id="lt_fd" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">lt_fd</th>
+<th id="actual_lt_fd" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">actual_lt_fd</th>
+<th id="lt_fd_pct" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">lt_fd_pct</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_left" headers="receiver">A.Firkser</td>
+<td class="gt_row gt_left" headers="posteam">DET</td>
+<td class="gt_row gt_right" headers="passes">2</td>
+<td class="gt_row gt_right" headers="neg_pct">0.00000000</td>
+<td class="gt_row gt_right" headers="gt_com">0</td>
+<td class="gt_row gt_right" headers="gt_fd">0</td>
+<td class="gt_row gt_right" headers="actual_gt_fd">0</td>
+<td class="gt_row gt_right" headers="gt_fd_pct">NaN</td>
+<td class="gt_row gt_right" headers="lt_com">2</td>
+<td class="gt_row gt_right" headers="lt_fd">2</td>
+<td class="gt_row gt_right" headers="actual_lt_fd">1</td>
+<td class="gt_row gt_right" headers="lt_fd_pct">0.5000000</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="receiver">A.St. Brown</td>
+<td class="gt_row gt_left" headers="posteam">DET</td>
+<td class="gt_row gt_right" headers="passes">110</td>
+<td class="gt_row gt_right" headers="neg_pct">0.02727273</td>
+<td class="gt_row gt_right" headers="gt_com">26</td>
+<td class="gt_row gt_right" headers="gt_fd">46</td>
+<td class="gt_row gt_right" headers="actual_gt_fd">26</td>
+<td class="gt_row gt_right" headers="gt_fd_pct">0.5652174</td>
+<td class="gt_row gt_right" headers="lt_com">52</td>
+<td class="gt_row gt_right" headers="lt_fd">64</td>
+<td class="gt_row gt_right" headers="actual_lt_fd">18</td>
+<td class="gt_row gt_right" headers="lt_fd_pct">0.2812500</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="receiver">B.Wright</td>
+<td class="gt_row gt_left" headers="posteam">DET</td>
+<td class="gt_row gt_right" headers="passes">21</td>
+<td class="gt_row gt_right" headers="neg_pct">0.04761905</td>
+<td class="gt_row gt_right" headers="gt_com">0</td>
+<td class="gt_row gt_right" headers="gt_fd">0</td>
+<td class="gt_row gt_right" headers="actual_gt_fd">0</td>
+<td class="gt_row gt_right" headers="gt_fd_pct">NaN</td>
+<td class="gt_row gt_right" headers="lt_com">13</td>
+<td class="gt_row gt_right" headers="lt_fd">21</td>
+<td class="gt_row gt_right" headers="actual_lt_fd">6</td>
+<td class="gt_row gt_right" headers="lt_fd_pct">0.2857143</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="receiver">D.Montgomery</td>
+<td class="gt_row gt_left" headers="posteam">DET</td>
+<td class="gt_row gt_right" headers="passes">25</td>
+<td class="gt_row gt_right" headers="neg_pct">0.00000000</td>
+<td class="gt_row gt_right" headers="gt_com">2</td>
+<td class="gt_row gt_right" headers="gt_fd">3</td>
+<td class="gt_row gt_right" headers="actual_gt_fd">2</td>
+<td class="gt_row gt_right" headers="gt_fd_pct">0.6666667</td>
+<td class="gt_row gt_right" headers="lt_com">19</td>
+<td class="gt_row gt_right" headers="lt_fd">22</td>
+<td class="gt_row gt_right" headers="actual_lt_fd">7</td>
+<td class="gt_row gt_right" headers="lt_fd_pct">0.3181818</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="receiver">I.TeSlaa</td>
+<td class="gt_row gt_left" headers="posteam">DET</td>
+<td class="gt_row gt_right" headers="passes">8</td>
+<td class="gt_row gt_right" headers="neg_pct">0.00000000</td>
+<td class="gt_row gt_right" headers="gt_com">3</td>
+<td class="gt_row gt_right" headers="gt_fd">6</td>
+<td class="gt_row gt_right" headers="actual_gt_fd">3</td>
+<td class="gt_row gt_right" headers="gt_fd_pct">0.5000000</td>
+<td class="gt_row gt_right" headers="lt_com">1</td>
+<td class="gt_row gt_right" headers="lt_fd">2</td>
+<td class="gt_row gt_right" headers="actual_lt_fd">0</td>
+<td class="gt_row gt_right" headers="lt_fd_pct">0.0000000</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="receiver">J.Gibbs</td>
+<td class="gt_row gt_left" headers="posteam">DET</td>
+<td class="gt_row gt_right" headers="passes">66</td>
+<td class="gt_row gt_right" headers="neg_pct">0.00000000</td>
+<td class="gt_row gt_right" headers="gt_com">3</td>
+<td class="gt_row gt_right" headers="gt_fd">7</td>
+<td class="gt_row gt_right" headers="actual_gt_fd">3</td>
+<td class="gt_row gt_right" headers="gt_fd_pct">0.4285714</td>
+<td class="gt_row gt_right" headers="lt_com">55</td>
+<td class="gt_row gt_right" headers="lt_fd">59</td>
+<td class="gt_row gt_right" headers="actual_lt_fd">19</td>
+<td class="gt_row gt_right" headers="lt_fd_pct">0.3220339</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="receiver">J.Williams</td>
+<td class="gt_row gt_left" headers="posteam">DET</td>
+<td class="gt_row gt_right" headers="passes">71</td>
+<td class="gt_row gt_right" headers="neg_pct">0.01408451</td>
+<td class="gt_row gt_right" headers="gt_com">26</td>
+<td class="gt_row gt_right" headers="gt_fd">44</td>
+<td class="gt_row gt_right" headers="actual_gt_fd">26</td>
+<td class="gt_row gt_right" headers="gt_fd_pct">0.5909091</td>
+<td class="gt_row gt_right" headers="lt_com">19</td>
+<td class="gt_row gt_right" headers="lt_fd">27</td>
+<td class="gt_row gt_right" headers="actual_lt_fd">9</td>
+<td class="gt_row gt_right" headers="lt_fd_pct">0.3333333</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="receiver">K.Raymond</td>
+<td class="gt_row gt_left" headers="posteam">DET</td>
+<td class="gt_row gt_right" headers="passes">19</td>
+<td class="gt_row gt_right" headers="neg_pct">0.00000000</td>
+<td class="gt_row gt_right" headers="gt_com">4</td>
+<td class="gt_row gt_right" headers="gt_fd">5</td>
+<td class="gt_row gt_right" headers="actual_gt_fd">4</td>
+<td class="gt_row gt_right" headers="gt_fd_pct">0.8000000</td>
+<td class="gt_row gt_right" headers="lt_com">11</td>
+<td class="gt_row gt_right" headers="lt_fd">14</td>
+<td class="gt_row gt_right" headers="actual_lt_fd">3</td>
+<td class="gt_row gt_right" headers="lt_fd_pct">0.2142857</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="receiver">R.Dwelley</td>
+<td class="gt_row gt_left" headers="posteam">DET</td>
+<td class="gt_row gt_right" headers="passes">4</td>
+<td class="gt_row gt_right" headers="neg_pct">0.00000000</td>
+<td class="gt_row gt_right" headers="gt_com">0</td>
+<td class="gt_row gt_right" headers="gt_fd">0</td>
+<td class="gt_row gt_right" headers="actual_gt_fd">0</td>
+<td class="gt_row gt_right" headers="gt_fd_pct">NaN</td>
+<td class="gt_row gt_right" headers="lt_com">2</td>
+<td class="gt_row gt_right" headers="lt_fd">4</td>
+<td class="gt_row gt_right" headers="actual_lt_fd">0</td>
+<td class="gt_row gt_right" headers="lt_fd_pct">0.0000000</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="receiver">S.LaPorta</td>
+<td class="gt_row gt_left" headers="posteam">DET</td>
+<td class="gt_row gt_right" headers="passes">48</td>
+<td class="gt_row gt_right" headers="neg_pct">0.00000000</td>
+<td class="gt_row gt_right" headers="gt_com">12</td>
+<td class="gt_row gt_right" headers="gt_fd">17</td>
+<td class="gt_row gt_right" headers="actual_gt_fd">12</td>
+<td class="gt_row gt_right" headers="gt_fd_pct">0.7058824</td>
+<td class="gt_row gt_right" headers="lt_com">27</td>
+<td class="gt_row gt_right" headers="lt_fd">31</td>
+<td class="gt_row gt_right" headers="actual_lt_fd">10</td>
+<td class="gt_row gt_right" headers="lt_fd_pct">0.3225806</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="receiver">T.Kennedy</td>
+<td class="gt_row gt_left" headers="posteam">DET</td>
+<td class="gt_row gt_right" headers="passes">4</td>
+<td class="gt_row gt_right" headers="neg_pct">0.00000000</td>
+<td class="gt_row gt_right" headers="gt_com">1</td>
+<td class="gt_row gt_right" headers="gt_fd">1</td>
+<td class="gt_row gt_right" headers="actual_gt_fd">1</td>
+<td class="gt_row gt_right" headers="gt_fd_pct">1.0000000</td>
+<td class="gt_row gt_right" headers="lt_com">3</td>
+<td class="gt_row gt_right" headers="lt_fd">3</td>
+<td class="gt_row gt_right" headers="actual_lt_fd">1</td>
+<td class="gt_row gt_right" headers="lt_fd_pct">0.3333333</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="receiver">NA</td>
+<td class="gt_row gt_left" headers="posteam">DET</td>
+<td class="gt_row gt_right" headers="passes">18</td>
+<td class="gt_row gt_right" headers="neg_pct">0.00000000</td>
+<td class="gt_row gt_right" headers="gt_com">NA</td>
+<td class="gt_row gt_right" headers="gt_fd">0</td>
+<td class="gt_row gt_right" headers="actual_gt_fd">0</td>
+<td class="gt_row gt_right" headers="gt_fd_pct">NaN</td>
+<td class="gt_row gt_right" headers="lt_com">NA</td>
+<td class="gt_row gt_right" headers="lt_fd">0</td>
+<td class="gt_row gt_right" headers="actual_lt_fd">0</td>
+<td class="gt_row gt_right" headers="lt_fd_pct">NaN</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<p>In the table “gt_” refers to passes that travel greater than the distance to the first down. “lt_” refers to passes that travel less than the distance to the first down. “neg_pct” refers to percent of passes that are caught and then fumbled to the other team. The principal receivers for DET are A.St.Brown (ASB), J.Gibbs (JG), J.Williams (JW) and S.LaPorta (SLP).</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">data.frame</span>( <span class="at">receiver =</span> <span class="fu">c</span>(<span class="st">"A.St.Brown"</span>,<span class="st">"J.Gibbs"</span>,<span class="st">"J.Williams"</span>,<span class="st">"S.LaPorta"</span>), <span class="at">abbrev =</span> <span class="fu">c</span>(<span class="st">"ASB"</span>, <span class="st">"JG"</span>, <span class="st">"JW"</span>, <span class="st">"SLP"</span>), <span class="at">gt_fd =</span> <span class="fu">c</span>(<span class="fl">0.79</span>, <span class="fl">0.33</span>, <span class="fl">0.47</span>, <span class="fl">0.69</span>), <span class="at">lt_fd =</span> <span class="fu">c</span>(<span class="fl">0.35</span>, <span class="fl">0.18</span>, <span class="fl">0.55</span>, <span class="fl">0.26</span>), <span class="at">fumble =</span> <span class="fu">c</span>(<span class="fl">0.02</span>, <span class="dv">0</span>, <span class="fl">0.03</span>, <span class="dv">0</span>) ) <span class="sc">|&gt;</span> </span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="kdyjcfvhuk" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#kdyjcfvhuk table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#kdyjcfvhuk thead, #kdyjcfvhuk tbody, #kdyjcfvhuk tfoot, #kdyjcfvhuk tr, #kdyjcfvhuk td, #kdyjcfvhuk th {
+  border-style: none;
+}
+
+#kdyjcfvhuk p {
+  margin: 0;
+  padding: 0;
+}
+
+#kdyjcfvhuk .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#kdyjcfvhuk .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#kdyjcfvhuk .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#kdyjcfvhuk .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#kdyjcfvhuk .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#kdyjcfvhuk .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#kdyjcfvhuk .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#kdyjcfvhuk .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#kdyjcfvhuk .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#kdyjcfvhuk .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#kdyjcfvhuk .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#kdyjcfvhuk .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#kdyjcfvhuk .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#kdyjcfvhuk .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#kdyjcfvhuk .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#kdyjcfvhuk .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#kdyjcfvhuk .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#kdyjcfvhuk .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#kdyjcfvhuk .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#kdyjcfvhuk .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#kdyjcfvhuk .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#kdyjcfvhuk .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#kdyjcfvhuk .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#kdyjcfvhuk .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#kdyjcfvhuk .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#kdyjcfvhuk .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#kdyjcfvhuk .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#kdyjcfvhuk .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#kdyjcfvhuk .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#kdyjcfvhuk .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#kdyjcfvhuk .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#kdyjcfvhuk .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#kdyjcfvhuk .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#kdyjcfvhuk .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#kdyjcfvhuk .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#kdyjcfvhuk .gt_left {
+  text-align: left;
+}
+
+#kdyjcfvhuk .gt_center {
+  text-align: center;
+}
+
+#kdyjcfvhuk .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#kdyjcfvhuk .gt_font_normal {
+  font-weight: normal;
+}
+
+#kdyjcfvhuk .gt_font_bold {
+  font-weight: bold;
+}
+
+#kdyjcfvhuk .gt_font_italic {
+  font-style: italic;
+}
+
+#kdyjcfvhuk .gt_super {
+  font-size: 65%;
+}
+
+#kdyjcfvhuk .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#kdyjcfvhuk .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#kdyjcfvhuk .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#kdyjcfvhuk .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#kdyjcfvhuk .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#kdyjcfvhuk .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#kdyjcfvhuk .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#kdyjcfvhuk .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#kdyjcfvhuk div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<thead>
+<tr class="gt_col_headings header">
+<th id="receiver" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">receiver</th>
+<th id="abbrev" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">abbrev</th>
+<th id="gt_fd" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">gt_fd</th>
+<th id="lt_fd" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">lt_fd</th>
+<th id="fumble" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">fumble</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_left" headers="receiver">A.St.Brown</td>
+<td class="gt_row gt_left" headers="abbrev">ASB</td>
+<td class="gt_row gt_right" headers="gt_fd">0.79</td>
+<td class="gt_row gt_right" headers="lt_fd">0.35</td>
+<td class="gt_row gt_right" headers="fumble">0.02</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="receiver">J.Gibbs</td>
+<td class="gt_row gt_left" headers="abbrev">JG</td>
+<td class="gt_row gt_right" headers="gt_fd">0.33</td>
+<td class="gt_row gt_right" headers="lt_fd">0.18</td>
+<td class="gt_row gt_right" headers="fumble">0.00</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="receiver">J.Williams</td>
+<td class="gt_row gt_left" headers="abbrev">JW</td>
+<td class="gt_row gt_right" headers="gt_fd">0.47</td>
+<td class="gt_row gt_right" headers="lt_fd">0.55</td>
+<td class="gt_row gt_right" headers="fumble">0.03</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="receiver">S.LaPorta</td>
+<td class="gt_row gt_left" headers="abbrev">SLP</td>
+<td class="gt_row gt_right" headers="gt_fd">0.69</td>
+<td class="gt_row gt_right" headers="lt_fd">0.26</td>
+<td class="gt_row gt_right" headers="fumble">0.00</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<p>“epa” stands for Expected Points Added. Fumble turnovers and first downs have an average epa.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>nflfastR<span class="sc">::</span><span class="fu">load_pbp</span>(<span class="dv">2025</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(play_type <span class="sc">==</span> <span class="st">"pass"</span>, air_yards <span class="sc">&lt;</span> yardline_100, fumble_lost <span class="sc">==</span> <span class="dv">1</span> <span class="sc">|</span> first_down <span class="sc">==</span> <span class="dv">1</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">summarize</span>( <span class="at">epa_fumble =</span> <span class="fu">sum</span>(epa <span class="sc">*</span> fumble_lost) <span class="sc">/</span> <span class="fu">sum</span>(fumble_lost), <span class="at">epa_fd =</span> <span class="fu">sum</span>(epa<span class="sc">*</span> first_down) <span class="sc">/</span> <span class="fu">sum</span>(first_down)) <span class="sc">|&gt;</span> </span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="pedrrboetn" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#pedrrboetn table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#pedrrboetn thead, #pedrrboetn tbody, #pedrrboetn tfoot, #pedrrboetn tr, #pedrrboetn td, #pedrrboetn th {
+  border-style: none;
+}
+
+#pedrrboetn p {
+  margin: 0;
+  padding: 0;
+}
+
+#pedrrboetn .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#pedrrboetn .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#pedrrboetn .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#pedrrboetn .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#pedrrboetn .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#pedrrboetn .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#pedrrboetn .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#pedrrboetn .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#pedrrboetn .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#pedrrboetn .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#pedrrboetn .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#pedrrboetn .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#pedrrboetn .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#pedrrboetn .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#pedrrboetn .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#pedrrboetn .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#pedrrboetn .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#pedrrboetn .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#pedrrboetn .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#pedrrboetn .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#pedrrboetn .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#pedrrboetn .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#pedrrboetn .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#pedrrboetn .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#pedrrboetn .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#pedrrboetn .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#pedrrboetn .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#pedrrboetn .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#pedrrboetn .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#pedrrboetn .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#pedrrboetn .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#pedrrboetn .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#pedrrboetn .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#pedrrboetn .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#pedrrboetn .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#pedrrboetn .gt_left {
+  text-align: left;
+}
+
+#pedrrboetn .gt_center {
+  text-align: center;
+}
+
+#pedrrboetn .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#pedrrboetn .gt_font_normal {
+  font-weight: normal;
+}
+
+#pedrrboetn .gt_font_bold {
+  font-weight: bold;
+}
+
+#pedrrboetn .gt_font_italic {
+  font-style: italic;
+}
+
+#pedrrboetn .gt_super {
+  font-size: 65%;
+}
+
+#pedrrboetn .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#pedrrboetn .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#pedrrboetn .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#pedrrboetn .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#pedrrboetn .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#pedrrboetn .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#pedrrboetn .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#pedrrboetn .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#pedrrboetn div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<thead>
+<tr class="gt_col_headings header">
+<th id="epa_fumble" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">epa_fumble</th>
+<th id="epa_fd" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">epa_fd</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_right" headers="epa_fumble">-4.046483</td>
+<td class="gt_row gt_right" headers="epa_fd">1.631217</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<ul>
+<li><span class="math inline">\(\mathrm{expected\ return\ on\ throw\ beyond\ first\ down} = P[\mathrm{gt\_fd}] * epa_{fd} + P[\mathrm{fumble}] * epa_{fumble}\)</span></li>
+<li><span class="math inline">\(\mathrm{expected\ return\ on\ throw\ short\ of\ first\ down} = P[\mathrm{lt\_fd}] * epa_{fd} + P[\mathrm{fumble}] * epa_{fumble}\)</span></li>
+</ul>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">receiver</th>
+<th style="text-align: center;">gt_fd epa</th>
+<th style="text-align: center;">lt_fd epa</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">ASB</td>
+<td style="text-align: center;">1.18</td>
+<td style="text-align: center;">0.48</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">JG</td>
+<td style="text-align: center;">0.52</td>
+<td style="text-align: center;">0.28</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">JW</td>
+<td style="text-align: center;">0.63</td>
+<td style="text-align: center;">0.76</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">SLP</td>
+<td style="text-align: center;">1.10</td>
+<td style="text-align: center;">0.46</td>
+</tr>
+</tbody>
+</table>
+<p>Detroit has two receivers, A.St.Brown and S.LaPorta, who are good at getting first downs on longer throws and on shorter throws. J.Williams is a threat on short throws but struggles to catch longer throws. J.Gibbs is a reliable target on shorter throws but converts a small percentage of those passes into first downs.</p>
+</section>
+<section id="demand-to-capacity-model-ratio-function" class="level3">
+<h3 class="anchored" data-anchor-id="demand-to-capacity-model-ratio-function">Demand-to-Capacity Model: Ratio Function</h3>
+<p>Use the ratio model for failure function.</p>
+<p><span class="math display">\[failure function = \frac{Capacity}{Demand}\]</span> <span class="math display">\[failure = \frac{Capacity}{Demand} &lt; 1\]</span> <span class="math display">\[improvement \mathrm{\ or\ } decline = \frac{\sum_{0}^{n}{\frac{Capacity}{Demand}}}{n}\]</span></p>
+<p>It should be possible to model injuries with a Demand-to-Capacity model but it is probably more effective to use it to model a player’s decline.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6ImQzID0gcmVxdWlyZShcImQzQDdcIilcbnJlY2VpdmVycyA9IEZpbGVBdHRhY2htZW50KFwicmVjZWl2ZXJzLmpzb25cIikuanNvbigpXG5yZWNlaXZlcnNfb2Zmc2V0ID0gRmlsZUF0dGFjaG1lbnQoXCJyZWNlaXZlcnNfb2Zmc2V0Lmpzb25cIikuanNvbigpXG5yX29mZnNldCA9IGQzLmdyb3VwKFxuICByZWNlaXZlcnNfb2Zmc2V0LFxuICAoZCkgPT4gZC5uZmxfaWQsXG4gIChkKSA9PiBkLnBsYXlfaWRcbilcbmNvbGxpc2lvbnMgPSBGaWxlQXR0YWNobWVudChcImNvbGxpc2lvbnMuanNvblwiKS5qc29uKClcblxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0yIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiXG5jaGFydCA9IHtcbiAgLy8gRGVjbGFyZSB0aGUgY2hhcnQgZGltZW5zaW9ucyBhbmQgbWFyZ2lucy5cbiAgY29uc3QgbWFyZ2luVG9wID0gMjA7XG4gIGNvbnN0IG1hcmdpblJpZ2h0ID0gMTtcbiAgY29uc3QgbWFyZ2luQm90dG9tID0gNDA7XG4gIGNvbnN0IG1hcmdpbkxlZnQgPSA0MDtcbiAgY29uc3Qgcm93SGVpZ2h0ID0gMjI7XG4gIGNvbnN0IHdpZHRoID0gMTIwMDtcbiAgY29uc3QgaGVpZ2h0ID1cbiAgICByb3dIZWlnaHQgKiBBcnJheS5mcm9tKG5ldyBTZXQoZDMubWFwKHJlY2VpdmVycywgKGQpID0+IGQubmZsX2lkKSkpLmxlbmd0aCArXG4gICAgbWFyZ2luVG9wICtcbiAgICBtYXJnaW5Cb3R0b207XG5cbiAgLy8gQ3JlYXRlIHRoZSBzY2FsZXMuXG4gIGNvbnN0IHggPSBkM1xuICAgIC5zY2FsZUxpbmVhcigpXG4gICAgLy8gbWF4IHZhbHVlIGZyb20gcmVjZWlldmVyc19vZmZzZXQuY3N1bVxuICAgIC5kb21haW4oWzEsIGQzLm1heChyZWNlaXZlcnNfb2Zmc2V0LCAoZCkgPT4gZC5jc3VtKV0pXG4gICAgLnJhbmdlUm91bmQoW21hcmdpbkxlZnQsIHdpZHRoIC0gbWFyZ2luUmlnaHRdKTtcblxuICBjb25zdCB5ID0gZDNcbiAgICAuc2NhbGVCYW5kKClcbiAgICAuZG9tYWluKEFycmF5LmZyb20obmV3IFNldChkMy5tYXAocmVjZWl2ZXJzLCAoZCkgPT4gZC5uZmxfaWQpKSkpXG4gICAgLnJhbmdlUm91bmQoW21hcmdpblRvcCwgaGVpZ2h0IC0gbWFyZ2luQm90dG9tXSk7XG5cbiAgY29uc3QgY29sb3IgPSBkMy5zY2FsZVNlcXVlbnRpYWxTcXJ0KFxuICAgIFswLCBkMy5tYXgocmVjZWl2ZXJzLCAoZCkgPT4gZC5kaXN0KV0sXG4gICAgZDMuaW50ZXJwb2xhdGVIc2woXCIjZGRkXCIsIFwicmVkXCIpXG4gICk7XG5cbiAgLy8gQ3JlYXRlIHRoZSBTVkcgY29udGFpbmVyLlxuICBjb25zdCBzdmcgPSBkM1xuICAgIC5jcmVhdGUoXCJzdmdcIilcbiAgICAuYXR0cihcInZpZXdCb3hcIiwgWzAsIDAsIHdpZHRoLCBoZWlnaHRdKVxuICAgIC5hdHRyKFwidmlld0JveFwiLCBbMCwgMCwgd2lkdGgsIGhlaWdodF0pXG4gICAgLmF0dHIoXCJ3aWR0aFwiLCB3aWR0aClcbiAgICAuYXR0cihcImhlaWdodFwiLCBoZWlnaHQpXG4gICAgLmF0dHIoXCJzdHlsZVwiLCBcIm1heC13aWR0aDogMTAwJTsgaGVpZ2h0OiBhdXRvO1wiKTtcblxuICAvLyBBcHBlbmQgdGhlIGF4ZXMuXG4gIHN2Z1xuICAgIC5hcHBlbmQoXCJnXCIpXG4gICAgLmF0dHIoXCJ0cmFuc2Zvcm1cIiwgYHRyYW5zbGF0ZSgwLCR7aGVpZ2h0IC0gbWFyZ2luQm90dG9tfSlgKVxuICAgIC5jYWxsKGQzLmF4aXNCb3R0b20oeCkudGlja3Mod2lkdGggLyA4MCkpXG4gICAgLmNhbGwoKGcpID0+IGcuc2VsZWN0KFwiLmRvbWFpblwiKS5yZW1vdmUoKSlcbiAgICAuY2FsbCgoZykgPT5cbiAgICAgIGdcbiAgICAgICAgLmFwcGVuZChcInRleHRcIilcbiAgICAgICAgLmF0dHIoXCJ4XCIsIHdpZHRoKVxuICAgICAgICAuYXR0cihcInlcIiwgbWFyZ2luQm90dG9tIC0gNClcbiAgICAgICAgLmF0dHIoXCJmaWxsXCIsIFwiY3VycmVudENvbG9yXCIpXG4gICAgICAgIC5hdHRyKFwidGV4dC1hbmNob3JcIiwgXCJlbmRcIilcbiAgICAgICAgLnRleHQoXCJmcmFtZSDihpJcIilcbiAgICApO1xuXG4gIHN2Z1xuICAgIC5hcHBlbmQoXCJnXCIpXG4gICAgLmF0dHIoXCJjbGFzc1wiLCBcImdyaWRcIilcbiAgICAuYXR0cihcInRyYW5zZm9ybVwiLCBgdHJhbnNsYXRlKCR7bWFyZ2luTGVmdH0sMClgKVxuICAgIC5jYWxsKGQzLmF4aXNMZWZ0KHkpLnRpY2tTaXplKC13aWR0aCkpXG4gICAgLmNhbGwoKGcpID0+IGcuc2VsZWN0KFwiLmRvbWFpblwiKS5yZW1vdmUoKSlcbiAgICAuY2FsbCgoZykgPT5cbiAgICAgIGdcbiAgICAgICAgLmFwcGVuZChcInRleHRcIilcbiAgICAgICAgLmF0dHIoXCJ4XCIsIC1tYXJnaW5MZWZ0KVxuICAgICAgICAuYXR0cihcInlcIiwgMTApXG4gICAgICAgIC5hdHRyKFwiZmlsbFwiLCBcImN1cnJlbnRDb2xvclwiKVxuICAgICAgICAuYXR0cihcInRleHQtYW5jaG9yXCIsIFwic3RhcnRcIilcbiAgICAgICAgLnRleHQoXCLihpEgcGxheWVyXCIpXG4gICAgKTtcblxuICAvLyB2aXN1YWxzXG4gIC8vIHRyYWNraW5nIHBhdGhzIHdpdGggdmVsb2NpdHkgYXMgZ3JleS1yZWQgZ3JhZGllbnRcbiAgc3ZnXG4gICAgLmFwcGVuZChcImdcIilcbiAgICAuc2VsZWN0QWxsKFwicGF0aFwiKVxuICAgIC5kYXRhKHJlY2VpdmVycylcbiAgICAuam9pbihcInBhdGhcIilcbiAgICAuYXR0cihcInRyYW5zZm9ybVwiLCAoZCkgPT5cbiAgICAgIGlzTmFOKGQuZGlzdClcbiAgICAgICAgPyBgdHJhbnNsYXRlKCR7eChcbiAgICAgICAgICAgIGQuZnJhbWVfaWQgKyByX29mZnNldC5nZXQoZC5uZmxfaWQpLmdldChkLnBsYXlfaWQpWzBdLm9mZnNldFxuICAgICAgICAgICl9LCAke3koZC5uZmxfaWQpfSkgc2NhbGUoMC4xLDMpYFxuICAgICAgICA6IGB0cmFuc2xhdGUoJHt4KFxuICAgICAgICAgICAgZC5mcmFtZV9pZCArIHJfb2Zmc2V0LmdldChkLm5mbF9pZCkuZ2V0KGQucGxheV9pZClbMF0ub2Zmc2V0XG4gICAgICAgICAgKX0sICR7eShkLm5mbF9pZCl9KSByb3RhdGUoJHtkLmRpcn0pIHNjYWxlKCR7MC4yICsgZC5keH0sJHsxICsgZC5keX0pYFxuICAgIClcbiAgICAuYXR0cihcImZpbGxcIiwgKGQpID0+XG4gICAgICBpc05hTihkLmRpc3QpID8gXCIjMDAwXCIgOiBjb2xvcihkLmRpc3QpXG4gICAgKVxuICAgIC5hdHRyKFwiZFwiLCBkMy5zeW1ib2woZDMuc3ltYm9sVHJpYW5nbGUpKTtcblxuICAvLyBjb2xsaXNpb25zIHdpdGggYmxhY2sgZmlsbGVkIGNpcmNsZXNcbiAgc3ZnXG4gICAgLmFwcGVuZChcImdcIilcbiAgICAuc2VsZWN0QWxsKFwicGF0aFwiKVxuICAgIC5kYXRhKGNvbGxpc2lvbnMpXG4gICAgLmpvaW4oXCJwYXRoXCIpXG4gICAgLmF0dHIoXG4gICAgICBcInRyYW5zZm9ybVwiLFxuICAgICAgKGQpID0+XG4gICAgICAgIGB0cmFuc2xhdGUoJHt4KFxuICAgICAgICAgIGQuZnJhbWVfaWQgKyByX29mZnNldC5nZXQoZC5uZmxfaWQpLmdldChkLnBsYXlfaWQpWzBdLm9mZnNldFxuICAgICAgICApfSwgJHt5KGQubmZsX2lkKX0pIHNjYWxlKDAuNSwwLjUpYFxuICAgIClcbiAgICAuYXR0cihcImZpbGxcIiwgXCIjMDAwXCIpXG4gICAgLmF0dHIoXCJkXCIsIGQzLnN5bWJvbChkMy5zeW1ib2xDaXJjbGUpKTtcblxuICByZXR1cm4gc3ZnLm5vZGUoKTtcbn1cblxuIn1dfQ==
+</script>
+<script type="module">
+if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
+window._ojs.paths.runtimeToDoc = "../../posts/course-project";
+window._ojs.paths.runtimeToRoot = "../..";
+window._ojs.paths.docToRoot = "../..";
+window._ojs.selfContained = false;
+window._ojs.runtime.interpretFromScriptTags();
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/DrivingWheelProjects\.github\.io\/analysis\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
