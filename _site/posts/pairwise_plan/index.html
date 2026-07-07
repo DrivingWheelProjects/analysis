@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Harlow Malloc">
-<meta name="dcterms.date" content="2025-10-06">
+<meta name="author" content="Brad Stenger">
+<meta name="dcterms.date" content="2026-06-27">
 
-<title>Post With Code – analysis</title>
+<title>Athletes Data Pairwise Comparison Survey (Cycle Tracking) - Recruitment &amp; Survey Design and Participation Plan – analysis</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -151,13 +151,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Post With Code</h1>
-                                <div class="quarto-categories">
-                <div class="quarto-category">news</div>
-                <div class="quarto-category">code</div>
-                <div class="quarto-category">analysis</div>
-              </div>
-                  </div>
+      <h1 class="title">Athletes Data Pairwise Comparison Survey (Cycle Tracking) - Recruitment &amp; Survey Design and Participation Plan</h1>
+                      </div>
   </div>
     
   
@@ -166,14 +161,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p>Harlow Malloc </p>
+               <p>Brad Stenger </p>
             </div>
     </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">October 6, 2025</p>
+        <p class="date">June 27, 2026</p>
       </div>
     </div>
     
@@ -192,15 +187,235 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<p>This is a post with executable code.</p>
+<section id="scenario" class="level3">
+<h3 class="anchored" data-anchor-id="scenario">Scenario</h3>
+<p>Survey will test U.S. women college athletes attitudes and preferences for data sharing of their menstrual cycle tracking data with coaches and teammates. Results will inform work on developing privacy-enhanced tools for data sharing of athletes’ data.</p>
+</section>
+<section id="research-question" class="level3">
+<h3 class="anchored" data-anchor-id="research-question">Research Question</h3>
+<p>What are U.S. women college athletes attitudes and preferences for data sharing of their menstrual cycle tracking data with coaches and teammates for the purpose of success for both individual athlete and their team?</p>
+</section>
+<section id="survey-method" class="level3">
+<h3 class="anchored" data-anchor-id="survey-method">Survey Method</h3>
+<p>The survey will ask participants to choose between two vignette scenarios, expressing their preference for which scenario is “more appropriate” in terms of their privacy preferences. Vignettes are structured descriptive scenarios, each one phrased to include a randomized set of specific parameters that describe the research question context. The pairwise comparison survey methodology fits college athlete populations who require small, flexible time windows in order to participate. Survey vignettes use the contextual integrity framework (a method for describing information flows in privacy-relevant contexts) for scenarios and their combinations.</p>
+</section>
+<section id="initial-questions-before-survey" class="level3">
+<h3 class="anchored" data-anchor-id="initial-questions-before-survey">Initial Questions before Survey</h3>
+<ol start="0" type="1">
+<li>Must ask: Women student-athletes approach to menstruation and its affect on athletic performance?
+<ul>
+<li>slider 0-100 for how much attention they pay to their period related to their athletic performance</li>
+<li>why that number?</li>
+<li>information preferences checkboxes: birth control, period tracking app, period tracking wearable, period tracking journal, past pregnancy, political awareness</li>
+</ul></li>
+<li>Question: Do we want to have participant demographics? (gender, location, revenue-nonrevenue, team-individual, freshman-upperclass, age, privacy-sensitivity)
+<ul>
+<li>If yes, which demographics?</li>
+</ul></li>
+</ol>
+</section>
+<section id="survey-construction-in-qualtrics" class="level3">
+<h3 class="anchored" data-anchor-id="survey-construction-in-qualtrics">Survey Construction in Qualtrics</h3>
+<ol start="0" type="1">
+<li>Survey will randomly pair combinations of information flows fo (determined by contextual integrity framework) and ask survey taker to judge which one is “more appropriate.” The actual process in Qualtrics is to have a choose-from list with all of the vignette combinations where two items’ choices are shown at random and then hide the rest of the choices from survey takers.</li>
+<li>Survey participants will be asked for 5 pairwise comparisons.</li>
+<li>We can plan to give survey participants the opportunity to do more pairwise comparisons.</li>
+</ol>
+</section>
+<section id="simulation-data-and-analysis-so-far" class="level3">
+<h3 class="anchored" data-anchor-id="simulation-data-and-analysis-so-far">Simulation: Data and Analysis (so far)</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(jsonlite)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyr)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>json <span class="ot">&lt;-</span> <span class="st">'{</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="st">    "datatype": ["journal","app","wearable","birth control"],</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="st">    "sender": ["strength coach","data analyst","athletic trainer"],</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="st">    "tp": ["player status","team analysis","health concern"],</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="st">    "recipient": ["head coach","whole team","strength coach","athletic trainer"],</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="st">    "purpose": ["training","game planning","performance review"]</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="st">}'</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>ci <span class="ot">&lt;-</span> jsonlite<span class="sc">::</span><span class="fu">fromJSON</span>(json)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>combinations <span class="ot">&lt;-</span> <span class="fu">expand.grid</span>(ci<span class="sc">$</span>datatype,ci<span class="sc">$</span>sender,ci<span class="sc">$</span>tp,ci<span class="sc">$</span>recipient)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(combinations) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"datatype"</span>,<span class="st">"sender"</span>,<span class="st">"tp"</span>,<span class="st">"recipient"</span>)</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">1</span>)</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>pair_ones <span class="ot">&lt;-</span> combinations[<span class="fu">sample</span>(<span class="fu">nrow</span>(combinations), <span class="dv">30</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>), ]</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>pair_twos <span class="ot">&lt;-</span> combinations[<span class="fu">sample</span>(<span class="fu">nrow</span>(combinations), <span class="dv">30</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>), ]</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>  <span class="at">pair_one =</span> pair_ones,</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>  <span class="at">pair_two =</span> pair_twos</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>results <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rowwise</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">winners =</span> <span class="fu">sample</span>(<span class="fu">list</span>(pair_one, pair_two), <span class="at">size =</span> <span class="dv">1</span>)[[<span class="dv">1</span>]]) <span class="sc">%&gt;%</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>()</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>results<span class="sc">$</span>winners</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
+<pre><code>               datatype           sender             tp        recipient
+121...1         journal   strength coach  team analysis athletic trainer
+129             journal athletic trainer  team analysis athletic trainer
+43             wearable     data analyst  player status       whole team
+14                  app   strength coach  team analysis       head coach
+51             wearable   strength coach  team analysis       whole team
+39             wearable   strength coach  player status       whole team
+21              journal athletic trainer  team analysis       head coach
+106                 app athletic trainer health concern   strength coach
+74                  app   strength coach  player status   strength coach
+7              wearable     data analyst  player status       head coach
+73              journal   strength coach  player status   strength coach
+45              journal athletic trainer  player status       whole team
+22                  app athletic trainer  team analysis       head coach
+115            wearable     data analyst  player status athletic trainer
+104       birth control     data analyst health concern   strength coach
+34                  app athletic trainer health concern       head coach
+70.1...17           app athletic trainer health concern       whole team
+104.1     birth control     data analyst health concern   strength coach
+103            wearable     data analyst health concern   strength coach
+75             wearable   strength coach  player status   strength coach
+84...21   birth control athletic trainer  player status   strength coach
+70                  app athletic trainer health concern       whole team
+89              journal     data analyst  team analysis   strength coach
+42                  app     data analyst  player status       whole team
+111            wearable   strength coach  player status athletic trainer
+84...26   birth control athletic trainer  player status   strength coach
+103.1          wearable     data analyst health concern   strength coach
+121...28        journal   strength coach  team analysis athletic trainer
+87             wearable   strength coach  team analysis   strength coach
+70.1...30           app athletic trainer health concern       whole team</code></pre>
 </div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">#.. format data to match Heis example</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+</section>
+<section id="survey-process" class="level3">
+<h3 class="anchored" data-anchor-id="survey-process">Survey Process</h3>
+<ol type="1">
+<li>Email invitation to survey from template</li>
+<li>Use <a href="https://www.qualtrics.com/support/survey-platform/distributions-module/email-distribution/emails-overview/">Qualtrics Emailer</a> for survey invitations, enables single submission per email invitation</li>
+<li>Use <a href="https://www.qualtrics.com/support/survey-platform/survey-module/survey-flow/advanced-elements/authenticator/authenticator-overview/">Qualtrics Authenticator</a> for survey participation, matches survey taker to contact list</li>
+<li>Survey Instructions page, includes essential background information</li>
+<li>Survey
+<ul>
+<li>user testing needed to judge correct number of pairwise comparison questions</li>
+<li>Q: do we want to include one optional open-ended response after pairwise comparison questions? It seems like a missed opportunity if not included.</li>
+</ul></li>
+<li>Qualtrics data export for analysis and participant payment (separate workflows)</li>
+</ol>
+</section>
+<section id="analysis-workflow" class="level3">
+<h3 class="anchored" data-anchor-id="analysis-workflow">Analysis workflow</h3>
+<ol type="1">
+<li>done in R Studio and Quarto environments</li>
+<li>Facets win percentage from pairwise comparisons</li>
+<li>Bayesian Hierarchical Analysis for Average Marginal Component Effects and Marginal Means, describes differences between facets</li>
+<li>Elo Rankings, advanced prediction model derived from facets win percentage</li>
+</ol>
+</section>
+<section id="payments-workflow" class="level3">
+<h3 class="anchored" data-anchor-id="payments-workflow">Payments workflow</h3>
+<ol type="1">
+<li>contact information exported with Qualtrics survey results</li>
+<li>electronic gift card payment automation with Amazon Incentives API and with Twilio Sendgrid Email API</li>
+</ol>
+</section>
+<section id="paid-for-email-list-for-survey-panel" class="level3">
+<h3 class="anchored" data-anchor-id="paid-for-email-list-for-survey-panel">Paid-for Email List for Survey Panel</h3>
+<ol type="1">
+<li>constraint: percentage results are only analysis that can be reported
+<ul>
+<li>constraint comes from contractual agreement between Student Athlete Insights consultancy and student-athlete participants in their mail list</li>
+<li>pairwise comparison win percentage is one available metric given the constraint</li>
+<li>Bayesian Hierarchical Analysis is also available. The survey is analogous to political strategy research comparing Candidate-A with a set of categorized descriptors to Candidate-B with a different set of categorized descriptors. Using pairwise comparison all Candidate combinations, those description will show measurable gain (or loss) in expected percentage. <a href="https://www.andrewheiss.com/blog/2023/07/25/conjoint-bayesian-frequentist-guide/">Heis, Conjoint Analysis in R</a></li>
+</ul></li>
+<li>if no constraint
+<ul>
+<li>Elo rankings and odds-ratio analysis would be available for public presentation of results (still available for private analysis)</li>
+<li>other sources for paid email list: CoachMePlus, Teamworks (no guarantee that either is willing to help)</li>
+</ul></li>
+<li><strong>assessment:</strong> easiest course of action
+<ul>
+<li>Q: is it realistic to expect a certain number of participants/dollar with pilot tests?</li>
+<li>Q: can pilot tests with small numbers of athletes (&lt; 5) indicate larger-scale participation levels in addition to finalizing wording for survey questions?</li>
+<li>Q: what are the cost differences between single + large survey invitation sendouts vs.&nbsp;multiple + smaller survey invitation sendouts?</li>
+</ul></li>
+</ol>
+</section>
+<section id="snowball-recruiting-to-create-survey-panel-from-scratch" class="level3">
+<h3 class="anchored" data-anchor-id="snowball-recruiting-to-create-survey-panel-from-scratch">Snowball Recruiting to Create Survey Panel from Scratch</h3>
+<ol type="1">
+<li>seed: student-athletes who will offered opportunity to take the survey, and who will likely refer other student-athletes in their network to take survey
+<ul>
+<li>UVM, UVA athlete network (lower quality, lower cost)</li>
+<li>seed from Student Athlete Insights network (higher quality, higher cost)</li>
+<li>personal outreach for seed student-athletes from Athletes Data Community Newsletter mail list</li>
+</ul></li>
+<li>create participant id + email invitation to survey for each seed (json + Python + Sendgrid)
+<ul>
+<li>may want to include identity verification using email address in order to prevent forwarding survey link</li>
+<li>if forwarded links are caught as unverified, it might be worth the effort to verify the attempted survey taker as a U.S. student athlete</li>
+</ul></li>
+<li>survey instructions and essential background (300-400 words) + survey + referrals (both survey and referral requests are in the same Qualtrics survey)</li>
+<li>referral confirmation as student-athlete at U.S. college
+<ul>
+<li>if ok referral gets participant id =&gt; proceed with steps 2 and 3</li>
+<li>checking referral is 100% necessary to</li>
+</ul></li>
+<li>payments
+<ul>
+<li>completed survey</li>
+<li>referral completed survey</li>
+</ul></li>
+<li>cutoff
+<ul>
+<li>number of participants</li>
+<li>time window</li>
+<li>money is spent</li>
+<li>be sure to mention cutoff in email invitation to survey</li>
+<li>make sure Qualtrics stays up to date, replace first page and say that survey has ended when cutoff has been reached</li>
+</ul></li>
+<li>start over if more participants needed
+<ul>
+<li>evaluate seed participants</li>
+<li>evaluate payment/incentive</li>
+<li>check referral network for downstream effectiveness</li>
+</ul></li>
+<li>analysis
+<ul>
+<li>no constraint</li>
+<li>win percentage</li>
+<li>Bayesian percentage changes from ACME and marginal mean</li>
+<li>Elo ranking</li>
+</ul></li>
+<li><strong>assessment:</strong> highest potential number of participants/dollar, least certainty of reaching participation objectives
+<ul>
+<li>ownership of mail list that results, with availability for future, similar surveys</li>
+</ul></li>
+</ol>
+</section>
+<section id="panel-hybrid-with-both-paid-snowball" class="level3">
+<h3 class="anchored" data-anchor-id="panel-hybrid-with-both-paid-snowball">2-Panel Hybrid with both Paid + Snowball</h3>
+<ol type="1">
+<li>determine ratio of paid list to snowball recruiting
+<ul>
+<li>test with pilot experiments to gauge effectiveness of each approach</li>
+<li>adaptive iterations based on small-scale survey releases (either paid list or snowball recruiting) will add cost and time</li>
+</ul></li>
+<li>analysis
+<ul>
+<li>differs by recruitment method</li>
+<li>separate but identical Qualtrics surveys to sandbox results according to recruitment method – No Mixing</li>
+<li>Elo not availables using Student Athlete Insights network, shows relative benefit of Elo ranking</li>
+</ul></li>
+<li><strong>assessment:</strong> balances cost and risk
+<ul>
+<li>assurance of reaching floor-level of survey response participation with Student Athlete Insights network mail list outreach</li>
+<li>opportunity to learn while also obtaining survey responses by doing snowball recruiting</li>
+<li>might be possible to stagger starting points, assess snowball recruiting and then use paid mail list as</li>
+</ul></li>
+</ol>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
