@@ -1,0 +1,176 @@
+[
+  {
+    "play_id": 58,
+    "n": 19,
+    "csum": 19,
+    "offset": 0
+  },
+  {
+    "play_id": 152,
+    "n": 16,
+    "csum": 35,
+    "offset": 19
+  },
+  {
+    "play_id": 482,
+    "n": 34,
+    "csum": 69,
+    "offset": 35
+  },
+  {
+    "play_id": 534,
+    "n": 22,
+    "csum": 91,
+    "offset": 69
+  },
+  {
+    "play_id": 559,
+    "n": 20,
+    "csum": 111,
+    "offset": 91
+  },
+  {
+    "play_id": 629,
+    "n": 44,
+    "csum": 155,
+    "offset": 111
+  },
+  {
+    "play_id": 962,
+    "n": 24,
+    "csum": 179,
+    "offset": 155
+  },
+  {
+    "play_id": 993,
+    "n": 47,
+    "csum": 226,
+    "offset": 179
+  },
+  {
+    "play_id": 1186,
+    "n": 26,
+    "csum": 252,
+    "offset": 226
+  },
+  {
+    "play_id": 1356,
+    "n": 36,
+    "csum": 288,
+    "offset": 252
+  },
+  {
+    "play_id": 1589,
+    "n": 20,
+    "csum": 308,
+    "offset": 288
+  },
+  {
+    "play_id": 1664,
+    "n": 18,
+    "csum": 326,
+    "offset": 308
+  },
+  {
+    "play_id": 1701,
+    "n": 26,
+    "csum": 352,
+    "offset": 326
+  },
+  {
+    "play_id": 1775,
+    "n": 32,
+    "csum": 384,
+    "offset": 352
+  },
+  {
+    "play_id": 2281,
+    "n": 41,
+    "csum": 425,
+    "offset": 384
+  },
+  {
+    "play_id": 2306,
+    "n": 17,
+    "csum": 442,
+    "offset": 425
+  },
+  {
+    "play_id": 2383,
+    "n": 36,
+    "csum": 478,
+    "offset": 442
+  },
+  {
+    "play_id": 2428,
+    "n": 33,
+    "csum": 511,
+    "offset": 478
+  },
+  {
+    "play_id": 2655,
+    "n": 18,
+    "csum": 529,
+    "offset": 511
+  },
+  {
+    "play_id": 2844,
+    "n": 23,
+    "csum": 552,
+    "offset": 529
+  },
+  {
+    "play_id": 2916,
+    "n": 18,
+    "csum": 570,
+    "offset": 552
+  },
+  {
+    "play_id": 2941,
+    "n": 26,
+    "csum": 596,
+    "offset": 570
+  },
+  {
+    "play_id": 3015,
+    "n": 25,
+    "csum": 621,
+    "offset": 596
+  },
+  {
+    "play_id": 3593,
+    "n": 18,
+    "csum": 639,
+    "offset": 621
+  },
+  {
+    "play_id": 3618,
+    "n": 31,
+    "csum": 670,
+    "offset": 639
+  },
+  {
+    "play_id": 3684,
+    "n": 29,
+    "csum": 699,
+    "offset": 670
+  },
+  {
+    "play_id": 3716,
+    "n": 18,
+    "csum": 717,
+    "offset": 699
+  },
+  {
+    "play_id": 3942,
+    "n": 23,
+    "csum": 740,
+    "offset": 717
+  },
+  {
+    "play_id": 3987,
+    "n": 33,
+    "csum": 773,
+    "offset": 740
+  }
+]

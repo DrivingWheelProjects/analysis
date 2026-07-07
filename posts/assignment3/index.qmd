@@ -6,10 +6,11 @@ title: "Assignment 3 -- Brad Stenger"
 
 "The probability of the occurrence of either one event or another or both is the sum of their individual probabilities minus the probability of their joint occurrence."
 
-The throw in football passing plays are either shorter or longer than the distance required for a first down.
-- $\mathrm{prob\ of\ catch\ when\ } xyac_{fd} > 0.99 => who$
-- $\mathrm{prob\ of\ catch\ when\ } xyac_{fd} < 0.99 * prob\ expected_{fd}$
-- $x:play_type == "pass" && \mathrm{prob\ of\ negative\ epa\ } (epa < 0)$
+The throw in football passing plays are either shorter or longer than the distance required for a first down. 
+
+* $\mathrm{prob\ of\ catch\ when\ } xyac_{fd} > 0.99 => who$ 
+* $\mathrm{prob\ of\ catch\ when\ } xyac_{fd} < 0.99 * prob\ expected_{fd}$ 
+* $x:play\_type == pass \ \&\& \ \mathrm{prob\ of\ negative\ epa\ } (epa < 0)$
 
 The quarterback of a football has up to six eligible receivers on a passing play. There are also two distinct scenarios on a passing play. Throw past the first down distance so that a catch ensures a first down. Or throw short of first down distance and leave the receiver work to do (in the form of yards after catch, yac) to gain the first down. Each receiver has a probability for getting a first down when the throw distance is less than first down distance (lt_fd) and another probability when the throw distance is greater than first down distance (gt_fd). These probabilities are mutually exclusive but not independent and the added probabilities (pr_gt_fd + pr_lt_fd) is the net probability for a targeted receiver getting a first down.
 
@@ -21,7 +22,7 @@ The probability of a fumble by the receiver after a catch is, however, independe
 library(gt)
 ```
 
-```{r} 
+```{r}
 #\| nflfastr
 
 nflfastR::load_pbp(2025) |> 
@@ -53,7 +54,7 @@ nflfastR::load_pbp(2025) |>
 
 In the table "gt\_" refers to passes that travel greater than the distance to the first down. "lt\_" refers to passes that travel less than the distance to the first down. "neg_pct" refers to percent of passes that are caught and then fumbled to the other team. The principal receivers for DET are A.St.Brown (ASB), J.Gibbs (JG), J.Williams (JW) and S.LaPorta (SLP).
 
-```{r} 
+```{r}
 data.frame( receiver = c("A.St.Brown","J.Gibbs","J.Williams","S.LaPorta"), abbrev = c("ASB", "JG", "JW", "SLP"), gt_fd = c(0.79, 0.33, 0.47, 0.69), lt_fd = c(0.35, 0.18, 0.55, 0.26), fumble = c(0.02, 0, 0.03, 0) ) |> 
   gt()
 ```
@@ -68,10 +69,10 @@ nflfastR::load_pbp(2025) |>
   gt()
 ```
 
-$$
-  \mathrm{expected\ return\ on\ throw\ beyond\ first\ down} = P[\mathrm{gt\_fd}] * epa_{fd} + P[\mathrm{fumble}] * epa_{fumble} \\
-  \mathrm{expected\ return\ on\ throw\ short\ of\ first\ down} = P[\mathrm{lt\_fd}] * epa_{fd} + P[\mathrm{fumble}] * epa_{fumble} 
-$$
+
+* $\mathrm{expected\ return\ on\ throw\ beyond\ first\ down} = P[\mathrm{gt\_fd}] * epa_{fd} + P[\mathrm{fumble}] * epa_{fumble}$
+* $\mathrm{expected\ return\ on\ throw\ short\ of\ first\ down} = P[\mathrm{lt\_fd}] * epa_{fd} + P[\mathrm{fumble}] * epa_{fumble}$
+
 
 | receiver | gt_fd epa | lt_fd epa |
 |:--------:|:---------:|:---------:|
@@ -80,7 +81,9 @@ $$
 |    JW    |   0.63    |   0.76    |
 |   SLP    |   1.10    |   0.46    |
 
+
 Detroit has two receivers, A.St.Brown and S.LaPorta, who are good at getting first downs on longer throws and on shorter throws. J.Williams is a threat on short throws but struggles to catch longer throws. J.Gibbs is a reliable target on shorter throws but converts a small percentage of those passes into first downs.
+
 
 ### 3-4. Create a problem in your field similar to the one presented on page 56 (Fig. 2.1.15) in Class Handout #2
 
@@ -90,21 +93,17 @@ https://www.nature.com/articles/s41598-021-87920-6, "Temporal trends in incidenc
 
 64.7 injuries for 1000 exposures in NFL games during one NFL team 10-year pre-season totals (https://journals.sagepub.com/doi/10.1177/0363546508316021, Epidemiology of National Football League Training Camp Injuries from 1998 to 2007)
 
-44.8 injuries for 1000 exposures for NCAA Division 1 football games between 2014-15 and 2018-19 (https://pubmed.ncbi.nlm.nih.gov/34280281/, Epidemiology of Injuries in National Collegiate Athletic Association Men's Football: 2014-2015 Through 2018-2019)
+44.8 injuries for 1000 exposures for NCAA Division 1 football games between 2014-15 and 2018-19 based on[*Epidemiology of Injuries in National Collegiate Athletic Association Men's Football: 2014-2015 Through 2018-2019*](https://pubmed.ncbi.nlm.nih.gov/34280281/) in **Journal of Athletic Training** (July 2021).
 
-One NFL game counts as one injury exposure, so a rough estimate for a single player experiencing an injury in a game is approximately 0.5%
+One NFL game counts as one injury exposure, so a rough estimate for a single player experiencing an injury in a game is approximately is 0.005 or 0.5%.
 
-https://mrrelevantdotcom1.wordpress.com/2014/09/16/average-nfl-career-of-three-seasons-is-completely-wrong/
+[Estimates vary](https://mrrelevantdotcom1.wordpress.com/2014/09/16/average-nfl-career-of-three-seasons-is-completely-wrong/) for NFL players' career length. An old but still often-used figure is 3.3 years across all players. Sports participation and achievement is often governed by Pareto (80-20) or Pareto-like distributions. Depending on player ability, the careers of quality NFL players is more likely 8, 12 or 15 years long. Obsolescence would not seem to be well represented by retirement in professional NFL football.
 
-Estimates vary for NFL players' career length. An old but still often-used figure is 3.3 years across all players. Sports participation and achievement is often governed by Pareto (80-20) or Pareto-like distributions. Depending on player ability, the careers of quality NFL players is more likely 8, 12 or 15 years long. Obsolescence would not seem to be well represented by retirement in professional NFL football.
-
-https://www.pff.com/news/nfl-investigating-positional-aging-curves-with-pff-war
-
-An alternative is to estimate the peak performance years for NFL players and then use aging curves to describe players' post-peak decline. Pro Football Focus analyst Timo Riske describes the peak value years for NFL players (averaged across positions) is 26-28 before player values drops at more rapid rates. This sets up a survivor model where the two events are (1.) injury and (2.) rapid post-peak decline. Like the class example, each event is a distinct path to the same endpoint, which is the end of a professional football playing career.
+An alternative is to estimate the peak performance years for NFL players and then use aging curves to describe players' post-peak decline. Pro Football Focus analyst Timo Riske [describes](https://www.pff.com/news/nfl-investigating-positional-aging-curves-with-pff-war) the peak value years for NFL players (averaged across positions) is 26-28 before player values drops at more rapid rates. This sets up a survivor model where the two events are (1.) injury and (2.) rapid post-peak decline. Like the class example, each event is a distinct path to the same endpoint, which is the end of a professional football playing career.
 
 The model has:
 
-1.  Initial value based on talent projection based on draft round or salary
+1.  Initial value based on talent projection based on draft round or salary (though NFL draft position [has been shown](https://faculty.wharton.upenn.edu/wp-content/uploads/2013/08/massey---thaler---losers-curse---management-science-july-2013.pdf) to be an inaccurate indicator of a football player's realized value.)
 
 2.  *A~i~* = \[injury occurs in game *i*\] =\>
 
@@ -112,7 +111,7 @@ The model has:
     p = 0.005
     $$
 
-3.  *B~i~* = \[positive or negative player development or decline in game *i*\] =\> *r* ... positive development (negative decline) more likely during early-career and less likely during late-career ... so start at Game 50
+3.  *B~i~* = \[positive or negative player development or decline in game *i*\] =\> *r* ... positive development (negative decline) more likely during early-career and less likely during late-career ... so start at Game 70, which is 4-5 seasons into an NFL career.
 
     $$
     r_i = 1 - e^{-0.001i}
@@ -122,17 +121,43 @@ $$ P[\mathrm{development/decline\ through}\ j] = (1-p)^{i} \prod_{i=1}^{j-1}(1-r
 
 $$ P[\mathrm{career\ ends\ in\ game}\ j] = [p + r_j - pr_j](1-p)^{i} \prod_{i=1}^{j-1}(1-r_{i}) $$
 
+First, let's inspect the probability for a player's decline that comes after their initial early-career development period.
+
 ```{r}
 
-J <- 50:(50 + (5*17)) 
+J <- 70:(70 + (6*17)) 
 games <- c() 
 surv <- c() 
 for (j in J) { 
-  game <- j - 49 
+  game <- j - 69 
   games <- c(games, game) 
   prob <- (1 - 0.995*exp(-0.001*game))*(0.995^(game-1))*prod(exp(-0.001*games)) 
   surv <- c(surv, prob) 
 } 
 chart_data <- rbind(surv) 
-barplot(chart_data)
+barplot(chart_data, names.arg = games, xlab = "Games Played", ylab = "P(development/decline)")
+```
+
+The barplot is consistent with this 2023 graph of aging curves based on players' fantasy football scoring [by The Washington Post](https://www.washingtonpost.com/sports/2023/08/24/fantasy-football-risk-rankings/).
+
+[![](football_aging_curves.png)](https://www.washingtonpost.com/sports/2023/08/24/fantasy-football-risk-rankings/)
+
+Second, the probabilities in an injury occurrence survival analysis during the same games sequence shows tiny probabilities.
+
+```{r}
+
+J <- 70:(70 + (6*17)) 
+games <- c() 
+surv <- c() 
+chart_data <- c()
+for (j in J) { 
+  game <- j - 69 
+  games <- c(games, game) 
+  prob <- ((0.005 + (1-exp(-0.001*max(J)))-(0.005)*(1-exp(-0.001*max(J))))^game)*(1-exp(-0.001*game))
+  surv <- c(surv, prob) 
+}
+chart_data <- rbind(surv) 
+#barplot(chart_data)
+barplot(chart_data, names.arg = games, xlab = "Games Played", ylab = "P(injury)")
+  
 ```

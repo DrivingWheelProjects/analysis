@@ -1,0 +1,12 @@
+ 1. 2023 CMSAC workshop video ... https://www.youtube.com/watch?v=2xg3nyPNo3s&t=2221s
+ 2. Kovalchik, Player Tracking Data in Sports ... https://www.annualreviews.org/content/journals/10.1146/annurev-statistics-033021-110117
+ 3. sportyR ... https://github.com/sportsdataverse/sportyR
+ 4. NFLfastr ... https://nflfastr.com/articles/nflfastR.html
+ 5. A Bayesian circular mixed-effects model for explaining variability in directional movement in American football ... https://arxiv.org/abs/2507.06122
+ 6. NFL Ghosts: A framework for evaluating defender positioning with conditional density estimation ... https://arxiv.org/abs/2406.17220
+ 7. Ron Yurko's Thoughts on Big Data Bowl 2025 ... https://statthinksportsanalytics.substack.com/p/thoughts-on-big-data-bowl-2025
+ 8. Modeling with Transformers ... https://www.kaggle.com/code/pvabish/modeling-with-transformers-by-sumersports/notebook
+ 9. Movement Dynamics in Elite Female Soccer Athletes: The Quantile Cube Approach ... https://arxiv.org/abs/2503.11815
+ 10. BDB 2026 Sumer Sports supplement ... https://sumersports.com/the-zone/sumersports-big-data-bowl-2026/
+ 11. Attention is all you need ... https://github.com/SumerSports/SportsTrackingTransformer
+ 

@@ -161,7 +161,6 @@ plot(x, pdf_l, type="l", col="red")
 
 ```
 
-
 ### 7. Generate 10 samples of a Gaussian random variable with mean 10 and variance of 4. Assume you know the mean precisely. Use Bayesian estimation to estimate its variance. Use a uniform prior between 0 and 10.
 
 ```{r}
@@ -189,7 +188,6 @@ for (sample in samples) {
 par(new=T)
 plot(sigma,posterior,type="l",col="red")
 ```
-
 
 ### 8. Generate 10 samples of an exponential random variable with $\lambda = 2$. Use Bayesian estimation to estimate $\lambda$. Use a uniform prior between 0 and 5. Compare your answer with just using basic statistics.
 

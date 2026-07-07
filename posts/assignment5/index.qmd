@@ -18,7 +18,6 @@ f_Y(y) = 2 \frac{d}{dy} \int_{-\infty}^{\sqrt{y}} \frac{1}{\sqrt{2\pi}} e^{\frac
 \end{aligned}
 $$
 
-
 ### 2. If $X$ is a uniform random variable in the interval $[0,2\pi]$, what is the probability distribution of:
 
 #### a. $Y = X + 1$
@@ -98,10 +97,10 @@ x <- seq(0,2*pi, length.out=n_samples)
 plot(x, x/(2*pi), xlim=c(-2*pi,2*pi), ylim=c(-1.5, 1.5), cex=0.25)
 par(new=T)
 y <- seq(-1, 1, length.out=n_samples)
-plot(1/(pi*sqrt(1-y^2)), y, xlim=c(-2*pi,2*pi), ylim=c(-1.5, 1.5), cex=0.25, col="red")
+plot(1/(pi*sqrt(1-y^2)), y, xlim=c(-2*pi,2*pi), ylim=c(1.5, -1.5), cex=0.25, col="red")
 ```
 
-### 3. If X is an exponential random variable with parameter $\lambda = 1$, what is the probability distribution of: 
+### 3. If X is an exponential random variable with parameter $\lambda = 1$, what is the probability distribution of:
 
 #### a. $Y = X + 1$
 
