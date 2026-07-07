@@ -495,27 +495,31 @@ r_i = 1 - e^{-0.001i}
 <span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(receiver, posteam, passes, neg_pct, gt_com, gt_fd, actual_gt_fd, gt_fd_pct, lt_com, lt_fd, actual_lt_fd, lt_fd_pct) <span class="sc">|&gt;</span> </span>
 <span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>`summarise()` has grouped output by 'receiver', 'receiver_id'. You can override
-using the `.groups` argument.</code></pre>
+<pre><code>`summarise()` has regrouped the output.
+ℹ Summaries were computed grouped by receiver, receiver_id, and posteam.
+ℹ Output is grouped by receiver and receiver_id.
+ℹ Use `summarise(.groups = "drop_last")` to silence this message.
+ℹ Use `summarise(.by = c(receiver, receiver_id, posteam))` for per-operation
+  grouping (`?dplyr::dplyr_by`) instead.</code></pre>
 </div>
 <div class="cell-output-display">
-<div id="wyaazzrwah" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#wyaazzrwah table {
+<div id="siuyplxaeq" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#siuyplxaeq table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#wyaazzrwah thead, #wyaazzrwah tbody, #wyaazzrwah tfoot, #wyaazzrwah tr, #wyaazzrwah td, #wyaazzrwah th {
+#siuyplxaeq thead, #siuyplxaeq tbody, #siuyplxaeq tfoot, #siuyplxaeq tr, #siuyplxaeq td, #siuyplxaeq th {
   border-style: none;
 }
 
-#wyaazzrwah p {
+#siuyplxaeq p {
   margin: 0;
   padding: 0;
 }
 
-#wyaazzrwah .gt_table {
+#siuyplxaeq .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -541,12 +545,12 @@ using the `.groups` argument.</code></pre>
   border-left-color: #D3D3D3;
 }
 
-#wyaazzrwah .gt_caption {
+#siuyplxaeq .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#wyaazzrwah .gt_title {
+#siuyplxaeq .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -558,7 +562,7 @@ using the `.groups` argument.</code></pre>
   border-bottom-width: 0;
 }
 
-#wyaazzrwah .gt_subtitle {
+#siuyplxaeq .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -570,7 +574,7 @@ using the `.groups` argument.</code></pre>
   border-top-width: 0;
 }
 
-#wyaazzrwah .gt_heading {
+#siuyplxaeq .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -582,13 +586,13 @@ using the `.groups` argument.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#wyaazzrwah .gt_bottom_border {
+#siuyplxaeq .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#wyaazzrwah .gt_col_headings {
+#siuyplxaeq .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -603,7 +607,7 @@ using the `.groups` argument.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#wyaazzrwah .gt_col_heading {
+#siuyplxaeq .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -623,7 +627,7 @@ using the `.groups` argument.</code></pre>
   overflow-x: hidden;
 }
 
-#wyaazzrwah .gt_column_spanner_outer {
+#siuyplxaeq .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -635,15 +639,15 @@ using the `.groups` argument.</code></pre>
   padding-right: 4px;
 }
 
-#wyaazzrwah .gt_column_spanner_outer:first-child {
+#siuyplxaeq .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#wyaazzrwah .gt_column_spanner_outer:last-child {
+#siuyplxaeq .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#wyaazzrwah .gt_column_spanner {
+#siuyplxaeq .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -655,11 +659,11 @@ using the `.groups` argument.</code></pre>
   width: 100%;
 }
 
-#wyaazzrwah .gt_spanner_row {
+#siuyplxaeq .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#wyaazzrwah .gt_group_heading {
+#siuyplxaeq .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -685,7 +689,7 @@ using the `.groups` argument.</code></pre>
   text-align: left;
 }
 
-#wyaazzrwah .gt_empty_group_heading {
+#siuyplxaeq .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -700,15 +704,15 @@ using the `.groups` argument.</code></pre>
   vertical-align: middle;
 }
 
-#wyaazzrwah .gt_from_md > :first-child {
+#siuyplxaeq .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#wyaazzrwah .gt_from_md > :last-child {
+#siuyplxaeq .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#wyaazzrwah .gt_row {
+#siuyplxaeq .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -727,7 +731,7 @@ using the `.groups` argument.</code></pre>
   overflow-x: hidden;
 }
 
-#wyaazzrwah .gt_stub {
+#siuyplxaeq .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -740,7 +744,7 @@ using the `.groups` argument.</code></pre>
   padding-right: 5px;
 }
 
-#wyaazzrwah .gt_stub_row_group {
+#siuyplxaeq .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -754,15 +758,15 @@ using the `.groups` argument.</code></pre>
   vertical-align: top;
 }
 
-#wyaazzrwah .gt_row_group_first td {
+#siuyplxaeq .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#wyaazzrwah .gt_row_group_first th {
+#siuyplxaeq .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#wyaazzrwah .gt_summary_row {
+#siuyplxaeq .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -772,16 +776,16 @@ using the `.groups` argument.</code></pre>
   padding-right: 5px;
 }
 
-#wyaazzrwah .gt_first_summary_row {
+#siuyplxaeq .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#wyaazzrwah .gt_first_summary_row.thick {
+#siuyplxaeq .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#wyaazzrwah .gt_last_summary_row {
+#siuyplxaeq .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -791,7 +795,7 @@ using the `.groups` argument.</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#wyaazzrwah .gt_grand_summary_row {
+#siuyplxaeq .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -801,7 +805,7 @@ using the `.groups` argument.</code></pre>
   padding-right: 5px;
 }
 
-#wyaazzrwah .gt_first_grand_summary_row {
+#siuyplxaeq .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -811,7 +815,7 @@ using the `.groups` argument.</code></pre>
   border-top-color: #D3D3D3;
 }
 
-#wyaazzrwah .gt_last_grand_summary_row_top {
+#siuyplxaeq .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -821,11 +825,11 @@ using the `.groups` argument.</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#wyaazzrwah .gt_striped {
+#siuyplxaeq .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#wyaazzrwah .gt_table_body {
+#siuyplxaeq .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -834,7 +838,7 @@ using the `.groups` argument.</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#wyaazzrwah .gt_footnotes {
+#siuyplxaeq .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -848,7 +852,7 @@ using the `.groups` argument.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#wyaazzrwah .gt_footnote {
+#siuyplxaeq .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -857,7 +861,7 @@ using the `.groups` argument.</code></pre>
   padding-right: 5px;
 }
 
-#wyaazzrwah .gt_sourcenotes {
+#siuyplxaeq .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -871,7 +875,7 @@ using the `.groups` argument.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#wyaazzrwah .gt_sourcenote {
+#siuyplxaeq .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -879,72 +883,72 @@ using the `.groups` argument.</code></pre>
   padding-right: 5px;
 }
 
-#wyaazzrwah .gt_left {
+#siuyplxaeq .gt_left {
   text-align: left;
 }
 
-#wyaazzrwah .gt_center {
+#siuyplxaeq .gt_center {
   text-align: center;
 }
 
-#wyaazzrwah .gt_right {
+#siuyplxaeq .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#wyaazzrwah .gt_font_normal {
+#siuyplxaeq .gt_font_normal {
   font-weight: normal;
 }
 
-#wyaazzrwah .gt_font_bold {
+#siuyplxaeq .gt_font_bold {
   font-weight: bold;
 }
 
-#wyaazzrwah .gt_font_italic {
+#siuyplxaeq .gt_font_italic {
   font-style: italic;
 }
 
-#wyaazzrwah .gt_super {
+#siuyplxaeq .gt_super {
   font-size: 65%;
 }
 
-#wyaazzrwah .gt_footnote_marks {
+#siuyplxaeq .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#wyaazzrwah .gt_asterisk {
+#siuyplxaeq .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#wyaazzrwah .gt_indent_1 {
+#siuyplxaeq .gt_indent_1 {
   text-indent: 5px;
 }
 
-#wyaazzrwah .gt_indent_2 {
+#siuyplxaeq .gt_indent_2 {
   text-indent: 10px;
 }
 
-#wyaazzrwah .gt_indent_3 {
+#siuyplxaeq .gt_indent_3 {
   text-indent: 15px;
 }
 
-#wyaazzrwah .gt_indent_4 {
+#siuyplxaeq .gt_indent_4 {
   text-indent: 20px;
 }
 
-#wyaazzrwah .gt_indent_5 {
+#siuyplxaeq .gt_indent_5 {
   text-indent: 25px;
 }
 
-#wyaazzrwah .katex-display {
+#siuyplxaeq .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#wyaazzrwah div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#siuyplxaeq div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -970,30 +974,30 @@ using the `.groups` argument.</code></pre>
 <tr class="odd">
 <td class="gt_row gt_left" headers="receiver">A.Firkser</td>
 <td class="gt_row gt_left" headers="posteam">DET</td>
-<td class="gt_row gt_right" headers="passes">2</td>
+<td class="gt_row gt_right" headers="passes">10</td>
 <td class="gt_row gt_right" headers="neg_pct">0.00000000</td>
-<td class="gt_row gt_right" headers="gt_com">0</td>
-<td class="gt_row gt_right" headers="gt_fd">0</td>
-<td class="gt_row gt_right" headers="actual_gt_fd">0</td>
-<td class="gt_row gt_right" headers="gt_fd_pct">NaN</td>
-<td class="gt_row gt_right" headers="lt_com">2</td>
-<td class="gt_row gt_right" headers="lt_fd">2</td>
-<td class="gt_row gt_right" headers="actual_lt_fd">1</td>
-<td class="gt_row gt_right" headers="lt_fd_pct">0.5000000</td>
+<td class="gt_row gt_right" headers="gt_com">2</td>
+<td class="gt_row gt_right" headers="gt_fd">2</td>
+<td class="gt_row gt_right" headers="actual_gt_fd">2</td>
+<td class="gt_row gt_right" headers="gt_fd_pct">1.0000000</td>
+<td class="gt_row gt_right" headers="lt_com">6</td>
+<td class="gt_row gt_right" headers="lt_fd">8</td>
+<td class="gt_row gt_right" headers="actual_lt_fd">2</td>
+<td class="gt_row gt_right" headers="lt_fd_pct">0.2500000</td>
 </tr>
 <tr class="even">
 <td class="gt_row gt_left" headers="receiver">A.St. Brown</td>
 <td class="gt_row gt_left" headers="posteam">DET</td>
-<td class="gt_row gt_right" headers="passes">110</td>
-<td class="gt_row gt_right" headers="neg_pct">0.02727273</td>
-<td class="gt_row gt_right" headers="gt_com">26</td>
-<td class="gt_row gt_right" headers="gt_fd">46</td>
-<td class="gt_row gt_right" headers="actual_gt_fd">26</td>
-<td class="gt_row gt_right" headers="gt_fd_pct">0.5652174</td>
-<td class="gt_row gt_right" headers="lt_com">52</td>
-<td class="gt_row gt_right" headers="lt_fd">64</td>
-<td class="gt_row gt_right" headers="actual_lt_fd">18</td>
-<td class="gt_row gt_right" headers="lt_fd_pct">0.2812500</td>
+<td class="gt_row gt_right" headers="passes">161</td>
+<td class="gt_row gt_right" headers="neg_pct">0.03105590</td>
+<td class="gt_row gt_right" headers="gt_com">40</td>
+<td class="gt_row gt_right" headers="gt_fd">64</td>
+<td class="gt_row gt_right" headers="actual_gt_fd">40</td>
+<td class="gt_row gt_right" headers="gt_fd_pct">0.6250000</td>
+<td class="gt_row gt_right" headers="lt_com">73</td>
+<td class="gt_row gt_right" headers="lt_fd">97</td>
+<td class="gt_row gt_right" headers="actual_lt_fd">27</td>
+<td class="gt_row gt_right" headers="lt_fd_pct">0.2783505</td>
 </tr>
 <tr class="odd">
 <td class="gt_row gt_left" headers="receiver">B.Wright</td>
@@ -1012,72 +1016,72 @@ using the `.groups` argument.</code></pre>
 <tr class="even">
 <td class="gt_row gt_left" headers="receiver">D.Montgomery</td>
 <td class="gt_row gt_left" headers="posteam">DET</td>
-<td class="gt_row gt_right" headers="passes">25</td>
+<td class="gt_row gt_right" headers="passes">29</td>
 <td class="gt_row gt_right" headers="neg_pct">0.00000000</td>
 <td class="gt_row gt_right" headers="gt_com">2</td>
 <td class="gt_row gt_right" headers="gt_fd">3</td>
 <td class="gt_row gt_right" headers="actual_gt_fd">2</td>
 <td class="gt_row gt_right" headers="gt_fd_pct">0.6666667</td>
-<td class="gt_row gt_right" headers="lt_com">19</td>
-<td class="gt_row gt_right" headers="lt_fd">22</td>
-<td class="gt_row gt_right" headers="actual_lt_fd">7</td>
-<td class="gt_row gt_right" headers="lt_fd_pct">0.3181818</td>
+<td class="gt_row gt_right" headers="lt_com">22</td>
+<td class="gt_row gt_right" headers="lt_fd">26</td>
+<td class="gt_row gt_right" headers="actual_lt_fd">9</td>
+<td class="gt_row gt_right" headers="lt_fd_pct">0.3461538</td>
 </tr>
 <tr class="odd">
 <td class="gt_row gt_left" headers="receiver">I.TeSlaa</td>
 <td class="gt_row gt_left" headers="posteam">DET</td>
-<td class="gt_row gt_right" headers="passes">8</td>
-<td class="gt_row gt_right" headers="neg_pct">0.00000000</td>
-<td class="gt_row gt_right" headers="gt_com">3</td>
-<td class="gt_row gt_right" headers="gt_fd">6</td>
-<td class="gt_row gt_right" headers="actual_gt_fd">3</td>
+<td class="gt_row gt_right" headers="passes">16</td>
+<td class="gt_row gt_right" headers="neg_pct">0.06250000</td>
+<td class="gt_row gt_right" headers="gt_com">5</td>
+<td class="gt_row gt_right" headers="gt_fd">10</td>
+<td class="gt_row gt_right" headers="actual_gt_fd">5</td>
 <td class="gt_row gt_right" headers="gt_fd_pct">0.5000000</td>
-<td class="gt_row gt_right" headers="lt_com">1</td>
-<td class="gt_row gt_right" headers="lt_fd">2</td>
-<td class="gt_row gt_right" headers="actual_lt_fd">0</td>
-<td class="gt_row gt_right" headers="lt_fd_pct">0.0000000</td>
+<td class="gt_row gt_right" headers="lt_com">5</td>
+<td class="gt_row gt_right" headers="lt_fd">6</td>
+<td class="gt_row gt_right" headers="actual_lt_fd">3</td>
+<td class="gt_row gt_right" headers="lt_fd_pct">0.5000000</td>
 </tr>
 <tr class="even">
 <td class="gt_row gt_left" headers="receiver">J.Gibbs</td>
 <td class="gt_row gt_left" headers="posteam">DET</td>
-<td class="gt_row gt_right" headers="passes">66</td>
+<td class="gt_row gt_right" headers="passes">94</td>
 <td class="gt_row gt_right" headers="neg_pct">0.00000000</td>
 <td class="gt_row gt_right" headers="gt_com">3</td>
 <td class="gt_row gt_right" headers="gt_fd">7</td>
 <td class="gt_row gt_right" headers="actual_gt_fd">3</td>
 <td class="gt_row gt_right" headers="gt_fd_pct">0.4285714</td>
-<td class="gt_row gt_right" headers="lt_com">55</td>
-<td class="gt_row gt_right" headers="lt_fd">59</td>
-<td class="gt_row gt_right" headers="actual_lt_fd">19</td>
-<td class="gt_row gt_right" headers="lt_fd_pct">0.3220339</td>
+<td class="gt_row gt_right" headers="lt_com">74</td>
+<td class="gt_row gt_right" headers="lt_fd">87</td>
+<td class="gt_row gt_right" headers="actual_lt_fd">26</td>
+<td class="gt_row gt_right" headers="lt_fd_pct">0.2988506</td>
 </tr>
 <tr class="odd">
 <td class="gt_row gt_left" headers="receiver">J.Williams</td>
 <td class="gt_row gt_left" headers="posteam">DET</td>
-<td class="gt_row gt_right" headers="passes">71</td>
-<td class="gt_row gt_right" headers="neg_pct">0.01408451</td>
-<td class="gt_row gt_right" headers="gt_com">26</td>
-<td class="gt_row gt_right" headers="gt_fd">44</td>
-<td class="gt_row gt_right" headers="actual_gt_fd">26</td>
-<td class="gt_row gt_right" headers="gt_fd_pct">0.5909091</td>
-<td class="gt_row gt_right" headers="lt_com">19</td>
-<td class="gt_row gt_right" headers="lt_fd">27</td>
-<td class="gt_row gt_right" headers="actual_lt_fd">9</td>
-<td class="gt_row gt_right" headers="lt_fd_pct">0.3333333</td>
+<td class="gt_row gt_right" headers="passes">98</td>
+<td class="gt_row gt_right" headers="neg_pct">0.01020408</td>
+<td class="gt_row gt_right" headers="gt_com">37</td>
+<td class="gt_row gt_right" headers="gt_fd">57</td>
+<td class="gt_row gt_right" headers="actual_gt_fd">37</td>
+<td class="gt_row gt_right" headers="gt_fd_pct">0.6491228</td>
+<td class="gt_row gt_right" headers="lt_com">27</td>
+<td class="gt_row gt_right" headers="lt_fd">41</td>
+<td class="gt_row gt_right" headers="actual_lt_fd">11</td>
+<td class="gt_row gt_right" headers="lt_fd_pct">0.2682927</td>
 </tr>
 <tr class="even">
 <td class="gt_row gt_left" headers="receiver">K.Raymond</td>
 <td class="gt_row gt_left" headers="posteam">DET</td>
-<td class="gt_row gt_right" headers="passes">19</td>
+<td class="gt_row gt_right" headers="passes">30</td>
 <td class="gt_row gt_right" headers="neg_pct">0.00000000</td>
-<td class="gt_row gt_right" headers="gt_com">4</td>
-<td class="gt_row gt_right" headers="gt_fd">5</td>
-<td class="gt_row gt_right" headers="actual_gt_fd">4</td>
-<td class="gt_row gt_right" headers="gt_fd_pct">0.8000000</td>
-<td class="gt_row gt_right" headers="lt_com">11</td>
-<td class="gt_row gt_right" headers="lt_fd">14</td>
-<td class="gt_row gt_right" headers="actual_lt_fd">3</td>
-<td class="gt_row gt_right" headers="lt_fd_pct">0.2142857</td>
+<td class="gt_row gt_right" headers="gt_com">8</td>
+<td class="gt_row gt_right" headers="gt_fd">9</td>
+<td class="gt_row gt_right" headers="actual_gt_fd">8</td>
+<td class="gt_row gt_right" headers="gt_fd_pct">0.8888889</td>
+<td class="gt_row gt_right" headers="lt_com">16</td>
+<td class="gt_row gt_right" headers="lt_fd">21</td>
+<td class="gt_row gt_right" headers="actual_lt_fd">6</td>
+<td class="gt_row gt_right" headers="lt_fd_pct">0.2857143</td>
 </tr>
 <tr class="odd">
 <td class="gt_row gt_left" headers="receiver">R.Dwelley</td>
@@ -1108,6 +1112,20 @@ using the `.groups` argument.</code></pre>
 <td class="gt_row gt_right" headers="lt_fd_pct">0.3225806</td>
 </tr>
 <tr class="odd">
+<td class="gt_row gt_left" headers="receiver">S.Zylstra</td>
+<td class="gt_row gt_left" headers="posteam">DET</td>
+<td class="gt_row gt_right" headers="passes">5</td>
+<td class="gt_row gt_right" headers="neg_pct">0.00000000</td>
+<td class="gt_row gt_right" headers="gt_com">0</td>
+<td class="gt_row gt_right" headers="gt_fd">1</td>
+<td class="gt_row gt_right" headers="actual_gt_fd">0</td>
+<td class="gt_row gt_right" headers="gt_fd_pct">0.0000000</td>
+<td class="gt_row gt_right" headers="lt_com">3</td>
+<td class="gt_row gt_right" headers="lt_fd">4</td>
+<td class="gt_row gt_right" headers="actual_lt_fd">1</td>
+<td class="gt_row gt_right" headers="lt_fd_pct">0.2500000</td>
+</tr>
+<tr class="even">
 <td class="gt_row gt_left" headers="receiver">T.Kennedy</td>
 <td class="gt_row gt_left" headers="posteam">DET</td>
 <td class="gt_row gt_right" headers="passes">4</td>
@@ -1121,10 +1139,10 @@ using the `.groups` argument.</code></pre>
 <td class="gt_row gt_right" headers="actual_lt_fd">1</td>
 <td class="gt_row gt_right" headers="lt_fd_pct">0.3333333</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="receiver">NA</td>
 <td class="gt_row gt_left" headers="posteam">DET</td>
-<td class="gt_row gt_right" headers="passes">18</td>
+<td class="gt_row gt_right" headers="passes">29</td>
 <td class="gt_row gt_right" headers="neg_pct">0.00000000</td>
 <td class="gt_row gt_right" headers="gt_com">NA</td>
 <td class="gt_row gt_right" headers="gt_fd">0</td>
@@ -1146,23 +1164,23 @@ using the `.groups` argument.</code></pre>
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">data.frame</span>( <span class="at">receiver =</span> <span class="fu">c</span>(<span class="st">"A.St.Brown"</span>,<span class="st">"J.Gibbs"</span>,<span class="st">"J.Williams"</span>,<span class="st">"S.LaPorta"</span>), <span class="at">abbrev =</span> <span class="fu">c</span>(<span class="st">"ASB"</span>, <span class="st">"JG"</span>, <span class="st">"JW"</span>, <span class="st">"SLP"</span>), <span class="at">gt_fd =</span> <span class="fu">c</span>(<span class="fl">0.79</span>, <span class="fl">0.33</span>, <span class="fl">0.47</span>, <span class="fl">0.69</span>), <span class="at">lt_fd =</span> <span class="fu">c</span>(<span class="fl">0.35</span>, <span class="fl">0.18</span>, <span class="fl">0.55</span>, <span class="fl">0.26</span>), <span class="at">fumble =</span> <span class="fu">c</span>(<span class="fl">0.02</span>, <span class="dv">0</span>, <span class="fl">0.03</span>, <span class="dv">0</span>) ) <span class="sc">|&gt;</span> </span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div id="kdyjcfvhuk" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#kdyjcfvhuk table {
+<div id="mirswetizq" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#mirswetizq table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#kdyjcfvhuk thead, #kdyjcfvhuk tbody, #kdyjcfvhuk tfoot, #kdyjcfvhuk tr, #kdyjcfvhuk td, #kdyjcfvhuk th {
+#mirswetizq thead, #mirswetizq tbody, #mirswetizq tfoot, #mirswetizq tr, #mirswetizq td, #mirswetizq th {
   border-style: none;
 }
 
-#kdyjcfvhuk p {
+#mirswetizq p {
   margin: 0;
   padding: 0;
 }
 
-#kdyjcfvhuk .gt_table {
+#mirswetizq .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1188,12 +1206,12 @@ using the `.groups` argument.</code></pre>
   border-left-color: #D3D3D3;
 }
 
-#kdyjcfvhuk .gt_caption {
+#mirswetizq .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#kdyjcfvhuk .gt_title {
+#mirswetizq .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1205,7 +1223,7 @@ using the `.groups` argument.</code></pre>
   border-bottom-width: 0;
 }
 
-#kdyjcfvhuk .gt_subtitle {
+#mirswetizq .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1217,7 +1235,7 @@ using the `.groups` argument.</code></pre>
   border-top-width: 0;
 }
 
-#kdyjcfvhuk .gt_heading {
+#mirswetizq .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1229,13 +1247,13 @@ using the `.groups` argument.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#kdyjcfvhuk .gt_bottom_border {
+#mirswetizq .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#kdyjcfvhuk .gt_col_headings {
+#mirswetizq .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1250,7 +1268,7 @@ using the `.groups` argument.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#kdyjcfvhuk .gt_col_heading {
+#mirswetizq .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1270,7 +1288,7 @@ using the `.groups` argument.</code></pre>
   overflow-x: hidden;
 }
 
-#kdyjcfvhuk .gt_column_spanner_outer {
+#mirswetizq .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1282,15 +1300,15 @@ using the `.groups` argument.</code></pre>
   padding-right: 4px;
 }
 
-#kdyjcfvhuk .gt_column_spanner_outer:first-child {
+#mirswetizq .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#kdyjcfvhuk .gt_column_spanner_outer:last-child {
+#mirswetizq .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#kdyjcfvhuk .gt_column_spanner {
+#mirswetizq .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1302,11 +1320,11 @@ using the `.groups` argument.</code></pre>
   width: 100%;
 }
 
-#kdyjcfvhuk .gt_spanner_row {
+#mirswetizq .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#kdyjcfvhuk .gt_group_heading {
+#mirswetizq .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1332,7 +1350,7 @@ using the `.groups` argument.</code></pre>
   text-align: left;
 }
 
-#kdyjcfvhuk .gt_empty_group_heading {
+#mirswetizq .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1347,15 +1365,15 @@ using the `.groups` argument.</code></pre>
   vertical-align: middle;
 }
 
-#kdyjcfvhuk .gt_from_md > :first-child {
+#mirswetizq .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#kdyjcfvhuk .gt_from_md > :last-child {
+#mirswetizq .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#kdyjcfvhuk .gt_row {
+#mirswetizq .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1374,7 +1392,7 @@ using the `.groups` argument.</code></pre>
   overflow-x: hidden;
 }
 
-#kdyjcfvhuk .gt_stub {
+#mirswetizq .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1387,7 +1405,7 @@ using the `.groups` argument.</code></pre>
   padding-right: 5px;
 }
 
-#kdyjcfvhuk .gt_stub_row_group {
+#mirswetizq .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1401,15 +1419,15 @@ using the `.groups` argument.</code></pre>
   vertical-align: top;
 }
 
-#kdyjcfvhuk .gt_row_group_first td {
+#mirswetizq .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#kdyjcfvhuk .gt_row_group_first th {
+#mirswetizq .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#kdyjcfvhuk .gt_summary_row {
+#mirswetizq .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1419,16 +1437,16 @@ using the `.groups` argument.</code></pre>
   padding-right: 5px;
 }
 
-#kdyjcfvhuk .gt_first_summary_row {
+#mirswetizq .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#kdyjcfvhuk .gt_first_summary_row.thick {
+#mirswetizq .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#kdyjcfvhuk .gt_last_summary_row {
+#mirswetizq .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1438,7 +1456,7 @@ using the `.groups` argument.</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#kdyjcfvhuk .gt_grand_summary_row {
+#mirswetizq .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1448,7 +1466,7 @@ using the `.groups` argument.</code></pre>
   padding-right: 5px;
 }
 
-#kdyjcfvhuk .gt_first_grand_summary_row {
+#mirswetizq .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1458,7 +1476,7 @@ using the `.groups` argument.</code></pre>
   border-top-color: #D3D3D3;
 }
 
-#kdyjcfvhuk .gt_last_grand_summary_row_top {
+#mirswetizq .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1468,11 +1486,11 @@ using the `.groups` argument.</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#kdyjcfvhuk .gt_striped {
+#mirswetizq .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#kdyjcfvhuk .gt_table_body {
+#mirswetizq .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1481,7 +1499,7 @@ using the `.groups` argument.</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#kdyjcfvhuk .gt_footnotes {
+#mirswetizq .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1495,7 +1513,7 @@ using the `.groups` argument.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#kdyjcfvhuk .gt_footnote {
+#mirswetizq .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1504,7 +1522,7 @@ using the `.groups` argument.</code></pre>
   padding-right: 5px;
 }
 
-#kdyjcfvhuk .gt_sourcenotes {
+#mirswetizq .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1518,7 +1536,7 @@ using the `.groups` argument.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#kdyjcfvhuk .gt_sourcenote {
+#mirswetizq .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1526,72 +1544,72 @@ using the `.groups` argument.</code></pre>
   padding-right: 5px;
 }
 
-#kdyjcfvhuk .gt_left {
+#mirswetizq .gt_left {
   text-align: left;
 }
 
-#kdyjcfvhuk .gt_center {
+#mirswetizq .gt_center {
   text-align: center;
 }
 
-#kdyjcfvhuk .gt_right {
+#mirswetizq .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#kdyjcfvhuk .gt_font_normal {
+#mirswetizq .gt_font_normal {
   font-weight: normal;
 }
 
-#kdyjcfvhuk .gt_font_bold {
+#mirswetizq .gt_font_bold {
   font-weight: bold;
 }
 
-#kdyjcfvhuk .gt_font_italic {
+#mirswetizq .gt_font_italic {
   font-style: italic;
 }
 
-#kdyjcfvhuk .gt_super {
+#mirswetizq .gt_super {
   font-size: 65%;
 }
 
-#kdyjcfvhuk .gt_footnote_marks {
+#mirswetizq .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#kdyjcfvhuk .gt_asterisk {
+#mirswetizq .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#kdyjcfvhuk .gt_indent_1 {
+#mirswetizq .gt_indent_1 {
   text-indent: 5px;
 }
 
-#kdyjcfvhuk .gt_indent_2 {
+#mirswetizq .gt_indent_2 {
   text-indent: 10px;
 }
 
-#kdyjcfvhuk .gt_indent_3 {
+#mirswetizq .gt_indent_3 {
   text-indent: 15px;
 }
 
-#kdyjcfvhuk .gt_indent_4 {
+#mirswetizq .gt_indent_4 {
   text-indent: 20px;
 }
 
-#kdyjcfvhuk .gt_indent_5 {
+#mirswetizq .gt_indent_5 {
   text-indent: 25px;
 }
 
-#kdyjcfvhuk .katex-display {
+#mirswetizq .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#kdyjcfvhuk div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#mirswetizq div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1648,23 +1666,23 @@ using the `.groups` argument.</code></pre>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">summarize</span>( <span class="at">epa_fumble =</span> <span class="fu">sum</span>(epa <span class="sc">*</span> fumble_lost) <span class="sc">/</span> <span class="fu">sum</span>(fumble_lost), <span class="at">epa_fd =</span> <span class="fu">sum</span>(epa<span class="sc">*</span> first_down) <span class="sc">/</span> <span class="fu">sum</span>(first_down)) <span class="sc">|&gt;</span> </span>
 <span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div id="pedrrboetn" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#pedrrboetn table {
+<div id="mevacjtwzn" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#mevacjtwzn table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#pedrrboetn thead, #pedrrboetn tbody, #pedrrboetn tfoot, #pedrrboetn tr, #pedrrboetn td, #pedrrboetn th {
+#mevacjtwzn thead, #mevacjtwzn tbody, #mevacjtwzn tfoot, #mevacjtwzn tr, #mevacjtwzn td, #mevacjtwzn th {
   border-style: none;
 }
 
-#pedrrboetn p {
+#mevacjtwzn p {
   margin: 0;
   padding: 0;
 }
 
-#pedrrboetn .gt_table {
+#mevacjtwzn .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1690,12 +1708,12 @@ using the `.groups` argument.</code></pre>
   border-left-color: #D3D3D3;
 }
 
-#pedrrboetn .gt_caption {
+#mevacjtwzn .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#pedrrboetn .gt_title {
+#mevacjtwzn .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1707,7 +1725,7 @@ using the `.groups` argument.</code></pre>
   border-bottom-width: 0;
 }
 
-#pedrrboetn .gt_subtitle {
+#mevacjtwzn .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1719,7 +1737,7 @@ using the `.groups` argument.</code></pre>
   border-top-width: 0;
 }
 
-#pedrrboetn .gt_heading {
+#mevacjtwzn .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1731,13 +1749,13 @@ using the `.groups` argument.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#pedrrboetn .gt_bottom_border {
+#mevacjtwzn .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#pedrrboetn .gt_col_headings {
+#mevacjtwzn .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1752,7 +1770,7 @@ using the `.groups` argument.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#pedrrboetn .gt_col_heading {
+#mevacjtwzn .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1772,7 +1790,7 @@ using the `.groups` argument.</code></pre>
   overflow-x: hidden;
 }
 
-#pedrrboetn .gt_column_spanner_outer {
+#mevacjtwzn .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1784,15 +1802,15 @@ using the `.groups` argument.</code></pre>
   padding-right: 4px;
 }
 
-#pedrrboetn .gt_column_spanner_outer:first-child {
+#mevacjtwzn .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#pedrrboetn .gt_column_spanner_outer:last-child {
+#mevacjtwzn .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#pedrrboetn .gt_column_spanner {
+#mevacjtwzn .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1804,11 +1822,11 @@ using the `.groups` argument.</code></pre>
   width: 100%;
 }
 
-#pedrrboetn .gt_spanner_row {
+#mevacjtwzn .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#pedrrboetn .gt_group_heading {
+#mevacjtwzn .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1834,7 +1852,7 @@ using the `.groups` argument.</code></pre>
   text-align: left;
 }
 
-#pedrrboetn .gt_empty_group_heading {
+#mevacjtwzn .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1849,15 +1867,15 @@ using the `.groups` argument.</code></pre>
   vertical-align: middle;
 }
 
-#pedrrboetn .gt_from_md > :first-child {
+#mevacjtwzn .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#pedrrboetn .gt_from_md > :last-child {
+#mevacjtwzn .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#pedrrboetn .gt_row {
+#mevacjtwzn .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1876,7 +1894,7 @@ using the `.groups` argument.</code></pre>
   overflow-x: hidden;
 }
 
-#pedrrboetn .gt_stub {
+#mevacjtwzn .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1889,7 +1907,7 @@ using the `.groups` argument.</code></pre>
   padding-right: 5px;
 }
 
-#pedrrboetn .gt_stub_row_group {
+#mevacjtwzn .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1903,15 +1921,15 @@ using the `.groups` argument.</code></pre>
   vertical-align: top;
 }
 
-#pedrrboetn .gt_row_group_first td {
+#mevacjtwzn .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#pedrrboetn .gt_row_group_first th {
+#mevacjtwzn .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#pedrrboetn .gt_summary_row {
+#mevacjtwzn .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1921,16 +1939,16 @@ using the `.groups` argument.</code></pre>
   padding-right: 5px;
 }
 
-#pedrrboetn .gt_first_summary_row {
+#mevacjtwzn .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#pedrrboetn .gt_first_summary_row.thick {
+#mevacjtwzn .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#pedrrboetn .gt_last_summary_row {
+#mevacjtwzn .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1940,7 +1958,7 @@ using the `.groups` argument.</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#pedrrboetn .gt_grand_summary_row {
+#mevacjtwzn .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1950,7 +1968,7 @@ using the `.groups` argument.</code></pre>
   padding-right: 5px;
 }
 
-#pedrrboetn .gt_first_grand_summary_row {
+#mevacjtwzn .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1960,7 +1978,7 @@ using the `.groups` argument.</code></pre>
   border-top-color: #D3D3D3;
 }
 
-#pedrrboetn .gt_last_grand_summary_row_top {
+#mevacjtwzn .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1970,11 +1988,11 @@ using the `.groups` argument.</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#pedrrboetn .gt_striped {
+#mevacjtwzn .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#pedrrboetn .gt_table_body {
+#mevacjtwzn .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1983,7 +2001,7 @@ using the `.groups` argument.</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#pedrrboetn .gt_footnotes {
+#mevacjtwzn .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1997,7 +2015,7 @@ using the `.groups` argument.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#pedrrboetn .gt_footnote {
+#mevacjtwzn .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -2006,7 +2024,7 @@ using the `.groups` argument.</code></pre>
   padding-right: 5px;
 }
 
-#pedrrboetn .gt_sourcenotes {
+#mevacjtwzn .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2020,7 +2038,7 @@ using the `.groups` argument.</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#pedrrboetn .gt_sourcenote {
+#mevacjtwzn .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -2028,72 +2046,72 @@ using the `.groups` argument.</code></pre>
   padding-right: 5px;
 }
 
-#pedrrboetn .gt_left {
+#mevacjtwzn .gt_left {
   text-align: left;
 }
 
-#pedrrboetn .gt_center {
+#mevacjtwzn .gt_center {
   text-align: center;
 }
 
-#pedrrboetn .gt_right {
+#mevacjtwzn .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#pedrrboetn .gt_font_normal {
+#mevacjtwzn .gt_font_normal {
   font-weight: normal;
 }
 
-#pedrrboetn .gt_font_bold {
+#mevacjtwzn .gt_font_bold {
   font-weight: bold;
 }
 
-#pedrrboetn .gt_font_italic {
+#mevacjtwzn .gt_font_italic {
   font-style: italic;
 }
 
-#pedrrboetn .gt_super {
+#mevacjtwzn .gt_super {
   font-size: 65%;
 }
 
-#pedrrboetn .gt_footnote_marks {
+#mevacjtwzn .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#pedrrboetn .gt_asterisk {
+#mevacjtwzn .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#pedrrboetn .gt_indent_1 {
+#mevacjtwzn .gt_indent_1 {
   text-indent: 5px;
 }
 
-#pedrrboetn .gt_indent_2 {
+#mevacjtwzn .gt_indent_2 {
   text-indent: 10px;
 }
 
-#pedrrboetn .gt_indent_3 {
+#mevacjtwzn .gt_indent_3 {
   text-indent: 15px;
 }
 
-#pedrrboetn .gt_indent_4 {
+#mevacjtwzn .gt_indent_4 {
   text-indent: 20px;
 }
 
-#pedrrboetn .gt_indent_5 {
+#mevacjtwzn .gt_indent_5 {
   text-indent: 25px;
 }
 
-#pedrrboetn .katex-display {
+#mevacjtwzn .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#pedrrboetn div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#mevacjtwzn div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -2107,8 +2125,8 @@ using the `.groups` argument.</code></pre>
 </thead>
 <tbody class="gt_table_body">
 <tr class="odd">
-<td class="gt_row gt_right" headers="epa_fumble">-4.046483</td>
-<td class="gt_row gt_right" headers="epa_fd">1.631217</td>
+<td class="gt_row gt_right" headers="epa_fumble">-4.075385</td>
+<td class="gt_row gt_right" headers="epa_fd">1.635453</td>
 </tr>
 </tbody>
 </table>
