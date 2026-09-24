@@ -1,0 +1,135 @@
+---
+title: "cjoint model to make pairwise comparison statements"
+format: html
+---
+
+0. this updates conjoint_design.R from NK
+1. restricted-randomization conjoint design object with constraints:
+* NEW ok for sender = recipient; it means that there is no further data sharing
+* constraint 1 - health concern purpose blocked for non-clinical senders (now excludes head coach too)
+* constraint 2 - load management blocked for clinical senders (head coach ALLOWED)
+* constraint 3 - team readiness blocked for clinical senders (head coach ALLOWED)
+* constraint 4 - health concern cannot route to sports scientist or whole team
+* constraint 5 - load management cannot route to whole team
+* NEW constraint 6 - sender = head coach, purpose = team readiness, recipient excludes all but head coach, whole team
+* NEW constraint 7 - sender = head coach, purpose = health concern, recipient excludes all non-clinical including head coach
+
+```{r}
+#| echo: true
+#| eval: true
+#| message: false
+#| warning: false
+library(jsonlite)
+library(cjoint)
+library(dplyr)
+library(tibble)
+
+spec <- fromJSON("../../data/conjoint/attributes_levels.json")
+attribute_levels <- list(
+  sender    = spec$attributes$sender,
+  purpose   = spec$attributes$purpose,
+  recipient = spec$attributes$recipient
+)
+
+# ---- Constraints, expressed in cjoint's constraint-list format ----
+# Each constraint lists levels for one attribute that are jointly infeasible
+# with levels for another attribute. cjoint expects one constraint entry per
+# blocked (attribute_A level combination) -> (attribute_B levels) pairing.
+constraints <- list(
+  list( # C1 health concern, no non-clinician sender
+    purpose = "health concern",
+    sender  = c("strength coach", "sports scientist")
+  ),
+  list( # C2 load management, no clinician sender
+    purpose = "load management",
+    sender  = c("physician", "athletic trainer")
+  ),
+  list( # C3 team readiness, no clinician sender
+    purpose = "team readiness",
+  #  sender  = c("physician", "athletic trainer", "head coach")
+    sender  = c("physician", "athletic trainer")
+  ),
+  list( # C4 health concern, no sport scientist or whole team recipient
+    purpose   = "health concern",
+    recipient = c("sports scientist", "whole team")
+  ),
+  list( # C5 load management, no whole team recipient
+    purpose   = "load management",
+    recipient = "whole team"
+  ),
+  list( # C6 sender = head coach and purpose = team readiness, recipient excludes all but head coach, whole team
+    sender  = "head coach",
+    purpose = "team readiness",
+    recipient = c("physician","athletic trainer","sports scientist","strength coach")
+  ),
+  list( # C7 sender = head coach, purpose = health concern, recipient excludes all non-clinical including head coach
+    sender  = "head coach",
+    purpose = "health concern",
+    recipient = c("sports scientist","strength coach","whole team","head coach")
+  )
+)
+
+# ---- Marginal probabilities of each level BEFORE restriction ----
+# cjoint uses these as the baseline distribution to reweight from when
+# excluding the constrained combinations above.
+level.probs <- list(
+  sender    = rep(1 / length(attribute_levels$sender), length(attribute_levels$sender)),
+  purpose   = rep(1 / length(attribute_levels$purpose), length(attribute_levels$purpose)),
+  recipient = rep(1 / length(attribute_levels$recipient), length(attribute_levels$recipient))
+)
+```
+2. cjoint model object makes it easy to generate statements as strings
+
+```{r}
+design <- makeDesign(
+  type = "constraints",
+  attribute.levels = attribute_levels,
+  constraints = constraints,
+  level.probs = level.probs
+)
+
+saveRDS(design, "../../data/conjoint/cjoint_design.rds")
+```
+
+3. create pairwise comparison statements
+* 39 statements (increase from 35 in NK)
+
+```{r}
+# dataframe with all attributes-levels combinations
+indices <- which(design$J > 0, arr.ind = TRUE)
+combinations <- apply(indices, 1, function(idx) {
+  sapply(seq_along(idx), function(dim_i) {
+    dimnames(design$J)[[dim_i]][[idx[dim_i]]]
+  })
+})
+df <- as.data.frame(t(combinations), stringsAsFactors = FALSE)
+colnames(df) <- names(dimnames(design$J))
+rownames(df) <- paste0("V", sprintf("%03d", 1:nrow(df)))
+
+# transform attributes-levels to survey statements for pairwise comparison
+phrases <- c(
+  "sender_readiness" = ", along with the rest of the team's data",
+  "health concern" = " evaluates the data for a health concern",
+  "load management" = " evaluates the data to decide whether to increase or reduce your training load that day",
+  "team readiness" = " aggregates the data"
+)
+
+df <- df %>%
+  mutate(value = paste0(
+    "You send your menstrual cycle data to your team's ",
+    sender,
+    if_else(purpose == "team readiness", phrases["sender_readiness"], ""),
+    ". The ",
+    sender,
+    phrases[purpose],
+    if_else(sender == recipient, 
+            " and does not share the information further.", 
+            paste0(" and passes it along to your ", recipient,".")
+    )
+  ))
+json_df <- df %>%
+  rownames_to_column(var = "id")
+write_json(json_df, "../../data/conjoint/conjoint_CI_cjoint.json", pretty = TRUE)
+json_df
+```
+---

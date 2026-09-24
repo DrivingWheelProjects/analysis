@@ -1,0 +1,95 @@
+---
+title: "simulate data (random) then analysis with cjoint in R"
+format: html
+---
+
+
+1.  create all possible pairs of statements then choose a random pair
+
+- 40 simulated participants
+- 6 pairwise comparisons, each gets assigned winner/loser
+
+```{r}
+#| echo: true
+#| eval: true
+#| message: false
+#| warning: false
+library(jsonlite)
+library(tidyr)
+library(dplyr)
+library(cmdstanr)
+library(tidybayes)
+library(marginaleffects)
+library(BradleyTerry2)
+library(forcats)
+
+df_ci <- fromJSON("../../data/conjoint/conjoint_CI_cjoint.json")
+pair_ids = as.data.frame(t(combn(df_ci$id,2)))
+colnames(pair_ids) <- c("id1","id2")
+df_pairs <- pair_ids[sample(nrow(pair_ids)), ] #all possible comparison pairs
+results <- data.frame(matrix(ncol = 3, nrow = 0)) #dataframe for winners from pairwise comparisons
+colnames(results) <- c("id1","id2","outcome")
+results <- results %>%
+  mutate(
+    id1 = as.factor(id1),
+    id2 = as.factor(id2),
+    outcome = as.integer(outcome)
+  )
+howmany_participants <- 40 #survey participants
+howmany_comparisons <- 6 #comparisons in each survey
+for (i in 1:howmany_participants) {
+  df_survey <- df_pairs[sample(nrow(df_pairs), howmany_comparisons), ]
+  df_survey$outcome <- sample(0:1, nrow(df_survey), replace = TRUE)
+  results <- bind_rows(results,df_survey) %>%
+    mutate(across(c(id1,id2),as.factor)) %>%
+    mutate(across(where(is.factor), ~ fct_unify(pick(where(is.factor)))[[cur_column()]]))
+}
+
+```
+
+2.  create data structure for analysis
+
+```{r}
+#| echo: true
+#| eval: true
+#| message: false
+#| warning: false
+# simulated survey data, random winner/loser to pairwise comparisons needs attribute-level info from df_ci_cjoint
+# resulting dataframe, with attribute-level info as factor, is analysis data structure
+ci_factors_cjoint <- results %>%
+  pivot_longer(
+    cols = c(c1,c2,c3,c4,c5,c6),
+    names_to = "choice number",
+    values_to = "id"
+  ) %>%
+  left_join(df_ci_cjoint, by = "id") %>%
+  mutate(across(c(sender,purpose,recipient),as.factor)) %>%
+  # refactor with new reference levels: strength coach, load management, head coach
+  mutate(sender = fct_relevel(sender, "strength coach")) %>%
+  mutate(purpose = fct_relevel(purpose, "load management")) %>%
+  mutate(recipient = fct_relevel(recipient, "head coach"))
+
+
+```
+
+3.  amce as calculated with cjoint package
+
+```{r}
+#| echo: true
+#| eval: true
+#| message: false
+#| warning: false
+# results <- read_csv("qualtrics_export.csv") will need to transform to this data structure
+# amce = Average Marginal Component Effects, from cjoint package
+# "design" parameter incorporates model constraints
+amce_out <- amce(
+  chosen ~ sender * purpose * recipient,
+  data = ci_factors_cjoint,
+  design = design,
+  respondent.id = "response_id",
+  cluster = TRUE
+)
+plot(amce_out)
+# summary(amce_out)
+
+```

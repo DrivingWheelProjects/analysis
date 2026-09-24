@@ -1,0 +1,107 @@
+---
+title: "simulate data (random) then analysis with cregg in R"
+format: html
+---
+
+1.  create all possible pairs of statements then choose a random pair
+- cregg required different names for all attributes and levels, so different .json file
+- 40 simulated participants
+- 6 pairwise comparisons, each gets assigned winner/loser
+
+```{r}
+#| echo: true
+#| eval: true
+#| message: false
+#| warning: false
+library(jsonlite)
+library(tidyr)
+library(dplyr)
+library(cregg)
+library(cmdstanr)
+library(tidybayes)
+library(marginaleffects)
+library(forcats)
+
+df_ci <- fromJSON("../../data/conjoint/conjoint_CI_cregg.json")
+pair_ids = as.data.frame(t(combn(df_ci$id,2)))
+colnames(pair_ids) <- c("id1","id2")
+df_pairs <- pair_ids[sample(nrow(pair_ids)), ] #all possible comparison pairs
+results <- data.frame(matrix(ncol = 8, nrow = 0)) #dataframe for winners from pairwise comparisons
+colnames(results) <- c("c1","c2","c3","c4","c5","c6","response_id","chosen")
+results <- results %>%
+  mutate(
+    c1 = as.character(c1),
+    c2 = as.character(c2),
+    c3 = as.character(c3),
+    c4 = as.character(c4),
+    c5 = as.character(c5),
+    c6 = as.character(c6),
+    response_id = as.integer(response_id),
+    chosen = as.numeric(chosen)
+  )
+howmany <- 40 #survey participants
+for (i in 1:howmany) {
+  df_survey <- df_pairs[sample(nrow(df_pairs), 6), ] # 6 comparisons in each survey
+  df_survey$winner <- df_survey[cbind(1:nrow(df_survey), sample(1:2, nrow(df_survey), replace = TRUE))]
+  df_survey <- df_survey %>%
+    mutate(loser = if_else(id1 == winner, id2, id1))
+  df_response <- as.data.frame(t(df_survey[,c("winner","loser")])) %>%
+    setNames(c("c1","c2","c3","c4","c5","c6")) %>%
+    mutate(
+      response_id = i,
+      chosen = c(1,0)
+    )
+  results <- bind_rows(results,df_response)
+}
+
+```
+2.  create data structure for analysis
+
+```{r}
+#| echo: true
+#| eval: true
+#| message: false
+#| warning: false
+ci_factors <- results %>%
+  pivot_longer(
+    cols = c(c1,c2,c3,c4,c5,c6),
+    names_to = "choice number",
+    values_to = "id"
+  ) %>%
+  left_join(df_ci, by = "id") %>%
+  mutate(across(c(sender,purpose,recipient),as.factor)) %>%
+# need to refactor with new reference levels: s:strength coach, load management, r:head coach
+  mutate(sender = fct_relevel(sender, "s:strength coach")) %>%
+  mutate(purpose = fct_relevel(purpose, "load management")) %>%
+  mutate(recipient = fct_relevel(recipient, "r:head coach"))
+
+# check attributes for uniqueness
+check_attr <- c("sender","purpose","recipient")
+for (attr in check_attr) {
+  raw_levels <- ci_factors[attr]
+  if (any(duplicated(unique(raw_levels)))) {
+    print(paste("Problem found in attribute: ", attr))
+  } else {
+    print(paste("No problems."))
+  }
+}
+
+
+```
+
+3. marginal means calculated using cregg::mm, adapted from [Heiss guide to conjoint analysis](https://www.andrewheiss.com/blog/2023/07/25/conjoint-bayesian-frequentist-guide/)
+
+```{r}
+#| echo: true
+#| eval: true
+#| message: false
+#| warning: false
+mm_cregg <- cregg::mm(
+  ci_factors,
+  chosen ~ sender * purpose * recipient,
+  id = ~response_id
+)
+plot(mm_cregg)
+
+
+```

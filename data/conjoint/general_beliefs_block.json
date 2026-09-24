@@ -1,0 +1,36 @@
+{
+  "placement": "Before the pairwise comparison vignettes, immediately after Q0 (attention/relevance slider) and any demographic items.",
+  "rationale": "Placed before the vignette task so responses reflect baseline attitudes rather than being anchored by the specific flows just seen. Correlate against pairwise win-rate and 'neither' rate post-hoc.",
+  "items": [
+    {
+      "id": "B1",
+      "construct": "baseline disclosure comfort",
+      "text": "I am generally comfortable sharing information about my menstrual cycle with non-medical team staff, such as coaches or strength coaches.",
+      "scale": "5-point Likert: Strongly Disagree / Disagree / Neutral / Agree / Strongly Agree"
+    },
+    {
+      "id": "B2",
+      "construct": "perceived performance relevance",
+      "text": "I believe my menstrual cycle affects my athletic performance in ways that would be useful for coaches or staff to know.",
+      "scale": "5-point Likert: Strongly Disagree / Disagree / Neutral / Agree / Strongly Agree"
+    },
+    {
+      "id": "B3",
+      "construct": "trust in downstream use",
+      "text": "I trust that information I share about my menstrual cycle would only be used for the purpose I originally agreed to.",
+      "scale": "5-point Likert: Strongly Disagree / Disagree / Neutral / Agree / Strongly Agree"
+    },
+    {
+      "id": "B4",
+      "construct": "individual vs. team tradeoff",
+      "text": "A potential benefit to my team's performance would make me more willing to share my menstrual cycle data, even if it feels personal.",
+      "scale": "5-point Likert: Strongly Disagree / Disagree / Neutral / Agree / Strongly Agree"
+    },
+    {
+      "id": "B5",
+      "construct": "preference for granular consent",
+      "text": "I would want to give separate, explicit permission each time my menstrual cycle data is shared with someone new, rather than agreeing to one blanket policy.",
+      "scale": "5-point Likert: Strongly Disagree / Disagree / Neutral / Agree / Strongly Agree"
+    }
+  ]
+}

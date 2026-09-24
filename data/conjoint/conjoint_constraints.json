@@ -1,0 +1,676 @@
+{
+  "attributes": {
+    "sender": [
+      "physician",
+      "athletic trainer",
+      "strength coach",
+      "sports scientist",
+      "head coach"
+    ],
+    "purpose": [
+      "health concern",
+      "load management",
+      "team readiness"
+    ],
+    "recipient": [
+      "no further sharing",
+      "physician",
+      "athletic trainer",
+      "strength coach",
+      "sports scientist",
+      "head coach",
+      "whole team"
+    ]
+  },
+  "constraints": [
+    {
+      "id": "C1",
+      "rule": "purpose = 'health concern' -> sender in {physician, athletic trainer}"
+    },
+    {
+      "id": "C2a",
+      "rule": "purpose = 'load management' -> sender in {strength coach, sports scientist, head coach}"
+    },
+    {
+      "id": "C2b",
+      "rule": "purpose = 'team readiness' -> sender in {strength coach, sports scientist}"
+    },
+    {
+      "id": "C3",
+      "rule": "recipient != sender"
+    },
+    {
+      "id": "C4",
+      "rule": "purpose = 'health concern' -> recipient not in {sports scientist, whole team}"
+    },
+    {
+      "id": "C5",
+      "rule": "purpose = 'load management' -> recipient != whole team"
+    }
+  ],
+  "n_full_factorial": 105,
+  "n_feasible": 35,
+  "n_excluded": 70,
+  "feasible_profiles": [
+    {
+      "sender": "physician",
+      "purpose": "health concern",
+      "recipient": "no further sharing"
+    },
+    {
+      "sender": "physician",
+      "purpose": "health concern",
+      "recipient": "athletic trainer"
+    },
+    {
+      "sender": "physician",
+      "purpose": "health concern",
+      "recipient": "strength coach"
+    },
+    {
+      "sender": "physician",
+      "purpose": "health concern",
+      "recipient": "head coach"
+    },
+    {
+      "sender": "athletic trainer",
+      "purpose": "health concern",
+      "recipient": "no further sharing"
+    },
+    {
+      "sender": "athletic trainer",
+      "purpose": "health concern",
+      "recipient": "physician"
+    },
+    {
+      "sender": "athletic trainer",
+      "purpose": "health concern",
+      "recipient": "strength coach"
+    },
+    {
+      "sender": "athletic trainer",
+      "purpose": "health concern",
+      "recipient": "head coach"
+    },
+    {
+      "sender": "strength coach",
+      "purpose": "load management",
+      "recipient": "no further sharing"
+    },
+    {
+      "sender": "strength coach",
+      "purpose": "load management",
+      "recipient": "physician"
+    },
+    {
+      "sender": "strength coach",
+      "purpose": "load management",
+      "recipient": "athletic trainer"
+    },
+    {
+      "sender": "strength coach",
+      "purpose": "load management",
+      "recipient": "sports scientist"
+    },
+    {
+      "sender": "strength coach",
+      "purpose": "load management",
+      "recipient": "head coach"
+    },
+    {
+      "sender": "strength coach",
+      "purpose": "team readiness",
+      "recipient": "no further sharing"
+    },
+    {
+      "sender": "strength coach",
+      "purpose": "team readiness",
+      "recipient": "physician"
+    },
+    {
+      "sender": "strength coach",
+      "purpose": "team readiness",
+      "recipient": "athletic trainer"
+    },
+    {
+      "sender": "strength coach",
+      "purpose": "team readiness",
+      "recipient": "sports scientist"
+    },
+    {
+      "sender": "strength coach",
+      "purpose": "team readiness",
+      "recipient": "head coach"
+    },
+    {
+      "sender": "strength coach",
+      "purpose": "team readiness",
+      "recipient": "whole team"
+    },
+    {
+      "sender": "sports scientist",
+      "purpose": "load management",
+      "recipient": "no further sharing"
+    },
+    {
+      "sender": "sports scientist",
+      "purpose": "load management",
+      "recipient": "physician"
+    },
+    {
+      "sender": "sports scientist",
+      "purpose": "load management",
+      "recipient": "athletic trainer"
+    },
+    {
+      "sender": "sports scientist",
+      "purpose": "load management",
+      "recipient": "strength coach"
+    },
+    {
+      "sender": "sports scientist",
+      "purpose": "load management",
+      "recipient": "head coach"
+    },
+    {
+      "sender": "sports scientist",
+      "purpose": "team readiness",
+      "recipient": "no further sharing"
+    },
+    {
+      "sender": "sports scientist",
+      "purpose": "team readiness",
+      "recipient": "physician"
+    },
+    {
+      "sender": "sports scientist",
+      "purpose": "team readiness",
+      "recipient": "athletic trainer"
+    },
+    {
+      "sender": "sports scientist",
+      "purpose": "team readiness",
+      "recipient": "strength coach"
+    },
+    {
+      "sender": "sports scientist",
+      "purpose": "team readiness",
+      "recipient": "head coach"
+    },
+    {
+      "sender": "sports scientist",
+      "purpose": "team readiness",
+      "recipient": "whole team"
+    },
+    {
+      "sender": "head coach",
+      "purpose": "load management",
+      "recipient": "no further sharing"
+    },
+    {
+      "sender": "head coach",
+      "purpose": "load management",
+      "recipient": "physician"
+    },
+    {
+      "sender": "head coach",
+      "purpose": "load management",
+      "recipient": "athletic trainer"
+    },
+    {
+      "sender": "head coach",
+      "purpose": "load management",
+      "recipient": "strength coach"
+    },
+    {
+      "sender": "head coach",
+      "purpose": "load management",
+      "recipient": "sports scientist"
+    }
+  ],
+  "excluded_profiles": [
+    {
+      "sender": "physician",
+      "purpose": "health concern",
+      "recipient": "physician",
+      "violated": "C3: recipient cannot equal sender"
+    },
+    {
+      "sender": "physician",
+      "purpose": "health concern",
+      "recipient": "sports scientist",
+      "violated": "C4: health concern cannot route to a non-clinical performance role or the whole team"
+    },
+    {
+      "sender": "physician",
+      "purpose": "health concern",
+      "recipient": "whole team",
+      "violated": "C4: health concern cannot route to a non-clinical performance role or the whole team"
+    },
+    {
+      "sender": "physician",
+      "purpose": "load management",
+      "recipient": "no further sharing",
+      "violated": "C2a: load management must be evaluated by a performance role or the head coach (direct athlete self-disclosure)"
+    },
+    {
+      "sender": "physician",
+      "purpose": "load management",
+      "recipient": "physician",
+      "violated": "C2a: load management must be evaluated by a performance role or the head coach (direct athlete self-disclosure)"
+    },
+    {
+      "sender": "physician",
+      "purpose": "load management",
+      "recipient": "athletic trainer",
+      "violated": "C2a: load management must be evaluated by a performance role or the head coach (direct athlete self-disclosure)"
+    },
+    {
+      "sender": "physician",
+      "purpose": "load management",
+      "recipient": "strength coach",
+      "violated": "C2a: load management must be evaluated by a performance role or the head coach (direct athlete self-disclosure)"
+    },
+    {
+      "sender": "physician",
+      "purpose": "load management",
+      "recipient": "sports scientist",
+      "violated": "C2a: load management must be evaluated by a performance role or the head coach (direct athlete self-disclosure)"
+    },
+    {
+      "sender": "physician",
+      "purpose": "load management",
+      "recipient": "head coach",
+      "violated": "C2a: load management must be evaluated by a performance role or the head coach (direct athlete self-disclosure)"
+    },
+    {
+      "sender": "physician",
+      "purpose": "load management",
+      "recipient": "whole team",
+      "violated": "C2a: load management must be evaluated by a performance role or the head coach (direct athlete self-disclosure)"
+    },
+    {
+      "sender": "physician",
+      "purpose": "team readiness",
+      "recipient": "no further sharing",
+      "violated": "C2b: team readiness aggregation is performed only by performance roles, not the head coach"
+    },
+    {
+      "sender": "physician",
+      "purpose": "team readiness",
+      "recipient": "physician",
+      "violated": "C2b: team readiness aggregation is performed only by performance roles, not the head coach"
+    },
+    {
+      "sender": "physician",
+      "purpose": "team readiness",
+      "recipient": "athletic trainer",
+      "violated": "C2b: team readiness aggregation is performed only by performance roles, not the head coach"
+    },
+    {
+      "sender": "physician",
+      "purpose": "team readiness",
+      "recipient": "strength coach",
+      "violated": "C2b: team readiness aggregation is performed only by performance roles, not the head coach"
+    },
+    {
+      "sender": "physician",
+      "purpose": "team readiness",
+      "recipient": "sports scientist",
+      "violated": "C2b: team readiness aggregation is performed only by performance roles, not the head coach"
+    },
+    {
+      "sender": "physician",
+      "purpose": "team readiness",
+      "recipient": "head coach",
+      "violated": "C2b: team readiness aggregation is performed only by performance roles, not the head coach"
+    },
+    {
+      "sender": "physician",
+      "purpose": "team readiness",
+      "recipient": "whole team",
+      "violated": "C2b: team readiness aggregation is performed only by performance roles, not the head coach"
+    },
+    {
+      "sender": "athletic trainer",
+      "purpose": "health concern",
+      "recipient": "athletic trainer",
+      "violated": "C3: recipient cannot equal sender"
+    },
+    {
+      "sender": "athletic trainer",
+      "purpose": "health concern",
+      "recipient": "sports scientist",
+      "violated": "C4: health concern cannot route to a non-clinical performance role or the whole team"
+    },
+    {
+      "sender": "athletic trainer",
+      "purpose": "health concern",
+      "recipient": "whole team",
+      "violated": "C4: health concern cannot route to a non-clinical performance role or the whole team"
+    },
+    {
+      "sender": "athletic trainer",
+      "purpose": "load management",
+      "recipient": "no further sharing",
+      "violated": "C2a: load management must be evaluated by a performance role or the head coach (direct athlete self-disclosure)"
+    },
+    {
+      "sender": "athletic trainer",
+      "purpose": "load management",
+      "recipient": "physician",
+      "violated": "C2a: load management must be evaluated by a performance role or the head coach (direct athlete self-disclosure)"
+    },
+    {
+      "sender": "athletic trainer",
+      "purpose": "load management",
+      "recipient": "athletic trainer",
+      "violated": "C2a: load management must be evaluated by a performance role or the head coach (direct athlete self-disclosure)"
+    },
+    {
+      "sender": "athletic trainer",
+      "purpose": "load management",
+      "recipient": "strength coach",
+      "violated": "C2a: load management must be evaluated by a performance role or the head coach (direct athlete self-disclosure)"
+    },
+    {
+      "sender": "athletic trainer",
+      "purpose": "load management",
+      "recipient": "sports scientist",
+      "violated": "C2a: load management must be evaluated by a performance role or the head coach (direct athlete self-disclosure)"
+    },
+    {
+      "sender": "athletic trainer",
+      "purpose": "load management",
+      "recipient": "head coach",
+      "violated": "C2a: load management must be evaluated by a performance role or the head coach (direct athlete self-disclosure)"
+    },
+    {
+      "sender": "athletic trainer",
+      "purpose": "load management",
+      "recipient": "whole team",
+      "violated": "C2a: load management must be evaluated by a performance role or the head coach (direct athlete self-disclosure)"
+    },
+    {
+      "sender": "athletic trainer",
+      "purpose": "team readiness",
+      "recipient": "no further sharing",
+      "violated": "C2b: team readiness aggregation is performed only by performance roles, not the head coach"
+    },
+    {
+      "sender": "athletic trainer",
+      "purpose": "team readiness",
+      "recipient": "physician",
+      "violated": "C2b: team readiness aggregation is performed only by performance roles, not the head coach"
+    },
+    {
+      "sender": "athletic trainer",
+      "purpose": "team readiness",
+      "recipient": "athletic trainer",
+      "violated": "C2b: team readiness aggregation is performed only by performance roles, not the head coach"
+    },
+    {
+      "sender": "athletic trainer",
+      "purpose": "team readiness",
+      "recipient": "strength coach",
+      "violated": "C2b: team readiness aggregation is performed only by performance roles, not the head coach"
+    },
+    {
+      "sender": "athletic trainer",
+      "purpose": "team readiness",
+      "recipient": "sports scientist",
+      "violated": "C2b: team readiness aggregation is performed only by performance roles, not the head coach"
+    },
+    {
+      "sender": "athletic trainer",
+      "purpose": "team readiness",
+      "recipient": "head coach",
+      "violated": "C2b: team readiness aggregation is performed only by performance roles, not the head coach"
+    },
+    {
+      "sender": "athletic trainer",
+      "purpose": "team readiness",
+      "recipient": "whole team",
+      "violated": "C2b: team readiness aggregation is performed only by performance roles, not the head coach"
+    },
+    {
+      "sender": "strength coach",
+      "purpose": "health concern",
+      "recipient": "no further sharing",
+      "violated": "C1: health concern must be evaluated by a clinical role"
+    },
+    {
+      "sender": "strength coach",
+      "purpose": "health concern",
+      "recipient": "physician",
+      "violated": "C1: health concern must be evaluated by a clinical role"
+    },
+    {
+      "sender": "strength coach",
+      "purpose": "health concern",
+      "recipient": "athletic trainer",
+      "violated": "C1: health concern must be evaluated by a clinical role"
+    },
+    {
+      "sender": "strength coach",
+      "purpose": "health concern",
+      "recipient": "strength coach",
+      "violated": "C1: health concern must be evaluated by a clinical role"
+    },
+    {
+      "sender": "strength coach",
+      "purpose": "health concern",
+      "recipient": "sports scientist",
+      "violated": "C1: health concern must be evaluated by a clinical role"
+    },
+    {
+      "sender": "strength coach",
+      "purpose": "health concern",
+      "recipient": "head coach",
+      "violated": "C1: health concern must be evaluated by a clinical role"
+    },
+    {
+      "sender": "strength coach",
+      "purpose": "health concern",
+      "recipient": "whole team",
+      "violated": "C1: health concern must be evaluated by a clinical role"
+    },
+    {
+      "sender": "strength coach",
+      "purpose": "load management",
+      "recipient": "strength coach",
+      "violated": "C3: recipient cannot equal sender"
+    },
+    {
+      "sender": "strength coach",
+      "purpose": "load management",
+      "recipient": "whole team",
+      "violated": "C5: load management is individual-level data; cannot go to whole team"
+    },
+    {
+      "sender": "strength coach",
+      "purpose": "team readiness",
+      "recipient": "strength coach",
+      "violated": "C3: recipient cannot equal sender"
+    },
+    {
+      "sender": "sports scientist",
+      "purpose": "health concern",
+      "recipient": "no further sharing",
+      "violated": "C1: health concern must be evaluated by a clinical role"
+    },
+    {
+      "sender": "sports scientist",
+      "purpose": "health concern",
+      "recipient": "physician",
+      "violated": "C1: health concern must be evaluated by a clinical role"
+    },
+    {
+      "sender": "sports scientist",
+      "purpose": "health concern",
+      "recipient": "athletic trainer",
+      "violated": "C1: health concern must be evaluated by a clinical role"
+    },
+    {
+      "sender": "sports scientist",
+      "purpose": "health concern",
+      "recipient": "strength coach",
+      "violated": "C1: health concern must be evaluated by a clinical role"
+    },
+    {
+      "sender": "sports scientist",
+      "purpose": "health concern",
+      "recipient": "sports scientist",
+      "violated": "C1: health concern must be evaluated by a clinical role"
+    },
+    {
+      "sender": "sports scientist",
+      "purpose": "health concern",
+      "recipient": "head coach",
+      "violated": "C1: health concern must be evaluated by a clinical role"
+    },
+    {
+      "sender": "sports scientist",
+      "purpose": "health concern",
+      "recipient": "whole team",
+      "violated": "C1: health concern must be evaluated by a clinical role"
+    },
+    {
+      "sender": "sports scientist",
+      "purpose": "load management",
+      "recipient": "sports scientist",
+      "violated": "C3: recipient cannot equal sender"
+    },
+    {
+      "sender": "sports scientist",
+      "purpose": "load management",
+      "recipient": "whole team",
+      "violated": "C5: load management is individual-level data; cannot go to whole team"
+    },
+    {
+      "sender": "sports scientist",
+      "purpose": "team readiness",
+      "recipient": "sports scientist",
+      "violated": "C3: recipient cannot equal sender"
+    },
+    {
+      "sender": "head coach",
+      "purpose": "health concern",
+      "recipient": "no further sharing",
+      "violated": "C1: health concern must be evaluated by a clinical role"
+    },
+    {
+      "sender": "head coach",
+      "purpose": "health concern",
+      "recipient": "physician",
+      "violated": "C1: health concern must be evaluated by a clinical role"
+    },
+    {
+      "sender": "head coach",
+      "purpose": "health concern",
+      "recipient": "athletic trainer",
+      "violated": "C1: health concern must be evaluated by a clinical role"
+    },
+    {
+      "sender": "head coach",
+      "purpose": "health concern",
+      "recipient": "strength coach",
+      "violated": "C1: health concern must be evaluated by a clinical role"
+    },
+    {
+      "sender": "head coach",
+      "purpose": "health concern",
+      "recipient": "sports scientist",
+      "violated": "C1: health concern must be evaluated by a clinical role"
+    },
+    {
+      "sender": "head coach",
+      "purpose": "health concern",
+      "recipient": "head coach",
+      "violated": "C1: health concern must be evaluated by a clinical role"
+    },
+    {
+      "sender": "head coach",
+      "purpose": "health concern",
+      "recipient": "whole team",
+      "violated": "C1: health concern must be evaluated by a clinical role"
+    },
+    {
+      "sender": "head coach",
+      "purpose": "load management",
+      "recipient": "head coach",
+      "violated": "C3: recipient cannot equal sender"
+    },
+    {
+      "sender": "head coach",
+      "purpose": "load management",
+      "recipient": "whole team",
+      "violated": "C5: load management is individual-level data; cannot go to whole team"
+    },
+    {
+      "sender": "head coach",
+      "purpose": "team readiness",
+      "recipient": "no further sharing",
+      "violated": "C2b: team readiness aggregation is performed only by performance roles, not the head coach"
+    },
+    {
+      "sender": "head coach",
+      "purpose": "team readiness",
+      "recipient": "physician",
+      "violated": "C2b: team readiness aggregation is performed only by performance roles, not the head coach"
+    },
+    {
+      "sender": "head coach",
+      "purpose": "team readiness",
+      "recipient": "athletic trainer",
+      "violated": "C2b: team readiness aggregation is performed only by performance roles, not the head coach"
+    },
+    {
+      "sender": "head coach",
+      "purpose": "team readiness",
+      "recipient": "strength coach",
+      "violated": "C2b: team readiness aggregation is performed only by performance roles, not the head coach"
+    },
+    {
+      "sender": "head coach",
+      "purpose": "team readiness",
+      "recipient": "sports scientist",
+      "violated": "C2b: team readiness aggregation is performed only by performance roles, not the head coach"
+    },
+    {
+      "sender": "head coach",
+      "purpose": "team readiness",
+      "recipient": "head coach",
+      "violated": "C2b: team readiness aggregation is performed only by performance roles, not the head coach"
+    },
+    {
+      "sender": "head coach",
+      "purpose": "team readiness",
+      "recipient": "whole team",
+      "violated": "C2b: team readiness aggregation is performed only by performance roles, not the head coach"
+    }
+  ],
+  "marginal_probabilities_within_restricted_space": {
+    "sender": {
+      "physician": 0.1143,
+      "athletic trainer": 0.1143,
+      "strength coach": 0.3143,
+      "sports scientist": 0.3143,
+      "head coach": 0.1429
+    },
+    "purpose": {
+      "health concern": 0.2286,
+      "load management": 0.4286,
+      "team readiness": 0.3429
+    },
+    "recipient": {
+      "no further sharing": 0.2,
+      "athletic trainer": 0.1714,
+      "strength coach": 0.1429,
+      "head coach": 0.1714,
+      "physician": 0.1714,
+      "sports scientist": 0.0857,
+      "whole team": 0.0571
+    }
+  }
+}

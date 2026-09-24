@@ -1,0 +1,24 @@
+{
+  "attributes": {
+    "sender": [
+      "physician",
+      "athletic trainer",
+      "strength coach",
+      "sports scientist",
+      "head coach"
+    ],
+    "purpose": [
+      "health concern",
+      "load management",
+      "team readiness"
+    ],
+    "recipient": [
+      "physician",
+      "athletic trainer",
+      "strength coach",
+      "sports scientist",
+      "head coach",
+      "whole team"
+    ]
+  }
+}
