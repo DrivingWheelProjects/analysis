@@ -1,0 +1,10887 @@
+[
+  {
+    "nfl_id": 39973,
+    "play_id": 159,
+    "n": 25,
+    "csum": 25,
+    "offset": 0
+  },
+  {
+    "nfl_id": 39973,
+    "play_id": 228,
+    "n": 29,
+    "csum": 54,
+    "offset": 25
+  },
+  {
+    "nfl_id": 39973,
+    "play_id": 721,
+    "n": 28,
+    "csum": 82,
+    "offset": 54
+  },
+  {
+    "nfl_id": 39973,
+    "play_id": 768,
+    "n": 33,
+    "csum": 115,
+    "offset": 82
+  },
+  {
+    "nfl_id": 39973,
+    "play_id": 793,
+    "n": 28,
+    "csum": 143,
+    "offset": 115
+  },
+  {
+    "nfl_id": 39973,
+    "play_id": 849,
+    "n": 24,
+    "csum": 167,
+    "offset": 143
+  },
+  {
+    "nfl_id": 39973,
+    "play_id": 1065,
+    "n": 28,
+    "csum": 195,
+    "offset": 167
+  },
+  {
+    "nfl_id": 39973,
+    "play_id": 1394,
+    "n": 57,
+    "csum": 252,
+    "offset": 195
+  },
+  {
+    "nfl_id": 39973,
+    "play_id": 1721,
+    "n": 36,
+    "csum": 288,
+    "offset": 252
+  },
+  {
+    "nfl_id": 39973,
+    "play_id": 1766,
+    "n": 37,
+    "csum": 325,
+    "offset": 288
+  },
+  {
+    "nfl_id": 39973,
+    "play_id": 2366,
+    "n": 18,
+    "csum": 343,
+    "offset": 325
+  },
+  {
+    "nfl_id": 39973,
+    "play_id": 2670,
+    "n": 32,
+    "csum": 375,
+    "offset": 343
+  },
+  {
+    "nfl_id": 39973,
+    "play_id": 2720,
+    "n": 28,
+    "csum": 403,
+    "offset": 375
+  },
+  {
+    "nfl_id": 39973,
+    "play_id": 3042,
+    "n": 22,
+    "csum": 425,
+    "offset": 403
+  },
+  {
+    "nfl_id": 39973,
+    "play_id": 3067,
+    "n": 23,
+    "csum": 448,
+    "offset": 425
+  },
+  {
+    "nfl_id": 39973,
+    "play_id": 3358,
+    "n": 31,
+    "csum": 479,
+    "offset": 448
+  },
+  {
+    "nfl_id": 39973,
+    "play_id": 3383,
+    "n": 33,
+    "csum": 512,
+    "offset": 479
+  },
+  {
+    "nfl_id": 39973,
+    "play_id": 3436,
+    "n": 23,
+    "csum": 535,
+    "offset": 512
+  },
+  {
+    "nfl_id": 39973,
+    "play_id": 3483,
+    "n": 39,
+    "csum": 574,
+    "offset": 535
+  },
+  {
+    "nfl_id": 39973,
+    "play_id": 3603,
+    "n": 24,
+    "csum": 598,
+    "offset": 574
+  },
+  {
+    "nfl_id": 39973,
+    "play_id": 3984,
+    "n": 18,
+    "csum": 616,
+    "offset": 598
+  },
+  {
+    "nfl_id": 39973,
+    "play_id": 4036,
+    "n": 21,
+    "csum": 637,
+    "offset": 616
+  },
+  {
+    "nfl_id": 39973,
+    "play_id": 4124,
+    "n": 24,
+    "csum": 661,
+    "offset": 637
+  },
+  {
+    "nfl_id": 39973,
+    "play_id": 4147,
+    "n": 38,
+    "csum": 699,
+    "offset": 661
+  },
+  {
+    "nfl_id": 39989,
+    "play_id": 559,
+    "n": 26,
+    "csum": 26,
+    "offset": 0
+  },
+  {
+    "nfl_id": 39989,
+    "play_id": 1042,
+    "n": 30,
+    "csum": 56,
+    "offset": 26
+  },
+  {
+    "nfl_id": 39989,
+    "play_id": 1065,
+    "n": 34,
+    "csum": 90,
+    "offset": 56
+  },
+  {
+    "nfl_id": 39989,
+    "play_id": 1368,
+    "n": 26,
+    "csum": 116,
+    "offset": 90
+  },
+  {
+    "nfl_id": 39989,
+    "play_id": 1438,
+    "n": 43,
+    "csum": 159,
+    "offset": 116
+  },
+  {
+    "nfl_id": 39989,
+    "play_id": 1470,
+    "n": 32,
+    "csum": 191,
+    "offset": 159
+  },
+  {
+    "nfl_id": 39989,
+    "play_id": 1517,
+    "n": 30,
+    "csum": 221,
+    "offset": 191
+  },
+  {
+    "nfl_id": 39989,
+    "play_id": 1549,
+    "n": 18,
+    "csum": 239,
+    "offset": 221
+  },
+  {
+    "nfl_id": 39989,
+    "play_id": 1948,
+    "n": 27,
+    "csum": 266,
+    "offset": 239
+  },
+  {
+    "nfl_id": 39989,
+    "play_id": 1980,
+    "n": 21,
+    "csum": 287,
+    "offset": 266
+  },
+  {
+    "nfl_id": 39989,
+    "play_id": 2151,
+    "n": 27,
+    "csum": 314,
+    "offset": 287
+  },
+  {
+    "nfl_id": 39989,
+    "play_id": 2759,
+    "n": 30,
+    "csum": 344,
+    "offset": 314
+  },
+  {
+    "nfl_id": 39989,
+    "play_id": 3216,
+    "n": 48,
+    "csum": 392,
+    "offset": 344
+  },
+  {
+    "nfl_id": 39989,
+    "play_id": 3383,
+    "n": 32,
+    "csum": 424,
+    "offset": 392
+  },
+  {
+    "nfl_id": 39989,
+    "play_id": 3514,
+    "n": 24,
+    "csum": 448,
+    "offset": 424
+  },
+  {
+    "nfl_id": 39989,
+    "play_id": 3879,
+    "n": 25,
+    "csum": 473,
+    "offset": 448
+  },
+  {
+    "nfl_id": 39989,
+    "play_id": 3902,
+    "n": 24,
+    "csum": 497,
+    "offset": 473
+  },
+  {
+    "nfl_id": 39989,
+    "play_id": 4191,
+    "n": 33,
+    "csum": 530,
+    "offset": 497
+  },
+  {
+    "nfl_id": 39989,
+    "play_id": 4216,
+    "n": 29,
+    "csum": 559,
+    "offset": 530
+  },
+  {
+    "nfl_id": 39989,
+    "play_id": 4239,
+    "n": 27,
+    "csum": 586,
+    "offset": 559
+  },
+  {
+    "nfl_id": 39989,
+    "play_id": 4322,
+    "n": 25,
+    "csum": 611,
+    "offset": 586
+  },
+  {
+    "nfl_id": 39989,
+    "play_id": 4392,
+    "n": 22,
+    "csum": 633,
+    "offset": 611
+  },
+  {
+    "nfl_id": 39989,
+    "play_id": 4639,
+    "n": 17,
+    "csum": 650,
+    "offset": 633
+  },
+  {
+    "nfl_id": 39989,
+    "play_id": 4662,
+    "n": 39,
+    "csum": 689,
+    "offset": 650
+  },
+  {
+    "nfl_id": 40024,
+    "play_id": 261,
+    "n": 35,
+    "csum": 35,
+    "offset": 0
+  },
+  {
+    "nfl_id": 40024,
+    "play_id": 328,
+    "n": 32,
+    "csum": 67,
+    "offset": 35
+  },
+  {
+    "nfl_id": 40024,
+    "play_id": 997,
+    "n": 44,
+    "csum": 111,
+    "offset": 67
+  },
+  {
+    "nfl_id": 40024,
+    "play_id": 1337,
+    "n": 35,
+    "csum": 146,
+    "offset": 111
+  },
+  {
+    "nfl_id": 40024,
+    "play_id": 1607,
+    "n": 19,
+    "csum": 165,
+    "offset": 146
+  },
+  {
+    "nfl_id": 40024,
+    "play_id": 2103,
+    "n": 21,
+    "csum": 186,
+    "offset": 165
+  },
+  {
+    "nfl_id": 40024,
+    "play_id": 2151,
+    "n": 29,
+    "csum": 215,
+    "offset": 186
+  },
+  {
+    "nfl_id": 40024,
+    "play_id": 2176,
+    "n": 22,
+    "csum": 237,
+    "offset": 215
+  },
+  {
+    "nfl_id": 40024,
+    "play_id": 2206,
+    "n": 33,
+    "csum": 270,
+    "offset": 237
+  },
+  {
+    "nfl_id": 40024,
+    "play_id": 2236,
+    "n": 34,
+    "csum": 304,
+    "offset": 270
+  },
+  {
+    "nfl_id": 40024,
+    "play_id": 2261,
+    "n": 27,
+    "csum": 331,
+    "offset": 304
+  },
+  {
+    "nfl_id": 40024,
+    "play_id": 2284,
+    "n": 20,
+    "csum": 351,
+    "offset": 331
+  },
+  {
+    "nfl_id": 40024,
+    "play_id": 3128,
+    "n": 37,
+    "csum": 388,
+    "offset": 351
+  },
+  {
+    "nfl_id": 40024,
+    "play_id": 3274,
+    "n": 28,
+    "csum": 416,
+    "offset": 388
+  },
+  {
+    "nfl_id": 40024,
+    "play_id": 3309,
+    "n": 34,
+    "csum": 450,
+    "offset": 416
+  },
+  {
+    "nfl_id": 40024,
+    "play_id": 3494,
+    "n": 29,
+    "csum": 479,
+    "offset": 450
+  },
+  {
+    "nfl_id": 40024,
+    "play_id": 3890,
+    "n": 24,
+    "csum": 503,
+    "offset": 479
+  },
+  {
+    "nfl_id": 40024,
+    "play_id": 4076,
+    "n": 32,
+    "csum": 535,
+    "offset": 503
+  },
+  {
+    "nfl_id": 40024,
+    "play_id": 4099,
+    "n": 34,
+    "csum": 569,
+    "offset": 535
+  },
+  {
+    "nfl_id": 40024,
+    "play_id": 4207,
+    "n": 21,
+    "csum": 590,
+    "offset": 569
+  },
+  {
+    "nfl_id": 40024,
+    "play_id": 4615,
+    "n": 30,
+    "csum": 620,
+    "offset": 590
+  },
+  {
+    "nfl_id": 40024,
+    "play_id": 4699,
+    "n": 34,
+    "csum": 654,
+    "offset": 620
+  },
+  {
+    "nfl_id": 40488,
+    "play_id": 185,
+    "n": 23,
+    "csum": 23,
+    "offset": 0
+  },
+  {
+    "nfl_id": 40488,
+    "play_id": 661,
+    "n": 29,
+    "csum": 52,
+    "offset": 23
+  },
+  {
+    "nfl_id": 40488,
+    "play_id": 842,
+    "n": 47,
+    "csum": 99,
+    "offset": 52
+  },
+  {
+    "nfl_id": 40488,
+    "play_id": 877,
+    "n": 49,
+    "csum": 148,
+    "offset": 99
+  },
+  {
+    "nfl_id": 40488,
+    "play_id": 1193,
+    "n": 34,
+    "csum": 182,
+    "offset": 148
+  },
+  {
+    "nfl_id": 40488,
+    "play_id": 1240,
+    "n": 32,
+    "csum": 214,
+    "offset": 182
+  },
+  {
+    "nfl_id": 40488,
+    "play_id": 1300,
+    "n": 23,
+    "csum": 237,
+    "offset": 214
+  },
+  {
+    "nfl_id": 40488,
+    "play_id": 1325,
+    "n": 27,
+    "csum": 264,
+    "offset": 237
+  },
+  {
+    "nfl_id": 40488,
+    "play_id": 1697,
+    "n": 24,
+    "csum": 288,
+    "offset": 264
+  },
+  {
+    "nfl_id": 40488,
+    "play_id": 1720,
+    "n": 27,
+    "csum": 315,
+    "offset": 288
+  },
+  {
+    "nfl_id": 40488,
+    "play_id": 1743,
+    "n": 31,
+    "csum": 346,
+    "offset": 315
+  },
+  {
+    "nfl_id": 40488,
+    "play_id": 1972,
+    "n": 41,
+    "csum": 387,
+    "offset": 346
+  },
+  {
+    "nfl_id": 40488,
+    "play_id": 2101,
+    "n": 26,
+    "csum": 413,
+    "offset": 387
+  },
+  {
+    "nfl_id": 40488,
+    "play_id": 2389,
+    "n": 27,
+    "csum": 440,
+    "offset": 413
+  },
+  {
+    "nfl_id": 40488,
+    "play_id": 2580,
+    "n": 31,
+    "csum": 471,
+    "offset": 440
+  },
+  {
+    "nfl_id": 40488,
+    "play_id": 3026,
+    "n": 26,
+    "csum": 497,
+    "offset": 471
+  },
+  {
+    "nfl_id": 40488,
+    "play_id": 3078,
+    "n": 40,
+    "csum": 537,
+    "offset": 497
+  },
+  {
+    "nfl_id": 40488,
+    "play_id": 3369,
+    "n": 33,
+    "csum": 570,
+    "offset": 537
+  },
+  {
+    "nfl_id": 40488,
+    "play_id": 3421,
+    "n": 24,
+    "csum": 594,
+    "offset": 570
+  },
+  {
+    "nfl_id": 40488,
+    "play_id": 3886,
+    "n": 34,
+    "csum": 628,
+    "offset": 594
+  },
+  {
+    "nfl_id": 40488,
+    "play_id": 3916,
+    "n": 36,
+    "csum": 664,
+    "offset": 628
+  },
+  {
+    "nfl_id": 40488,
+    "play_id": 4107,
+    "n": 20,
+    "csum": 684,
+    "offset": 664
+  },
+  {
+    "nfl_id": 40488,
+    "play_id": 4155,
+    "n": 25,
+    "csum": 709,
+    "offset": 684
+  },
+  {
+    "nfl_id": 41233,
+    "play_id": 196,
+    "n": 33,
+    "csum": 33,
+    "offset": 0
+  },
+  {
+    "nfl_id": 41233,
+    "play_id": 219,
+    "n": 33,
+    "csum": 66,
+    "offset": 33
+  },
+  {
+    "nfl_id": 41233,
+    "play_id": 542,
+    "n": 18,
+    "csum": 84,
+    "offset": 66
+  },
+  {
+    "nfl_id": 41233,
+    "play_id": 592,
+    "n": 19,
+    "csum": 103,
+    "offset": 84
+  },
+  {
+    "nfl_id": 41233,
+    "play_id": 695,
+    "n": 28,
+    "csum": 131,
+    "offset": 103
+  },
+  {
+    "nfl_id": 41233,
+    "play_id": 821,
+    "n": 25,
+    "csum": 156,
+    "offset": 131
+  },
+  {
+    "nfl_id": 41233,
+    "play_id": 1839,
+    "n": 32,
+    "csum": 188,
+    "offset": 156
+  },
+  {
+    "nfl_id": 41233,
+    "play_id": 2077,
+    "n": 21,
+    "csum": 209,
+    "offset": 188
+  },
+  {
+    "nfl_id": 41233,
+    "play_id": 2102,
+    "n": 31,
+    "csum": 240,
+    "offset": 209
+  },
+  {
+    "nfl_id": 41233,
+    "play_id": 2154,
+    "n": 25,
+    "csum": 265,
+    "offset": 240
+  },
+  {
+    "nfl_id": 41233,
+    "play_id": 2177,
+    "n": 33,
+    "csum": 298,
+    "offset": 265
+  },
+  {
+    "nfl_id": 41233,
+    "play_id": 2505,
+    "n": 15,
+    "csum": 313,
+    "offset": 298
+  },
+  {
+    "nfl_id": 41233,
+    "play_id": 2607,
+    "n": 23,
+    "csum": 336,
+    "offset": 313
+  },
+  {
+    "nfl_id": 41233,
+    "play_id": 2701,
+    "n": 15,
+    "csum": 351,
+    "offset": 336
+  },
+  {
+    "nfl_id": 41233,
+    "play_id": 2724,
+    "n": 29,
+    "csum": 380,
+    "offset": 351
+  },
+  {
+    "nfl_id": 41233,
+    "play_id": 2749,
+    "n": 39,
+    "csum": 419,
+    "offset": 380
+  },
+  {
+    "nfl_id": 41233,
+    "play_id": 2827,
+    "n": 24,
+    "csum": 443,
+    "offset": 419
+  },
+  {
+    "nfl_id": 41233,
+    "play_id": 2850,
+    "n": 35,
+    "csum": 478,
+    "offset": 443
+  },
+  {
+    "nfl_id": 41233,
+    "play_id": 3429,
+    "n": 29,
+    "csum": 507,
+    "offset": 478
+  },
+  {
+    "nfl_id": 41233,
+    "play_id": 3690,
+    "n": 18,
+    "csum": 525,
+    "offset": 507
+  },
+  {
+    "nfl_id": 41233,
+    "play_id": 3849,
+    "n": 22,
+    "csum": 547,
+    "offset": 525
+  },
+  {
+    "nfl_id": 41233,
+    "play_id": 3874,
+    "n": 17,
+    "csum": 564,
+    "offset": 547
+  },
+  {
+    "nfl_id": 41233,
+    "play_id": 4122,
+    "n": 9,
+    "csum": 573,
+    "offset": 564
+  },
+  {
+    "nfl_id": 41233,
+    "play_id": 4249,
+    "n": 21,
+    "csum": 594,
+    "offset": 573
+  },
+  {
+    "nfl_id": 41282,
+    "play_id": 103,
+    "n": 12,
+    "csum": 12,
+    "offset": 0
+  },
+  {
+    "nfl_id": 41282,
+    "play_id": 306,
+    "n": 18,
+    "csum": 30,
+    "offset": 12
+  },
+  {
+    "nfl_id": 41282,
+    "play_id": 861,
+    "n": 22,
+    "csum": 52,
+    "offset": 30
+  },
+  {
+    "nfl_id": 41282,
+    "play_id": 953,
+    "n": 34,
+    "csum": 86,
+    "offset": 52
+  },
+  {
+    "nfl_id": 41282,
+    "play_id": 987,
+    "n": 20,
+    "csum": 106,
+    "offset": 86
+  },
+  {
+    "nfl_id": 41282,
+    "play_id": 1017,
+    "n": 32,
+    "csum": 138,
+    "offset": 106
+  },
+  {
+    "nfl_id": 41282,
+    "play_id": 1097,
+    "n": 43,
+    "csum": 181,
+    "offset": 138
+  },
+  {
+    "nfl_id": 41282,
+    "play_id": 1507,
+    "n": 19,
+    "csum": 200,
+    "offset": 181
+  },
+  {
+    "nfl_id": 41282,
+    "play_id": 1561,
+    "n": 18,
+    "csum": 218,
+    "offset": 200
+  },
+  {
+    "nfl_id": 41282,
+    "play_id": 1621,
+    "n": 18,
+    "csum": 236,
+    "offset": 218
+  },
+  {
+    "nfl_id": 41282,
+    "play_id": 2430,
+    "n": 43,
+    "csum": 279,
+    "offset": 236
+  },
+  {
+    "nfl_id": 41282,
+    "play_id": 2499,
+    "n": 28,
+    "csum": 307,
+    "offset": 279
+  },
+  {
+    "nfl_id": 41282,
+    "play_id": 2546,
+    "n": 38,
+    "csum": 345,
+    "offset": 307
+  },
+  {
+    "nfl_id": 41282,
+    "play_id": 2609,
+    "n": 34,
+    "csum": 379,
+    "offset": 345
+  },
+  {
+    "nfl_id": 41282,
+    "play_id": 2634,
+    "n": 25,
+    "csum": 404,
+    "offset": 379
+  },
+  {
+    "nfl_id": 41282,
+    "play_id": 2826,
+    "n": 36,
+    "csum": 440,
+    "offset": 404
+  },
+  {
+    "nfl_id": 41282,
+    "play_id": 2849,
+    "n": 52,
+    "csum": 492,
+    "offset": 440
+  },
+  {
+    "nfl_id": 41282,
+    "play_id": 3361,
+    "n": 38,
+    "csum": 530,
+    "offset": 492
+  },
+  {
+    "nfl_id": 41282,
+    "play_id": 3386,
+    "n": 35,
+    "csum": 565,
+    "offset": 530
+  },
+  {
+    "nfl_id": 41282,
+    "play_id": 3418,
+    "n": 28,
+    "csum": 593,
+    "offset": 565
+  },
+  {
+    "nfl_id": 41282,
+    "play_id": 3454,
+    "n": 22,
+    "csum": 615,
+    "offset": 593
+  },
+  {
+    "nfl_id": 41282,
+    "play_id": 3501,
+    "n": 21,
+    "csum": 636,
+    "offset": 615
+  },
+  {
+    "nfl_id": 41282,
+    "play_id": 3754,
+    "n": 26,
+    "csum": 662,
+    "offset": 636
+  },
+  {
+    "nfl_id": 41290,
+    "play_id": 55,
+    "n": 29,
+    "csum": 29,
+    "offset": 0
+  },
+  {
+    "nfl_id": 41290,
+    "play_id": 431,
+    "n": 35,
+    "csum": 64,
+    "offset": 29
+  },
+  {
+    "nfl_id": 41290,
+    "play_id": 775,
+    "n": 33,
+    "csum": 97,
+    "offset": 64
+  },
+  {
+    "nfl_id": 41290,
+    "play_id": 822,
+    "n": 30,
+    "csum": 127,
+    "offset": 97
+  },
+  {
+    "nfl_id": 41290,
+    "play_id": 1207,
+    "n": 34,
+    "csum": 161,
+    "offset": 127
+  },
+  {
+    "nfl_id": 41290,
+    "play_id": 2156,
+    "n": 21,
+    "csum": 182,
+    "offset": 161
+  },
+  {
+    "nfl_id": 41290,
+    "play_id": 2188,
+    "n": 29,
+    "csum": 211,
+    "offset": 182
+  },
+  {
+    "nfl_id": 41290,
+    "play_id": 2274,
+    "n": 32,
+    "csum": 243,
+    "offset": 211
+  },
+  {
+    "nfl_id": 41290,
+    "play_id": 2299,
+    "n": 26,
+    "csum": 269,
+    "offset": 243
+  },
+  {
+    "nfl_id": 41290,
+    "play_id": 2380,
+    "n": 20,
+    "csum": 289,
+    "offset": 269
+  },
+  {
+    "nfl_id": 41290,
+    "play_id": 2415,
+    "n": 17,
+    "csum": 306,
+    "offset": 289
+  },
+  {
+    "nfl_id": 41290,
+    "play_id": 2470,
+    "n": 26,
+    "csum": 332,
+    "offset": 306
+  },
+  {
+    "nfl_id": 41290,
+    "play_id": 2529,
+    "n": 21,
+    "csum": 353,
+    "offset": 332
+  },
+  {
+    "nfl_id": 41290,
+    "play_id": 2736,
+    "n": 22,
+    "csum": 375,
+    "offset": 353
+  },
+  {
+    "nfl_id": 41290,
+    "play_id": 3078,
+    "n": 27,
+    "csum": 402,
+    "offset": 375
+  },
+  {
+    "nfl_id": 41290,
+    "play_id": 3137,
+    "n": 28,
+    "csum": 430,
+    "offset": 402
+  },
+  {
+    "nfl_id": 41290,
+    "play_id": 3234,
+    "n": 28,
+    "csum": 458,
+    "offset": 430
+  },
+  {
+    "nfl_id": 41290,
+    "play_id": 3295,
+    "n": 21,
+    "csum": 479,
+    "offset": 458
+  },
+  {
+    "nfl_id": 41290,
+    "play_id": 3422,
+    "n": 19,
+    "csum": 498,
+    "offset": 479
+  },
+  {
+    "nfl_id": 41290,
+    "play_id": 3447,
+    "n": 38,
+    "csum": 536,
+    "offset": 498
+  },
+  {
+    "nfl_id": 41290,
+    "play_id": 3472,
+    "n": 28,
+    "csum": 564,
+    "offset": 536
+  },
+  {
+    "nfl_id": 41290,
+    "play_id": 3722,
+    "n": 20,
+    "csum": 584,
+    "offset": 564
+  },
+  {
+    "nfl_id": 41290,
+    "play_id": 3754,
+    "n": 32,
+    "csum": 616,
+    "offset": 584
+  },
+  {
+    "nfl_id": 41290,
+    "play_id": 3779,
+    "n": 28,
+    "csum": 644,
+    "offset": 616
+  },
+  {
+    "nfl_id": 41290,
+    "play_id": 3804,
+    "n": 36,
+    "csum": 680,
+    "offset": 644
+  },
+  {
+    "nfl_id": 41290,
+    "play_id": 3829,
+    "n": 49,
+    "csum": 729,
+    "offset": 680
+  },
+  {
+    "nfl_id": 41290,
+    "play_id": 3881,
+    "n": 33,
+    "csum": 762,
+    "offset": 729
+  },
+  {
+    "nfl_id": 41290,
+    "play_id": 4163,
+    "n": 27,
+    "csum": 789,
+    "offset": 762
+  },
+  {
+    "nfl_id": 41290,
+    "play_id": 4186,
+    "n": 32,
+    "csum": 821,
+    "offset": 789
+  },
+  {
+    "nfl_id": 41290,
+    "play_id": 4211,
+    "n": 27,
+    "csum": 848,
+    "offset": 821
+  },
+  {
+    "nfl_id": 41290,
+    "play_id": 4270,
+    "n": 28,
+    "csum": 876,
+    "offset": 848
+  },
+  {
+    "nfl_id": 41290,
+    "play_id": 4315,
+    "n": 32,
+    "csum": 908,
+    "offset": 876
+  },
+  {
+    "nfl_id": 41290,
+    "play_id": 4340,
+    "n": 62,
+    "csum": 970,
+    "offset": 908
+  },
+  {
+    "nfl_id": 41290,
+    "play_id": 4395,
+    "n": 31,
+    "csum": 1001,
+    "offset": 970
+  },
+  {
+    "nfl_id": 41290,
+    "play_id": 4420,
+    "n": 32,
+    "csum": 1033,
+    "offset": 1001
+  },
+  {
+    "nfl_id": 42489,
+    "play_id": 58,
+    "n": 19,
+    "csum": 19,
+    "offset": 0
+  },
+  {
+    "nfl_id": 42489,
+    "play_id": 152,
+    "n": 16,
+    "csum": 35,
+    "offset": 19
+  },
+  {
+    "nfl_id": 42489,
+    "play_id": 482,
+    "n": 34,
+    "csum": 69,
+    "offset": 35
+  },
+  {
+    "nfl_id": 42489,
+    "play_id": 534,
+    "n": 22,
+    "csum": 91,
+    "offset": 69
+  },
+  {
+    "nfl_id": 42489,
+    "play_id": 559,
+    "n": 20,
+    "csum": 111,
+    "offset": 91
+  },
+  {
+    "nfl_id": 42489,
+    "play_id": 629,
+    "n": 44,
+    "csum": 155,
+    "offset": 111
+  },
+  {
+    "nfl_id": 42489,
+    "play_id": 962,
+    "n": 24,
+    "csum": 179,
+    "offset": 155
+  },
+  {
+    "nfl_id": 42489,
+    "play_id": 993,
+    "n": 47,
+    "csum": 226,
+    "offset": 179
+  },
+  {
+    "nfl_id": 42489,
+    "play_id": 1186,
+    "n": 26,
+    "csum": 252,
+    "offset": 226
+  },
+  {
+    "nfl_id": 42489,
+    "play_id": 1356,
+    "n": 36,
+    "csum": 288,
+    "offset": 252
+  },
+  {
+    "nfl_id": 42489,
+    "play_id": 1589,
+    "n": 20,
+    "csum": 308,
+    "offset": 288
+  },
+  {
+    "nfl_id": 42489,
+    "play_id": 1664,
+    "n": 18,
+    "csum": 326,
+    "offset": 308
+  },
+  {
+    "nfl_id": 42489,
+    "play_id": 1701,
+    "n": 26,
+    "csum": 352,
+    "offset": 326
+  },
+  {
+    "nfl_id": 42489,
+    "play_id": 1775,
+    "n": 32,
+    "csum": 384,
+    "offset": 352
+  },
+  {
+    "nfl_id": 42489,
+    "play_id": 2281,
+    "n": 41,
+    "csum": 425,
+    "offset": 384
+  },
+  {
+    "nfl_id": 42489,
+    "play_id": 2306,
+    "n": 17,
+    "csum": 442,
+    "offset": 425
+  },
+  {
+    "nfl_id": 42489,
+    "play_id": 2383,
+    "n": 36,
+    "csum": 478,
+    "offset": 442
+  },
+  {
+    "nfl_id": 42489,
+    "play_id": 2428,
+    "n": 33,
+    "csum": 511,
+    "offset": 478
+  },
+  {
+    "nfl_id": 42489,
+    "play_id": 2655,
+    "n": 18,
+    "csum": 529,
+    "offset": 511
+  },
+  {
+    "nfl_id": 42489,
+    "play_id": 2844,
+    "n": 23,
+    "csum": 552,
+    "offset": 529
+  },
+  {
+    "nfl_id": 42489,
+    "play_id": 2916,
+    "n": 18,
+    "csum": 570,
+    "offset": 552
+  },
+  {
+    "nfl_id": 42489,
+    "play_id": 2941,
+    "n": 26,
+    "csum": 596,
+    "offset": 570
+  },
+  {
+    "nfl_id": 42489,
+    "play_id": 3015,
+    "n": 25,
+    "csum": 621,
+    "offset": 596
+  },
+  {
+    "nfl_id": 42489,
+    "play_id": 3593,
+    "n": 18,
+    "csum": 639,
+    "offset": 621
+  },
+  {
+    "nfl_id": 42489,
+    "play_id": 3618,
+    "n": 31,
+    "csum": 670,
+    "offset": 639
+  },
+  {
+    "nfl_id": 42489,
+    "play_id": 3684,
+    "n": 29,
+    "csum": 699,
+    "offset": 670
+  },
+  {
+    "nfl_id": 42489,
+    "play_id": 3716,
+    "n": 18,
+    "csum": 717,
+    "offset": 699
+  },
+  {
+    "nfl_id": 42489,
+    "play_id": 3942,
+    "n": 23,
+    "csum": 740,
+    "offset": 717
+  },
+  {
+    "nfl_id": 42489,
+    "play_id": 3987,
+    "n": 33,
+    "csum": 773,
+    "offset": 740
+  },
+  {
+    "nfl_id": 42718,
+    "play_id": 121,
+    "n": 18,
+    "csum": 18,
+    "offset": 0
+  },
+  {
+    "nfl_id": 42718,
+    "play_id": 607,
+    "n": 32,
+    "csum": 50,
+    "offset": 18
+  },
+  {
+    "nfl_id": 42718,
+    "play_id": 630,
+    "n": 23,
+    "csum": 73,
+    "offset": 50
+  },
+  {
+    "nfl_id": 42718,
+    "play_id": 706,
+    "n": 39,
+    "csum": 112,
+    "offset": 73
+  },
+  {
+    "nfl_id": 42718,
+    "play_id": 1040,
+    "n": 28,
+    "csum": 140,
+    "offset": 112
+  },
+  {
+    "nfl_id": 42718,
+    "play_id": 1072,
+    "n": 32,
+    "csum": 172,
+    "offset": 140
+  },
+  {
+    "nfl_id": 42718,
+    "play_id": 1119,
+    "n": 33,
+    "csum": 205,
+    "offset": 172
+  },
+  {
+    "nfl_id": 42718,
+    "play_id": 1249,
+    "n": 17,
+    "csum": 222,
+    "offset": 205
+  },
+  {
+    "nfl_id": 42718,
+    "play_id": 1714,
+    "n": 19,
+    "csum": 241,
+    "offset": 222
+  },
+  {
+    "nfl_id": 42718,
+    "play_id": 1761,
+    "n": 42,
+    "csum": 283,
+    "offset": 241
+  },
+  {
+    "nfl_id": 42718,
+    "play_id": 1810,
+    "n": 18,
+    "csum": 301,
+    "offset": 283
+  },
+  {
+    "nfl_id": 42718,
+    "play_id": 1858,
+    "n": 25,
+    "csum": 326,
+    "offset": 301
+  },
+  {
+    "nfl_id": 42718,
+    "play_id": 1888,
+    "n": 29,
+    "csum": 355,
+    "offset": 326
+  },
+  {
+    "nfl_id": 42718,
+    "play_id": 2002,
+    "n": 18,
+    "csum": 373,
+    "offset": 355
+  },
+  {
+    "nfl_id": 42718,
+    "play_id": 2027,
+    "n": 29,
+    "csum": 402,
+    "offset": 373
+  },
+  {
+    "nfl_id": 42718,
+    "play_id": 2372,
+    "n": 39,
+    "csum": 441,
+    "offset": 402
+  },
+  {
+    "nfl_id": 42718,
+    "play_id": 2930,
+    "n": 22,
+    "csum": 463,
+    "offset": 441
+  },
+  {
+    "nfl_id": 42718,
+    "play_id": 2982,
+    "n": 19,
+    "csum": 482,
+    "offset": 463
+  },
+  {
+    "nfl_id": 42718,
+    "play_id": 3198,
+    "n": 26,
+    "csum": 508,
+    "offset": 482
+  },
+  {
+    "nfl_id": 42718,
+    "play_id": 3803,
+    "n": 20,
+    "csum": 528,
+    "offset": 508
+  },
+  {
+    "nfl_id": 42718,
+    "play_id": 3826,
+    "n": 16,
+    "csum": 544,
+    "offset": 528
+  },
+  {
+    "nfl_id": 42718,
+    "play_id": 4426,
+    "n": 38,
+    "csum": 582,
+    "offset": 544
+  },
+  {
+    "nfl_id": 42718,
+    "play_id": 4473,
+    "n": 25,
+    "csum": 607,
+    "offset": 582
+  },
+  {
+    "nfl_id": 42718,
+    "play_id": 4498,
+    "n": 40,
+    "csum": 647,
+    "offset": 607
+  },
+  {
+    "nfl_id": 42718,
+    "play_id": 4528,
+    "n": 18,
+    "csum": 665,
+    "offset": 647
+  },
+  {
+    "nfl_id": 42718,
+    "play_id": 4558,
+    "n": 14,
+    "csum": 679,
+    "offset": 665
+  },
+  {
+    "nfl_id": 43324,
+    "play_id": 515,
+    "n": 30,
+    "csum": 30,
+    "offset": 0
+  },
+  {
+    "nfl_id": 43324,
+    "play_id": 614,
+    "n": 22,
+    "csum": 52,
+    "offset": 30
+  },
+  {
+    "nfl_id": 43324,
+    "play_id": 952,
+    "n": 26,
+    "csum": 78,
+    "offset": 52
+  },
+  {
+    "nfl_id": 43324,
+    "play_id": 1224,
+    "n": 21,
+    "csum": 99,
+    "offset": 78
+  },
+  {
+    "nfl_id": 43324,
+    "play_id": 1418,
+    "n": 21,
+    "csum": 120,
+    "offset": 99
+  },
+  {
+    "nfl_id": 43324,
+    "play_id": 1443,
+    "n": 27,
+    "csum": 147,
+    "offset": 120
+  },
+  {
+    "nfl_id": 43324,
+    "play_id": 1661,
+    "n": 35,
+    "csum": 182,
+    "offset": 147
+  },
+  {
+    "nfl_id": 43324,
+    "play_id": 1686,
+    "n": 29,
+    "csum": 211,
+    "offset": 182
+  },
+  {
+    "nfl_id": 43324,
+    "play_id": 1734,
+    "n": 23,
+    "csum": 234,
+    "offset": 211
+  },
+  {
+    "nfl_id": 43324,
+    "play_id": 1839,
+    "n": 23,
+    "csum": 257,
+    "offset": 234
+  },
+  {
+    "nfl_id": 43324,
+    "play_id": 2093,
+    "n": 22,
+    "csum": 279,
+    "offset": 257
+  },
+  {
+    "nfl_id": 43324,
+    "play_id": 2125,
+    "n": 24,
+    "csum": 303,
+    "offset": 279
+  },
+  {
+    "nfl_id": 43324,
+    "play_id": 2196,
+    "n": 34,
+    "csum": 337,
+    "offset": 303
+  },
+  {
+    "nfl_id": 43324,
+    "play_id": 2363,
+    "n": 32,
+    "csum": 369,
+    "offset": 337
+  },
+  {
+    "nfl_id": 43324,
+    "play_id": 2809,
+    "n": 30,
+    "csum": 399,
+    "offset": 369
+  },
+  {
+    "nfl_id": 43324,
+    "play_id": 2834,
+    "n": 24,
+    "csum": 423,
+    "offset": 399
+  },
+  {
+    "nfl_id": 43324,
+    "play_id": 3455,
+    "n": 29,
+    "csum": 452,
+    "offset": 423
+  },
+  {
+    "nfl_id": 43324,
+    "play_id": 3491,
+    "n": 30,
+    "csum": 482,
+    "offset": 452
+  },
+  {
+    "nfl_id": 43324,
+    "play_id": 3541,
+    "n": 15,
+    "csum": 497,
+    "offset": 482
+  },
+  {
+    "nfl_id": 43324,
+    "play_id": 3976,
+    "n": 28,
+    "csum": 525,
+    "offset": 497
+  },
+  {
+    "nfl_id": 43324,
+    "play_id": 4046,
+    "n": 28,
+    "csum": 553,
+    "offset": 525
+  },
+  {
+    "nfl_id": 43324,
+    "play_id": 4071,
+    "n": 33,
+    "csum": 586,
+    "offset": 553
+  },
+  {
+    "nfl_id": 43324,
+    "play_id": 4270,
+    "n": 35,
+    "csum": 621,
+    "offset": 586
+  },
+  {
+    "nfl_id": 43324,
+    "play_id": 4317,
+    "n": 36,
+    "csum": 657,
+    "offset": 621
+  },
+  {
+    "nfl_id": 43324,
+    "play_id": 4457,
+    "n": 19,
+    "csum": 676,
+    "offset": 657
+  },
+  {
+    "nfl_id": 43324,
+    "play_id": 4485,
+    "n": 23,
+    "csum": 699,
+    "offset": 676
+  },
+  {
+    "nfl_id": 43324,
+    "play_id": 4666,
+    "n": 27,
+    "csum": 726,
+    "offset": 699
+  },
+  {
+    "nfl_id": 43344,
+    "play_id": 110,
+    "n": 23,
+    "csum": 23,
+    "offset": 0
+  },
+  {
+    "nfl_id": 43344,
+    "play_id": 444,
+    "n": 18,
+    "csum": 41,
+    "offset": 23
+  },
+  {
+    "nfl_id": 43344,
+    "play_id": 767,
+    "n": 17,
+    "csum": 58,
+    "offset": 41
+  },
+  {
+    "nfl_id": 43344,
+    "play_id": 1048,
+    "n": 25,
+    "csum": 83,
+    "offset": 58
+  },
+  {
+    "nfl_id": 43344,
+    "play_id": 1071,
+    "n": 24,
+    "csum": 107,
+    "offset": 83
+  },
+  {
+    "nfl_id": 43344,
+    "play_id": 1412,
+    "n": 24,
+    "csum": 131,
+    "offset": 107
+  },
+  {
+    "nfl_id": 43344,
+    "play_id": 1944,
+    "n": 49,
+    "csum": 180,
+    "offset": 131
+  },
+  {
+    "nfl_id": 43344,
+    "play_id": 1974,
+    "n": 25,
+    "csum": 205,
+    "offset": 180
+  },
+  {
+    "nfl_id": 43344,
+    "play_id": 2517,
+    "n": 19,
+    "csum": 224,
+    "offset": 205
+  },
+  {
+    "nfl_id": 43344,
+    "play_id": 2620,
+    "n": 50,
+    "csum": 274,
+    "offset": 224
+  },
+  {
+    "nfl_id": 43344,
+    "play_id": 2847,
+    "n": 28,
+    "csum": 302,
+    "offset": 274
+  },
+  {
+    "nfl_id": 43344,
+    "play_id": 2872,
+    "n": 17,
+    "csum": 319,
+    "offset": 302
+  },
+  {
+    "nfl_id": 43344,
+    "play_id": 2942,
+    "n": 23,
+    "csum": 342,
+    "offset": 319
+  },
+  {
+    "nfl_id": 43344,
+    "play_id": 3253,
+    "n": 23,
+    "csum": 365,
+    "offset": 342
+  },
+  {
+    "nfl_id": 43344,
+    "play_id": 3314,
+    "n": 25,
+    "csum": 390,
+    "offset": 365
+  },
+  {
+    "nfl_id": 43344,
+    "play_id": 3337,
+    "n": 36,
+    "csum": 426,
+    "offset": 390
+  },
+  {
+    "nfl_id": 43344,
+    "play_id": 3571,
+    "n": 21,
+    "csum": 447,
+    "offset": 426
+  },
+  {
+    "nfl_id": 43344,
+    "play_id": 3594,
+    "n": 22,
+    "csum": 469,
+    "offset": 447
+  },
+  {
+    "nfl_id": 43344,
+    "play_id": 3617,
+    "n": 43,
+    "csum": 512,
+    "offset": 469
+  },
+  {
+    "nfl_id": 43344,
+    "play_id": 3787,
+    "n": 19,
+    "csum": 531,
+    "offset": 512
+  },
+  {
+    "nfl_id": 43344,
+    "play_id": 3812,
+    "n": 26,
+    "csum": 557,
+    "offset": 531
+  },
+  {
+    "nfl_id": 43344,
+    "play_id": 3835,
+    "n": 20,
+    "csum": 577,
+    "offset": 557
+  },
+  {
+    "nfl_id": 43344,
+    "play_id": 4036,
+    "n": 26,
+    "csum": 603,
+    "offset": 577
+  },
+  {
+    "nfl_id": 43454,
+    "play_id": 121,
+    "n": 18,
+    "csum": 18,
+    "offset": 0
+  },
+  {
+    "nfl_id": 43454,
+    "play_id": 607,
+    "n": 32,
+    "csum": 50,
+    "offset": 18
+  },
+  {
+    "nfl_id": 43454,
+    "play_id": 706,
+    "n": 39,
+    "csum": 89,
+    "offset": 50
+  },
+  {
+    "nfl_id": 43454,
+    "play_id": 767,
+    "n": 39,
+    "csum": 128,
+    "offset": 89
+  },
+  {
+    "nfl_id": 43454,
+    "play_id": 1040,
+    "n": 28,
+    "csum": 156,
+    "offset": 128
+  },
+  {
+    "nfl_id": 43454,
+    "play_id": 1072,
+    "n": 32,
+    "csum": 188,
+    "offset": 156
+  },
+  {
+    "nfl_id": 43454,
+    "play_id": 1249,
+    "n": 17,
+    "csum": 205,
+    "offset": 188
+  },
+  {
+    "nfl_id": 43454,
+    "play_id": 1513,
+    "n": 35,
+    "csum": 240,
+    "offset": 205
+  },
+  {
+    "nfl_id": 43454,
+    "play_id": 1761,
+    "n": 42,
+    "csum": 282,
+    "offset": 240
+  },
+  {
+    "nfl_id": 43454,
+    "play_id": 1835,
+    "n": 18,
+    "csum": 300,
+    "offset": 282
+  },
+  {
+    "nfl_id": 43454,
+    "play_id": 1858,
+    "n": 25,
+    "csum": 325,
+    "offset": 300
+  },
+  {
+    "nfl_id": 43454,
+    "play_id": 1888,
+    "n": 29,
+    "csum": 354,
+    "offset": 325
+  },
+  {
+    "nfl_id": 43454,
+    "play_id": 1940,
+    "n": 24,
+    "csum": 378,
+    "offset": 354
+  },
+  {
+    "nfl_id": 43454,
+    "play_id": 2002,
+    "n": 18,
+    "csum": 396,
+    "offset": 378
+  },
+  {
+    "nfl_id": 43454,
+    "play_id": 2930,
+    "n": 22,
+    "csum": 418,
+    "offset": 396
+  },
+  {
+    "nfl_id": 43454,
+    "play_id": 3029,
+    "n": 21,
+    "csum": 439,
+    "offset": 418
+  },
+  {
+    "nfl_id": 43454,
+    "play_id": 3064,
+    "n": 30,
+    "csum": 469,
+    "offset": 439
+  },
+  {
+    "nfl_id": 43454,
+    "play_id": 3198,
+    "n": 26,
+    "csum": 495,
+    "offset": 469
+  },
+  {
+    "nfl_id": 43454,
+    "play_id": 3640,
+    "n": 47,
+    "csum": 542,
+    "offset": 495
+  },
+  {
+    "nfl_id": 43454,
+    "play_id": 3701,
+    "n": 29,
+    "csum": 571,
+    "offset": 542
+  },
+  {
+    "nfl_id": 43454,
+    "play_id": 3803,
+    "n": 20,
+    "csum": 591,
+    "offset": 571
+  },
+  {
+    "nfl_id": 43454,
+    "play_id": 3826,
+    "n": 16,
+    "csum": 607,
+    "offset": 591
+  },
+  {
+    "nfl_id": 43454,
+    "play_id": 4321,
+    "n": 19,
+    "csum": 626,
+    "offset": 607
+  },
+  {
+    "nfl_id": 43454,
+    "play_id": 4426,
+    "n": 38,
+    "csum": 664,
+    "offset": 626
+  },
+  {
+    "nfl_id": 43454,
+    "play_id": 4498,
+    "n": 40,
+    "csum": 704,
+    "offset": 664
+  },
+  {
+    "nfl_id": 43454,
+    "play_id": 4528,
+    "n": 18,
+    "csum": 722,
+    "offset": 704
+  },
+  {
+    "nfl_id": 43454,
+    "play_id": 4558,
+    "n": 14,
+    "csum": 736,
+    "offset": 722
+  },
+  {
+    "nfl_id": 44835,
+    "play_id": 143,
+    "n": 22,
+    "csum": 22,
+    "offset": 0
+  },
+  {
+    "nfl_id": 44835,
+    "play_id": 166,
+    "n": 18,
+    "csum": 40,
+    "offset": 22
+  },
+  {
+    "nfl_id": 44835,
+    "play_id": 191,
+    "n": 23,
+    "csum": 63,
+    "offset": 40
+  },
+  {
+    "nfl_id": 44835,
+    "play_id": 358,
+    "n": 26,
+    "csum": 89,
+    "offset": 63
+  },
+  {
+    "nfl_id": 44835,
+    "play_id": 529,
+    "n": 74,
+    "csum": 163,
+    "offset": 89
+  },
+  {
+    "nfl_id": 44835,
+    "play_id": 933,
+    "n": 34,
+    "csum": 197,
+    "offset": 163
+  },
+  {
+    "nfl_id": 44835,
+    "play_id": 1171,
+    "n": 31,
+    "csum": 228,
+    "offset": 197
+  },
+  {
+    "nfl_id": 44835,
+    "play_id": 1649,
+    "n": 22,
+    "csum": 250,
+    "offset": 228
+  },
+  {
+    "nfl_id": 44835,
+    "play_id": 1929,
+    "n": 25,
+    "csum": 275,
+    "offset": 250
+  },
+  {
+    "nfl_id": 44835,
+    "play_id": 1954,
+    "n": 16,
+    "csum": 291,
+    "offset": 275
+  },
+  {
+    "nfl_id": 44835,
+    "play_id": 2204,
+    "n": 25,
+    "csum": 316,
+    "offset": 291
+  },
+  {
+    "nfl_id": 44835,
+    "play_id": 2227,
+    "n": 28,
+    "csum": 344,
+    "offset": 316
+  },
+  {
+    "nfl_id": 44835,
+    "play_id": 2519,
+    "n": 17,
+    "csum": 361,
+    "offset": 344
+  },
+  {
+    "nfl_id": 44835,
+    "play_id": 2571,
+    "n": 17,
+    "csum": 378,
+    "offset": 361
+  },
+  {
+    "nfl_id": 44835,
+    "play_id": 2608,
+    "n": 24,
+    "csum": 402,
+    "offset": 378
+  },
+  {
+    "nfl_id": 44835,
+    "play_id": 2638,
+    "n": 17,
+    "csum": 419,
+    "offset": 402
+  },
+  {
+    "nfl_id": 44835,
+    "play_id": 2902,
+    "n": 25,
+    "csum": 444,
+    "offset": 419
+  },
+  {
+    "nfl_id": 44835,
+    "play_id": 3202,
+    "n": 27,
+    "csum": 471,
+    "offset": 444
+  },
+  {
+    "nfl_id": 44835,
+    "play_id": 3750,
+    "n": 15,
+    "csum": 486,
+    "offset": 471
+  },
+  {
+    "nfl_id": 44835,
+    "play_id": 3797,
+    "n": 27,
+    "csum": 513,
+    "offset": 486
+  },
+  {
+    "nfl_id": 44835,
+    "play_id": 3820,
+    "n": 31,
+    "csum": 544,
+    "offset": 513
+  },
+  {
+    "nfl_id": 44835,
+    "play_id": 3845,
+    "n": 26,
+    "csum": 570,
+    "offset": 544
+  },
+  {
+    "nfl_id": 44835,
+    "play_id": 4047,
+    "n": 40,
+    "csum": 610,
+    "offset": 570
+  },
+  {
+    "nfl_id": 45052,
+    "play_id": 284,
+    "n": 18,
+    "csum": 18,
+    "offset": 0
+  },
+  {
+    "nfl_id": 45052,
+    "play_id": 1065,
+    "n": 34,
+    "csum": 52,
+    "offset": 18
+  },
+  {
+    "nfl_id": 45052,
+    "play_id": 1438,
+    "n": 43,
+    "csum": 95,
+    "offset": 52
+  },
+  {
+    "nfl_id": 45052,
+    "play_id": 1517,
+    "n": 30,
+    "csum": 125,
+    "offset": 95
+  },
+  {
+    "nfl_id": 45052,
+    "play_id": 1549,
+    "n": 18,
+    "csum": 143,
+    "offset": 125
+  },
+  {
+    "nfl_id": 45052,
+    "play_id": 1574,
+    "n": 25,
+    "csum": 168,
+    "offset": 143
+  },
+  {
+    "nfl_id": 45052,
+    "play_id": 1948,
+    "n": 27,
+    "csum": 195,
+    "offset": 168
+  },
+  {
+    "nfl_id": 45052,
+    "play_id": 1980,
+    "n": 21,
+    "csum": 216,
+    "offset": 195
+  },
+  {
+    "nfl_id": 45052,
+    "play_id": 2033,
+    "n": 29,
+    "csum": 245,
+    "offset": 216
+  },
+  {
+    "nfl_id": 45052,
+    "play_id": 2151,
+    "n": 27,
+    "csum": 272,
+    "offset": 245
+  },
+  {
+    "nfl_id": 45052,
+    "play_id": 2759,
+    "n": 30,
+    "csum": 302,
+    "offset": 272
+  },
+  {
+    "nfl_id": 45052,
+    "play_id": 3086,
+    "n": 21,
+    "csum": 323,
+    "offset": 302
+  },
+  {
+    "nfl_id": 45052,
+    "play_id": 3111,
+    "n": 25,
+    "csum": 348,
+    "offset": 323
+  },
+  {
+    "nfl_id": 45052,
+    "play_id": 3216,
+    "n": 48,
+    "csum": 396,
+    "offset": 348
+  },
+  {
+    "nfl_id": 45052,
+    "play_id": 3514,
+    "n": 24,
+    "csum": 420,
+    "offset": 396
+  },
+  {
+    "nfl_id": 45052,
+    "play_id": 3879,
+    "n": 25,
+    "csum": 445,
+    "offset": 420
+  },
+  {
+    "nfl_id": 45052,
+    "play_id": 3902,
+    "n": 24,
+    "csum": 469,
+    "offset": 445
+  },
+  {
+    "nfl_id": 45052,
+    "play_id": 4191,
+    "n": 33,
+    "csum": 502,
+    "offset": 469
+  },
+  {
+    "nfl_id": 45052,
+    "play_id": 4216,
+    "n": 29,
+    "csum": 531,
+    "offset": 502
+  },
+  {
+    "nfl_id": 45052,
+    "play_id": 4239,
+    "n": 27,
+    "csum": 558,
+    "offset": 531
+  },
+  {
+    "nfl_id": 45052,
+    "play_id": 4322,
+    "n": 25,
+    "csum": 583,
+    "offset": 558
+  },
+  {
+    "nfl_id": 45052,
+    "play_id": 4392,
+    "n": 22,
+    "csum": 605,
+    "offset": 583
+  },
+  {
+    "nfl_id": 45052,
+    "play_id": 4639,
+    "n": 17,
+    "csum": 622,
+    "offset": 605
+  },
+  {
+    "nfl_id": 45052,
+    "play_id": 4662,
+    "n": 39,
+    "csum": 661,
+    "offset": 622
+  },
+  {
+    "nfl_id": 45185,
+    "play_id": 614,
+    "n": 22,
+    "csum": 22,
+    "offset": 0
+  },
+  {
+    "nfl_id": 45185,
+    "play_id": 637,
+    "n": 25,
+    "csum": 47,
+    "offset": 22
+  },
+  {
+    "nfl_id": 45185,
+    "play_id": 952,
+    "n": 26,
+    "csum": 73,
+    "offset": 47
+  },
+  {
+    "nfl_id": 45185,
+    "play_id": 980,
+    "n": 51,
+    "csum": 124,
+    "offset": 73
+  },
+  {
+    "nfl_id": 45185,
+    "play_id": 1224,
+    "n": 21,
+    "csum": 145,
+    "offset": 124
+  },
+  {
+    "nfl_id": 45185,
+    "play_id": 1418,
+    "n": 21,
+    "csum": 166,
+    "offset": 145
+  },
+  {
+    "nfl_id": 45185,
+    "play_id": 1443,
+    "n": 27,
+    "csum": 193,
+    "offset": 166
+  },
+  {
+    "nfl_id": 45185,
+    "play_id": 1661,
+    "n": 35,
+    "csum": 228,
+    "offset": 193
+  },
+  {
+    "nfl_id": 45185,
+    "play_id": 1686,
+    "n": 29,
+    "csum": 257,
+    "offset": 228
+  },
+  {
+    "nfl_id": 45185,
+    "play_id": 1734,
+    "n": 23,
+    "csum": 280,
+    "offset": 257
+  },
+  {
+    "nfl_id": 45185,
+    "play_id": 1839,
+    "n": 23,
+    "csum": 303,
+    "offset": 280
+  },
+  {
+    "nfl_id": 45185,
+    "play_id": 2093,
+    "n": 22,
+    "csum": 325,
+    "offset": 303
+  },
+  {
+    "nfl_id": 45185,
+    "play_id": 2125,
+    "n": 24,
+    "csum": 349,
+    "offset": 325
+  },
+  {
+    "nfl_id": 45185,
+    "play_id": 2196,
+    "n": 34,
+    "csum": 383,
+    "offset": 349
+  },
+  {
+    "nfl_id": 45185,
+    "play_id": 2221,
+    "n": 28,
+    "csum": 411,
+    "offset": 383
+  },
+  {
+    "nfl_id": 45185,
+    "play_id": 2363,
+    "n": 32,
+    "csum": 443,
+    "offset": 411
+  },
+  {
+    "nfl_id": 45185,
+    "play_id": 2388,
+    "n": 23,
+    "csum": 466,
+    "offset": 443
+  },
+  {
+    "nfl_id": 45185,
+    "play_id": 2809,
+    "n": 30,
+    "csum": 496,
+    "offset": 466
+  },
+  {
+    "nfl_id": 45185,
+    "play_id": 2834,
+    "n": 24,
+    "csum": 520,
+    "offset": 496
+  },
+  {
+    "nfl_id": 45185,
+    "play_id": 2857,
+    "n": 23,
+    "csum": 543,
+    "offset": 520
+  },
+  {
+    "nfl_id": 45185,
+    "play_id": 3006,
+    "n": 37,
+    "csum": 580,
+    "offset": 543
+  },
+  {
+    "nfl_id": 45185,
+    "play_id": 3425,
+    "n": 13,
+    "csum": 593,
+    "offset": 580
+  },
+  {
+    "nfl_id": 45185,
+    "play_id": 3455,
+    "n": 29,
+    "csum": 622,
+    "offset": 593
+  },
+  {
+    "nfl_id": 45185,
+    "play_id": 3491,
+    "n": 30,
+    "csum": 652,
+    "offset": 622
+  },
+  {
+    "nfl_id": 45185,
+    "play_id": 3541,
+    "n": 15,
+    "csum": 667,
+    "offset": 652
+  },
+  {
+    "nfl_id": 45185,
+    "play_id": 3976,
+    "n": 28,
+    "csum": 695,
+    "offset": 667
+  },
+  {
+    "nfl_id": 45185,
+    "play_id": 4046,
+    "n": 28,
+    "csum": 723,
+    "offset": 695
+  },
+  {
+    "nfl_id": 45185,
+    "play_id": 4071,
+    "n": 33,
+    "csum": 756,
+    "offset": 723
+  },
+  {
+    "nfl_id": 45185,
+    "play_id": 4096,
+    "n": 25,
+    "csum": 781,
+    "offset": 756
+  },
+  {
+    "nfl_id": 45185,
+    "play_id": 4270,
+    "n": 35,
+    "csum": 816,
+    "offset": 781
+  },
+  {
+    "nfl_id": 45185,
+    "play_id": 4317,
+    "n": 36,
+    "csum": 852,
+    "offset": 816
+  },
+  {
+    "nfl_id": 45185,
+    "play_id": 4457,
+    "n": 19,
+    "csum": 871,
+    "offset": 852
+  },
+  {
+    "nfl_id": 45185,
+    "play_id": 4485,
+    "n": 23,
+    "csum": 894,
+    "offset": 871
+  },
+  {
+    "nfl_id": 45185,
+    "play_id": 4557,
+    "n": 33,
+    "csum": 927,
+    "offset": 894
+  },
+  {
+    "nfl_id": 45185,
+    "play_id": 4666,
+    "n": 27,
+    "csum": 954,
+    "offset": 927
+  },
+  {
+    "nfl_id": 46093,
+    "play_id": 125,
+    "n": 28,
+    "csum": 28,
+    "offset": 0
+  },
+  {
+    "nfl_id": 46093,
+    "play_id": 572,
+    "n": 41,
+    "csum": 69,
+    "offset": 28
+  },
+  {
+    "nfl_id": 46093,
+    "play_id": 619,
+    "n": 39,
+    "csum": 108,
+    "offset": 69
+  },
+  {
+    "nfl_id": 46093,
+    "play_id": 735,
+    "n": 43,
+    "csum": 151,
+    "offset": 108
+  },
+  {
+    "nfl_id": 46093,
+    "play_id": 1105,
+    "n": 22,
+    "csum": 173,
+    "offset": 151
+  },
+  {
+    "nfl_id": 46093,
+    "play_id": 1130,
+    "n": 20,
+    "csum": 193,
+    "offset": 173
+  },
+  {
+    "nfl_id": 46093,
+    "play_id": 1200,
+    "n": 30,
+    "csum": 223,
+    "offset": 193
+  },
+  {
+    "nfl_id": 46093,
+    "play_id": 1473,
+    "n": 34,
+    "csum": 257,
+    "offset": 223
+  },
+  {
+    "nfl_id": 46093,
+    "play_id": 1818,
+    "n": 34,
+    "csum": 291,
+    "offset": 257
+  },
+  {
+    "nfl_id": 46093,
+    "play_id": 2390,
+    "n": 37,
+    "csum": 328,
+    "offset": 291
+  },
+  {
+    "nfl_id": 46093,
+    "play_id": 2865,
+    "n": 32,
+    "csum": 360,
+    "offset": 328
+  },
+  {
+    "nfl_id": 46093,
+    "play_id": 2921,
+    "n": 23,
+    "csum": 383,
+    "offset": 360
+  },
+  {
+    "nfl_id": 46093,
+    "play_id": 3010,
+    "n": 27,
+    "csum": 410,
+    "offset": 383
+  },
+  {
+    "nfl_id": 46093,
+    "play_id": 3354,
+    "n": 33,
+    "csum": 443,
+    "offset": 410
+  },
+  {
+    "nfl_id": 46093,
+    "play_id": 3377,
+    "n": 37,
+    "csum": 480,
+    "offset": 443
+  },
+  {
+    "nfl_id": 46093,
+    "play_id": 3495,
+    "n": 31,
+    "csum": 511,
+    "offset": 480
+  },
+  {
+    "nfl_id": 46093,
+    "play_id": 3826,
+    "n": 21,
+    "csum": 532,
+    "offset": 511
+  },
+  {
+    "nfl_id": 46093,
+    "play_id": 3851,
+    "n": 27,
+    "csum": 559,
+    "offset": 532
+  },
+  {
+    "nfl_id": 46093,
+    "play_id": 3923,
+    "n": 35,
+    "csum": 594,
+    "offset": 559
+  },
+  {
+    "nfl_id": 46093,
+    "play_id": 3975,
+    "n": 21,
+    "csum": 615,
+    "offset": 594
+  },
+  {
+    "nfl_id": 46093,
+    "play_id": 3998,
+    "n": 23,
+    "csum": 638,
+    "offset": 615
+  },
+  {
+    "nfl_id": 46093,
+    "play_id": 4021,
+    "n": 26,
+    "csum": 664,
+    "offset": 638
+  },
+  {
+    "nfl_id": 46093,
+    "play_id": 4051,
+    "n": 33,
+    "csum": 697,
+    "offset": 664
+  },
+  {
+    "nfl_id": 46093,
+    "play_id": 4083,
+    "n": 20,
+    "csum": 717,
+    "offset": 697
+  },
+  {
+    "nfl_id": 46093,
+    "play_id": 4452,
+    "n": 34,
+    "csum": 751,
+    "offset": 717
+  },
+  {
+    "nfl_id": 46093,
+    "play_id": 4491,
+    "n": 37,
+    "csum": 788,
+    "offset": 751
+  },
+  {
+    "nfl_id": 46093,
+    "play_id": 4514,
+    "n": 32,
+    "csum": 820,
+    "offset": 788
+  },
+  {
+    "nfl_id": 46093,
+    "play_id": 4539,
+    "n": 30,
+    "csum": 850,
+    "offset": 820
+  },
+  {
+    "nfl_id": 46094,
+    "play_id": 185,
+    "n": 23,
+    "csum": 23,
+    "offset": 0
+  },
+  {
+    "nfl_id": 46094,
+    "play_id": 661,
+    "n": 29,
+    "csum": 52,
+    "offset": 23
+  },
+  {
+    "nfl_id": 46094,
+    "play_id": 842,
+    "n": 47,
+    "csum": 99,
+    "offset": 52
+  },
+  {
+    "nfl_id": 46094,
+    "play_id": 1193,
+    "n": 34,
+    "csum": 133,
+    "offset": 99
+  },
+  {
+    "nfl_id": 46094,
+    "play_id": 1240,
+    "n": 32,
+    "csum": 165,
+    "offset": 133
+  },
+  {
+    "nfl_id": 46094,
+    "play_id": 1300,
+    "n": 23,
+    "csum": 188,
+    "offset": 165
+  },
+  {
+    "nfl_id": 46094,
+    "play_id": 1325,
+    "n": 27,
+    "csum": 215,
+    "offset": 188
+  },
+  {
+    "nfl_id": 46094,
+    "play_id": 1382,
+    "n": 34,
+    "csum": 249,
+    "offset": 215
+  },
+  {
+    "nfl_id": 46094,
+    "play_id": 1429,
+    "n": 18,
+    "csum": 267,
+    "offset": 249
+  },
+  {
+    "nfl_id": 46094,
+    "play_id": 1697,
+    "n": 24,
+    "csum": 291,
+    "offset": 267
+  },
+  {
+    "nfl_id": 46094,
+    "play_id": 1720,
+    "n": 27,
+    "csum": 318,
+    "offset": 291
+  },
+  {
+    "nfl_id": 46094,
+    "play_id": 1743,
+    "n": 31,
+    "csum": 349,
+    "offset": 318
+  },
+  {
+    "nfl_id": 46094,
+    "play_id": 1972,
+    "n": 41,
+    "csum": 390,
+    "offset": 349
+  },
+  {
+    "nfl_id": 46094,
+    "play_id": 2580,
+    "n": 31,
+    "csum": 421,
+    "offset": 390
+  },
+  {
+    "nfl_id": 46094,
+    "play_id": 3078,
+    "n": 40,
+    "csum": 461,
+    "offset": 421
+  },
+  {
+    "nfl_id": 46094,
+    "play_id": 3369,
+    "n": 33,
+    "csum": 494,
+    "offset": 461
+  },
+  {
+    "nfl_id": 46094,
+    "play_id": 3421,
+    "n": 24,
+    "csum": 518,
+    "offset": 494
+  },
+  {
+    "nfl_id": 46094,
+    "play_id": 3886,
+    "n": 34,
+    "csum": 552,
+    "offset": 518
+  },
+  {
+    "nfl_id": 46094,
+    "play_id": 3916,
+    "n": 36,
+    "csum": 588,
+    "offset": 552
+  },
+  {
+    "nfl_id": 46094,
+    "play_id": 4107,
+    "n": 20,
+    "csum": 608,
+    "offset": 588
+  },
+  {
+    "nfl_id": 46095,
+    "play_id": 143,
+    "n": 22,
+    "csum": 22,
+    "offset": 0
+  },
+  {
+    "nfl_id": 46095,
+    "play_id": 166,
+    "n": 18,
+    "csum": 40,
+    "offset": 22
+  },
+  {
+    "nfl_id": 46095,
+    "play_id": 191,
+    "n": 23,
+    "csum": 63,
+    "offset": 40
+  },
+  {
+    "nfl_id": 46095,
+    "play_id": 358,
+    "n": 26,
+    "csum": 89,
+    "offset": 63
+  },
+  {
+    "nfl_id": 46095,
+    "play_id": 410,
+    "n": 32,
+    "csum": 121,
+    "offset": 89
+  },
+  {
+    "nfl_id": 46095,
+    "play_id": 529,
+    "n": 74,
+    "csum": 195,
+    "offset": 121
+  },
+  {
+    "nfl_id": 46095,
+    "play_id": 933,
+    "n": 34,
+    "csum": 229,
+    "offset": 195
+  },
+  {
+    "nfl_id": 46095,
+    "play_id": 1171,
+    "n": 31,
+    "csum": 260,
+    "offset": 229
+  },
+  {
+    "nfl_id": 46095,
+    "play_id": 1649,
+    "n": 22,
+    "csum": 282,
+    "offset": 260
+  },
+  {
+    "nfl_id": 46095,
+    "play_id": 1929,
+    "n": 25,
+    "csum": 307,
+    "offset": 282
+  },
+  {
+    "nfl_id": 46095,
+    "play_id": 1954,
+    "n": 16,
+    "csum": 323,
+    "offset": 307
+  },
+  {
+    "nfl_id": 46095,
+    "play_id": 2204,
+    "n": 25,
+    "csum": 348,
+    "offset": 323
+  },
+  {
+    "nfl_id": 46095,
+    "play_id": 2227,
+    "n": 28,
+    "csum": 376,
+    "offset": 348
+  },
+  {
+    "nfl_id": 46095,
+    "play_id": 2519,
+    "n": 17,
+    "csum": 393,
+    "offset": 376
+  },
+  {
+    "nfl_id": 46095,
+    "play_id": 2571,
+    "n": 17,
+    "csum": 410,
+    "offset": 393
+  },
+  {
+    "nfl_id": 46095,
+    "play_id": 2608,
+    "n": 24,
+    "csum": 434,
+    "offset": 410
+  },
+  {
+    "nfl_id": 46095,
+    "play_id": 2638,
+    "n": 17,
+    "csum": 451,
+    "offset": 434
+  },
+  {
+    "nfl_id": 46095,
+    "play_id": 2902,
+    "n": 25,
+    "csum": 476,
+    "offset": 451
+  },
+  {
+    "nfl_id": 46095,
+    "play_id": 3202,
+    "n": 27,
+    "csum": 503,
+    "offset": 476
+  },
+  {
+    "nfl_id": 46095,
+    "play_id": 3750,
+    "n": 15,
+    "csum": 518,
+    "offset": 503
+  },
+  {
+    "nfl_id": 46095,
+    "play_id": 3797,
+    "n": 27,
+    "csum": 545,
+    "offset": 518
+  },
+  {
+    "nfl_id": 46095,
+    "play_id": 3820,
+    "n": 31,
+    "csum": 576,
+    "offset": 545
+  },
+  {
+    "nfl_id": 46095,
+    "play_id": 3845,
+    "n": 26,
+    "csum": 602,
+    "offset": 576
+  },
+  {
+    "nfl_id": 46095,
+    "play_id": 4047,
+    "n": 40,
+    "csum": 642,
+    "offset": 602
+  },
+  {
+    "nfl_id": 46109,
+    "play_id": 417,
+    "n": 23,
+    "csum": 23,
+    "offset": 0
+  },
+  {
+    "nfl_id": 46109,
+    "play_id": 442,
+    "n": 32,
+    "csum": 55,
+    "offset": 23
+  },
+  {
+    "nfl_id": 46109,
+    "play_id": 570,
+    "n": 21,
+    "csum": 76,
+    "offset": 55
+  },
+  {
+    "nfl_id": 46109,
+    "play_id": 681,
+    "n": 35,
+    "csum": 111,
+    "offset": 76
+  },
+  {
+    "nfl_id": 46109,
+    "play_id": 750,
+    "n": 39,
+    "csum": 150,
+    "offset": 111
+  },
+  {
+    "nfl_id": 46109,
+    "play_id": 797,
+    "n": 54,
+    "csum": 204,
+    "offset": 150
+  },
+  {
+    "nfl_id": 46109,
+    "play_id": 1212,
+    "n": 15,
+    "csum": 219,
+    "offset": 204
+  },
+  {
+    "nfl_id": 46109,
+    "play_id": 1680,
+    "n": 23,
+    "csum": 242,
+    "offset": 219
+  },
+  {
+    "nfl_id": 46109,
+    "play_id": 1710,
+    "n": 18,
+    "csum": 260,
+    "offset": 242
+  },
+  {
+    "nfl_id": 46109,
+    "play_id": 1735,
+    "n": 29,
+    "csum": 289,
+    "offset": 260
+  },
+  {
+    "nfl_id": 46109,
+    "play_id": 1772,
+    "n": 27,
+    "csum": 316,
+    "offset": 289
+  },
+  {
+    "nfl_id": 46109,
+    "play_id": 1802,
+    "n": 25,
+    "csum": 341,
+    "offset": 316
+  },
+  {
+    "nfl_id": 46109,
+    "play_id": 1827,
+    "n": 21,
+    "csum": 362,
+    "offset": 341
+  },
+  {
+    "nfl_id": 46109,
+    "play_id": 1886,
+    "n": 20,
+    "csum": 382,
+    "offset": 362
+  },
+  {
+    "nfl_id": 46109,
+    "play_id": 1946,
+    "n": 50,
+    "csum": 432,
+    "offset": 382
+  },
+  {
+    "nfl_id": 46109,
+    "play_id": 2102,
+    "n": 33,
+    "csum": 465,
+    "offset": 432
+  },
+  {
+    "nfl_id": 46109,
+    "play_id": 2907,
+    "n": 24,
+    "csum": 489,
+    "offset": 465
+  },
+  {
+    "nfl_id": 46109,
+    "play_id": 2932,
+    "n": 21,
+    "csum": 510,
+    "offset": 489
+  },
+  {
+    "nfl_id": 46109,
+    "play_id": 3009,
+    "n": 22,
+    "csum": 532,
+    "offset": 510
+  },
+  {
+    "nfl_id": 46109,
+    "play_id": 3140,
+    "n": 42,
+    "csum": 574,
+    "offset": 532
+  },
+  {
+    "nfl_id": 46109,
+    "play_id": 3170,
+    "n": 17,
+    "csum": 591,
+    "offset": 574
+  },
+  {
+    "nfl_id": 46109,
+    "play_id": 3195,
+    "n": 50,
+    "csum": 641,
+    "offset": 591
+  },
+  {
+    "nfl_id": 46109,
+    "play_id": 3242,
+    "n": 36,
+    "csum": 677,
+    "offset": 641
+  },
+  {
+    "nfl_id": 46109,
+    "play_id": 3587,
+    "n": 30,
+    "csum": 707,
+    "offset": 677
+  },
+  {
+    "nfl_id": 46109,
+    "play_id": 3610,
+    "n": 38,
+    "csum": 745,
+    "offset": 707
+  },
+  {
+    "nfl_id": 46192,
+    "play_id": 121,
+    "n": 18,
+    "csum": 18,
+    "offset": 0
+  },
+  {
+    "nfl_id": 46192,
+    "play_id": 630,
+    "n": 23,
+    "csum": 41,
+    "offset": 18
+  },
+  {
+    "nfl_id": 46192,
+    "play_id": 706,
+    "n": 39,
+    "csum": 80,
+    "offset": 41
+  },
+  {
+    "nfl_id": 46192,
+    "play_id": 767,
+    "n": 39,
+    "csum": 119,
+    "offset": 80
+  },
+  {
+    "nfl_id": 46192,
+    "play_id": 1119,
+    "n": 33,
+    "csum": 152,
+    "offset": 119
+  },
+  {
+    "nfl_id": 46192,
+    "play_id": 1249,
+    "n": 17,
+    "csum": 169,
+    "offset": 152
+  },
+  {
+    "nfl_id": 46192,
+    "play_id": 1558,
+    "n": 22,
+    "csum": 191,
+    "offset": 169
+  },
+  {
+    "nfl_id": 46192,
+    "play_id": 1714,
+    "n": 19,
+    "csum": 210,
+    "offset": 191
+  },
+  {
+    "nfl_id": 46192,
+    "play_id": 1761,
+    "n": 42,
+    "csum": 252,
+    "offset": 210
+  },
+  {
+    "nfl_id": 46192,
+    "play_id": 1810,
+    "n": 18,
+    "csum": 270,
+    "offset": 252
+  },
+  {
+    "nfl_id": 46192,
+    "play_id": 1835,
+    "n": 18,
+    "csum": 288,
+    "offset": 270
+  },
+  {
+    "nfl_id": 46192,
+    "play_id": 1858,
+    "n": 25,
+    "csum": 313,
+    "offset": 288
+  },
+  {
+    "nfl_id": 46192,
+    "play_id": 1888,
+    "n": 29,
+    "csum": 342,
+    "offset": 313
+  },
+  {
+    "nfl_id": 46192,
+    "play_id": 1940,
+    "n": 24,
+    "csum": 366,
+    "offset": 342
+  },
+  {
+    "nfl_id": 46192,
+    "play_id": 2002,
+    "n": 18,
+    "csum": 384,
+    "offset": 366
+  },
+  {
+    "nfl_id": 46192,
+    "play_id": 2930,
+    "n": 22,
+    "csum": 406,
+    "offset": 384
+  },
+  {
+    "nfl_id": 46192,
+    "play_id": 2982,
+    "n": 19,
+    "csum": 425,
+    "offset": 406
+  },
+  {
+    "nfl_id": 46192,
+    "play_id": 3064,
+    "n": 30,
+    "csum": 455,
+    "offset": 425
+  },
+  {
+    "nfl_id": 46192,
+    "play_id": 3198,
+    "n": 26,
+    "csum": 481,
+    "offset": 455
+  },
+  {
+    "nfl_id": 46192,
+    "play_id": 3640,
+    "n": 47,
+    "csum": 528,
+    "offset": 481
+  },
+  {
+    "nfl_id": 46192,
+    "play_id": 3676,
+    "n": 15,
+    "csum": 543,
+    "offset": 528
+  },
+  {
+    "nfl_id": 46192,
+    "play_id": 3701,
+    "n": 29,
+    "csum": 572,
+    "offset": 543
+  },
+  {
+    "nfl_id": 46192,
+    "play_id": 3803,
+    "n": 20,
+    "csum": 592,
+    "offset": 572
+  },
+  {
+    "nfl_id": 46192,
+    "play_id": 3826,
+    "n": 16,
+    "csum": 608,
+    "offset": 592
+  },
+  {
+    "nfl_id": 46192,
+    "play_id": 4321,
+    "n": 19,
+    "csum": 627,
+    "offset": 608
+  },
+  {
+    "nfl_id": 46192,
+    "play_id": 4426,
+    "n": 38,
+    "csum": 665,
+    "offset": 627
+  },
+  {
+    "nfl_id": 46192,
+    "play_id": 4473,
+    "n": 25,
+    "csum": 690,
+    "offset": 665
+  },
+  {
+    "nfl_id": 46192,
+    "play_id": 4498,
+    "n": 40,
+    "csum": 730,
+    "offset": 690
+  },
+  {
+    "nfl_id": 46192,
+    "play_id": 4528,
+    "n": 18,
+    "csum": 748,
+    "offset": 730
+  },
+  {
+    "nfl_id": 46192,
+    "play_id": 4558,
+    "n": 14,
+    "csum": 762,
+    "offset": 748
+  },
+  {
+    "nfl_id": 46206,
+    "play_id": 284,
+    "n": 18,
+    "csum": 18,
+    "offset": 0
+  },
+  {
+    "nfl_id": 46206,
+    "play_id": 559,
+    "n": 26,
+    "csum": 44,
+    "offset": 18
+  },
+  {
+    "nfl_id": 46206,
+    "play_id": 1065,
+    "n": 34,
+    "csum": 78,
+    "offset": 44
+  },
+  {
+    "nfl_id": 46206,
+    "play_id": 1368,
+    "n": 26,
+    "csum": 104,
+    "offset": 78
+  },
+  {
+    "nfl_id": 46206,
+    "play_id": 1438,
+    "n": 43,
+    "csum": 147,
+    "offset": 104
+  },
+  {
+    "nfl_id": 46206,
+    "play_id": 1470,
+    "n": 32,
+    "csum": 179,
+    "offset": 147
+  },
+  {
+    "nfl_id": 46206,
+    "play_id": 1517,
+    "n": 30,
+    "csum": 209,
+    "offset": 179
+  },
+  {
+    "nfl_id": 46206,
+    "play_id": 1549,
+    "n": 18,
+    "csum": 227,
+    "offset": 209
+  },
+  {
+    "nfl_id": 46206,
+    "play_id": 1948,
+    "n": 27,
+    "csum": 254,
+    "offset": 227
+  },
+  {
+    "nfl_id": 46206,
+    "play_id": 1980,
+    "n": 21,
+    "csum": 275,
+    "offset": 254
+  },
+  {
+    "nfl_id": 46206,
+    "play_id": 2033,
+    "n": 29,
+    "csum": 304,
+    "offset": 275
+  },
+  {
+    "nfl_id": 46206,
+    "play_id": 2151,
+    "n": 27,
+    "csum": 331,
+    "offset": 304
+  },
+  {
+    "nfl_id": 46206,
+    "play_id": 2759,
+    "n": 30,
+    "csum": 361,
+    "offset": 331
+  },
+  {
+    "nfl_id": 46206,
+    "play_id": 3086,
+    "n": 21,
+    "csum": 382,
+    "offset": 361
+  },
+  {
+    "nfl_id": 46206,
+    "play_id": 3111,
+    "n": 25,
+    "csum": 407,
+    "offset": 382
+  },
+  {
+    "nfl_id": 46206,
+    "play_id": 3216,
+    "n": 48,
+    "csum": 455,
+    "offset": 407
+  },
+  {
+    "nfl_id": 46206,
+    "play_id": 3514,
+    "n": 24,
+    "csum": 479,
+    "offset": 455
+  },
+  {
+    "nfl_id": 46206,
+    "play_id": 3879,
+    "n": 25,
+    "csum": 504,
+    "offset": 479
+  },
+  {
+    "nfl_id": 46206,
+    "play_id": 4191,
+    "n": 33,
+    "csum": 537,
+    "offset": 504
+  },
+  {
+    "nfl_id": 46206,
+    "play_id": 4216,
+    "n": 29,
+    "csum": 566,
+    "offset": 537
+  },
+  {
+    "nfl_id": 46206,
+    "play_id": 4239,
+    "n": 27,
+    "csum": 593,
+    "offset": 566
+  },
+  {
+    "nfl_id": 46206,
+    "play_id": 4322,
+    "n": 25,
+    "csum": 618,
+    "offset": 593
+  },
+  {
+    "nfl_id": 46206,
+    "play_id": 4392,
+    "n": 22,
+    "csum": 640,
+    "offset": 618
+  },
+  {
+    "nfl_id": 46206,
+    "play_id": 4564,
+    "n": 29,
+    "csum": 669,
+    "offset": 640
+  },
+  {
+    "nfl_id": 46206,
+    "play_id": 4589,
+    "n": 17,
+    "csum": 686,
+    "offset": 669
+  },
+  {
+    "nfl_id": 46206,
+    "play_id": 4614,
+    "n": 20,
+    "csum": 706,
+    "offset": 686
+  },
+  {
+    "nfl_id": 46206,
+    "play_id": 4639,
+    "n": 17,
+    "csum": 723,
+    "offset": 706
+  },
+  {
+    "nfl_id": 46206,
+    "play_id": 4662,
+    "n": 39,
+    "csum": 762,
+    "offset": 723
+  },
+  {
+    "nfl_id": 46243,
+    "play_id": 194,
+    "n": 32,
+    "csum": 32,
+    "offset": 0
+  },
+  {
+    "nfl_id": 46243,
+    "play_id": 219,
+    "n": 17,
+    "csum": 49,
+    "offset": 32
+  },
+  {
+    "nfl_id": 46243,
+    "play_id": 713,
+    "n": 24,
+    "csum": 73,
+    "offset": 49
+  },
+  {
+    "nfl_id": 46243,
+    "play_id": 736,
+    "n": 31,
+    "csum": 104,
+    "offset": 73
+  },
+  {
+    "nfl_id": 46243,
+    "play_id": 877,
+    "n": 34,
+    "csum": 138,
+    "offset": 104
+  },
+  {
+    "nfl_id": 46243,
+    "play_id": 902,
+    "n": 32,
+    "csum": 170,
+    "offset": 138
+  },
+  {
+    "nfl_id": 46243,
+    "play_id": 1001,
+    "n": 38,
+    "csum": 208,
+    "offset": 170
+  },
+  {
+    "nfl_id": 46243,
+    "play_id": 1563,
+    "n": 45,
+    "csum": 253,
+    "offset": 208
+  },
+  {
+    "nfl_id": 46243,
+    "play_id": 1588,
+    "n": 30,
+    "csum": 283,
+    "offset": 253
+  },
+  {
+    "nfl_id": 46243,
+    "play_id": 1679,
+    "n": 31,
+    "csum": 314,
+    "offset": 283
+  },
+  {
+    "nfl_id": 46243,
+    "play_id": 1711,
+    "n": 26,
+    "csum": 340,
+    "offset": 314
+  },
+  {
+    "nfl_id": 46243,
+    "play_id": 2118,
+    "n": 26,
+    "csum": 366,
+    "offset": 340
+  },
+  {
+    "nfl_id": 46243,
+    "play_id": 2306,
+    "n": 26,
+    "csum": 392,
+    "offset": 366
+  },
+  {
+    "nfl_id": 46243,
+    "play_id": 2364,
+    "n": 25,
+    "csum": 417,
+    "offset": 392
+  },
+  {
+    "nfl_id": 46243,
+    "play_id": 2435,
+    "n": 34,
+    "csum": 451,
+    "offset": 417
+  },
+  {
+    "nfl_id": 46243,
+    "play_id": 2510,
+    "n": 17,
+    "csum": 468,
+    "offset": 451
+  },
+  {
+    "nfl_id": 46243,
+    "play_id": 2906,
+    "n": 62,
+    "csum": 530,
+    "offset": 468
+  },
+  {
+    "nfl_id": 46243,
+    "play_id": 2936,
+    "n": 18,
+    "csum": 548,
+    "offset": 530
+  },
+  {
+    "nfl_id": 46243,
+    "play_id": 3185,
+    "n": 37,
+    "csum": 585,
+    "offset": 548
+  },
+  {
+    "nfl_id": 46243,
+    "play_id": 3233,
+    "n": 30,
+    "csum": 615,
+    "offset": 585
+  },
+  {
+    "nfl_id": 46243,
+    "play_id": 3324,
+    "n": 52,
+    "csum": 667,
+    "offset": 615
+  },
+  {
+    "nfl_id": 46243,
+    "play_id": 3912,
+    "n": 38,
+    "csum": 705,
+    "offset": 667
+  },
+  {
+    "nfl_id": 46243,
+    "play_id": 3971,
+    "n": 28,
+    "csum": 733,
+    "offset": 705
+  },
+  {
+    "nfl_id": 46243,
+    "play_id": 4041,
+    "n": 67,
+    "csum": 800,
+    "offset": 733
+  },
+  {
+    "nfl_id": 46279,
+    "play_id": 607,
+    "n": 32,
+    "csum": 32,
+    "offset": 0
+  },
+  {
+    "nfl_id": 46279,
+    "play_id": 630,
+    "n": 23,
+    "csum": 55,
+    "offset": 32
+  },
+  {
+    "nfl_id": 46279,
+    "play_id": 767,
+    "n": 39,
+    "csum": 94,
+    "offset": 55
+  },
+  {
+    "nfl_id": 46279,
+    "play_id": 1249,
+    "n": 17,
+    "csum": 111,
+    "offset": 94
+  },
+  {
+    "nfl_id": 46279,
+    "play_id": 1558,
+    "n": 22,
+    "csum": 133,
+    "offset": 111
+  },
+  {
+    "nfl_id": 46279,
+    "play_id": 1761,
+    "n": 42,
+    "csum": 175,
+    "offset": 133
+  },
+  {
+    "nfl_id": 46279,
+    "play_id": 1810,
+    "n": 18,
+    "csum": 193,
+    "offset": 175
+  },
+  {
+    "nfl_id": 46279,
+    "play_id": 1835,
+    "n": 18,
+    "csum": 211,
+    "offset": 193
+  },
+  {
+    "nfl_id": 46279,
+    "play_id": 1858,
+    "n": 25,
+    "csum": 236,
+    "offset": 211
+  },
+  {
+    "nfl_id": 46279,
+    "play_id": 1888,
+    "n": 29,
+    "csum": 265,
+    "offset": 236
+  },
+  {
+    "nfl_id": 46279,
+    "play_id": 1940,
+    "n": 24,
+    "csum": 289,
+    "offset": 265
+  },
+  {
+    "nfl_id": 46279,
+    "play_id": 2002,
+    "n": 18,
+    "csum": 307,
+    "offset": 289
+  },
+  {
+    "nfl_id": 46279,
+    "play_id": 2930,
+    "n": 22,
+    "csum": 329,
+    "offset": 307
+  },
+  {
+    "nfl_id": 46279,
+    "play_id": 2982,
+    "n": 19,
+    "csum": 348,
+    "offset": 329
+  },
+  {
+    "nfl_id": 46279,
+    "play_id": 3029,
+    "n": 21,
+    "csum": 369,
+    "offset": 348
+  },
+  {
+    "nfl_id": 46279,
+    "play_id": 3064,
+    "n": 30,
+    "csum": 399,
+    "offset": 369
+  },
+  {
+    "nfl_id": 46279,
+    "play_id": 3198,
+    "n": 26,
+    "csum": 425,
+    "offset": 399
+  },
+  {
+    "nfl_id": 46279,
+    "play_id": 3640,
+    "n": 47,
+    "csum": 472,
+    "offset": 425
+  },
+  {
+    "nfl_id": 46279,
+    "play_id": 3701,
+    "n": 29,
+    "csum": 501,
+    "offset": 472
+  },
+  {
+    "nfl_id": 46279,
+    "play_id": 3803,
+    "n": 20,
+    "csum": 521,
+    "offset": 501
+  },
+  {
+    "nfl_id": 46279,
+    "play_id": 3826,
+    "n": 16,
+    "csum": 537,
+    "offset": 521
+  },
+  {
+    "nfl_id": 46279,
+    "play_id": 4321,
+    "n": 19,
+    "csum": 556,
+    "offset": 537
+  },
+  {
+    "nfl_id": 46279,
+    "play_id": 4426,
+    "n": 38,
+    "csum": 594,
+    "offset": 556
+  },
+  {
+    "nfl_id": 46279,
+    "play_id": 4473,
+    "n": 25,
+    "csum": 619,
+    "offset": 594
+  },
+  {
+    "nfl_id": 46279,
+    "play_id": 4498,
+    "n": 40,
+    "csum": 659,
+    "offset": 619
+  },
+  {
+    "nfl_id": 46279,
+    "play_id": 4558,
+    "n": 14,
+    "csum": 673,
+    "offset": 659
+  },
+  {
+    "nfl_id": 47791,
+    "play_id": 124,
+    "n": 28,
+    "csum": 28,
+    "offset": 0
+  },
+  {
+    "nfl_id": 47791,
+    "play_id": 315,
+    "n": 19,
+    "csum": 47,
+    "offset": 28
+  },
+  {
+    "nfl_id": 47791,
+    "play_id": 413,
+    "n": 23,
+    "csum": 70,
+    "offset": 47
+  },
+  {
+    "nfl_id": 47791,
+    "play_id": 438,
+    "n": 35,
+    "csum": 105,
+    "offset": 70
+  },
+  {
+    "nfl_id": 47791,
+    "play_id": 936,
+    "n": 29,
+    "csum": 134,
+    "offset": 105
+  },
+  {
+    "nfl_id": 47791,
+    "play_id": 983,
+    "n": 20,
+    "csum": 154,
+    "offset": 134
+  },
+  {
+    "nfl_id": 47791,
+    "play_id": 1300,
+    "n": 17,
+    "csum": 171,
+    "offset": 154
+  },
+  {
+    "nfl_id": 47791,
+    "play_id": 1326,
+    "n": 33,
+    "csum": 204,
+    "offset": 171
+  },
+  {
+    "nfl_id": 47791,
+    "play_id": 1676,
+    "n": 32,
+    "csum": 236,
+    "offset": 204
+  },
+  {
+    "nfl_id": 47791,
+    "play_id": 1701,
+    "n": 33,
+    "csum": 269,
+    "offset": 236
+  },
+  {
+    "nfl_id": 47791,
+    "play_id": 1746,
+    "n": 34,
+    "csum": 303,
+    "offset": 269
+  },
+  {
+    "nfl_id": 47791,
+    "play_id": 1933,
+    "n": 53,
+    "csum": 356,
+    "offset": 303
+  },
+  {
+    "nfl_id": 47791,
+    "play_id": 1958,
+    "n": 32,
+    "csum": 388,
+    "offset": 356
+  },
+  {
+    "nfl_id": 47791,
+    "play_id": 2234,
+    "n": 28,
+    "csum": 416,
+    "offset": 388
+  },
+  {
+    "nfl_id": 47791,
+    "play_id": 2257,
+    "n": 17,
+    "csum": 433,
+    "offset": 416
+  },
+  {
+    "nfl_id": 47791,
+    "play_id": 2287,
+    "n": 22,
+    "csum": 455,
+    "offset": 433
+  },
+  {
+    "nfl_id": 47791,
+    "play_id": 2312,
+    "n": 34,
+    "csum": 489,
+    "offset": 455
+  },
+  {
+    "nfl_id": 47791,
+    "play_id": 2344,
+    "n": 20,
+    "csum": 509,
+    "offset": 489
+  },
+  {
+    "nfl_id": 47791,
+    "play_id": 2369,
+    "n": 22,
+    "csum": 531,
+    "offset": 509
+  },
+  {
+    "nfl_id": 47791,
+    "play_id": 2936,
+    "n": 17,
+    "csum": 548,
+    "offset": 531
+  },
+  {
+    "nfl_id": 47791,
+    "play_id": 2961,
+    "n": 22,
+    "csum": 570,
+    "offset": 548
+  },
+  {
+    "nfl_id": 47791,
+    "play_id": 3105,
+    "n": 24,
+    "csum": 594,
+    "offset": 570
+  },
+  {
+    "nfl_id": 47791,
+    "play_id": 3177,
+    "n": 25,
+    "csum": 619,
+    "offset": 594
+  },
+  {
+    "nfl_id": 47791,
+    "play_id": 3244,
+    "n": 57,
+    "csum": 676,
+    "offset": 619
+  },
+  {
+    "nfl_id": 47791,
+    "play_id": 3365,
+    "n": 21,
+    "csum": 697,
+    "offset": 676
+  },
+  {
+    "nfl_id": 47791,
+    "play_id": 3584,
+    "n": 25,
+    "csum": 722,
+    "offset": 697
+  },
+  {
+    "nfl_id": 47791,
+    "play_id": 3616,
+    "n": 41,
+    "csum": 763,
+    "offset": 722
+  },
+  {
+    "nfl_id": 47791,
+    "play_id": 3641,
+    "n": 41,
+    "csum": 804,
+    "offset": 763
+  },
+  {
+    "nfl_id": 47791,
+    "play_id": 4015,
+    "n": 19,
+    "csum": 823,
+    "offset": 804
+  },
+  {
+    "nfl_id": 47791,
+    "play_id": 4040,
+    "n": 24,
+    "csum": 847,
+    "offset": 823
+  },
+  {
+    "nfl_id": 47819,
+    "play_id": 144,
+    "n": 22,
+    "csum": 22,
+    "offset": 0
+  },
+  {
+    "nfl_id": 47819,
+    "play_id": 213,
+    "n": 24,
+    "csum": 46,
+    "offset": 22
+  },
+  {
+    "nfl_id": 47819,
+    "play_id": 282,
+    "n": 33,
+    "csum": 79,
+    "offset": 46
+  },
+  {
+    "nfl_id": 47819,
+    "play_id": 492,
+    "n": 22,
+    "csum": 101,
+    "offset": 79
+  },
+  {
+    "nfl_id": 47819,
+    "play_id": 550,
+    "n": 21,
+    "csum": 122,
+    "offset": 101
+  },
+  {
+    "nfl_id": 47819,
+    "play_id": 575,
+    "n": 23,
+    "csum": 145,
+    "offset": 122
+  },
+  {
+    "nfl_id": 47819,
+    "play_id": 598,
+    "n": 40,
+    "csum": 185,
+    "offset": 145
+  },
+  {
+    "nfl_id": 47819,
+    "play_id": 899,
+    "n": 24,
+    "csum": 209,
+    "offset": 185
+  },
+  {
+    "nfl_id": 47819,
+    "play_id": 960,
+    "n": 23,
+    "csum": 232,
+    "offset": 209
+  },
+  {
+    "nfl_id": 47819,
+    "play_id": 1027,
+    "n": 21,
+    "csum": 253,
+    "offset": 232
+  },
+  {
+    "nfl_id": 47819,
+    "play_id": 1096,
+    "n": 31,
+    "csum": 284,
+    "offset": 253
+  },
+  {
+    "nfl_id": 47819,
+    "play_id": 1143,
+    "n": 24,
+    "csum": 308,
+    "offset": 284
+  },
+  {
+    "nfl_id": 47819,
+    "play_id": 1421,
+    "n": 29,
+    "csum": 337,
+    "offset": 308
+  },
+  {
+    "nfl_id": 47819,
+    "play_id": 1446,
+    "n": 41,
+    "csum": 378,
+    "offset": 337
+  },
+  {
+    "nfl_id": 47819,
+    "play_id": 1828,
+    "n": 21,
+    "csum": 399,
+    "offset": 378
+  },
+  {
+    "nfl_id": 47819,
+    "play_id": 1974,
+    "n": 54,
+    "csum": 453,
+    "offset": 399
+  },
+  {
+    "nfl_id": 47819,
+    "play_id": 1999,
+    "n": 30,
+    "csum": 483,
+    "offset": 453
+  },
+  {
+    "nfl_id": 47819,
+    "play_id": 2657,
+    "n": 36,
+    "csum": 519,
+    "offset": 483
+  },
+  {
+    "nfl_id": 47819,
+    "play_id": 2861,
+    "n": 28,
+    "csum": 547,
+    "offset": 519
+  },
+  {
+    "nfl_id": 47819,
+    "play_id": 2930,
+    "n": 31,
+    "csum": 578,
+    "offset": 547
+  },
+  {
+    "nfl_id": 47819,
+    "play_id": 3596,
+    "n": 25,
+    "csum": 603,
+    "offset": 578
+  },
+  {
+    "nfl_id": 47819,
+    "play_id": 3680,
+    "n": 20,
+    "csum": 623,
+    "offset": 603
+  },
+  {
+    "nfl_id": 47819,
+    "play_id": 4079,
+    "n": 20,
+    "csum": 643,
+    "offset": 623
+  },
+  {
+    "nfl_id": 47834,
+    "play_id": 55,
+    "n": 28,
+    "csum": 28,
+    "offset": 0
+  },
+  {
+    "nfl_id": 47834,
+    "play_id": 140,
+    "n": 30,
+    "csum": 58,
+    "offset": 28
+  },
+  {
+    "nfl_id": 47834,
+    "play_id": 209,
+    "n": 20,
+    "csum": 78,
+    "offset": 58
+  },
+  {
+    "nfl_id": 47834,
+    "play_id": 766,
+    "n": 23,
+    "csum": 101,
+    "offset": 78
+  },
+  {
+    "nfl_id": 47834,
+    "play_id": 849,
+    "n": 29,
+    "csum": 130,
+    "offset": 101
+  },
+  {
+    "nfl_id": 47834,
+    "play_id": 1034,
+    "n": 22,
+    "csum": 152,
+    "offset": 130
+  },
+  {
+    "nfl_id": 47834,
+    "play_id": 1101,
+    "n": 25,
+    "csum": 177,
+    "offset": 152
+  },
+  {
+    "nfl_id": 47834,
+    "play_id": 1964,
+    "n": 25,
+    "csum": 202,
+    "offset": 177
+  },
+  {
+    "nfl_id": 47834,
+    "play_id": 1989,
+    "n": 25,
+    "csum": 227,
+    "offset": 202
+  },
+  {
+    "nfl_id": 47834,
+    "play_id": 2449,
+    "n": 28,
+    "csum": 255,
+    "offset": 227
+  },
+  {
+    "nfl_id": 47834,
+    "play_id": 2555,
+    "n": 31,
+    "csum": 286,
+    "offset": 255
+  },
+  {
+    "nfl_id": 47834,
+    "play_id": 2580,
+    "n": 31,
+    "csum": 317,
+    "offset": 286
+  },
+  {
+    "nfl_id": 47834,
+    "play_id": 2643,
+    "n": 28,
+    "csum": 345,
+    "offset": 317
+  },
+  {
+    "nfl_id": 47834,
+    "play_id": 3108,
+    "n": 25,
+    "csum": 370,
+    "offset": 345
+  },
+  {
+    "nfl_id": 47834,
+    "play_id": 3140,
+    "n": 26,
+    "csum": 396,
+    "offset": 370
+  },
+  {
+    "nfl_id": 47834,
+    "play_id": 3187,
+    "n": 26,
+    "csum": 422,
+    "offset": 396
+  },
+  {
+    "nfl_id": 47834,
+    "play_id": 3217,
+    "n": 34,
+    "csum": 456,
+    "offset": 422
+  },
+  {
+    "nfl_id": 47834,
+    "play_id": 3262,
+    "n": 42,
+    "csum": 498,
+    "offset": 456
+  },
+  {
+    "nfl_id": 47834,
+    "play_id": 3355,
+    "n": 30,
+    "csum": 528,
+    "offset": 498
+  },
+  {
+    "nfl_id": 47834,
+    "play_id": 3683,
+    "n": 63,
+    "csum": 591,
+    "offset": 528
+  },
+  {
+    "nfl_id": 47834,
+    "play_id": 3772,
+    "n": 49,
+    "csum": 640,
+    "offset": 591
+  },
+  {
+    "nfl_id": 47834,
+    "play_id": 3797,
+    "n": 24,
+    "csum": 664,
+    "offset": 640
+  },
+  {
+    "nfl_id": 47834,
+    "play_id": 3915,
+    "n": 21,
+    "csum": 685,
+    "offset": 664
+  },
+  {
+    "nfl_id": 47834,
+    "play_id": 4427,
+    "n": 19,
+    "csum": 704,
+    "offset": 685
+  },
+  {
+    "nfl_id": 47879,
+    "play_id": 58,
+    "n": 19,
+    "csum": 19,
+    "offset": 0
+  },
+  {
+    "nfl_id": 47879,
+    "play_id": 152,
+    "n": 16,
+    "csum": 35,
+    "offset": 19
+  },
+  {
+    "nfl_id": 47879,
+    "play_id": 534,
+    "n": 22,
+    "csum": 57,
+    "offset": 35
+  },
+  {
+    "nfl_id": 47879,
+    "play_id": 559,
+    "n": 20,
+    "csum": 77,
+    "offset": 57
+  },
+  {
+    "nfl_id": 47879,
+    "play_id": 629,
+    "n": 44,
+    "csum": 121,
+    "offset": 77
+  },
+  {
+    "nfl_id": 47879,
+    "play_id": 962,
+    "n": 24,
+    "csum": 145,
+    "offset": 121
+  },
+  {
+    "nfl_id": 47879,
+    "play_id": 993,
+    "n": 47,
+    "csum": 192,
+    "offset": 145
+  },
+  {
+    "nfl_id": 47879,
+    "play_id": 1186,
+    "n": 26,
+    "csum": 218,
+    "offset": 192
+  },
+  {
+    "nfl_id": 47879,
+    "play_id": 1216,
+    "n": 29,
+    "csum": 247,
+    "offset": 218
+  },
+  {
+    "nfl_id": 47879,
+    "play_id": 1356,
+    "n": 36,
+    "csum": 283,
+    "offset": 247
+  },
+  {
+    "nfl_id": 47879,
+    "play_id": 1664,
+    "n": 18,
+    "csum": 301,
+    "offset": 283
+  },
+  {
+    "nfl_id": 47879,
+    "play_id": 1775,
+    "n": 32,
+    "csum": 333,
+    "offset": 301
+  },
+  {
+    "nfl_id": 47879,
+    "play_id": 2281,
+    "n": 41,
+    "csum": 374,
+    "offset": 333
+  },
+  {
+    "nfl_id": 47879,
+    "play_id": 2383,
+    "n": 36,
+    "csum": 410,
+    "offset": 374
+  },
+  {
+    "nfl_id": 47879,
+    "play_id": 2655,
+    "n": 18,
+    "csum": 428,
+    "offset": 410
+  },
+  {
+    "nfl_id": 47879,
+    "play_id": 2844,
+    "n": 23,
+    "csum": 451,
+    "offset": 428
+  },
+  {
+    "nfl_id": 47879,
+    "play_id": 2941,
+    "n": 26,
+    "csum": 477,
+    "offset": 451
+  },
+  {
+    "nfl_id": 47879,
+    "play_id": 3015,
+    "n": 25,
+    "csum": 502,
+    "offset": 477
+  },
+  {
+    "nfl_id": 47879,
+    "play_id": 3593,
+    "n": 18,
+    "csum": 520,
+    "offset": 502
+  },
+  {
+    "nfl_id": 47879,
+    "play_id": 3618,
+    "n": 31,
+    "csum": 551,
+    "offset": 520
+  },
+  {
+    "nfl_id": 47879,
+    "play_id": 3684,
+    "n": 29,
+    "csum": 580,
+    "offset": 551
+  },
+  {
+    "nfl_id": 47879,
+    "play_id": 3716,
+    "n": 18,
+    "csum": 598,
+    "offset": 580
+  },
+  {
+    "nfl_id": 47879,
+    "play_id": 3942,
+    "n": 23,
+    "csum": 621,
+    "offset": 598
+  },
+  {
+    "nfl_id": 47879,
+    "play_id": 3987,
+    "n": 33,
+    "csum": 654,
+    "offset": 621
+  },
+  {
+    "nfl_id": 52430,
+    "play_id": 124,
+    "n": 28,
+    "csum": 28,
+    "offset": 0
+  },
+  {
+    "nfl_id": 52430,
+    "play_id": 315,
+    "n": 19,
+    "csum": 47,
+    "offset": 28
+  },
+  {
+    "nfl_id": 52430,
+    "play_id": 340,
+    "n": 30,
+    "csum": 77,
+    "offset": 47
+  },
+  {
+    "nfl_id": 52430,
+    "play_id": 365,
+    "n": 25,
+    "csum": 102,
+    "offset": 77
+  },
+  {
+    "nfl_id": 52430,
+    "play_id": 390,
+    "n": 20,
+    "csum": 122,
+    "offset": 102
+  },
+  {
+    "nfl_id": 52430,
+    "play_id": 413,
+    "n": 23,
+    "csum": 145,
+    "offset": 122
+  },
+  {
+    "nfl_id": 52430,
+    "play_id": 438,
+    "n": 35,
+    "csum": 180,
+    "offset": 145
+  },
+  {
+    "nfl_id": 52430,
+    "play_id": 766,
+    "n": 27,
+    "csum": 207,
+    "offset": 180
+  },
+  {
+    "nfl_id": 52430,
+    "play_id": 936,
+    "n": 29,
+    "csum": 236,
+    "offset": 207
+  },
+  {
+    "nfl_id": 52430,
+    "play_id": 983,
+    "n": 20,
+    "csum": 256,
+    "offset": 236
+  },
+  {
+    "nfl_id": 52430,
+    "play_id": 1190,
+    "n": 26,
+    "csum": 282,
+    "offset": 256
+  },
+  {
+    "nfl_id": 52430,
+    "play_id": 1300,
+    "n": 17,
+    "csum": 299,
+    "offset": 282
+  },
+  {
+    "nfl_id": 52430,
+    "play_id": 1326,
+    "n": 33,
+    "csum": 332,
+    "offset": 299
+  },
+  {
+    "nfl_id": 52430,
+    "play_id": 1540,
+    "n": 39,
+    "csum": 371,
+    "offset": 332
+  },
+  {
+    "nfl_id": 52430,
+    "play_id": 1594,
+    "n": 11,
+    "csum": 382,
+    "offset": 371
+  },
+  {
+    "nfl_id": 52430,
+    "play_id": 1641,
+    "n": 26,
+    "csum": 408,
+    "offset": 382
+  },
+  {
+    "nfl_id": 52430,
+    "play_id": 1676,
+    "n": 32,
+    "csum": 440,
+    "offset": 408
+  },
+  {
+    "nfl_id": 52430,
+    "play_id": 1701,
+    "n": 33,
+    "csum": 473,
+    "offset": 440
+  },
+  {
+    "nfl_id": 52430,
+    "play_id": 1746,
+    "n": 34,
+    "csum": 507,
+    "offset": 473
+  },
+  {
+    "nfl_id": 52430,
+    "play_id": 1933,
+    "n": 53,
+    "csum": 560,
+    "offset": 507
+  },
+  {
+    "nfl_id": 52430,
+    "play_id": 1958,
+    "n": 32,
+    "csum": 592,
+    "offset": 560
+  },
+  {
+    "nfl_id": 52430,
+    "play_id": 2234,
+    "n": 28,
+    "csum": 620,
+    "offset": 592
+  },
+  {
+    "nfl_id": 52430,
+    "play_id": 2257,
+    "n": 17,
+    "csum": 637,
+    "offset": 620
+  },
+  {
+    "nfl_id": 52430,
+    "play_id": 2287,
+    "n": 22,
+    "csum": 659,
+    "offset": 637
+  },
+  {
+    "nfl_id": 52430,
+    "play_id": 2312,
+    "n": 34,
+    "csum": 693,
+    "offset": 659
+  },
+  {
+    "nfl_id": 52430,
+    "play_id": 2344,
+    "n": 20,
+    "csum": 713,
+    "offset": 693
+  },
+  {
+    "nfl_id": 52430,
+    "play_id": 2369,
+    "n": 22,
+    "csum": 735,
+    "offset": 713
+  },
+  {
+    "nfl_id": 52430,
+    "play_id": 2936,
+    "n": 17,
+    "csum": 752,
+    "offset": 735
+  },
+  {
+    "nfl_id": 52430,
+    "play_id": 2961,
+    "n": 22,
+    "csum": 774,
+    "offset": 752
+  },
+  {
+    "nfl_id": 52430,
+    "play_id": 3030,
+    "n": 49,
+    "csum": 823,
+    "offset": 774
+  },
+  {
+    "nfl_id": 52430,
+    "play_id": 3105,
+    "n": 24,
+    "csum": 847,
+    "offset": 823
+  },
+  {
+    "nfl_id": 52430,
+    "play_id": 3177,
+    "n": 25,
+    "csum": 872,
+    "offset": 847
+  },
+  {
+    "nfl_id": 52430,
+    "play_id": 3244,
+    "n": 57,
+    "csum": 929,
+    "offset": 872
+  },
+  {
+    "nfl_id": 52430,
+    "play_id": 3365,
+    "n": 21,
+    "csum": 950,
+    "offset": 929
+  },
+  {
+    "nfl_id": 52430,
+    "play_id": 3584,
+    "n": 25,
+    "csum": 975,
+    "offset": 950
+  },
+  {
+    "nfl_id": 52430,
+    "play_id": 3616,
+    "n": 41,
+    "csum": 1016,
+    "offset": 975
+  },
+  {
+    "nfl_id": 52430,
+    "play_id": 3641,
+    "n": 41,
+    "csum": 1057,
+    "offset": 1016
+  },
+  {
+    "nfl_id": 52430,
+    "play_id": 4015,
+    "n": 19,
+    "csum": 1076,
+    "offset": 1057
+  },
+  {
+    "nfl_id": 52430,
+    "play_id": 4040,
+    "n": 24,
+    "csum": 1100,
+    "offset": 1076
+  },
+  {
+    "nfl_id": 52441,
+    "play_id": 110,
+    "n": 23,
+    "csum": 23,
+    "offset": 0
+  },
+  {
+    "nfl_id": 52441,
+    "play_id": 444,
+    "n": 18,
+    "csum": 41,
+    "offset": 23
+  },
+  {
+    "nfl_id": 52441,
+    "play_id": 767,
+    "n": 17,
+    "csum": 58,
+    "offset": 41
+  },
+  {
+    "nfl_id": 52441,
+    "play_id": 1048,
+    "n": 25,
+    "csum": 83,
+    "offset": 58
+  },
+  {
+    "nfl_id": 52441,
+    "play_id": 1071,
+    "n": 24,
+    "csum": 107,
+    "offset": 83
+  },
+  {
+    "nfl_id": 52441,
+    "play_id": 1412,
+    "n": 24,
+    "csum": 131,
+    "offset": 107
+  },
+  {
+    "nfl_id": 52441,
+    "play_id": 1944,
+    "n": 49,
+    "csum": 180,
+    "offset": 131
+  },
+  {
+    "nfl_id": 52441,
+    "play_id": 1974,
+    "n": 25,
+    "csum": 205,
+    "offset": 180
+  },
+  {
+    "nfl_id": 52441,
+    "play_id": 2517,
+    "n": 19,
+    "csum": 224,
+    "offset": 205
+  },
+  {
+    "nfl_id": 52441,
+    "play_id": 2620,
+    "n": 50,
+    "csum": 274,
+    "offset": 224
+  },
+  {
+    "nfl_id": 52441,
+    "play_id": 2847,
+    "n": 28,
+    "csum": 302,
+    "offset": 274
+  },
+  {
+    "nfl_id": 52441,
+    "play_id": 2872,
+    "n": 17,
+    "csum": 319,
+    "offset": 302
+  },
+  {
+    "nfl_id": 52441,
+    "play_id": 2942,
+    "n": 23,
+    "csum": 342,
+    "offset": 319
+  },
+  {
+    "nfl_id": 52441,
+    "play_id": 3253,
+    "n": 23,
+    "csum": 365,
+    "offset": 342
+  },
+  {
+    "nfl_id": 52441,
+    "play_id": 3314,
+    "n": 25,
+    "csum": 390,
+    "offset": 365
+  },
+  {
+    "nfl_id": 52441,
+    "play_id": 3337,
+    "n": 36,
+    "csum": 426,
+    "offset": 390
+  },
+  {
+    "nfl_id": 52441,
+    "play_id": 3571,
+    "n": 21,
+    "csum": 447,
+    "offset": 426
+  },
+  {
+    "nfl_id": 52441,
+    "play_id": 3594,
+    "n": 22,
+    "csum": 469,
+    "offset": 447
+  },
+  {
+    "nfl_id": 52441,
+    "play_id": 3617,
+    "n": 43,
+    "csum": 512,
+    "offset": 469
+  },
+  {
+    "nfl_id": 52441,
+    "play_id": 3787,
+    "n": 19,
+    "csum": 531,
+    "offset": 512
+  },
+  {
+    "nfl_id": 52441,
+    "play_id": 3812,
+    "n": 26,
+    "csum": 557,
+    "offset": 531
+  },
+  {
+    "nfl_id": 52441,
+    "play_id": 3835,
+    "n": 20,
+    "csum": 577,
+    "offset": 557
+  },
+  {
+    "nfl_id": 52441,
+    "play_id": 4036,
+    "n": 26,
+    "csum": 603,
+    "offset": 577
+  },
+  {
+    "nfl_id": 52442,
+    "play_id": 81,
+    "n": 25,
+    "csum": 25,
+    "offset": 0
+  },
+  {
+    "nfl_id": 52442,
+    "play_id": 263,
+    "n": 18,
+    "csum": 43,
+    "offset": 25
+  },
+  {
+    "nfl_id": 52442,
+    "play_id": 662,
+    "n": 25,
+    "csum": 68,
+    "offset": 43
+  },
+  {
+    "nfl_id": 52442,
+    "play_id": 687,
+    "n": 28,
+    "csum": 96,
+    "offset": 68
+  },
+  {
+    "nfl_id": 52442,
+    "play_id": 761,
+    "n": 18,
+    "csum": 114,
+    "offset": 96
+  },
+  {
+    "nfl_id": 52442,
+    "play_id": 1503,
+    "n": 34,
+    "csum": 148,
+    "offset": 114
+  },
+  {
+    "nfl_id": 52442,
+    "play_id": 1805,
+    "n": 21,
+    "csum": 169,
+    "offset": 148
+  },
+  {
+    "nfl_id": 52442,
+    "play_id": 1841,
+    "n": 38,
+    "csum": 207,
+    "offset": 169
+  },
+  {
+    "nfl_id": 52442,
+    "play_id": 2062,
+    "n": 29,
+    "csum": 236,
+    "offset": 207
+  },
+  {
+    "nfl_id": 52442,
+    "play_id": 2087,
+    "n": 29,
+    "csum": 265,
+    "offset": 236
+  },
+  {
+    "nfl_id": 52442,
+    "play_id": 2286,
+    "n": 26,
+    "csum": 291,
+    "offset": 265
+  },
+  {
+    "nfl_id": 52442,
+    "play_id": 2369,
+    "n": 18,
+    "csum": 309,
+    "offset": 291
+  },
+  {
+    "nfl_id": 52442,
+    "play_id": 2798,
+    "n": 45,
+    "csum": 354,
+    "offset": 309
+  },
+  {
+    "nfl_id": 52442,
+    "play_id": 2979,
+    "n": 27,
+    "csum": 381,
+    "offset": 354
+  },
+  {
+    "nfl_id": 52442,
+    "play_id": 3002,
+    "n": 21,
+    "csum": 402,
+    "offset": 381
+  },
+  {
+    "nfl_id": 52442,
+    "play_id": 3335,
+    "n": 20,
+    "csum": 422,
+    "offset": 402
+  },
+  {
+    "nfl_id": 52442,
+    "play_id": 3409,
+    "n": 25,
+    "csum": 447,
+    "offset": 422
+  },
+  {
+    "nfl_id": 52442,
+    "play_id": 3645,
+    "n": 23,
+    "csum": 470,
+    "offset": 447
+  },
+  {
+    "nfl_id": 52442,
+    "play_id": 3975,
+    "n": 32,
+    "csum": 502,
+    "offset": 470
+  },
+  {
+    "nfl_id": 52442,
+    "play_id": 3998,
+    "n": 37,
+    "csum": 539,
+    "offset": 502
+  },
+  {
+    "nfl_id": 52442,
+    "play_id": 4153,
+    "n": 23,
+    "csum": 562,
+    "offset": 539
+  },
+  {
+    "nfl_id": 52442,
+    "play_id": 4201,
+    "n": 20,
+    "csum": 582,
+    "offset": 562
+  },
+  {
+    "nfl_id": 52442,
+    "play_id": 4258,
+    "n": 19,
+    "csum": 601,
+    "offset": 582
+  },
+  {
+    "nfl_id": 52442,
+    "play_id": 4283,
+    "n": 49,
+    "csum": 650,
+    "offset": 601
+  },
+  {
+    "nfl_id": 52442,
+    "play_id": 4308,
+    "n": 20,
+    "csum": 670,
+    "offset": 650
+  },
+  {
+    "nfl_id": 52442,
+    "play_id": 4333,
+    "n": 19,
+    "csum": 689,
+    "offset": 670
+  },
+  {
+    "nfl_id": 52442,
+    "play_id": 4363,
+    "n": 22,
+    "csum": 711,
+    "offset": 689
+  },
+  {
+    "nfl_id": 52442,
+    "play_id": 4416,
+    "n": 27,
+    "csum": 738,
+    "offset": 711
+  },
+  {
+    "nfl_id": 52442,
+    "play_id": 4494,
+    "n": 19,
+    "csum": 757,
+    "offset": 738
+  },
+  {
+    "nfl_id": 52442,
+    "play_id": 4551,
+    "n": 53,
+    "csum": 810,
+    "offset": 757
+  },
+  {
+    "nfl_id": 52451,
+    "play_id": 125,
+    "n": 28,
+    "csum": 28,
+    "offset": 0
+  },
+  {
+    "nfl_id": 52451,
+    "play_id": 735,
+    "n": 43,
+    "csum": 71,
+    "offset": 28
+  },
+  {
+    "nfl_id": 52451,
+    "play_id": 1105,
+    "n": 22,
+    "csum": 93,
+    "offset": 71
+  },
+  {
+    "nfl_id": 52451,
+    "play_id": 1130,
+    "n": 20,
+    "csum": 113,
+    "offset": 93
+  },
+  {
+    "nfl_id": 52451,
+    "play_id": 1155,
+    "n": 30,
+    "csum": 143,
+    "offset": 113
+  },
+  {
+    "nfl_id": 52451,
+    "play_id": 1200,
+    "n": 30,
+    "csum": 173,
+    "offset": 143
+  },
+  {
+    "nfl_id": 52451,
+    "play_id": 1473,
+    "n": 34,
+    "csum": 207,
+    "offset": 173
+  },
+  {
+    "nfl_id": 52451,
+    "play_id": 1818,
+    "n": 34,
+    "csum": 241,
+    "offset": 207
+  },
+  {
+    "nfl_id": 52451,
+    "play_id": 2390,
+    "n": 37,
+    "csum": 278,
+    "offset": 241
+  },
+  {
+    "nfl_id": 52451,
+    "play_id": 2865,
+    "n": 32,
+    "csum": 310,
+    "offset": 278
+  },
+  {
+    "nfl_id": 52451,
+    "play_id": 2921,
+    "n": 23,
+    "csum": 333,
+    "offset": 310
+  },
+  {
+    "nfl_id": 52451,
+    "play_id": 3354,
+    "n": 33,
+    "csum": 366,
+    "offset": 333
+  },
+  {
+    "nfl_id": 52451,
+    "play_id": 3377,
+    "n": 37,
+    "csum": 403,
+    "offset": 366
+  },
+  {
+    "nfl_id": 52451,
+    "play_id": 3495,
+    "n": 31,
+    "csum": 434,
+    "offset": 403
+  },
+  {
+    "nfl_id": 52451,
+    "play_id": 3826,
+    "n": 21,
+    "csum": 455,
+    "offset": 434
+  },
+  {
+    "nfl_id": 52451,
+    "play_id": 3851,
+    "n": 27,
+    "csum": 482,
+    "offset": 455
+  },
+  {
+    "nfl_id": 52451,
+    "play_id": 3923,
+    "n": 35,
+    "csum": 517,
+    "offset": 482
+  },
+  {
+    "nfl_id": 52451,
+    "play_id": 3975,
+    "n": 21,
+    "csum": 538,
+    "offset": 517
+  },
+  {
+    "nfl_id": 52451,
+    "play_id": 3998,
+    "n": 23,
+    "csum": 561,
+    "offset": 538
+  },
+  {
+    "nfl_id": 52451,
+    "play_id": 4021,
+    "n": 26,
+    "csum": 587,
+    "offset": 561
+  },
+  {
+    "nfl_id": 52451,
+    "play_id": 4051,
+    "n": 33,
+    "csum": 620,
+    "offset": 587
+  },
+  {
+    "nfl_id": 52451,
+    "play_id": 4083,
+    "n": 20,
+    "csum": 640,
+    "offset": 620
+  },
+  {
+    "nfl_id": 52451,
+    "play_id": 4452,
+    "n": 34,
+    "csum": 674,
+    "offset": 640
+  },
+  {
+    "nfl_id": 52451,
+    "play_id": 4491,
+    "n": 37,
+    "csum": 711,
+    "offset": 674
+  },
+  {
+    "nfl_id": 52451,
+    "play_id": 4514,
+    "n": 32,
+    "csum": 743,
+    "offset": 711
+  },
+  {
+    "nfl_id": 52451,
+    "play_id": 4539,
+    "n": 30,
+    "csum": 773,
+    "offset": 743
+  },
+  {
+    "nfl_id": 52457,
+    "play_id": 572,
+    "n": 41,
+    "csum": 41,
+    "offset": 0
+  },
+  {
+    "nfl_id": 52457,
+    "play_id": 619,
+    "n": 39,
+    "csum": 80,
+    "offset": 41
+  },
+  {
+    "nfl_id": 52457,
+    "play_id": 735,
+    "n": 43,
+    "csum": 123,
+    "offset": 80
+  },
+  {
+    "nfl_id": 52457,
+    "play_id": 1105,
+    "n": 22,
+    "csum": 145,
+    "offset": 123
+  },
+  {
+    "nfl_id": 52457,
+    "play_id": 1130,
+    "n": 20,
+    "csum": 165,
+    "offset": 145
+  },
+  {
+    "nfl_id": 52457,
+    "play_id": 1200,
+    "n": 30,
+    "csum": 195,
+    "offset": 165
+  },
+  {
+    "nfl_id": 52457,
+    "play_id": 1818,
+    "n": 34,
+    "csum": 229,
+    "offset": 195
+  },
+  {
+    "nfl_id": 52457,
+    "play_id": 2865,
+    "n": 32,
+    "csum": 261,
+    "offset": 229
+  },
+  {
+    "nfl_id": 52457,
+    "play_id": 2921,
+    "n": 23,
+    "csum": 284,
+    "offset": 261
+  },
+  {
+    "nfl_id": 52457,
+    "play_id": 3010,
+    "n": 27,
+    "csum": 311,
+    "offset": 284
+  },
+  {
+    "nfl_id": 52457,
+    "play_id": 3354,
+    "n": 33,
+    "csum": 344,
+    "offset": 311
+  },
+  {
+    "nfl_id": 52457,
+    "play_id": 3377,
+    "n": 37,
+    "csum": 381,
+    "offset": 344
+  },
+  {
+    "nfl_id": 52457,
+    "play_id": 3495,
+    "n": 31,
+    "csum": 412,
+    "offset": 381
+  },
+  {
+    "nfl_id": 52457,
+    "play_id": 3826,
+    "n": 21,
+    "csum": 433,
+    "offset": 412
+  },
+  {
+    "nfl_id": 52457,
+    "play_id": 3851,
+    "n": 27,
+    "csum": 460,
+    "offset": 433
+  },
+  {
+    "nfl_id": 52457,
+    "play_id": 3923,
+    "n": 35,
+    "csum": 495,
+    "offset": 460
+  },
+  {
+    "nfl_id": 52457,
+    "play_id": 3975,
+    "n": 21,
+    "csum": 516,
+    "offset": 495
+  },
+  {
+    "nfl_id": 52457,
+    "play_id": 3998,
+    "n": 23,
+    "csum": 539,
+    "offset": 516
+  },
+  {
+    "nfl_id": 52457,
+    "play_id": 4021,
+    "n": 26,
+    "csum": 565,
+    "offset": 539
+  },
+  {
+    "nfl_id": 52457,
+    "play_id": 4051,
+    "n": 33,
+    "csum": 598,
+    "offset": 565
+  },
+  {
+    "nfl_id": 52457,
+    "play_id": 4083,
+    "n": 20,
+    "csum": 618,
+    "offset": 598
+  },
+  {
+    "nfl_id": 52465,
+    "play_id": 439,
+    "n": 37,
+    "csum": 37,
+    "offset": 0
+  },
+  {
+    "nfl_id": 52465,
+    "play_id": 582,
+    "n": 19,
+    "csum": 56,
+    "offset": 37
+  },
+  {
+    "nfl_id": 52465,
+    "play_id": 605,
+    "n": 22,
+    "csum": 78,
+    "offset": 56
+  },
+  {
+    "nfl_id": 52465,
+    "play_id": 652,
+    "n": 26,
+    "csum": 104,
+    "offset": 78
+  },
+  {
+    "nfl_id": 52465,
+    "play_id": 783,
+    "n": 15,
+    "csum": 119,
+    "offset": 104
+  },
+  {
+    "nfl_id": 52465,
+    "play_id": 1392,
+    "n": 17,
+    "csum": 136,
+    "offset": 119
+  },
+  {
+    "nfl_id": 52465,
+    "play_id": 1641,
+    "n": 24,
+    "csum": 160,
+    "offset": 136
+  },
+  {
+    "nfl_id": 52465,
+    "play_id": 1713,
+    "n": 31,
+    "csum": 191,
+    "offset": 160
+  },
+  {
+    "nfl_id": 52465,
+    "play_id": 1956,
+    "n": 33,
+    "csum": 224,
+    "offset": 191
+  },
+  {
+    "nfl_id": 52465,
+    "play_id": 1979,
+    "n": 21,
+    "csum": 245,
+    "offset": 224
+  },
+  {
+    "nfl_id": 52465,
+    "play_id": 2002,
+    "n": 19,
+    "csum": 264,
+    "offset": 245
+  },
+  {
+    "nfl_id": 52465,
+    "play_id": 2034,
+    "n": 30,
+    "csum": 294,
+    "offset": 264
+  },
+  {
+    "nfl_id": 52465,
+    "play_id": 2215,
+    "n": 22,
+    "csum": 316,
+    "offset": 294
+  },
+  {
+    "nfl_id": 52465,
+    "play_id": 2240,
+    "n": 41,
+    "csum": 357,
+    "offset": 316
+  },
+  {
+    "nfl_id": 52465,
+    "play_id": 2310,
+    "n": 25,
+    "csum": 382,
+    "offset": 357
+  },
+  {
+    "nfl_id": 52465,
+    "play_id": 2335,
+    "n": 29,
+    "csum": 411,
+    "offset": 382
+  },
+  {
+    "nfl_id": 52465,
+    "play_id": 2543,
+    "n": 22,
+    "csum": 433,
+    "offset": 411
+  },
+  {
+    "nfl_id": 52465,
+    "play_id": 2602,
+    "n": 22,
+    "csum": 455,
+    "offset": 433
+  },
+  {
+    "nfl_id": 52465,
+    "play_id": 2656,
+    "n": 29,
+    "csum": 484,
+    "offset": 455
+  },
+  {
+    "nfl_id": 52465,
+    "play_id": 2725,
+    "n": 29,
+    "csum": 513,
+    "offset": 484
+  },
+  {
+    "nfl_id": 52465,
+    "play_id": 2956,
+    "n": 27,
+    "csum": 540,
+    "offset": 513
+  },
+  {
+    "nfl_id": 52465,
+    "play_id": 3068,
+    "n": 32,
+    "csum": 572,
+    "offset": 540
+  },
+  {
+    "nfl_id": 52465,
+    "play_id": 3093,
+    "n": 36,
+    "csum": 608,
+    "offset": 572
+  },
+  {
+    "nfl_id": 52465,
+    "play_id": 3140,
+    "n": 33,
+    "csum": 641,
+    "offset": 608
+  },
+  {
+    "nfl_id": 52465,
+    "play_id": 3197,
+    "n": 23,
+    "csum": 664,
+    "offset": 641
+  },
+  {
+    "nfl_id": 52465,
+    "play_id": 3516,
+    "n": 24,
+    "csum": 688,
+    "offset": 664
+  },
+  {
+    "nfl_id": 52465,
+    "play_id": 3541,
+    "n": 29,
+    "csum": 717,
+    "offset": 688
+  },
+  {
+    "nfl_id": 52465,
+    "play_id": 3618,
+    "n": 39,
+    "csum": 756,
+    "offset": 717
+  },
+  {
+    "nfl_id": 52465,
+    "play_id": 3663,
+    "n": 24,
+    "csum": 780,
+    "offset": 756
+  },
+  {
+    "nfl_id": 52536,
+    "play_id": 58,
+    "n": 19,
+    "csum": 19,
+    "offset": 0
+  },
+  {
+    "nfl_id": 52536,
+    "play_id": 152,
+    "n": 16,
+    "csum": 35,
+    "offset": 19
+  },
+  {
+    "nfl_id": 52536,
+    "play_id": 534,
+    "n": 22,
+    "csum": 57,
+    "offset": 35
+  },
+  {
+    "nfl_id": 52536,
+    "play_id": 559,
+    "n": 20,
+    "csum": 77,
+    "offset": 57
+  },
+  {
+    "nfl_id": 52536,
+    "play_id": 629,
+    "n": 44,
+    "csum": 121,
+    "offset": 77
+  },
+  {
+    "nfl_id": 52536,
+    "play_id": 962,
+    "n": 24,
+    "csum": 145,
+    "offset": 121
+  },
+  {
+    "nfl_id": 52536,
+    "play_id": 993,
+    "n": 47,
+    "csum": 192,
+    "offset": 145
+  },
+  {
+    "nfl_id": 52536,
+    "play_id": 1186,
+    "n": 26,
+    "csum": 218,
+    "offset": 192
+  },
+  {
+    "nfl_id": 52536,
+    "play_id": 1216,
+    "n": 29,
+    "csum": 247,
+    "offset": 218
+  },
+  {
+    "nfl_id": 52536,
+    "play_id": 1239,
+    "n": 17,
+    "csum": 264,
+    "offset": 247
+  },
+  {
+    "nfl_id": 52536,
+    "play_id": 1356,
+    "n": 36,
+    "csum": 300,
+    "offset": 264
+  },
+  {
+    "nfl_id": 52536,
+    "play_id": 1589,
+    "n": 20,
+    "csum": 320,
+    "offset": 300
+  },
+  {
+    "nfl_id": 52536,
+    "play_id": 1664,
+    "n": 18,
+    "csum": 338,
+    "offset": 320
+  },
+  {
+    "nfl_id": 52536,
+    "play_id": 1701,
+    "n": 26,
+    "csum": 364,
+    "offset": 338
+  },
+  {
+    "nfl_id": 52536,
+    "play_id": 1775,
+    "n": 32,
+    "csum": 396,
+    "offset": 364
+  },
+  {
+    "nfl_id": 52536,
+    "play_id": 2281,
+    "n": 41,
+    "csum": 437,
+    "offset": 396
+  },
+  {
+    "nfl_id": 52536,
+    "play_id": 2306,
+    "n": 17,
+    "csum": 454,
+    "offset": 437
+  },
+  {
+    "nfl_id": 52536,
+    "play_id": 2358,
+    "n": 24,
+    "csum": 478,
+    "offset": 454
+  },
+  {
+    "nfl_id": 52536,
+    "play_id": 2383,
+    "n": 36,
+    "csum": 514,
+    "offset": 478
+  },
+  {
+    "nfl_id": 52536,
+    "play_id": 2655,
+    "n": 18,
+    "csum": 532,
+    "offset": 514
+  },
+  {
+    "nfl_id": 52536,
+    "play_id": 2844,
+    "n": 23,
+    "csum": 555,
+    "offset": 532
+  },
+  {
+    "nfl_id": 52536,
+    "play_id": 2916,
+    "n": 18,
+    "csum": 573,
+    "offset": 555
+  },
+  {
+    "nfl_id": 52536,
+    "play_id": 2941,
+    "n": 26,
+    "csum": 599,
+    "offset": 573
+  },
+  {
+    "nfl_id": 52536,
+    "play_id": 3015,
+    "n": 25,
+    "csum": 624,
+    "offset": 599
+  },
+  {
+    "nfl_id": 52536,
+    "play_id": 3593,
+    "n": 18,
+    "csum": 642,
+    "offset": 624
+  },
+  {
+    "nfl_id": 52536,
+    "play_id": 3618,
+    "n": 31,
+    "csum": 673,
+    "offset": 642
+  },
+  {
+    "nfl_id": 52536,
+    "play_id": 3684,
+    "n": 29,
+    "csum": 702,
+    "offset": 673
+  },
+  {
+    "nfl_id": 52536,
+    "play_id": 3716,
+    "n": 18,
+    "csum": 720,
+    "offset": 702
+  },
+  {
+    "nfl_id": 52536,
+    "play_id": 3942,
+    "n": 23,
+    "csum": 743,
+    "offset": 720
+  },
+  {
+    "nfl_id": 52536,
+    "play_id": 3987,
+    "n": 33,
+    "csum": 776,
+    "offset": 743
+  },
+  {
+    "nfl_id": 52581,
+    "play_id": 125,
+    "n": 28,
+    "csum": 28,
+    "offset": 0
+  },
+  {
+    "nfl_id": 52581,
+    "play_id": 572,
+    "n": 41,
+    "csum": 69,
+    "offset": 28
+  },
+  {
+    "nfl_id": 52581,
+    "play_id": 619,
+    "n": 39,
+    "csum": 108,
+    "offset": 69
+  },
+  {
+    "nfl_id": 52581,
+    "play_id": 1105,
+    "n": 22,
+    "csum": 130,
+    "offset": 108
+  },
+  {
+    "nfl_id": 52581,
+    "play_id": 1130,
+    "n": 20,
+    "csum": 150,
+    "offset": 130
+  },
+  {
+    "nfl_id": 52581,
+    "play_id": 1155,
+    "n": 30,
+    "csum": 180,
+    "offset": 150
+  },
+  {
+    "nfl_id": 52581,
+    "play_id": 1200,
+    "n": 30,
+    "csum": 210,
+    "offset": 180
+  },
+  {
+    "nfl_id": 52581,
+    "play_id": 1473,
+    "n": 34,
+    "csum": 244,
+    "offset": 210
+  },
+  {
+    "nfl_id": 52581,
+    "play_id": 1818,
+    "n": 34,
+    "csum": 278,
+    "offset": 244
+  },
+  {
+    "nfl_id": 52581,
+    "play_id": 2390,
+    "n": 37,
+    "csum": 315,
+    "offset": 278
+  },
+  {
+    "nfl_id": 52581,
+    "play_id": 2865,
+    "n": 32,
+    "csum": 347,
+    "offset": 315
+  },
+  {
+    "nfl_id": 52581,
+    "play_id": 2921,
+    "n": 23,
+    "csum": 370,
+    "offset": 347
+  },
+  {
+    "nfl_id": 52581,
+    "play_id": 3010,
+    "n": 27,
+    "csum": 397,
+    "offset": 370
+  },
+  {
+    "nfl_id": 52581,
+    "play_id": 3354,
+    "n": 33,
+    "csum": 430,
+    "offset": 397
+  },
+  {
+    "nfl_id": 52581,
+    "play_id": 3377,
+    "n": 37,
+    "csum": 467,
+    "offset": 430
+  },
+  {
+    "nfl_id": 52581,
+    "play_id": 3495,
+    "n": 31,
+    "csum": 498,
+    "offset": 467
+  },
+  {
+    "nfl_id": 52581,
+    "play_id": 3826,
+    "n": 21,
+    "csum": 519,
+    "offset": 498
+  },
+  {
+    "nfl_id": 52581,
+    "play_id": 3851,
+    "n": 27,
+    "csum": 546,
+    "offset": 519
+  },
+  {
+    "nfl_id": 52581,
+    "play_id": 3923,
+    "n": 35,
+    "csum": 581,
+    "offset": 546
+  },
+  {
+    "nfl_id": 52581,
+    "play_id": 3975,
+    "n": 21,
+    "csum": 602,
+    "offset": 581
+  },
+  {
+    "nfl_id": 52581,
+    "play_id": 3998,
+    "n": 23,
+    "csum": 625,
+    "offset": 602
+  },
+  {
+    "nfl_id": 52581,
+    "play_id": 4021,
+    "n": 26,
+    "csum": 651,
+    "offset": 625
+  },
+  {
+    "nfl_id": 52581,
+    "play_id": 4051,
+    "n": 33,
+    "csum": 684,
+    "offset": 651
+  },
+  {
+    "nfl_id": 52581,
+    "play_id": 4083,
+    "n": 20,
+    "csum": 704,
+    "offset": 684
+  },
+  {
+    "nfl_id": 52584,
+    "play_id": 124,
+    "n": 28,
+    "csum": 28,
+    "offset": 0
+  },
+  {
+    "nfl_id": 52584,
+    "play_id": 315,
+    "n": 19,
+    "csum": 47,
+    "offset": 28
+  },
+  {
+    "nfl_id": 52584,
+    "play_id": 340,
+    "n": 30,
+    "csum": 77,
+    "offset": 47
+  },
+  {
+    "nfl_id": 52584,
+    "play_id": 365,
+    "n": 25,
+    "csum": 102,
+    "offset": 77
+  },
+  {
+    "nfl_id": 52584,
+    "play_id": 390,
+    "n": 20,
+    "csum": 122,
+    "offset": 102
+  },
+  {
+    "nfl_id": 52584,
+    "play_id": 413,
+    "n": 23,
+    "csum": 145,
+    "offset": 122
+  },
+  {
+    "nfl_id": 52584,
+    "play_id": 766,
+    "n": 27,
+    "csum": 172,
+    "offset": 145
+  },
+  {
+    "nfl_id": 52584,
+    "play_id": 983,
+    "n": 20,
+    "csum": 192,
+    "offset": 172
+  },
+  {
+    "nfl_id": 52584,
+    "play_id": 1190,
+    "n": 26,
+    "csum": 218,
+    "offset": 192
+  },
+  {
+    "nfl_id": 52584,
+    "play_id": 1300,
+    "n": 17,
+    "csum": 235,
+    "offset": 218
+  },
+  {
+    "nfl_id": 52584,
+    "play_id": 1326,
+    "n": 33,
+    "csum": 268,
+    "offset": 235
+  },
+  {
+    "nfl_id": 52584,
+    "play_id": 1540,
+    "n": 39,
+    "csum": 307,
+    "offset": 268
+  },
+  {
+    "nfl_id": 52584,
+    "play_id": 1594,
+    "n": 11,
+    "csum": 318,
+    "offset": 307
+  },
+  {
+    "nfl_id": 52584,
+    "play_id": 1641,
+    "n": 26,
+    "csum": 344,
+    "offset": 318
+  },
+  {
+    "nfl_id": 52584,
+    "play_id": 1676,
+    "n": 32,
+    "csum": 376,
+    "offset": 344
+  },
+  {
+    "nfl_id": 52584,
+    "play_id": 1701,
+    "n": 33,
+    "csum": 409,
+    "offset": 376
+  },
+  {
+    "nfl_id": 52584,
+    "play_id": 1746,
+    "n": 34,
+    "csum": 443,
+    "offset": 409
+  },
+  {
+    "nfl_id": 52584,
+    "play_id": 1958,
+    "n": 32,
+    "csum": 475,
+    "offset": 443
+  },
+  {
+    "nfl_id": 52584,
+    "play_id": 2234,
+    "n": 28,
+    "csum": 503,
+    "offset": 475
+  },
+  {
+    "nfl_id": 52584,
+    "play_id": 2257,
+    "n": 17,
+    "csum": 520,
+    "offset": 503
+  },
+  {
+    "nfl_id": 52584,
+    "play_id": 2287,
+    "n": 22,
+    "csum": 542,
+    "offset": 520
+  },
+  {
+    "nfl_id": 52584,
+    "play_id": 2312,
+    "n": 34,
+    "csum": 576,
+    "offset": 542
+  },
+  {
+    "nfl_id": 52584,
+    "play_id": 2344,
+    "n": 20,
+    "csum": 596,
+    "offset": 576
+  },
+  {
+    "nfl_id": 52584,
+    "play_id": 2369,
+    "n": 22,
+    "csum": 618,
+    "offset": 596
+  },
+  {
+    "nfl_id": 52584,
+    "play_id": 2936,
+    "n": 17,
+    "csum": 635,
+    "offset": 618
+  },
+  {
+    "nfl_id": 52584,
+    "play_id": 2961,
+    "n": 22,
+    "csum": 657,
+    "offset": 635
+  },
+  {
+    "nfl_id": 52584,
+    "play_id": 3030,
+    "n": 49,
+    "csum": 706,
+    "offset": 657
+  },
+  {
+    "nfl_id": 52584,
+    "play_id": 3105,
+    "n": 24,
+    "csum": 730,
+    "offset": 706
+  },
+  {
+    "nfl_id": 52584,
+    "play_id": 3177,
+    "n": 25,
+    "csum": 755,
+    "offset": 730
+  },
+  {
+    "nfl_id": 52584,
+    "play_id": 3244,
+    "n": 57,
+    "csum": 812,
+    "offset": 755
+  },
+  {
+    "nfl_id": 52584,
+    "play_id": 3365,
+    "n": 21,
+    "csum": 833,
+    "offset": 812
+  },
+  {
+    "nfl_id": 52584,
+    "play_id": 3584,
+    "n": 25,
+    "csum": 858,
+    "offset": 833
+  },
+  {
+    "nfl_id": 52584,
+    "play_id": 3616,
+    "n": 41,
+    "csum": 899,
+    "offset": 858
+  },
+  {
+    "nfl_id": 52584,
+    "play_id": 3641,
+    "n": 41,
+    "csum": 940,
+    "offset": 899
+  },
+  {
+    "nfl_id": 52584,
+    "play_id": 4015,
+    "n": 19,
+    "csum": 959,
+    "offset": 940
+  },
+  {
+    "nfl_id": 52584,
+    "play_id": 4040,
+    "n": 24,
+    "csum": 983,
+    "offset": 959
+  },
+  {
+    "nfl_id": 52608,
+    "play_id": 55,
+    "n": 28,
+    "csum": 28,
+    "offset": 0
+  },
+  {
+    "nfl_id": 52608,
+    "play_id": 209,
+    "n": 20,
+    "csum": 48,
+    "offset": 28
+  },
+  {
+    "nfl_id": 52608,
+    "play_id": 766,
+    "n": 23,
+    "csum": 71,
+    "offset": 48
+  },
+  {
+    "nfl_id": 52608,
+    "play_id": 849,
+    "n": 29,
+    "csum": 100,
+    "offset": 71
+  },
+  {
+    "nfl_id": 52608,
+    "play_id": 1034,
+    "n": 22,
+    "csum": 122,
+    "offset": 100
+  },
+  {
+    "nfl_id": 52608,
+    "play_id": 1101,
+    "n": 25,
+    "csum": 147,
+    "offset": 122
+  },
+  {
+    "nfl_id": 52608,
+    "play_id": 1964,
+    "n": 25,
+    "csum": 172,
+    "offset": 147
+  },
+  {
+    "nfl_id": 52608,
+    "play_id": 1989,
+    "n": 25,
+    "csum": 197,
+    "offset": 172
+  },
+  {
+    "nfl_id": 52608,
+    "play_id": 2449,
+    "n": 28,
+    "csum": 225,
+    "offset": 197
+  },
+  {
+    "nfl_id": 52608,
+    "play_id": 2508,
+    "n": 26,
+    "csum": 251,
+    "offset": 225
+  },
+  {
+    "nfl_id": 52608,
+    "play_id": 2555,
+    "n": 31,
+    "csum": 282,
+    "offset": 251
+  },
+  {
+    "nfl_id": 52608,
+    "play_id": 2580,
+    "n": 31,
+    "csum": 313,
+    "offset": 282
+  },
+  {
+    "nfl_id": 52608,
+    "play_id": 3108,
+    "n": 25,
+    "csum": 338,
+    "offset": 313
+  },
+  {
+    "nfl_id": 52608,
+    "play_id": 3140,
+    "n": 26,
+    "csum": 364,
+    "offset": 338
+  },
+  {
+    "nfl_id": 52608,
+    "play_id": 3285,
+    "n": 23,
+    "csum": 387,
+    "offset": 364
+  },
+  {
+    "nfl_id": 52608,
+    "play_id": 3355,
+    "n": 30,
+    "csum": 417,
+    "offset": 387
+  },
+  {
+    "nfl_id": 52608,
+    "play_id": 3683,
+    "n": 63,
+    "csum": 480,
+    "offset": 417
+  },
+  {
+    "nfl_id": 52608,
+    "play_id": 3772,
+    "n": 49,
+    "csum": 529,
+    "offset": 480
+  },
+  {
+    "nfl_id": 52608,
+    "play_id": 3797,
+    "n": 24,
+    "csum": 553,
+    "offset": 529
+  },
+  {
+    "nfl_id": 52608,
+    "play_id": 3915,
+    "n": 21,
+    "csum": 574,
+    "offset": 553
+  },
+  {
+    "nfl_id": 52608,
+    "play_id": 4427,
+    "n": 19,
+    "csum": 593,
+    "offset": 574
+  },
+  {
+    "nfl_id": 53074,
+    "play_id": 159,
+    "n": 25,
+    "csum": 25,
+    "offset": 0
+  },
+  {
+    "nfl_id": 53074,
+    "play_id": 228,
+    "n": 29,
+    "csum": 54,
+    "offset": 25
+  },
+  {
+    "nfl_id": 53074,
+    "play_id": 793,
+    "n": 28,
+    "csum": 82,
+    "offset": 54
+  },
+  {
+    "nfl_id": 53074,
+    "play_id": 849,
+    "n": 24,
+    "csum": 106,
+    "offset": 82
+  },
+  {
+    "nfl_id": 53074,
+    "play_id": 1065,
+    "n": 28,
+    "csum": 134,
+    "offset": 106
+  },
+  {
+    "nfl_id": 53074,
+    "play_id": 1394,
+    "n": 57,
+    "csum": 191,
+    "offset": 134
+  },
+  {
+    "nfl_id": 53074,
+    "play_id": 1766,
+    "n": 37,
+    "csum": 228,
+    "offset": 191
+  },
+  {
+    "nfl_id": 53074,
+    "play_id": 2366,
+    "n": 18,
+    "csum": 246,
+    "offset": 228
+  },
+  {
+    "nfl_id": 53074,
+    "play_id": 2670,
+    "n": 32,
+    "csum": 278,
+    "offset": 246
+  },
+  {
+    "nfl_id": 53074,
+    "play_id": 2720,
+    "n": 28,
+    "csum": 306,
+    "offset": 278
+  },
+  {
+    "nfl_id": 53074,
+    "play_id": 3042,
+    "n": 22,
+    "csum": 328,
+    "offset": 306
+  },
+  {
+    "nfl_id": 53074,
+    "play_id": 3067,
+    "n": 23,
+    "csum": 351,
+    "offset": 328
+  },
+  {
+    "nfl_id": 53074,
+    "play_id": 3358,
+    "n": 31,
+    "csum": 382,
+    "offset": 351
+  },
+  {
+    "nfl_id": 53074,
+    "play_id": 3383,
+    "n": 33,
+    "csum": 415,
+    "offset": 382
+  },
+  {
+    "nfl_id": 53074,
+    "play_id": 3413,
+    "n": 42,
+    "csum": 457,
+    "offset": 415
+  },
+  {
+    "nfl_id": 53074,
+    "play_id": 3436,
+    "n": 23,
+    "csum": 480,
+    "offset": 457
+  },
+  {
+    "nfl_id": 53074,
+    "play_id": 3483,
+    "n": 39,
+    "csum": 519,
+    "offset": 480
+  },
+  {
+    "nfl_id": 53074,
+    "play_id": 3578,
+    "n": 20,
+    "csum": 539,
+    "offset": 519
+  },
+  {
+    "nfl_id": 53074,
+    "play_id": 3603,
+    "n": 24,
+    "csum": 563,
+    "offset": 539
+  },
+  {
+    "nfl_id": 53074,
+    "play_id": 3984,
+    "n": 18,
+    "csum": 581,
+    "offset": 563
+  },
+  {
+    "nfl_id": 53074,
+    "play_id": 4036,
+    "n": 21,
+    "csum": 602,
+    "offset": 581
+  },
+  {
+    "nfl_id": 53074,
+    "play_id": 4124,
+    "n": 24,
+    "csum": 626,
+    "offset": 602
+  },
+  {
+    "nfl_id": 53074,
+    "play_id": 4147,
+    "n": 38,
+    "csum": 664,
+    "offset": 626
+  },
+  {
+    "nfl_id": 53434,
+    "play_id": 110,
+    "n": 23,
+    "csum": 23,
+    "offset": 0
+  },
+  {
+    "nfl_id": 53434,
+    "play_id": 444,
+    "n": 18,
+    "csum": 41,
+    "offset": 23
+  },
+  {
+    "nfl_id": 53434,
+    "play_id": 767,
+    "n": 17,
+    "csum": 58,
+    "offset": 41
+  },
+  {
+    "nfl_id": 53434,
+    "play_id": 1048,
+    "n": 25,
+    "csum": 83,
+    "offset": 58
+  },
+  {
+    "nfl_id": 53434,
+    "play_id": 1071,
+    "n": 24,
+    "csum": 107,
+    "offset": 83
+  },
+  {
+    "nfl_id": 53434,
+    "play_id": 1412,
+    "n": 24,
+    "csum": 131,
+    "offset": 107
+  },
+  {
+    "nfl_id": 53434,
+    "play_id": 1944,
+    "n": 49,
+    "csum": 180,
+    "offset": 131
+  },
+  {
+    "nfl_id": 53434,
+    "play_id": 1974,
+    "n": 25,
+    "csum": 205,
+    "offset": 180
+  },
+  {
+    "nfl_id": 53434,
+    "play_id": 2517,
+    "n": 19,
+    "csum": 224,
+    "offset": 205
+  },
+  {
+    "nfl_id": 53434,
+    "play_id": 2620,
+    "n": 50,
+    "csum": 274,
+    "offset": 224
+  },
+  {
+    "nfl_id": 53434,
+    "play_id": 2847,
+    "n": 28,
+    "csum": 302,
+    "offset": 274
+  },
+  {
+    "nfl_id": 53434,
+    "play_id": 2872,
+    "n": 17,
+    "csum": 319,
+    "offset": 302
+  },
+  {
+    "nfl_id": 53434,
+    "play_id": 2942,
+    "n": 23,
+    "csum": 342,
+    "offset": 319
+  },
+  {
+    "nfl_id": 53434,
+    "play_id": 3253,
+    "n": 23,
+    "csum": 365,
+    "offset": 342
+  },
+  {
+    "nfl_id": 53434,
+    "play_id": 3314,
+    "n": 25,
+    "csum": 390,
+    "offset": 365
+  },
+  {
+    "nfl_id": 53434,
+    "play_id": 3337,
+    "n": 36,
+    "csum": 426,
+    "offset": 390
+  },
+  {
+    "nfl_id": 53434,
+    "play_id": 3571,
+    "n": 21,
+    "csum": 447,
+    "offset": 426
+  },
+  {
+    "nfl_id": 53434,
+    "play_id": 3594,
+    "n": 22,
+    "csum": 469,
+    "offset": 447
+  },
+  {
+    "nfl_id": 53434,
+    "play_id": 3617,
+    "n": 43,
+    "csum": 512,
+    "offset": 469
+  },
+  {
+    "nfl_id": 53434,
+    "play_id": 3787,
+    "n": 19,
+    "csum": 531,
+    "offset": 512
+  },
+  {
+    "nfl_id": 53434,
+    "play_id": 3812,
+    "n": 26,
+    "csum": 557,
+    "offset": 531
+  },
+  {
+    "nfl_id": 53434,
+    "play_id": 3835,
+    "n": 20,
+    "csum": 577,
+    "offset": 557
+  },
+  {
+    "nfl_id": 53434,
+    "play_id": 4036,
+    "n": 26,
+    "csum": 603,
+    "offset": 577
+  },
+  {
+    "nfl_id": 53435,
+    "play_id": 121,
+    "n": 18,
+    "csum": 18,
+    "offset": 0
+  },
+  {
+    "nfl_id": 53435,
+    "play_id": 607,
+    "n": 32,
+    "csum": 50,
+    "offset": 18
+  },
+  {
+    "nfl_id": 53435,
+    "play_id": 706,
+    "n": 39,
+    "csum": 89,
+    "offset": 50
+  },
+  {
+    "nfl_id": 53435,
+    "play_id": 767,
+    "n": 39,
+    "csum": 128,
+    "offset": 89
+  },
+  {
+    "nfl_id": 53435,
+    "play_id": 1072,
+    "n": 32,
+    "csum": 160,
+    "offset": 128
+  },
+  {
+    "nfl_id": 53435,
+    "play_id": 1119,
+    "n": 33,
+    "csum": 193,
+    "offset": 160
+  },
+  {
+    "nfl_id": 53435,
+    "play_id": 1249,
+    "n": 17,
+    "csum": 210,
+    "offset": 193
+  },
+  {
+    "nfl_id": 53435,
+    "play_id": 1513,
+    "n": 35,
+    "csum": 245,
+    "offset": 210
+  },
+  {
+    "nfl_id": 53435,
+    "play_id": 1558,
+    "n": 22,
+    "csum": 267,
+    "offset": 245
+  },
+  {
+    "nfl_id": 53435,
+    "play_id": 1714,
+    "n": 19,
+    "csum": 286,
+    "offset": 267
+  },
+  {
+    "nfl_id": 53435,
+    "play_id": 1761,
+    "n": 42,
+    "csum": 328,
+    "offset": 286
+  },
+  {
+    "nfl_id": 53435,
+    "play_id": 1810,
+    "n": 18,
+    "csum": 346,
+    "offset": 328
+  },
+  {
+    "nfl_id": 53435,
+    "play_id": 1835,
+    "n": 18,
+    "csum": 364,
+    "offset": 346
+  },
+  {
+    "nfl_id": 53435,
+    "play_id": 1858,
+    "n": 25,
+    "csum": 389,
+    "offset": 364
+  },
+  {
+    "nfl_id": 53435,
+    "play_id": 1888,
+    "n": 29,
+    "csum": 418,
+    "offset": 389
+  },
+  {
+    "nfl_id": 53435,
+    "play_id": 2002,
+    "n": 18,
+    "csum": 436,
+    "offset": 418
+  },
+  {
+    "nfl_id": 53435,
+    "play_id": 2027,
+    "n": 29,
+    "csum": 465,
+    "offset": 436
+  },
+  {
+    "nfl_id": 53435,
+    "play_id": 2372,
+    "n": 39,
+    "csum": 504,
+    "offset": 465
+  },
+  {
+    "nfl_id": 53435,
+    "play_id": 2930,
+    "n": 22,
+    "csum": 526,
+    "offset": 504
+  },
+  {
+    "nfl_id": 53435,
+    "play_id": 2982,
+    "n": 19,
+    "csum": 545,
+    "offset": 526
+  },
+  {
+    "nfl_id": 53435,
+    "play_id": 3064,
+    "n": 30,
+    "csum": 575,
+    "offset": 545
+  },
+  {
+    "nfl_id": 53435,
+    "play_id": 3640,
+    "n": 47,
+    "csum": 622,
+    "offset": 575
+  },
+  {
+    "nfl_id": 53435,
+    "play_id": 3803,
+    "n": 20,
+    "csum": 642,
+    "offset": 622
+  },
+  {
+    "nfl_id": 53435,
+    "play_id": 3826,
+    "n": 16,
+    "csum": 658,
+    "offset": 642
+  },
+  {
+    "nfl_id": 53435,
+    "play_id": 4321,
+    "n": 19,
+    "csum": 677,
+    "offset": 658
+  },
+  {
+    "nfl_id": 53435,
+    "play_id": 4426,
+    "n": 38,
+    "csum": 715,
+    "offset": 677
+  },
+  {
+    "nfl_id": 53435,
+    "play_id": 4473,
+    "n": 25,
+    "csum": 740,
+    "offset": 715
+  },
+  {
+    "nfl_id": 53435,
+    "play_id": 4528,
+    "n": 18,
+    "csum": 758,
+    "offset": 740
+  },
+  {
+    "nfl_id": 53439,
+    "play_id": 55,
+    "n": 28,
+    "csum": 28,
+    "offset": 0
+  },
+  {
+    "nfl_id": 53439,
+    "play_id": 140,
+    "n": 30,
+    "csum": 58,
+    "offset": 28
+  },
+  {
+    "nfl_id": 53439,
+    "play_id": 209,
+    "n": 20,
+    "csum": 78,
+    "offset": 58
+  },
+  {
+    "nfl_id": 53439,
+    "play_id": 766,
+    "n": 23,
+    "csum": 101,
+    "offset": 78
+  },
+  {
+    "nfl_id": 53439,
+    "play_id": 849,
+    "n": 29,
+    "csum": 130,
+    "offset": 101
+  },
+  {
+    "nfl_id": 53439,
+    "play_id": 1034,
+    "n": 22,
+    "csum": 152,
+    "offset": 130
+  },
+  {
+    "nfl_id": 53439,
+    "play_id": 1101,
+    "n": 25,
+    "csum": 177,
+    "offset": 152
+  },
+  {
+    "nfl_id": 53439,
+    "play_id": 1964,
+    "n": 25,
+    "csum": 202,
+    "offset": 177
+  },
+  {
+    "nfl_id": 53439,
+    "play_id": 1989,
+    "n": 25,
+    "csum": 227,
+    "offset": 202
+  },
+  {
+    "nfl_id": 53439,
+    "play_id": 2449,
+    "n": 28,
+    "csum": 255,
+    "offset": 227
+  },
+  {
+    "nfl_id": 53439,
+    "play_id": 2508,
+    "n": 26,
+    "csum": 281,
+    "offset": 255
+  },
+  {
+    "nfl_id": 53439,
+    "play_id": 2555,
+    "n": 31,
+    "csum": 312,
+    "offset": 281
+  },
+  {
+    "nfl_id": 53439,
+    "play_id": 2580,
+    "n": 31,
+    "csum": 343,
+    "offset": 312
+  },
+  {
+    "nfl_id": 53439,
+    "play_id": 2643,
+    "n": 28,
+    "csum": 371,
+    "offset": 343
+  },
+  {
+    "nfl_id": 53439,
+    "play_id": 3108,
+    "n": 25,
+    "csum": 396,
+    "offset": 371
+  },
+  {
+    "nfl_id": 53439,
+    "play_id": 3140,
+    "n": 26,
+    "csum": 422,
+    "offset": 396
+  },
+  {
+    "nfl_id": 53439,
+    "play_id": 3187,
+    "n": 26,
+    "csum": 448,
+    "offset": 422
+  },
+  {
+    "nfl_id": 53439,
+    "play_id": 3217,
+    "n": 34,
+    "csum": 482,
+    "offset": 448
+  },
+  {
+    "nfl_id": 53439,
+    "play_id": 3285,
+    "n": 23,
+    "csum": 505,
+    "offset": 482
+  },
+  {
+    "nfl_id": 53439,
+    "play_id": 3355,
+    "n": 30,
+    "csum": 535,
+    "offset": 505
+  },
+  {
+    "nfl_id": 53439,
+    "play_id": 3683,
+    "n": 63,
+    "csum": 598,
+    "offset": 535
+  },
+  {
+    "nfl_id": 53439,
+    "play_id": 3772,
+    "n": 49,
+    "csum": 647,
+    "offset": 598
+  },
+  {
+    "nfl_id": 53439,
+    "play_id": 3797,
+    "n": 24,
+    "csum": 671,
+    "offset": 647
+  },
+  {
+    "nfl_id": 53439,
+    "play_id": 3915,
+    "n": 21,
+    "csum": 692,
+    "offset": 671
+  },
+  {
+    "nfl_id": 53439,
+    "play_id": 4427,
+    "n": 19,
+    "csum": 711,
+    "offset": 692
+  },
+  {
+    "nfl_id": 53454,
+    "play_id": 143,
+    "n": 22,
+    "csum": 22,
+    "offset": 0
+  },
+  {
+    "nfl_id": 53454,
+    "play_id": 166,
+    "n": 18,
+    "csum": 40,
+    "offset": 22
+  },
+  {
+    "nfl_id": 53454,
+    "play_id": 191,
+    "n": 23,
+    "csum": 63,
+    "offset": 40
+  },
+  {
+    "nfl_id": 53454,
+    "play_id": 358,
+    "n": 26,
+    "csum": 89,
+    "offset": 63
+  },
+  {
+    "nfl_id": 53454,
+    "play_id": 410,
+    "n": 32,
+    "csum": 121,
+    "offset": 89
+  },
+  {
+    "nfl_id": 53454,
+    "play_id": 529,
+    "n": 74,
+    "csum": 195,
+    "offset": 121
+  },
+  {
+    "nfl_id": 53454,
+    "play_id": 933,
+    "n": 34,
+    "csum": 229,
+    "offset": 195
+  },
+  {
+    "nfl_id": 53454,
+    "play_id": 1649,
+    "n": 22,
+    "csum": 251,
+    "offset": 229
+  },
+  {
+    "nfl_id": 53454,
+    "play_id": 1929,
+    "n": 25,
+    "csum": 276,
+    "offset": 251
+  },
+  {
+    "nfl_id": 53454,
+    "play_id": 2204,
+    "n": 25,
+    "csum": 301,
+    "offset": 276
+  },
+  {
+    "nfl_id": 53454,
+    "play_id": 2227,
+    "n": 28,
+    "csum": 329,
+    "offset": 301
+  },
+  {
+    "nfl_id": 53454,
+    "play_id": 2519,
+    "n": 17,
+    "csum": 346,
+    "offset": 329
+  },
+  {
+    "nfl_id": 53454,
+    "play_id": 2571,
+    "n": 17,
+    "csum": 363,
+    "offset": 346
+  },
+  {
+    "nfl_id": 53454,
+    "play_id": 2608,
+    "n": 24,
+    "csum": 387,
+    "offset": 363
+  },
+  {
+    "nfl_id": 53454,
+    "play_id": 2638,
+    "n": 17,
+    "csum": 404,
+    "offset": 387
+  },
+  {
+    "nfl_id": 53454,
+    "play_id": 2902,
+    "n": 25,
+    "csum": 429,
+    "offset": 404
+  },
+  {
+    "nfl_id": 53454,
+    "play_id": 3202,
+    "n": 27,
+    "csum": 456,
+    "offset": 429
+  },
+  {
+    "nfl_id": 53454,
+    "play_id": 3750,
+    "n": 15,
+    "csum": 471,
+    "offset": 456
+  },
+  {
+    "nfl_id": 53454,
+    "play_id": 3797,
+    "n": 27,
+    "csum": 498,
+    "offset": 471
+  },
+  {
+    "nfl_id": 53454,
+    "play_id": 3820,
+    "n": 31,
+    "csum": 529,
+    "offset": 498
+  },
+  {
+    "nfl_id": 53454,
+    "play_id": 3845,
+    "n": 26,
+    "csum": 555,
+    "offset": 529
+  },
+  {
+    "nfl_id": 53454,
+    "play_id": 4047,
+    "n": 40,
+    "csum": 595,
+    "offset": 555
+  },
+  {
+    "nfl_id": 53486,
+    "play_id": 439,
+    "n": 37,
+    "csum": 37,
+    "offset": 0
+  },
+  {
+    "nfl_id": 53486,
+    "play_id": 582,
+    "n": 19,
+    "csum": 56,
+    "offset": 37
+  },
+  {
+    "nfl_id": 53486,
+    "play_id": 605,
+    "n": 22,
+    "csum": 78,
+    "offset": 56
+  },
+  {
+    "nfl_id": 53486,
+    "play_id": 652,
+    "n": 26,
+    "csum": 104,
+    "offset": 78
+  },
+  {
+    "nfl_id": 53486,
+    "play_id": 677,
+    "n": 25,
+    "csum": 129,
+    "offset": 104
+  },
+  {
+    "nfl_id": 53486,
+    "play_id": 783,
+    "n": 15,
+    "csum": 144,
+    "offset": 129
+  },
+  {
+    "nfl_id": 53486,
+    "play_id": 1392,
+    "n": 17,
+    "csum": 161,
+    "offset": 144
+  },
+  {
+    "nfl_id": 53486,
+    "play_id": 1641,
+    "n": 24,
+    "csum": 185,
+    "offset": 161
+  },
+  {
+    "nfl_id": 53486,
+    "play_id": 1713,
+    "n": 31,
+    "csum": 216,
+    "offset": 185
+  },
+  {
+    "nfl_id": 53486,
+    "play_id": 1956,
+    "n": 33,
+    "csum": 249,
+    "offset": 216
+  },
+  {
+    "nfl_id": 53486,
+    "play_id": 1979,
+    "n": 21,
+    "csum": 270,
+    "offset": 249
+  },
+  {
+    "nfl_id": 53486,
+    "play_id": 2002,
+    "n": 19,
+    "csum": 289,
+    "offset": 270
+  },
+  {
+    "nfl_id": 53486,
+    "play_id": 2034,
+    "n": 30,
+    "csum": 319,
+    "offset": 289
+  },
+  {
+    "nfl_id": 53486,
+    "play_id": 2215,
+    "n": 22,
+    "csum": 341,
+    "offset": 319
+  },
+  {
+    "nfl_id": 53486,
+    "play_id": 2240,
+    "n": 41,
+    "csum": 382,
+    "offset": 341
+  },
+  {
+    "nfl_id": 53486,
+    "play_id": 2263,
+    "n": 28,
+    "csum": 410,
+    "offset": 382
+  },
+  {
+    "nfl_id": 53486,
+    "play_id": 2310,
+    "n": 25,
+    "csum": 435,
+    "offset": 410
+  },
+  {
+    "nfl_id": 53486,
+    "play_id": 2335,
+    "n": 29,
+    "csum": 464,
+    "offset": 435
+  },
+  {
+    "nfl_id": 53486,
+    "play_id": 2543,
+    "n": 22,
+    "csum": 486,
+    "offset": 464
+  },
+  {
+    "nfl_id": 53486,
+    "play_id": 2602,
+    "n": 22,
+    "csum": 508,
+    "offset": 486
+  },
+  {
+    "nfl_id": 53486,
+    "play_id": 2656,
+    "n": 29,
+    "csum": 537,
+    "offset": 508
+  },
+  {
+    "nfl_id": 53486,
+    "play_id": 2725,
+    "n": 29,
+    "csum": 566,
+    "offset": 537
+  },
+  {
+    "nfl_id": 53486,
+    "play_id": 3068,
+    "n": 32,
+    "csum": 598,
+    "offset": 566
+  },
+  {
+    "nfl_id": 53486,
+    "play_id": 3093,
+    "n": 36,
+    "csum": 634,
+    "offset": 598
+  },
+  {
+    "nfl_id": 53486,
+    "play_id": 3140,
+    "n": 33,
+    "csum": 667,
+    "offset": 634
+  },
+  {
+    "nfl_id": 53486,
+    "play_id": 3197,
+    "n": 23,
+    "csum": 690,
+    "offset": 667
+  },
+  {
+    "nfl_id": 53486,
+    "play_id": 3516,
+    "n": 24,
+    "csum": 714,
+    "offset": 690
+  },
+  {
+    "nfl_id": 53486,
+    "play_id": 3541,
+    "n": 29,
+    "csum": 743,
+    "offset": 714
+  },
+  {
+    "nfl_id": 53486,
+    "play_id": 3618,
+    "n": 39,
+    "csum": 782,
+    "offset": 743
+  },
+  {
+    "nfl_id": 53486,
+    "play_id": 3663,
+    "n": 24,
+    "csum": 806,
+    "offset": 782
+  },
+  {
+    "nfl_id": 53488,
+    "play_id": 185,
+    "n": 23,
+    "csum": 23,
+    "offset": 0
+  },
+  {
+    "nfl_id": 53488,
+    "play_id": 661,
+    "n": 29,
+    "csum": 52,
+    "offset": 23
+  },
+  {
+    "nfl_id": 53488,
+    "play_id": 842,
+    "n": 47,
+    "csum": 99,
+    "offset": 52
+  },
+  {
+    "nfl_id": 53488,
+    "play_id": 877,
+    "n": 49,
+    "csum": 148,
+    "offset": 99
+  },
+  {
+    "nfl_id": 53488,
+    "play_id": 1193,
+    "n": 34,
+    "csum": 182,
+    "offset": 148
+  },
+  {
+    "nfl_id": 53488,
+    "play_id": 1240,
+    "n": 32,
+    "csum": 214,
+    "offset": 182
+  },
+  {
+    "nfl_id": 53488,
+    "play_id": 1300,
+    "n": 23,
+    "csum": 237,
+    "offset": 214
+  },
+  {
+    "nfl_id": 53488,
+    "play_id": 1325,
+    "n": 27,
+    "csum": 264,
+    "offset": 237
+  },
+  {
+    "nfl_id": 53488,
+    "play_id": 1382,
+    "n": 34,
+    "csum": 298,
+    "offset": 264
+  },
+  {
+    "nfl_id": 53488,
+    "play_id": 1429,
+    "n": 18,
+    "csum": 316,
+    "offset": 298
+  },
+  {
+    "nfl_id": 53488,
+    "play_id": 1697,
+    "n": 24,
+    "csum": 340,
+    "offset": 316
+  },
+  {
+    "nfl_id": 53488,
+    "play_id": 1720,
+    "n": 27,
+    "csum": 367,
+    "offset": 340
+  },
+  {
+    "nfl_id": 53488,
+    "play_id": 1743,
+    "n": 31,
+    "csum": 398,
+    "offset": 367
+  },
+  {
+    "nfl_id": 53488,
+    "play_id": 1925,
+    "n": 31,
+    "csum": 429,
+    "offset": 398
+  },
+  {
+    "nfl_id": 53488,
+    "play_id": 2101,
+    "n": 26,
+    "csum": 455,
+    "offset": 429
+  },
+  {
+    "nfl_id": 53488,
+    "play_id": 2342,
+    "n": 40,
+    "csum": 495,
+    "offset": 455
+  },
+  {
+    "nfl_id": 53488,
+    "play_id": 2389,
+    "n": 27,
+    "csum": 522,
+    "offset": 495
+  },
+  {
+    "nfl_id": 53488,
+    "play_id": 2580,
+    "n": 31,
+    "csum": 553,
+    "offset": 522
+  },
+  {
+    "nfl_id": 53488,
+    "play_id": 3026,
+    "n": 26,
+    "csum": 579,
+    "offset": 553
+  },
+  {
+    "nfl_id": 53488,
+    "play_id": 3078,
+    "n": 40,
+    "csum": 619,
+    "offset": 579
+  },
+  {
+    "nfl_id": 53488,
+    "play_id": 3369,
+    "n": 33,
+    "csum": 652,
+    "offset": 619
+  },
+  {
+    "nfl_id": 53488,
+    "play_id": 3421,
+    "n": 24,
+    "csum": 676,
+    "offset": 652
+  },
+  {
+    "nfl_id": 53488,
+    "play_id": 3886,
+    "n": 34,
+    "csum": 710,
+    "offset": 676
+  },
+  {
+    "nfl_id": 53488,
+    "play_id": 3916,
+    "n": 36,
+    "csum": 746,
+    "offset": 710
+  },
+  {
+    "nfl_id": 53488,
+    "play_id": 4107,
+    "n": 20,
+    "csum": 766,
+    "offset": 746
+  },
+  {
+    "nfl_id": 53488,
+    "play_id": 4155,
+    "n": 25,
+    "csum": 791,
+    "offset": 766
+  },
+  {
+    "nfl_id": 53541,
+    "play_id": 101,
+    "n": 26,
+    "csum": 26,
+    "offset": 0
+  },
+  {
+    "nfl_id": 53541,
+    "play_id": 361,
+    "n": 51,
+    "csum": 77,
+    "offset": 26
+  },
+  {
+    "nfl_id": 53541,
+    "play_id": 436,
+    "n": 20,
+    "csum": 97,
+    "offset": 77
+  },
+  {
+    "nfl_id": 53541,
+    "play_id": 461,
+    "n": 23,
+    "csum": 120,
+    "offset": 97
+  },
+  {
+    "nfl_id": 53541,
+    "play_id": 530,
+    "n": 20,
+    "csum": 140,
+    "offset": 120
+  },
+  {
+    "nfl_id": 53541,
+    "play_id": 621,
+    "n": 29,
+    "csum": 169,
+    "offset": 140
+  },
+  {
+    "nfl_id": 53541,
+    "play_id": 1069,
+    "n": 31,
+    "csum": 200,
+    "offset": 169
+  },
+  {
+    "nfl_id": 53541,
+    "play_id": 1154,
+    "n": 33,
+    "csum": 233,
+    "offset": 200
+  },
+  {
+    "nfl_id": 53541,
+    "play_id": 1201,
+    "n": 19,
+    "csum": 252,
+    "offset": 233
+  },
+  {
+    "nfl_id": 53541,
+    "play_id": 1300,
+    "n": 19,
+    "csum": 271,
+    "offset": 252
+  },
+  {
+    "nfl_id": 53541,
+    "play_id": 1494,
+    "n": 30,
+    "csum": 301,
+    "offset": 271
+  },
+  {
+    "nfl_id": 53541,
+    "play_id": 1812,
+    "n": 22,
+    "csum": 323,
+    "offset": 301
+  },
+  {
+    "nfl_id": 53541,
+    "play_id": 1837,
+    "n": 27,
+    "csum": 350,
+    "offset": 323
+  },
+  {
+    "nfl_id": 53541,
+    "play_id": 1869,
+    "n": 28,
+    "csum": 378,
+    "offset": 350
+  },
+  {
+    "nfl_id": 53541,
+    "play_id": 1940,
+    "n": 39,
+    "csum": 417,
+    "offset": 378
+  },
+  {
+    "nfl_id": 53541,
+    "play_id": 2186,
+    "n": 16,
+    "csum": 433,
+    "offset": 417
+  },
+  {
+    "nfl_id": 53541,
+    "play_id": 2261,
+    "n": 28,
+    "csum": 461,
+    "offset": 433
+  },
+  {
+    "nfl_id": 53541,
+    "play_id": 2613,
+    "n": 35,
+    "csum": 496,
+    "offset": 461
+  },
+  {
+    "nfl_id": 53541,
+    "play_id": 2638,
+    "n": 40,
+    "csum": 536,
+    "offset": 496
+  },
+  {
+    "nfl_id": 53541,
+    "play_id": 3032,
+    "n": 20,
+    "csum": 556,
+    "offset": 536
+  },
+  {
+    "nfl_id": 53541,
+    "play_id": 3089,
+    "n": 29,
+    "csum": 585,
+    "offset": 556
+  },
+  {
+    "nfl_id": 53541,
+    "play_id": 3114,
+    "n": 32,
+    "csum": 617,
+    "offset": 585
+  },
+  {
+    "nfl_id": 53541,
+    "play_id": 3461,
+    "n": 31,
+    "csum": 648,
+    "offset": 617
+  },
+  {
+    "nfl_id": 53541,
+    "play_id": 3486,
+    "n": 34,
+    "csum": 682,
+    "offset": 648
+  },
+  {
+    "nfl_id": 53541,
+    "play_id": 3566,
+    "n": 38,
+    "csum": 720,
+    "offset": 682
+  },
+  {
+    "nfl_id": 53549,
+    "play_id": 614,
+    "n": 22,
+    "csum": 22,
+    "offset": 0
+  },
+  {
+    "nfl_id": 53549,
+    "play_id": 637,
+    "n": 25,
+    "csum": 47,
+    "offset": 22
+  },
+  {
+    "nfl_id": 53549,
+    "play_id": 952,
+    "n": 26,
+    "csum": 73,
+    "offset": 47
+  },
+  {
+    "nfl_id": 53549,
+    "play_id": 980,
+    "n": 51,
+    "csum": 124,
+    "offset": 73
+  },
+  {
+    "nfl_id": 53549,
+    "play_id": 1224,
+    "n": 21,
+    "csum": 145,
+    "offset": 124
+  },
+  {
+    "nfl_id": 53549,
+    "play_id": 1418,
+    "n": 21,
+    "csum": 166,
+    "offset": 145
+  },
+  {
+    "nfl_id": 53549,
+    "play_id": 1443,
+    "n": 27,
+    "csum": 193,
+    "offset": 166
+  },
+  {
+    "nfl_id": 53549,
+    "play_id": 1759,
+    "n": 32,
+    "csum": 225,
+    "offset": 193
+  },
+  {
+    "nfl_id": 53549,
+    "play_id": 1792,
+    "n": 24,
+    "csum": 249,
+    "offset": 225
+  },
+  {
+    "nfl_id": 53549,
+    "play_id": 1839,
+    "n": 23,
+    "csum": 272,
+    "offset": 249
+  },
+  {
+    "nfl_id": 53549,
+    "play_id": 2093,
+    "n": 22,
+    "csum": 294,
+    "offset": 272
+  },
+  {
+    "nfl_id": 53549,
+    "play_id": 2196,
+    "n": 34,
+    "csum": 328,
+    "offset": 294
+  },
+  {
+    "nfl_id": 53549,
+    "play_id": 2363,
+    "n": 32,
+    "csum": 360,
+    "offset": 328
+  },
+  {
+    "nfl_id": 53549,
+    "play_id": 2388,
+    "n": 23,
+    "csum": 383,
+    "offset": 360
+  },
+  {
+    "nfl_id": 53549,
+    "play_id": 2834,
+    "n": 24,
+    "csum": 407,
+    "offset": 383
+  },
+  {
+    "nfl_id": 53549,
+    "play_id": 2857,
+    "n": 23,
+    "csum": 430,
+    "offset": 407
+  },
+  {
+    "nfl_id": 53549,
+    "play_id": 3425,
+    "n": 13,
+    "csum": 443,
+    "offset": 430
+  },
+  {
+    "nfl_id": 53549,
+    "play_id": 3455,
+    "n": 29,
+    "csum": 472,
+    "offset": 443
+  },
+  {
+    "nfl_id": 53549,
+    "play_id": 3541,
+    "n": 15,
+    "csum": 487,
+    "offset": 472
+  },
+  {
+    "nfl_id": 53549,
+    "play_id": 3976,
+    "n": 28,
+    "csum": 515,
+    "offset": 487
+  },
+  {
+    "nfl_id": 53549,
+    "play_id": 4046,
+    "n": 28,
+    "csum": 543,
+    "offset": 515
+  },
+  {
+    "nfl_id": 53549,
+    "play_id": 4071,
+    "n": 33,
+    "csum": 576,
+    "offset": 543
+  },
+  {
+    "nfl_id": 53549,
+    "play_id": 4457,
+    "n": 19,
+    "csum": 595,
+    "offset": 576
+  },
+  {
+    "nfl_id": 53549,
+    "play_id": 4485,
+    "n": 23,
+    "csum": 618,
+    "offset": 595
+  },
+  {
+    "nfl_id": 53556,
+    "play_id": 662,
+    "n": 25,
+    "csum": 25,
+    "offset": 0
+  },
+  {
+    "nfl_id": 53556,
+    "play_id": 687,
+    "n": 28,
+    "csum": 53,
+    "offset": 25
+  },
+  {
+    "nfl_id": 53556,
+    "play_id": 1503,
+    "n": 34,
+    "csum": 87,
+    "offset": 53
+  },
+  {
+    "nfl_id": 53556,
+    "play_id": 1805,
+    "n": 21,
+    "csum": 108,
+    "offset": 87
+  },
+  {
+    "nfl_id": 53556,
+    "play_id": 1841,
+    "n": 38,
+    "csum": 146,
+    "offset": 108
+  },
+  {
+    "nfl_id": 53556,
+    "play_id": 2062,
+    "n": 29,
+    "csum": 175,
+    "offset": 146
+  },
+  {
+    "nfl_id": 53556,
+    "play_id": 2087,
+    "n": 29,
+    "csum": 204,
+    "offset": 175
+  },
+  {
+    "nfl_id": 53556,
+    "play_id": 2798,
+    "n": 45,
+    "csum": 249,
+    "offset": 204
+  },
+  {
+    "nfl_id": 53556,
+    "play_id": 2979,
+    "n": 27,
+    "csum": 276,
+    "offset": 249
+  },
+  {
+    "nfl_id": 53556,
+    "play_id": 3002,
+    "n": 21,
+    "csum": 297,
+    "offset": 276
+  },
+  {
+    "nfl_id": 53556,
+    "play_id": 3335,
+    "n": 20,
+    "csum": 317,
+    "offset": 297
+  },
+  {
+    "nfl_id": 53556,
+    "play_id": 3409,
+    "n": 25,
+    "csum": 342,
+    "offset": 317
+  },
+  {
+    "nfl_id": 53556,
+    "play_id": 3645,
+    "n": 23,
+    "csum": 365,
+    "offset": 342
+  },
+  {
+    "nfl_id": 53556,
+    "play_id": 3975,
+    "n": 32,
+    "csum": 397,
+    "offset": 365
+  },
+  {
+    "nfl_id": 53556,
+    "play_id": 3998,
+    "n": 37,
+    "csum": 434,
+    "offset": 397
+  },
+  {
+    "nfl_id": 53556,
+    "play_id": 4153,
+    "n": 23,
+    "csum": 457,
+    "offset": 434
+  },
+  {
+    "nfl_id": 53556,
+    "play_id": 4258,
+    "n": 19,
+    "csum": 476,
+    "offset": 457
+  },
+  {
+    "nfl_id": 53556,
+    "play_id": 4283,
+    "n": 49,
+    "csum": 525,
+    "offset": 476
+  },
+  {
+    "nfl_id": 53556,
+    "play_id": 4308,
+    "n": 20,
+    "csum": 545,
+    "offset": 525
+  },
+  {
+    "nfl_id": 53556,
+    "play_id": 4333,
+    "n": 19,
+    "csum": 564,
+    "offset": 545
+  },
+  {
+    "nfl_id": 53556,
+    "play_id": 4363,
+    "n": 22,
+    "csum": 586,
+    "offset": 564
+  },
+  {
+    "nfl_id": 53556,
+    "play_id": 4494,
+    "n": 19,
+    "csum": 605,
+    "offset": 586
+  },
+  {
+    "nfl_id": 53556,
+    "play_id": 4551,
+    "n": 53,
+    "csum": 658,
+    "offset": 605
+  },
+  {
+    "nfl_id": 53591,
+    "play_id": 194,
+    "n": 32,
+    "csum": 32,
+    "offset": 0
+  },
+  {
+    "nfl_id": 53591,
+    "play_id": 219,
+    "n": 17,
+    "csum": 49,
+    "offset": 32
+  },
+  {
+    "nfl_id": 53591,
+    "play_id": 713,
+    "n": 24,
+    "csum": 73,
+    "offset": 49
+  },
+  {
+    "nfl_id": 53591,
+    "play_id": 736,
+    "n": 31,
+    "csum": 104,
+    "offset": 73
+  },
+  {
+    "nfl_id": 53591,
+    "play_id": 877,
+    "n": 34,
+    "csum": 138,
+    "offset": 104
+  },
+  {
+    "nfl_id": 53591,
+    "play_id": 1001,
+    "n": 38,
+    "csum": 176,
+    "offset": 138
+  },
+  {
+    "nfl_id": 53591,
+    "play_id": 1422,
+    "n": 27,
+    "csum": 203,
+    "offset": 176
+  },
+  {
+    "nfl_id": 53591,
+    "play_id": 1563,
+    "n": 45,
+    "csum": 248,
+    "offset": 203
+  },
+  {
+    "nfl_id": 53591,
+    "play_id": 1588,
+    "n": 30,
+    "csum": 278,
+    "offset": 248
+  },
+  {
+    "nfl_id": 53591,
+    "play_id": 1618,
+    "n": 22,
+    "csum": 300,
+    "offset": 278
+  },
+  {
+    "nfl_id": 53591,
+    "play_id": 1679,
+    "n": 31,
+    "csum": 331,
+    "offset": 300
+  },
+  {
+    "nfl_id": 53591,
+    "play_id": 1711,
+    "n": 26,
+    "csum": 357,
+    "offset": 331
+  },
+  {
+    "nfl_id": 53591,
+    "play_id": 1741,
+    "n": 25,
+    "csum": 382,
+    "offset": 357
+  },
+  {
+    "nfl_id": 53591,
+    "play_id": 2118,
+    "n": 26,
+    "csum": 408,
+    "offset": 382
+  },
+  {
+    "nfl_id": 53591,
+    "play_id": 2141,
+    "n": 33,
+    "csum": 441,
+    "offset": 408
+  },
+  {
+    "nfl_id": 53591,
+    "play_id": 2306,
+    "n": 26,
+    "csum": 467,
+    "offset": 441
+  },
+  {
+    "nfl_id": 53591,
+    "play_id": 2364,
+    "n": 25,
+    "csum": 492,
+    "offset": 467
+  },
+  {
+    "nfl_id": 53591,
+    "play_id": 2435,
+    "n": 34,
+    "csum": 526,
+    "offset": 492
+  },
+  {
+    "nfl_id": 53591,
+    "play_id": 2487,
+    "n": 44,
+    "csum": 570,
+    "offset": 526
+  },
+  {
+    "nfl_id": 53591,
+    "play_id": 2510,
+    "n": 17,
+    "csum": 587,
+    "offset": 570
+  },
+  {
+    "nfl_id": 53591,
+    "play_id": 2825,
+    "n": 40,
+    "csum": 627,
+    "offset": 587
+  },
+  {
+    "nfl_id": 53591,
+    "play_id": 2906,
+    "n": 62,
+    "csum": 689,
+    "offset": 627
+  },
+  {
+    "nfl_id": 53591,
+    "play_id": 2959,
+    "n": 23,
+    "csum": 712,
+    "offset": 689
+  },
+  {
+    "nfl_id": 53591,
+    "play_id": 3185,
+    "n": 37,
+    "csum": 749,
+    "offset": 712
+  },
+  {
+    "nfl_id": 53591,
+    "play_id": 3233,
+    "n": 30,
+    "csum": 779,
+    "offset": 749
+  },
+  {
+    "nfl_id": 53591,
+    "play_id": 3324,
+    "n": 52,
+    "csum": 831,
+    "offset": 779
+  },
+  {
+    "nfl_id": 53591,
+    "play_id": 3674,
+    "n": 16,
+    "csum": 847,
+    "offset": 831
+  },
+  {
+    "nfl_id": 53591,
+    "play_id": 3971,
+    "n": 28,
+    "csum": 875,
+    "offset": 847
+  },
+  {
+    "nfl_id": 53591,
+    "play_id": 3994,
+    "n": 33,
+    "csum": 908,
+    "offset": 875
+  },
+  {
+    "nfl_id": 53591,
+    "play_id": 4041,
+    "n": 67,
+    "csum": 975,
+    "offset": 908
+  },
+  {
+    "nfl_id": 54481,
+    "play_id": 77,
+    "n": 22,
+    "csum": 22,
+    "offset": 0
+  },
+  {
+    "nfl_id": 54481,
+    "play_id": 124,
+    "n": 27,
+    "csum": 49,
+    "offset": 22
+  },
+  {
+    "nfl_id": 54481,
+    "play_id": 147,
+    "n": 39,
+    "csum": 88,
+    "offset": 49
+  },
+  {
+    "nfl_id": 54481,
+    "play_id": 197,
+    "n": 24,
+    "csum": 112,
+    "offset": 88
+  },
+  {
+    "nfl_id": 54481,
+    "play_id": 220,
+    "n": 22,
+    "csum": 134,
+    "offset": 112
+  },
+  {
+    "nfl_id": 54481,
+    "play_id": 580,
+    "n": 22,
+    "csum": 156,
+    "offset": 134
+  },
+  {
+    "nfl_id": 54481,
+    "play_id": 699,
+    "n": 61,
+    "csum": 217,
+    "offset": 156
+  },
+  {
+    "nfl_id": 54481,
+    "play_id": 1371,
+    "n": 28,
+    "csum": 245,
+    "offset": 217
+  },
+  {
+    "nfl_id": 54481,
+    "play_id": 1399,
+    "n": 16,
+    "csum": 261,
+    "offset": 245
+  },
+  {
+    "nfl_id": 54481,
+    "play_id": 1424,
+    "n": 38,
+    "csum": 299,
+    "offset": 261
+  },
+  {
+    "nfl_id": 54481,
+    "play_id": 1620,
+    "n": 21,
+    "csum": 320,
+    "offset": 299
+  },
+  {
+    "nfl_id": 54481,
+    "play_id": 1679,
+    "n": 30,
+    "csum": 350,
+    "offset": 320
+  },
+  {
+    "nfl_id": 54481,
+    "play_id": 1988,
+    "n": 26,
+    "csum": 376,
+    "offset": 350
+  },
+  {
+    "nfl_id": 54481,
+    "play_id": 2013,
+    "n": 28,
+    "csum": 404,
+    "offset": 376
+  },
+  {
+    "nfl_id": 54481,
+    "play_id": 2036,
+    "n": 20,
+    "csum": 424,
+    "offset": 404
+  },
+  {
+    "nfl_id": 54481,
+    "play_id": 2135,
+    "n": 27,
+    "csum": 451,
+    "offset": 424
+  },
+  {
+    "nfl_id": 54481,
+    "play_id": 2160,
+    "n": 32,
+    "csum": 483,
+    "offset": 451
+  },
+  {
+    "nfl_id": 54481,
+    "play_id": 2208,
+    "n": 29,
+    "csum": 512,
+    "offset": 483
+  },
+  {
+    "nfl_id": 54481,
+    "play_id": 2238,
+    "n": 31,
+    "csum": 543,
+    "offset": 512
+  },
+  {
+    "nfl_id": 54481,
+    "play_id": 2672,
+    "n": 30,
+    "csum": 573,
+    "offset": 543
+  },
+  {
+    "nfl_id": 54481,
+    "play_id": 2719,
+    "n": 25,
+    "csum": 598,
+    "offset": 573
+  },
+  {
+    "nfl_id": 54481,
+    "play_id": 3145,
+    "n": 41,
+    "csum": 639,
+    "offset": 598
+  },
+  {
+    "nfl_id": 54483,
+    "play_id": 159,
+    "n": 25,
+    "csum": 25,
+    "offset": 0
+  },
+  {
+    "nfl_id": 54483,
+    "play_id": 228,
+    "n": 29,
+    "csum": 54,
+    "offset": 25
+  },
+  {
+    "nfl_id": 54483,
+    "play_id": 721,
+    "n": 28,
+    "csum": 82,
+    "offset": 54
+  },
+  {
+    "nfl_id": 54483,
+    "play_id": 768,
+    "n": 33,
+    "csum": 115,
+    "offset": 82
+  },
+  {
+    "nfl_id": 54483,
+    "play_id": 793,
+    "n": 28,
+    "csum": 143,
+    "offset": 115
+  },
+  {
+    "nfl_id": 54483,
+    "play_id": 849,
+    "n": 24,
+    "csum": 167,
+    "offset": 143
+  },
+  {
+    "nfl_id": 54483,
+    "play_id": 1065,
+    "n": 28,
+    "csum": 195,
+    "offset": 167
+  },
+  {
+    "nfl_id": 54483,
+    "play_id": 1394,
+    "n": 57,
+    "csum": 252,
+    "offset": 195
+  },
+  {
+    "nfl_id": 54483,
+    "play_id": 1721,
+    "n": 36,
+    "csum": 288,
+    "offset": 252
+  },
+  {
+    "nfl_id": 54483,
+    "play_id": 1766,
+    "n": 37,
+    "csum": 325,
+    "offset": 288
+  },
+  {
+    "nfl_id": 54483,
+    "play_id": 2366,
+    "n": 18,
+    "csum": 343,
+    "offset": 325
+  },
+  {
+    "nfl_id": 54483,
+    "play_id": 2670,
+    "n": 32,
+    "csum": 375,
+    "offset": 343
+  },
+  {
+    "nfl_id": 54483,
+    "play_id": 2720,
+    "n": 28,
+    "csum": 403,
+    "offset": 375
+  },
+  {
+    "nfl_id": 54483,
+    "play_id": 3042,
+    "n": 22,
+    "csum": 425,
+    "offset": 403
+  },
+  {
+    "nfl_id": 54483,
+    "play_id": 3067,
+    "n": 23,
+    "csum": 448,
+    "offset": 425
+  },
+  {
+    "nfl_id": 54483,
+    "play_id": 3358,
+    "n": 31,
+    "csum": 479,
+    "offset": 448
+  },
+  {
+    "nfl_id": 54483,
+    "play_id": 3413,
+    "n": 42,
+    "csum": 521,
+    "offset": 479
+  },
+  {
+    "nfl_id": 54483,
+    "play_id": 3436,
+    "n": 23,
+    "csum": 544,
+    "offset": 521
+  },
+  {
+    "nfl_id": 54483,
+    "play_id": 3483,
+    "n": 39,
+    "csum": 583,
+    "offset": 544
+  },
+  {
+    "nfl_id": 54483,
+    "play_id": 3578,
+    "n": 20,
+    "csum": 603,
+    "offset": 583
+  },
+  {
+    "nfl_id": 54483,
+    "play_id": 3603,
+    "n": 24,
+    "csum": 627,
+    "offset": 603
+  },
+  {
+    "nfl_id": 54483,
+    "play_id": 3984,
+    "n": 18,
+    "csum": 645,
+    "offset": 627
+  },
+  {
+    "nfl_id": 54483,
+    "play_id": 4036,
+    "n": 21,
+    "csum": 666,
+    "offset": 645
+  },
+  {
+    "nfl_id": 54483,
+    "play_id": 4124,
+    "n": 24,
+    "csum": 690,
+    "offset": 666
+  },
+  {
+    "nfl_id": 54483,
+    "play_id": 4147,
+    "n": 38,
+    "csum": 728,
+    "offset": 690
+  },
+  {
+    "nfl_id": 54517,
+    "play_id": 55,
+    "n": 29,
+    "csum": 29,
+    "offset": 0
+  },
+  {
+    "nfl_id": 54517,
+    "play_id": 431,
+    "n": 35,
+    "csum": 64,
+    "offset": 29
+  },
+  {
+    "nfl_id": 54517,
+    "play_id": 822,
+    "n": 30,
+    "csum": 94,
+    "offset": 64
+  },
+  {
+    "nfl_id": 54517,
+    "play_id": 1207,
+    "n": 34,
+    "csum": 128,
+    "offset": 94
+  },
+  {
+    "nfl_id": 54517,
+    "play_id": 1717,
+    "n": 25,
+    "csum": 153,
+    "offset": 128
+  },
+  {
+    "nfl_id": 54517,
+    "play_id": 2156,
+    "n": 21,
+    "csum": 174,
+    "offset": 153
+  },
+  {
+    "nfl_id": 54517,
+    "play_id": 2188,
+    "n": 29,
+    "csum": 203,
+    "offset": 174
+  },
+  {
+    "nfl_id": 54517,
+    "play_id": 2274,
+    "n": 32,
+    "csum": 235,
+    "offset": 203
+  },
+  {
+    "nfl_id": 54517,
+    "play_id": 2299,
+    "n": 26,
+    "csum": 261,
+    "offset": 235
+  },
+  {
+    "nfl_id": 54517,
+    "play_id": 2324,
+    "n": 24,
+    "csum": 285,
+    "offset": 261
+  },
+  {
+    "nfl_id": 54517,
+    "play_id": 2380,
+    "n": 20,
+    "csum": 305,
+    "offset": 285
+  },
+  {
+    "nfl_id": 54517,
+    "play_id": 2415,
+    "n": 17,
+    "csum": 322,
+    "offset": 305
+  },
+  {
+    "nfl_id": 54517,
+    "play_id": 2470,
+    "n": 26,
+    "csum": 348,
+    "offset": 322
+  },
+  {
+    "nfl_id": 54517,
+    "play_id": 2529,
+    "n": 21,
+    "csum": 369,
+    "offset": 348
+  },
+  {
+    "nfl_id": 54517,
+    "play_id": 3078,
+    "n": 27,
+    "csum": 396,
+    "offset": 369
+  },
+  {
+    "nfl_id": 54517,
+    "play_id": 3137,
+    "n": 28,
+    "csum": 424,
+    "offset": 396
+  },
+  {
+    "nfl_id": 54517,
+    "play_id": 3234,
+    "n": 28,
+    "csum": 452,
+    "offset": 424
+  },
+  {
+    "nfl_id": 54517,
+    "play_id": 3295,
+    "n": 21,
+    "csum": 473,
+    "offset": 452
+  },
+  {
+    "nfl_id": 54517,
+    "play_id": 3422,
+    "n": 19,
+    "csum": 492,
+    "offset": 473
+  },
+  {
+    "nfl_id": 54517,
+    "play_id": 3447,
+    "n": 38,
+    "csum": 530,
+    "offset": 492
+  },
+  {
+    "nfl_id": 54517,
+    "play_id": 3472,
+    "n": 28,
+    "csum": 558,
+    "offset": 530
+  },
+  {
+    "nfl_id": 54517,
+    "play_id": 3722,
+    "n": 20,
+    "csum": 578,
+    "offset": 558
+  },
+  {
+    "nfl_id": 54517,
+    "play_id": 3754,
+    "n": 32,
+    "csum": 610,
+    "offset": 578
+  },
+  {
+    "nfl_id": 54517,
+    "play_id": 3779,
+    "n": 28,
+    "csum": 638,
+    "offset": 610
+  },
+  {
+    "nfl_id": 54517,
+    "play_id": 3804,
+    "n": 36,
+    "csum": 674,
+    "offset": 638
+  },
+  {
+    "nfl_id": 54517,
+    "play_id": 3829,
+    "n": 49,
+    "csum": 723,
+    "offset": 674
+  },
+  {
+    "nfl_id": 54517,
+    "play_id": 3881,
+    "n": 33,
+    "csum": 756,
+    "offset": 723
+  },
+  {
+    "nfl_id": 54517,
+    "play_id": 4163,
+    "n": 27,
+    "csum": 783,
+    "offset": 756
+  },
+  {
+    "nfl_id": 54517,
+    "play_id": 4186,
+    "n": 32,
+    "csum": 815,
+    "offset": 783
+  },
+  {
+    "nfl_id": 54517,
+    "play_id": 4211,
+    "n": 27,
+    "csum": 842,
+    "offset": 815
+  },
+  {
+    "nfl_id": 54517,
+    "play_id": 4270,
+    "n": 28,
+    "csum": 870,
+    "offset": 842
+  },
+  {
+    "nfl_id": 54517,
+    "play_id": 4315,
+    "n": 32,
+    "csum": 902,
+    "offset": 870
+  },
+  {
+    "nfl_id": 54517,
+    "play_id": 4340,
+    "n": 62,
+    "csum": 964,
+    "offset": 902
+  },
+  {
+    "nfl_id": 54517,
+    "play_id": 4420,
+    "n": 32,
+    "csum": 996,
+    "offset": 964
+  },
+  {
+    "nfl_id": 54518,
+    "play_id": 81,
+    "n": 25,
+    "csum": 25,
+    "offset": 0
+  },
+  {
+    "nfl_id": 54518,
+    "play_id": 263,
+    "n": 18,
+    "csum": 43,
+    "offset": 25
+  },
+  {
+    "nfl_id": 54518,
+    "play_id": 662,
+    "n": 25,
+    "csum": 68,
+    "offset": 43
+  },
+  {
+    "nfl_id": 54518,
+    "play_id": 761,
+    "n": 18,
+    "csum": 86,
+    "offset": 68
+  },
+  {
+    "nfl_id": 54518,
+    "play_id": 1503,
+    "n": 34,
+    "csum": 120,
+    "offset": 86
+  },
+  {
+    "nfl_id": 54518,
+    "play_id": 1782,
+    "n": 52,
+    "csum": 172,
+    "offset": 120
+  },
+  {
+    "nfl_id": 54518,
+    "play_id": 1805,
+    "n": 21,
+    "csum": 193,
+    "offset": 172
+  },
+  {
+    "nfl_id": 54518,
+    "play_id": 1841,
+    "n": 38,
+    "csum": 231,
+    "offset": 193
+  },
+  {
+    "nfl_id": 54518,
+    "play_id": 2062,
+    "n": 29,
+    "csum": 260,
+    "offset": 231
+  },
+  {
+    "nfl_id": 54518,
+    "play_id": 2087,
+    "n": 29,
+    "csum": 289,
+    "offset": 260
+  },
+  {
+    "nfl_id": 54518,
+    "play_id": 2286,
+    "n": 26,
+    "csum": 315,
+    "offset": 289
+  },
+  {
+    "nfl_id": 54518,
+    "play_id": 2369,
+    "n": 18,
+    "csum": 333,
+    "offset": 315
+  },
+  {
+    "nfl_id": 54518,
+    "play_id": 2798,
+    "n": 45,
+    "csum": 378,
+    "offset": 333
+  },
+  {
+    "nfl_id": 54518,
+    "play_id": 2979,
+    "n": 27,
+    "csum": 405,
+    "offset": 378
+  },
+  {
+    "nfl_id": 54518,
+    "play_id": 3002,
+    "n": 21,
+    "csum": 426,
+    "offset": 405
+  },
+  {
+    "nfl_id": 54518,
+    "play_id": 3335,
+    "n": 20,
+    "csum": 446,
+    "offset": 426
+  },
+  {
+    "nfl_id": 54518,
+    "play_id": 3409,
+    "n": 25,
+    "csum": 471,
+    "offset": 446
+  },
+  {
+    "nfl_id": 54518,
+    "play_id": 3645,
+    "n": 23,
+    "csum": 494,
+    "offset": 471
+  },
+  {
+    "nfl_id": 54518,
+    "play_id": 3975,
+    "n": 32,
+    "csum": 526,
+    "offset": 494
+  },
+  {
+    "nfl_id": 54518,
+    "play_id": 3998,
+    "n": 37,
+    "csum": 563,
+    "offset": 526
+  },
+  {
+    "nfl_id": 54518,
+    "play_id": 4153,
+    "n": 23,
+    "csum": 586,
+    "offset": 563
+  },
+  {
+    "nfl_id": 54518,
+    "play_id": 4201,
+    "n": 20,
+    "csum": 606,
+    "offset": 586
+  },
+  {
+    "nfl_id": 54518,
+    "play_id": 4363,
+    "n": 22,
+    "csum": 628,
+    "offset": 606
+  },
+  {
+    "nfl_id": 54518,
+    "play_id": 4416,
+    "n": 27,
+    "csum": 655,
+    "offset": 628
+  },
+  {
+    "nfl_id": 54518,
+    "play_id": 4494,
+    "n": 19,
+    "csum": 674,
+    "offset": 655
+  },
+  {
+    "nfl_id": 54518,
+    "play_id": 4551,
+    "n": 53,
+    "csum": 727,
+    "offset": 674
+  },
+  {
+    "nfl_id": 54608,
+    "play_id": 159,
+    "n": 25,
+    "csum": 25,
+    "offset": 0
+  },
+  {
+    "nfl_id": 54608,
+    "play_id": 228,
+    "n": 29,
+    "csum": 54,
+    "offset": 25
+  },
+  {
+    "nfl_id": 54608,
+    "play_id": 721,
+    "n": 28,
+    "csum": 82,
+    "offset": 54
+  },
+  {
+    "nfl_id": 54608,
+    "play_id": 793,
+    "n": 28,
+    "csum": 110,
+    "offset": 82
+  },
+  {
+    "nfl_id": 54608,
+    "play_id": 849,
+    "n": 24,
+    "csum": 134,
+    "offset": 110
+  },
+  {
+    "nfl_id": 54608,
+    "play_id": 1394,
+    "n": 57,
+    "csum": 191,
+    "offset": 134
+  },
+  {
+    "nfl_id": 54608,
+    "play_id": 1721,
+    "n": 36,
+    "csum": 227,
+    "offset": 191
+  },
+  {
+    "nfl_id": 54608,
+    "play_id": 1766,
+    "n": 37,
+    "csum": 264,
+    "offset": 227
+  },
+  {
+    "nfl_id": 54608,
+    "play_id": 2440,
+    "n": 41,
+    "csum": 305,
+    "offset": 264
+  },
+  {
+    "nfl_id": 54608,
+    "play_id": 2670,
+    "n": 32,
+    "csum": 337,
+    "offset": 305
+  },
+  {
+    "nfl_id": 54608,
+    "play_id": 2720,
+    "n": 28,
+    "csum": 365,
+    "offset": 337
+  },
+  {
+    "nfl_id": 54608,
+    "play_id": 3042,
+    "n": 22,
+    "csum": 387,
+    "offset": 365
+  },
+  {
+    "nfl_id": 54608,
+    "play_id": 3067,
+    "n": 23,
+    "csum": 410,
+    "offset": 387
+  },
+  {
+    "nfl_id": 54608,
+    "play_id": 3358,
+    "n": 31,
+    "csum": 441,
+    "offset": 410
+  },
+  {
+    "nfl_id": 54608,
+    "play_id": 3413,
+    "n": 42,
+    "csum": 483,
+    "offset": 441
+  },
+  {
+    "nfl_id": 54608,
+    "play_id": 3578,
+    "n": 20,
+    "csum": 503,
+    "offset": 483
+  },
+  {
+    "nfl_id": 54608,
+    "play_id": 3603,
+    "n": 24,
+    "csum": 527,
+    "offset": 503
+  },
+  {
+    "nfl_id": 54608,
+    "play_id": 3984,
+    "n": 18,
+    "csum": 545,
+    "offset": 527
+  },
+  {
+    "nfl_id": 54608,
+    "play_id": 4036,
+    "n": 21,
+    "csum": 566,
+    "offset": 545
+  },
+  {
+    "nfl_id": 54608,
+    "play_id": 4124,
+    "n": 24,
+    "csum": 590,
+    "offset": 566
+  },
+  {
+    "nfl_id": 54608,
+    "play_id": 4147,
+    "n": 38,
+    "csum": 628,
+    "offset": 590
+  },
+  {
+    "nfl_id": 54629,
+    "play_id": 439,
+    "n": 37,
+    "csum": 37,
+    "offset": 0
+  },
+  {
+    "nfl_id": 54629,
+    "play_id": 582,
+    "n": 19,
+    "csum": 56,
+    "offset": 37
+  },
+  {
+    "nfl_id": 54629,
+    "play_id": 605,
+    "n": 22,
+    "csum": 78,
+    "offset": 56
+  },
+  {
+    "nfl_id": 54629,
+    "play_id": 652,
+    "n": 26,
+    "csum": 104,
+    "offset": 78
+  },
+  {
+    "nfl_id": 54629,
+    "play_id": 783,
+    "n": 15,
+    "csum": 119,
+    "offset": 104
+  },
+  {
+    "nfl_id": 54629,
+    "play_id": 1392,
+    "n": 17,
+    "csum": 136,
+    "offset": 119
+  },
+  {
+    "nfl_id": 54629,
+    "play_id": 1666,
+    "n": 33,
+    "csum": 169,
+    "offset": 136
+  },
+  {
+    "nfl_id": 54629,
+    "play_id": 1956,
+    "n": 33,
+    "csum": 202,
+    "offset": 169
+  },
+  {
+    "nfl_id": 54629,
+    "play_id": 1979,
+    "n": 21,
+    "csum": 223,
+    "offset": 202
+  },
+  {
+    "nfl_id": 54629,
+    "play_id": 2034,
+    "n": 30,
+    "csum": 253,
+    "offset": 223
+  },
+  {
+    "nfl_id": 54629,
+    "play_id": 2215,
+    "n": 22,
+    "csum": 275,
+    "offset": 253
+  },
+  {
+    "nfl_id": 54629,
+    "play_id": 2240,
+    "n": 41,
+    "csum": 316,
+    "offset": 275
+  },
+  {
+    "nfl_id": 54629,
+    "play_id": 2263,
+    "n": 28,
+    "csum": 344,
+    "offset": 316
+  },
+  {
+    "nfl_id": 54629,
+    "play_id": 2310,
+    "n": 25,
+    "csum": 369,
+    "offset": 344
+  },
+  {
+    "nfl_id": 54629,
+    "play_id": 2656,
+    "n": 29,
+    "csum": 398,
+    "offset": 369
+  },
+  {
+    "nfl_id": 54629,
+    "play_id": 2725,
+    "n": 29,
+    "csum": 427,
+    "offset": 398
+  },
+  {
+    "nfl_id": 54629,
+    "play_id": 3068,
+    "n": 32,
+    "csum": 459,
+    "offset": 427
+  },
+  {
+    "nfl_id": 54629,
+    "play_id": 3093,
+    "n": 36,
+    "csum": 495,
+    "offset": 459
+  },
+  {
+    "nfl_id": 54629,
+    "play_id": 3197,
+    "n": 23,
+    "csum": 518,
+    "offset": 495
+  },
+  {
+    "nfl_id": 54629,
+    "play_id": 3516,
+    "n": 24,
+    "csum": 542,
+    "offset": 518
+  },
+  {
+    "nfl_id": 54629,
+    "play_id": 3541,
+    "n": 29,
+    "csum": 571,
+    "offset": 542
+  },
+  {
+    "nfl_id": 54629,
+    "play_id": 3663,
+    "n": 24,
+    "csum": 595,
+    "offset": 571
+  },
+  {
+    "nfl_id": 55887,
+    "play_id": 124,
+    "n": 28,
+    "csum": 28,
+    "offset": 0
+  },
+  {
+    "nfl_id": 55887,
+    "play_id": 315,
+    "n": 19,
+    "csum": 47,
+    "offset": 28
+  },
+  {
+    "nfl_id": 55887,
+    "play_id": 413,
+    "n": 23,
+    "csum": 70,
+    "offset": 47
+  },
+  {
+    "nfl_id": 55887,
+    "play_id": 766,
+    "n": 27,
+    "csum": 97,
+    "offset": 70
+  },
+  {
+    "nfl_id": 55887,
+    "play_id": 983,
+    "n": 20,
+    "csum": 117,
+    "offset": 97
+  },
+  {
+    "nfl_id": 55887,
+    "play_id": 1300,
+    "n": 17,
+    "csum": 134,
+    "offset": 117
+  },
+  {
+    "nfl_id": 55887,
+    "play_id": 1326,
+    "n": 33,
+    "csum": 167,
+    "offset": 134
+  },
+  {
+    "nfl_id": 55887,
+    "play_id": 1746,
+    "n": 34,
+    "csum": 201,
+    "offset": 167
+  },
+  {
+    "nfl_id": 55887,
+    "play_id": 1958,
+    "n": 32,
+    "csum": 233,
+    "offset": 201
+  },
+  {
+    "nfl_id": 55887,
+    "play_id": 2234,
+    "n": 28,
+    "csum": 261,
+    "offset": 233
+  },
+  {
+    "nfl_id": 55887,
+    "play_id": 2257,
+    "n": 17,
+    "csum": 278,
+    "offset": 261
+  },
+  {
+    "nfl_id": 55887,
+    "play_id": 2287,
+    "n": 22,
+    "csum": 300,
+    "offset": 278
+  },
+  {
+    "nfl_id": 55887,
+    "play_id": 2312,
+    "n": 34,
+    "csum": 334,
+    "offset": 300
+  },
+  {
+    "nfl_id": 55887,
+    "play_id": 2344,
+    "n": 20,
+    "csum": 354,
+    "offset": 334
+  },
+  {
+    "nfl_id": 55887,
+    "play_id": 2369,
+    "n": 22,
+    "csum": 376,
+    "offset": 354
+  },
+  {
+    "nfl_id": 55887,
+    "play_id": 2936,
+    "n": 17,
+    "csum": 393,
+    "offset": 376
+  },
+  {
+    "nfl_id": 55887,
+    "play_id": 2961,
+    "n": 22,
+    "csum": 415,
+    "offset": 393
+  },
+  {
+    "nfl_id": 55887,
+    "play_id": 3105,
+    "n": 24,
+    "csum": 439,
+    "offset": 415
+  },
+  {
+    "nfl_id": 55887,
+    "play_id": 3177,
+    "n": 25,
+    "csum": 464,
+    "offset": 439
+  },
+  {
+    "nfl_id": 55887,
+    "play_id": 3244,
+    "n": 57,
+    "csum": 521,
+    "offset": 464
+  },
+  {
+    "nfl_id": 55887,
+    "play_id": 3365,
+    "n": 21,
+    "csum": 542,
+    "offset": 521
+  },
+  {
+    "nfl_id": 55887,
+    "play_id": 3616,
+    "n": 41,
+    "csum": 583,
+    "offset": 542
+  },
+  {
+    "nfl_id": 55887,
+    "play_id": 3641,
+    "n": 41,
+    "csum": 624,
+    "offset": 583
+  },
+  {
+    "nfl_id": 55887,
+    "play_id": 4015,
+    "n": 19,
+    "csum": 643,
+    "offset": 624
+  },
+  {
+    "nfl_id": 55887,
+    "play_id": 4040,
+    "n": 24,
+    "csum": 667,
+    "offset": 643
+  },
+  {
+    "nfl_id": 55889,
+    "play_id": 58,
+    "n": 19,
+    "csum": 19,
+    "offset": 0
+  },
+  {
+    "nfl_id": 55889,
+    "play_id": 482,
+    "n": 34,
+    "csum": 53,
+    "offset": 19
+  },
+  {
+    "nfl_id": 55889,
+    "play_id": 534,
+    "n": 22,
+    "csum": 75,
+    "offset": 53
+  },
+  {
+    "nfl_id": 55889,
+    "play_id": 559,
+    "n": 20,
+    "csum": 95,
+    "offset": 75
+  },
+  {
+    "nfl_id": 55889,
+    "play_id": 629,
+    "n": 44,
+    "csum": 139,
+    "offset": 95
+  },
+  {
+    "nfl_id": 55889,
+    "play_id": 962,
+    "n": 24,
+    "csum": 163,
+    "offset": 139
+  },
+  {
+    "nfl_id": 55889,
+    "play_id": 1186,
+    "n": 26,
+    "csum": 189,
+    "offset": 163
+  },
+  {
+    "nfl_id": 55889,
+    "play_id": 1216,
+    "n": 29,
+    "csum": 218,
+    "offset": 189
+  },
+  {
+    "nfl_id": 55889,
+    "play_id": 1239,
+    "n": 17,
+    "csum": 235,
+    "offset": 218
+  },
+  {
+    "nfl_id": 55889,
+    "play_id": 1356,
+    "n": 36,
+    "csum": 271,
+    "offset": 235
+  },
+  {
+    "nfl_id": 55889,
+    "play_id": 1589,
+    "n": 20,
+    "csum": 291,
+    "offset": 271
+  },
+  {
+    "nfl_id": 55889,
+    "play_id": 1701,
+    "n": 26,
+    "csum": 317,
+    "offset": 291
+  },
+  {
+    "nfl_id": 55889,
+    "play_id": 2281,
+    "n": 41,
+    "csum": 358,
+    "offset": 317
+  },
+  {
+    "nfl_id": 55889,
+    "play_id": 2306,
+    "n": 17,
+    "csum": 375,
+    "offset": 358
+  },
+  {
+    "nfl_id": 55889,
+    "play_id": 2358,
+    "n": 24,
+    "csum": 399,
+    "offset": 375
+  },
+  {
+    "nfl_id": 55889,
+    "play_id": 2428,
+    "n": 33,
+    "csum": 432,
+    "offset": 399
+  },
+  {
+    "nfl_id": 55889,
+    "play_id": 2655,
+    "n": 18,
+    "csum": 450,
+    "offset": 432
+  },
+  {
+    "nfl_id": 55889,
+    "play_id": 2916,
+    "n": 18,
+    "csum": 468,
+    "offset": 450
+  },
+  {
+    "nfl_id": 55889,
+    "play_id": 3015,
+    "n": 25,
+    "csum": 493,
+    "offset": 468
+  },
+  {
+    "nfl_id": 55889,
+    "play_id": 3593,
+    "n": 18,
+    "csum": 511,
+    "offset": 493
+  },
+  {
+    "nfl_id": 55889,
+    "play_id": 3618,
+    "n": 31,
+    "csum": 542,
+    "offset": 511
+  },
+  {
+    "nfl_id": 55889,
+    "play_id": 3716,
+    "n": 18,
+    "csum": 560,
+    "offset": 542
+  },
+  {
+    "nfl_id": 55889,
+    "play_id": 3987,
+    "n": 33,
+    "csum": 593,
+    "offset": 560
+  },
+  {
+    "nfl_id": 55904,
+    "play_id": 185,
+    "n": 23,
+    "csum": 23,
+    "offset": 0
+  },
+  {
+    "nfl_id": 55904,
+    "play_id": 661,
+    "n": 29,
+    "csum": 52,
+    "offset": 23
+  },
+  {
+    "nfl_id": 55904,
+    "play_id": 842,
+    "n": 47,
+    "csum": 99,
+    "offset": 52
+  },
+  {
+    "nfl_id": 55904,
+    "play_id": 877,
+    "n": 49,
+    "csum": 148,
+    "offset": 99
+  },
+  {
+    "nfl_id": 55904,
+    "play_id": 1193,
+    "n": 34,
+    "csum": 182,
+    "offset": 148
+  },
+  {
+    "nfl_id": 55904,
+    "play_id": 1240,
+    "n": 32,
+    "csum": 214,
+    "offset": 182
+  },
+  {
+    "nfl_id": 55904,
+    "play_id": 1300,
+    "n": 23,
+    "csum": 237,
+    "offset": 214
+  },
+  {
+    "nfl_id": 55904,
+    "play_id": 1325,
+    "n": 27,
+    "csum": 264,
+    "offset": 237
+  },
+  {
+    "nfl_id": 55904,
+    "play_id": 1382,
+    "n": 34,
+    "csum": 298,
+    "offset": 264
+  },
+  {
+    "nfl_id": 55904,
+    "play_id": 1697,
+    "n": 24,
+    "csum": 322,
+    "offset": 298
+  },
+  {
+    "nfl_id": 55904,
+    "play_id": 1720,
+    "n": 27,
+    "csum": 349,
+    "offset": 322
+  },
+  {
+    "nfl_id": 55904,
+    "play_id": 1743,
+    "n": 31,
+    "csum": 380,
+    "offset": 349
+  },
+  {
+    "nfl_id": 55904,
+    "play_id": 1925,
+    "n": 31,
+    "csum": 411,
+    "offset": 380
+  },
+  {
+    "nfl_id": 55904,
+    "play_id": 1972,
+    "n": 41,
+    "csum": 452,
+    "offset": 411
+  },
+  {
+    "nfl_id": 55904,
+    "play_id": 2101,
+    "n": 26,
+    "csum": 478,
+    "offset": 452
+  },
+  {
+    "nfl_id": 55904,
+    "play_id": 2342,
+    "n": 40,
+    "csum": 518,
+    "offset": 478
+  },
+  {
+    "nfl_id": 55904,
+    "play_id": 2389,
+    "n": 27,
+    "csum": 545,
+    "offset": 518
+  },
+  {
+    "nfl_id": 55904,
+    "play_id": 2580,
+    "n": 31,
+    "csum": 576,
+    "offset": 545
+  },
+  {
+    "nfl_id": 55904,
+    "play_id": 3026,
+    "n": 26,
+    "csum": 602,
+    "offset": 576
+  },
+  {
+    "nfl_id": 55904,
+    "play_id": 3078,
+    "n": 40,
+    "csum": 642,
+    "offset": 602
+  },
+  {
+    "nfl_id": 55904,
+    "play_id": 3369,
+    "n": 33,
+    "csum": 675,
+    "offset": 642
+  },
+  {
+    "nfl_id": 55904,
+    "play_id": 3421,
+    "n": 24,
+    "csum": 699,
+    "offset": 675
+  },
+  {
+    "nfl_id": 55904,
+    "play_id": 3886,
+    "n": 34,
+    "csum": 733,
+    "offset": 699
+  },
+  {
+    "nfl_id": 55904,
+    "play_id": 3916,
+    "n": 36,
+    "csum": 769,
+    "offset": 733
+  },
+  {
+    "nfl_id": 55904,
+    "play_id": 4107,
+    "n": 20,
+    "csum": 789,
+    "offset": 769
+  },
+  {
+    "nfl_id": 55904,
+    "play_id": 4155,
+    "n": 25,
+    "csum": 814,
+    "offset": 789
+  },
+  {
+    "nfl_id": 55944,
+    "play_id": 81,
+    "n": 25,
+    "csum": 25,
+    "offset": 0
+  },
+  {
+    "nfl_id": 55944,
+    "play_id": 263,
+    "n": 18,
+    "csum": 43,
+    "offset": 25
+  },
+  {
+    "nfl_id": 55944,
+    "play_id": 761,
+    "n": 18,
+    "csum": 61,
+    "offset": 43
+  },
+  {
+    "nfl_id": 55944,
+    "play_id": 1503,
+    "n": 34,
+    "csum": 95,
+    "offset": 61
+  },
+  {
+    "nfl_id": 55944,
+    "play_id": 2062,
+    "n": 29,
+    "csum": 124,
+    "offset": 95
+  },
+  {
+    "nfl_id": 55944,
+    "play_id": 2087,
+    "n": 29,
+    "csum": 153,
+    "offset": 124
+  },
+  {
+    "nfl_id": 55944,
+    "play_id": 2286,
+    "n": 26,
+    "csum": 179,
+    "offset": 153
+  },
+  {
+    "nfl_id": 55944,
+    "play_id": 2369,
+    "n": 18,
+    "csum": 197,
+    "offset": 179
+  },
+  {
+    "nfl_id": 55944,
+    "play_id": 2798,
+    "n": 45,
+    "csum": 242,
+    "offset": 197
+  },
+  {
+    "nfl_id": 55944,
+    "play_id": 3002,
+    "n": 21,
+    "csum": 263,
+    "offset": 242
+  },
+  {
+    "nfl_id": 55944,
+    "play_id": 3335,
+    "n": 20,
+    "csum": 283,
+    "offset": 263
+  },
+  {
+    "nfl_id": 55944,
+    "play_id": 3409,
+    "n": 25,
+    "csum": 308,
+    "offset": 283
+  },
+  {
+    "nfl_id": 55944,
+    "play_id": 3645,
+    "n": 23,
+    "csum": 331,
+    "offset": 308
+  },
+  {
+    "nfl_id": 55944,
+    "play_id": 4153,
+    "n": 23,
+    "csum": 354,
+    "offset": 331
+  },
+  {
+    "nfl_id": 55944,
+    "play_id": 4201,
+    "n": 20,
+    "csum": 374,
+    "offset": 354
+  },
+  {
+    "nfl_id": 55944,
+    "play_id": 4258,
+    "n": 19,
+    "csum": 393,
+    "offset": 374
+  },
+  {
+    "nfl_id": 55944,
+    "play_id": 4283,
+    "n": 49,
+    "csum": 442,
+    "offset": 393
+  },
+  {
+    "nfl_id": 55944,
+    "play_id": 4308,
+    "n": 20,
+    "csum": 462,
+    "offset": 442
+  },
+  {
+    "nfl_id": 55944,
+    "play_id": 4333,
+    "n": 19,
+    "csum": 481,
+    "offset": 462
+  },
+  {
+    "nfl_id": 55944,
+    "play_id": 4363,
+    "n": 22,
+    "csum": 503,
+    "offset": 481
+  },
+  {
+    "nfl_id": 55944,
+    "play_id": 4416,
+    "n": 27,
+    "csum": 530,
+    "offset": 503
+  },
+  {
+    "nfl_id": 55944,
+    "play_id": 4494,
+    "n": 19,
+    "csum": 549,
+    "offset": 530
+  },
+  {
+    "nfl_id": 55944,
+    "play_id": 4551,
+    "n": 53,
+    "csum": 602,
+    "offset": 549
+  },
+  {
+    "nfl_id": 56042,
+    "play_id": 439,
+    "n": 37,
+    "csum": 37,
+    "offset": 0
+  },
+  {
+    "nfl_id": 56042,
+    "play_id": 582,
+    "n": 19,
+    "csum": 56,
+    "offset": 37
+  },
+  {
+    "nfl_id": 56042,
+    "play_id": 605,
+    "n": 22,
+    "csum": 78,
+    "offset": 56
+  },
+  {
+    "nfl_id": 56042,
+    "play_id": 652,
+    "n": 26,
+    "csum": 104,
+    "offset": 78
+  },
+  {
+    "nfl_id": 56042,
+    "play_id": 677,
+    "n": 25,
+    "csum": 129,
+    "offset": 104
+  },
+  {
+    "nfl_id": 56042,
+    "play_id": 783,
+    "n": 15,
+    "csum": 144,
+    "offset": 129
+  },
+  {
+    "nfl_id": 56042,
+    "play_id": 1392,
+    "n": 17,
+    "csum": 161,
+    "offset": 144
+  },
+  {
+    "nfl_id": 56042,
+    "play_id": 1641,
+    "n": 24,
+    "csum": 185,
+    "offset": 161
+  },
+  {
+    "nfl_id": 56042,
+    "play_id": 1666,
+    "n": 33,
+    "csum": 218,
+    "offset": 185
+  },
+  {
+    "nfl_id": 56042,
+    "play_id": 1713,
+    "n": 31,
+    "csum": 249,
+    "offset": 218
+  },
+  {
+    "nfl_id": 56042,
+    "play_id": 1956,
+    "n": 33,
+    "csum": 282,
+    "offset": 249
+  },
+  {
+    "nfl_id": 56042,
+    "play_id": 1979,
+    "n": 21,
+    "csum": 303,
+    "offset": 282
+  },
+  {
+    "nfl_id": 56042,
+    "play_id": 2002,
+    "n": 19,
+    "csum": 322,
+    "offset": 303
+  },
+  {
+    "nfl_id": 56042,
+    "play_id": 2034,
+    "n": 30,
+    "csum": 352,
+    "offset": 322
+  },
+  {
+    "nfl_id": 56042,
+    "play_id": 2215,
+    "n": 22,
+    "csum": 374,
+    "offset": 352
+  },
+  {
+    "nfl_id": 56042,
+    "play_id": 2240,
+    "n": 41,
+    "csum": 415,
+    "offset": 374
+  },
+  {
+    "nfl_id": 56042,
+    "play_id": 2263,
+    "n": 28,
+    "csum": 443,
+    "offset": 415
+  },
+  {
+    "nfl_id": 56042,
+    "play_id": 2335,
+    "n": 29,
+    "csum": 472,
+    "offset": 443
+  },
+  {
+    "nfl_id": 56042,
+    "play_id": 2543,
+    "n": 22,
+    "csum": 494,
+    "offset": 472
+  },
+  {
+    "nfl_id": 56042,
+    "play_id": 2602,
+    "n": 22,
+    "csum": 516,
+    "offset": 494
+  },
+  {
+    "nfl_id": 56042,
+    "play_id": 2656,
+    "n": 29,
+    "csum": 545,
+    "offset": 516
+  },
+  {
+    "nfl_id": 56042,
+    "play_id": 2725,
+    "n": 29,
+    "csum": 574,
+    "offset": 545
+  },
+  {
+    "nfl_id": 56042,
+    "play_id": 2956,
+    "n": 27,
+    "csum": 601,
+    "offset": 574
+  },
+  {
+    "nfl_id": 56042,
+    "play_id": 3068,
+    "n": 32,
+    "csum": 633,
+    "offset": 601
+  },
+  {
+    "nfl_id": 56042,
+    "play_id": 3093,
+    "n": 36,
+    "csum": 669,
+    "offset": 633
+  },
+  {
+    "nfl_id": 56042,
+    "play_id": 3140,
+    "n": 33,
+    "csum": 702,
+    "offset": 669
+  },
+  {
+    "nfl_id": 56042,
+    "play_id": 3516,
+    "n": 24,
+    "csum": 726,
+    "offset": 702
+  },
+  {
+    "nfl_id": 56042,
+    "play_id": 3541,
+    "n": 29,
+    "csum": 755,
+    "offset": 726
+  },
+  {
+    "nfl_id": 56042,
+    "play_id": 3663,
+    "n": 24,
+    "csum": 779,
+    "offset": 755
+  },
+  {
+    "nfl_id": 56052,
+    "play_id": 637,
+    "n": 25,
+    "csum": 25,
+    "offset": 0
+  },
+  {
+    "nfl_id": 56052,
+    "play_id": 980,
+    "n": 51,
+    "csum": 76,
+    "offset": 25
+  },
+  {
+    "nfl_id": 56052,
+    "play_id": 1443,
+    "n": 27,
+    "csum": 103,
+    "offset": 76
+  },
+  {
+    "nfl_id": 56052,
+    "play_id": 1686,
+    "n": 29,
+    "csum": 132,
+    "offset": 103
+  },
+  {
+    "nfl_id": 56052,
+    "play_id": 1734,
+    "n": 23,
+    "csum": 155,
+    "offset": 132
+  },
+  {
+    "nfl_id": 56052,
+    "play_id": 1759,
+    "n": 32,
+    "csum": 187,
+    "offset": 155
+  },
+  {
+    "nfl_id": 56052,
+    "play_id": 1792,
+    "n": 24,
+    "csum": 211,
+    "offset": 187
+  },
+  {
+    "nfl_id": 56052,
+    "play_id": 2093,
+    "n": 22,
+    "csum": 233,
+    "offset": 211
+  },
+  {
+    "nfl_id": 56052,
+    "play_id": 2125,
+    "n": 24,
+    "csum": 257,
+    "offset": 233
+  },
+  {
+    "nfl_id": 56052,
+    "play_id": 2196,
+    "n": 34,
+    "csum": 291,
+    "offset": 257
+  },
+  {
+    "nfl_id": 56052,
+    "play_id": 2221,
+    "n": 28,
+    "csum": 319,
+    "offset": 291
+  },
+  {
+    "nfl_id": 56052,
+    "play_id": 2363,
+    "n": 32,
+    "csum": 351,
+    "offset": 319
+  },
+  {
+    "nfl_id": 56052,
+    "play_id": 2388,
+    "n": 23,
+    "csum": 374,
+    "offset": 351
+  },
+  {
+    "nfl_id": 56052,
+    "play_id": 2857,
+    "n": 23,
+    "csum": 397,
+    "offset": 374
+  },
+  {
+    "nfl_id": 56052,
+    "play_id": 3006,
+    "n": 37,
+    "csum": 434,
+    "offset": 397
+  },
+  {
+    "nfl_id": 56052,
+    "play_id": 3491,
+    "n": 30,
+    "csum": 464,
+    "offset": 434
+  },
+  {
+    "nfl_id": 56052,
+    "play_id": 3976,
+    "n": 28,
+    "csum": 492,
+    "offset": 464
+  },
+  {
+    "nfl_id": 56052,
+    "play_id": 4046,
+    "n": 28,
+    "csum": 520,
+    "offset": 492
+  },
+  {
+    "nfl_id": 56052,
+    "play_id": 4071,
+    "n": 33,
+    "csum": 553,
+    "offset": 520
+  },
+  {
+    "nfl_id": 56052,
+    "play_id": 4096,
+    "n": 25,
+    "csum": 578,
+    "offset": 553
+  },
+  {
+    "nfl_id": 56052,
+    "play_id": 4270,
+    "n": 35,
+    "csum": 613,
+    "offset": 578
+  },
+  {
+    "nfl_id": 56052,
+    "play_id": 4317,
+    "n": 36,
+    "csum": 649,
+    "offset": 613
+  },
+  {
+    "nfl_id": 56052,
+    "play_id": 4457,
+    "n": 19,
+    "csum": 668,
+    "offset": 649
+  },
+  {
+    "nfl_id": 56052,
+    "play_id": 4485,
+    "n": 23,
+    "csum": 691,
+    "offset": 668
+  },
+  {
+    "nfl_id": 56052,
+    "play_id": 4557,
+    "n": 33,
+    "csum": 724,
+    "offset": 691
+  },
+  {
+    "nfl_id": 56052,
+    "play_id": 4666,
+    "n": 27,
+    "csum": 751,
+    "offset": 724
+  }
+]
