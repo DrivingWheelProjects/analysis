@@ -9,7 +9,7 @@ library(jsonlite)
 library(cjoint)   # install.packages("cjoint") if not already installed
 library(dplyr)
 
-spec <- fromJSON("./data/attributes_levels.json")
+spec <- fromJSON("./data/conjoint/attributes_levels.json")
 
 # ---- Attribute levels (must match survey_design.json / vignette_items.json) ----
 attribute_levels <- list(
@@ -124,6 +124,7 @@ df <- df %>%
             paste0(" and passes it along to your ", recipient,".")
     )
   ))
+df$value <- trimws(df$value)
 json_df <- df %>%
   rownames_to_column(var = "id") %>%
   toJSON(auto_unbox = TRUE, pretty = TRUE)

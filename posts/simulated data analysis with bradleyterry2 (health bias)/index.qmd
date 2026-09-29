@@ -98,7 +98,7 @@ bt_model <- BTm(
 
 dotchart(
   coef(bt_model),
-  main = "Bradley-Terry Fixed Effect Coefficients (random)"
+  main = "Bradley-Terry Fixed Effect Coefficients (health bias)"
 )
 
 ```
