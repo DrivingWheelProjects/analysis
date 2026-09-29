@@ -1,0 +1,177 @@
+---
+title: "update to conjoint parameters, constraints, model"
+format: html
+---
+
+1.  read, display CI parameters (sender, purpose, recipient) for conjoint analysis
+
+```{r}
+#| echo: true
+#| eval: true
+#| message: false
+#| warning: false
+library(jsonlite)
+
+spec <- fromJSON("../../data/conjoint/attributes_levels.json")
+spec
+
+```
+
+2.  set constraints
+
+- problems arose with constraints that separated "purpose" into two distinct graphs
+- distinct graphs results in parallel regression terms that fail to intersect
+- added C6, C7 to satisfy network requirement & prevent parallel regression terms
+- sender = recipient is OK; it just means that information is not shared
+
+```{r}
+#| echo: true
+#| eval: true
+#| message: false
+#| warning: false
+constraints <- list(
+  # C1: health concern purpose blocked for non-clinical senders (now excludes head coach too)
+  list(
+    purpose = "health concern",
+    sender  = c("strength coach", "sports scientist")
+  ),
+  # C2a: load management blocked for clinical senders 
+  # ***head coach now ALLOWED here***
+  # represents an athlete's direct, voluntary self-disclosure to her coach for a
+  # practical training decision; this is the "ethical but plausible" pathway,
+  # distinct from a third party forwarding clinical data without her involvement)
+  list(
+    purpose = "load management",
+    sender  = c("physician", "athletic trainer")
+  ),
+  # C2b: team readiness blocked for clinical senders AND head coach (aggregation is
+  # a performance-staff function only)
+  # ***head coach not excluded***
+  list(
+    purpose = "team readiness",
+  #  sender  = c("physician", "athletic trainer", "head coach")
+    sender  = c("physician", "athletic trainer")
+  ),
+  # C4: health concern cannot route to sports scientist or whole team
+  list(
+    purpose   = "health concern",
+    recipient = c("sports scientist", "whole team")
+  ),
+  # C5: load management cannot route to whole team
+  list(
+    purpose   = "load management",
+    recipient = "whole team"
+  ),
+  # C6: sender = head coach and purpose = team readiness
+  # recipient excludes all but head coach, whole team
+  list(
+    sender  = "head coach",
+    purpose = "team readiness",
+    recipient = c("physician","athletic trainer","sports scientist","strength coach")
+  ),
+  # C7: sender = head coach and purpose = health concern
+  # recipient excludes all non-clinical including head coach
+  list(
+    sender  = "head coach",
+    purpose = "health concern",
+    recipient = c("sports scientist","strength coach","whole team","head coach")
+  )
+)
+
+
+```
+
+3.  create cjoint model
+
+```{r}
+#| echo: true
+#| eval: true
+#| message: false
+#| warning: false
+library(cjoint)
+
+# ---- Attribute levels (must match survey_design.json / vignette_items.json) ----
+attribute_levels <- list(
+  sender    = spec$attributes$sender,
+  purpose   = spec$attributes$purpose,
+  recipient = spec$attributes$recipient
+)
+
+# ---- Marginal probabilities of each level BEFORE restriction ----
+# cjoint uses these as the baseline distribution to reweight from when
+# excluding the constrained combinations above.
+level.probs <- list(
+  sender    = rep(1 / length(attribute_levels$sender), length(attribute_levels$sender)),
+  purpose   = rep(1 / length(attribute_levels$purpose), length(attribute_levels$purpose)),
+  recipient = rep(1 / length(attribute_levels$recipient), length(attribute_levels$recipient))
+)
+
+design <- makeDesign(
+  type = "constraints",
+  attribute.levels = attribute_levels,
+  constraints = constraints,
+  level.probs = level.probs
+)
+
+saveRDS(design, "../../data/cjoint_design.rds")
+```
+
+4.  combinations of attributes and levels
+
+```{r}
+#| echo: true
+#| eval: true
+#| message: false
+#| warning: false
+library(dplyr)
+
+# dataframe with all attributes-levels combinations
+indices <- which(design$J > 0, arr.ind = TRUE)
+combinations <- apply(indices, 1, function(idx) {
+  sapply(seq_along(idx), function(dim_i) {
+    dimnames(design$J)[[dim_i]][[idx[dim_i]]]
+  })
+})
+df <- as.data.frame(t(combinations), stringsAsFactors = FALSE)
+colnames(df) <- names(dimnames(design$J))
+rownames(df) <- paste0("V", sprintf("%03d", 1:nrow(df)))
+
+```
+
+5.  produce, display statements list from model
+
+```{r}
+#| echo: true
+#| eval: true
+#| message: false
+#| warning: false
+library(tibble)
+
+# transform attributes-levels to survey statements for pairwise comparison
+phrases <- c(
+  "sender_readiness" = ", along with the rest of the team's data",
+  "health concern" = " evaluates the data for a health concern",
+  "load management" = " evaluates the data to decide whether to increase or reduce your training load that day",
+  "team readiness" = " aggregates the data"
+)
+
+df <- df %>%
+  mutate(value = paste0(
+    "You send your menstrual cycle data to your team's ",
+    sender,
+    if_else(purpose == "team readiness", phrases["sender_readiness"], ""),
+    ". The ",
+    sender,
+    phrases[purpose],
+    if_else(sender == recipient, 
+            " and does not share the information further.", 
+            paste0(" and passes it along to your ", recipient,".")
+    )
+  ))
+json_df <- df %>%
+  rownames_to_column(var = "id") %>%
+  toJSON(auto_unbox = TRUE, pretty = TRUE)
+write_json(json_df, "../../data/CI.json", auto_unbox = TRUE, pretty = TRUE)
+json_df
+
+```

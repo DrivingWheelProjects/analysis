@@ -1,0 +1,29 @@
+------------------------------------------------------------------------
+
+title: "Athletes Data Pairwise Comparison Survey (Cycle Tracking) - Privacy/Sharing Question" author: "Brad Stenger" date: "2026-07-28" ---
+
+```{r}
+#| echo: true
+#| eval: true
+#| message: false
+#| warning: false
+library(jsonlite)
+library(tidyr)
+library(dplyr)
+
+json <- '{
+    "reporting": ["sent automatically by an app or device","reported directly by the athlete"],
+    "privacy": ["statistical noise","anonymization","athlete consent"],
+    "sharing": ["coaches","whole team","research","public"],
+    "payment": ["none","small","large"]
+}'
+
+abc <- jsonlite::fromJSON(json)
+combinations <- tidyr::expand_grid(abc$reporting,abc$privacy,abc$sharing)
+names(combinations) <- c("reporting","privacy","sharing")
+
+# Cycle tracking data is [reporting] and privacy assured by [privacy] when that data is shared with [recipient].
+combinations$qualtrics <- paste0("Your cycle-tracking data is ", combinations$reporting," with privacy assurance based on ", combinations$privacy," and then shared with ", combinations$sharing,".") 
+combinations$qualtrics
+
+```

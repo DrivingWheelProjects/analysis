@@ -4,16 +4,17 @@ data: "2026-09-23"
 format: html
 ---
 
-0. this updates conjoint_design.R from NK
-1. restricted-randomization conjoint design object with constraints:
-* NEW ok for sender = recipient; it means that there is no further data sharing
-* constraint 1 - health concern purpose blocked for non-clinical senders (now excludes head coach too)
-* constraint 2 - load management blocked for clinical senders (head coach ALLOWED)
-* constraint 3 - team readiness blocked for clinical senders (head coach ALLOWED)
-* constraint 4 - health concern cannot route to sports scientist or whole team
-* constraint 5 - load management cannot route to whole team
-* NEW constraint 6 - sender = head coach, purpose = team readiness, recipient excludes all but head coach, whole team
-* NEW constraint 7 - sender = head coach, purpose = health concern, recipient excludes all non-clinical including head coach
+0.  this updates conjoint_design.R from NK
+1.  restricted-randomization conjoint design object with constraints:
+
+- NEW ok for sender = recipient; it means that there is no further data sharing
+- constraint 1 - health concern purpose blocked for non-clinical senders (now excludes head coach too)
+- constraint 2 - load management blocked for clinical senders (head coach ALLOWED)
+- constraint 3 - team readiness blocked for clinical senders (head coach ALLOWED)
+- constraint 4 - health concern cannot route to sports scientist or whole team
+- constraint 5 - load management cannot route to whole team
+- NEW constraint 6 - sender = head coach, purpose = team readiness, recipient excludes all but head coach, whole team
+- NEW constraint 7 - sender = head coach, purpose = health concern, recipient excludes all non-clinical including head coach
 
 ```{r}
 #| echo: true
@@ -79,7 +80,8 @@ level.probs <- list(
   recipient = rep(1 / length(attribute_levels$recipient), length(attribute_levels$recipient))
 )
 ```
-2. cjoint model object makes it easy to generate statements as strings
+
+2.  cjoint model object makes it easy to generate statements as strings
 
 ```{r}
 design <- makeDesign(
@@ -92,8 +94,9 @@ design <- makeDesign(
 saveRDS(design, "../../data/conjoint/cjoint_design.rds")
 ```
 
-3. create pairwise comparison statements
-* 39 statements (increase from 35 in NK)
+3.  create pairwise comparison statements
+
+- 39 statements (increase from 35 in NK)
 
 ```{r}
 # dataframe with all attributes-levels combinations
@@ -133,4 +136,5 @@ json_df <- df %>%
 write_json(json_df, "../../data/conjoint/conjoint_CI_cjoint.json", pretty = TRUE)
 json_df
 ```
----
+
+------------------------------------------------------------------------

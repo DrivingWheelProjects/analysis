@@ -1,0 +1,91 @@
+---
+title: "simulate data (random) then analysis with BradleyTerry2 in R"
+format: html
+---
+
+1.  create all possible pairs of statements then choose a random pair
+
+- 40 simulated participants
+- 6 pairwise comparisons, each gets assigned winner/loser
+
+```{r}
+#| echo: true
+#| eval: true
+#| message: false
+#| warning: false
+library(jsonlite)
+library(tidyr)
+library(dplyr)
+library(cmdstanr)
+library(tidybayes)
+library(marginaleffects)
+library(BradleyTerry2)
+library(forcats)
+
+df_ci <- fromJSON("../../data/conjoint/conjoint_CI_cjoint.json")
+pair_ids = as.data.frame(t(combn(df_ci$id,2)))
+colnames(pair_ids) <- c("id1","id2")
+df_pairs <- pair_ids[sample(nrow(pair_ids)), ] #all possible comparison pairs
+results <- data.frame(matrix(ncol = 3, nrow = 0)) #dataframe for winners from pairwise comparisons
+colnames(results) <- c("id1","id2","outcome")
+results <- results %>%
+  mutate(
+    id1 = as.factor(id1),
+    id2 = as.factor(id2),
+    outcome = as.integer(outcome)
+  )
+howmany_participants <- 40 #survey participants
+howmany_comparisons <- 6 #comparisons in each survey
+for (i in 1:howmany_participants) {
+  df_survey <- df_pairs[sample(nrow(df_pairs), howmany_comparisons), ]
+  df_survey$outcome <- sample(0:1, nrow(df_survey), replace = TRUE)
+  results <- bind_rows(results,df_survey) %>%
+    mutate(across(c(id1,id2),as.factor)) %>%
+    mutate(across(where(is.factor), ~ fct_unify(pick(where(is.factor)))[[cur_column()]]))
+}
+
+```
+
+2.  create data structure for analysis
+
+```{r}
+#| echo: true
+#| eval: true
+#| message: false
+#| warning: false
+ci <- data.frame(
+  Sender = df_ci$sender,
+  Purpose = df_ci$purpose,
+  Recipient = df_ci$recipient,
+  id = df_ci$id,
+  row.names = df_ci$id
+) %>%
+  mutate(across(c(Sender,Purpose,Recipient),as.factor))
+
+bt_data <- list(contests = results, predictors = ci)
+
+```
+
+3.  Bradley Terry model and fixed effects plot
+
+```{r}
+#| echo: true
+#| eval: true
+#| message: false
+#| warning: false
+bt_model <- BTm(
+  outcome = outcome,
+  player1 = id1,
+  player2 = id2,
+  formula = ~ Sender[id] + Purpose[id] + Recipient[id] + (1 | id),
+  id = "id",
+  data = bt_data,
+  br = TRUE
+)
+
+dotchart(
+  coef(bt_model),
+  main = "Bradley-Terry Fixed Effect Coefficients (random)"
+)
+
+```

@@ -1,0 +1,17 @@
+{
+  "hash": "925b01761cf32a18aacebfc7b30e03c7",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"simulate data (random) then analysis with BradleyTerry2 in R\"\nformat: html\n---\n\n1.  create all possible pairs of statements then choose a random pair\n\n- 40 simulated participants\n- 6 pairwise comparisons, each gets assigned winner/loser\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(jsonlite)\nlibrary(tidyr)\nlibrary(dplyr)\nlibrary(cmdstanr)\nlibrary(tidybayes)\nlibrary(marginaleffects)\nlibrary(BradleyTerry2)\nlibrary(forcats)\n\ndf_ci <- fromJSON(\"../../data/conjoint/conjoint_CI_cjoint.json\")\npair_ids = as.data.frame(t(combn(df_ci$id,2)))\ncolnames(pair_ids) <- c(\"id1\",\"id2\")\ndf_pairs <- pair_ids[sample(nrow(pair_ids)), ] #all possible comparison pairs\nresults <- data.frame(matrix(ncol = 3, nrow = 0)) #dataframe for winners from pairwise comparisons\ncolnames(results) <- c(\"id1\",\"id2\",\"outcome\")\nresults <- results %>%\n  mutate(\n    id1 = as.factor(id1),\n    id2 = as.factor(id2),\n    outcome = as.integer(outcome)\n  )\nhowmany_participants <- 40 #survey participants\nhowmany_comparisons <- 6 #comparisons in each survey\nfor (i in 1:howmany_participants) {\n  df_survey <- df_pairs[sample(nrow(df_pairs), howmany_comparisons), ]\n  df_survey$outcome <- sample(0:1, nrow(df_survey), replace = TRUE)\n  results <- bind_rows(results,df_survey) %>%\n    mutate(across(c(id1,id2),as.factor)) %>%\n    mutate(across(where(is.factor), ~ fct_unify(pick(where(is.factor)))[[cur_column()]]))\n}\n```\n:::\n\n\n2.  create data structure for analysis\n\n\n::: {.cell}\n\n```{.r .cell-code}\nci <- data.frame(\n  Sender = df_ci$sender,\n  Purpose = df_ci$purpose,\n  Recipient = df_ci$recipient,\n  id = df_ci$id,\n  row.names = df_ci$id\n) %>%\n  mutate(across(c(Sender,Purpose,Recipient),as.factor))\n\nbt_data <- list(contests = results, predictors = ci)\n```\n:::\n\n\n3.  Bradley Terry model and fixed effects plot\n\n\n::: {.cell}\n\n```{.r .cell-code}\nbt_model <- BTm(\n  outcome = outcome,\n  player1 = id1,\n  player2 = id2,\n  formula = ~ Sender[id] + Purpose[id] + Recipient[id] + (1 | id),\n  id = \"id\",\n  data = bt_data,\n  br = TRUE\n)\n\ndotchart(\n  coef(bt_model),\n  main = \"Bradley-Terry Fixed Effect Coefficients (random)\"\n)\n```\n\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-3-1.png){width=672}\n:::\n:::\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -5,6 +5,7 @@ format: html
 ---
 
 1.  create all possible pairs of statements then choose a random pair
+
 - cregg required different names for all attributes and levels, so different .json file
 - 40 simulated participants
 - 6 pairwise comparisons, each gets assigned winner/loser
@@ -56,6 +57,7 @@ for (i in 1:howmany) {
 }
 
 ```
+
 2.  create data structure for analysis
 
 ```{r}
@@ -90,7 +92,7 @@ for (attr in check_attr) {
 
 ```
 
-3. marginal means calculated using cregg::mm, adapted from [Heiss guide to conjoint analysis](https://www.andrewheiss.com/blog/2023/07/25/conjoint-bayesian-frequentist-guide/)
+3.  marginal means calculated using cregg::mm, adapted from [Heiss guide to conjoint analysis](https://www.andrewheiss.com/blog/2023/07/25/conjoint-bayesian-frequentist-guide/)
 
 ```{r}
 #| echo: true

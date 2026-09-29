@@ -5,7 +5,10 @@
 # amce() computes AMCEs relative to the TRUE (restricted) assignment
 # distribution rather than assuming uniform independent randomization.
 
- 
+library(jsonlite)
+library(cjoint)   # install.packages("cjoint") if not already installed
+library(dplyr)
+
 spec <- fromJSON("./data/attributes_levels.json")
 
 # ---- Attribute levels (must match survey_design.json / vignette_items.json) ----
@@ -100,7 +103,7 @@ df <- as.data.frame(t(combinations), stringsAsFactors = FALSE)
 colnames(df) <- names(dimnames(design$J))
 rownames(df) <- paste0("V", sprintf("%03d", 1:nrow(df)))
 
-# transform attributes-levels to survey choices for pairwise comparison
+# transform attributes-levels to survey statements for pairwise comparison
 phrases <- c(
   "sender_readiness" = ", along with the rest of the team's data",
   "health concern" = " evaluates the data for a health concern",
@@ -198,7 +201,7 @@ ci_factors_cjoint <- results %>%
 # amce = Average Marginal Component Effects, from cjoint package
 # "design" parameter incorporates model constraints
 amce_out <- amce(
-  chosen ~ sender + purpose + recipient,
+  chosen ~ sender * purpose * recipient,
   data = ci_factors_cjoint,
   design = design,
   respondent.id = "response_id",

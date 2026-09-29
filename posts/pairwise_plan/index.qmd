@@ -31,6 +31,32 @@ The survey will ask participants to choose between two vignette scenarios, expre
 1.  Survey participants will be asked for 5 pairwise comparisons.
 2.  We can plan to give survey participants the opportunity to do more pairwise comparisons.
 
+```{r}
+#| echo: true
+#| eval: true
+#| message: false
+#| warning: false
+library(jsonlite)
+library(tidyr)
+library(dplyr)
+
+json <- '{
+    "datatype": ["a journal or check-in","an app","a wearable"],
+    "sender": ["strength coach","data analyst","athletic trainer"],
+    "tp": ["player status","team readiness","health concern"],
+    "recipient": ["head coach","whole team","strength coach","athletic trainer"],
+    "purpose": ["training","game planning","performance review"]
+}'
+ci <- jsonlite::fromJSON(json)
+combinations <- tidyr::expand_grid(ci$datatype,ci$sender,ci$tp,ci$recipient)
+names(combinations) <- c("datatype","sender","tp","recipient")
+
+# You send cycle tracking data from [data type] to [sender]. The [sender] evaluates the data for [tp] and passes it along to [recipient].
+combinations$qualtrics <- paste0("You send cycle-tracking data from ", combinations$datatype," to your team's ",combinations$sender,". The ", combinations$sender, " evaluates the data for ", combinations$tp, " and passes it along to your team's ", combinations$recipient,".") 
+combinations$qualtrics
+
+```
+
 ### Simulation: Data and Analysis (so far)
 
 ```{r}
@@ -42,16 +68,6 @@ library(jsonlite)
 library(tidyr)
 library(dplyr)
 
-json <- '{
-    "datatype": ["journal","app","wearable","birth control"],
-    "sender": ["strength coach","data analyst","athletic trainer"],
-    "tp": ["player status","team analysis","health concern"],
-    "recipient": ["head coach","whole team","strength coach","athletic trainer"],
-    "purpose": ["training","game planning","performance review"]
-}'
-ci <- jsonlite::fromJSON(json)
-combinations <- expand.grid(ci$datatype,ci$sender,ci$tp,ci$recipient)
-names(combinations) <- c("datatype","sender","tp","recipient")
 set.seed(1)
 pair_ones <- combinations[sample(nrow(combinations), 30, replace = TRUE), ]
 pair_twos <- combinations[sample(nrow(combinations), 30, replace = TRUE), ]
@@ -63,8 +79,7 @@ results <- df %>%
   rowwise() %>%
   mutate(winners = sample(list(pair_one, pair_two), size = 1)[[1]]) %>%
   ungroup()
-results$winners
-#.. format data to match Heis example
+#results$winners
 
 ```
 

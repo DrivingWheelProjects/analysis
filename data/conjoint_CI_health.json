@@ -1,0 +1,211 @@
+[{
+	"id": "1186", 
+	"value": "You send your menstrual cycle data to your team's physician. The physician evaluates the data for a health concern and does not share the information further.", 
+	"sender": "s:physician", 
+	"purpose": "health concern",
+	"recipient": "r:physician"
+},{
+	"id": "1187",
+	"value": "You send your menstrual cycle data to your team's athletic trainer. The athletic trainer evaluates the data for a health concern and passes it along to your physician.",
+	"sender": "s:athletic trainer",
+	"purpose": "health concern",
+	"recipient": "r:physician"
+},{
+	"id": "1188",
+	"value": "You send your menstrual cycle data to your team's strength coach. The strength coach evaluates the data to decide whether to increase or reduce your training load that day and passes it along to your physician.",
+	"sender": "s:strength coach",
+	"purpose": "load management",
+	"recipient": "r:physician"
+},{
+	"id": "1189",
+	"value": "You send your menstrual cycle data to your team's sports scientist. The sports scientist evaluates the data to decide whether to increase or reduce your training load that day and passes it along to your physician.",
+	"sender": "s:sports scientist",
+	"purpose": "load management",
+	"recipient": "r:physician"
+},{
+	"id": "1190",
+	"value": "You send your menstrual cycle data to your team's head coach. The head coach evaluates the data to decide whether to increase or reduce your training load that day and passes it along to your physician.",
+	"sender": "s:head coach",
+	"purpose": "load management",
+	"recipient": "r:physician"
+},{
+	"id": "1191",
+	"value": "You send your menstrual cycle data to your team's strength coach, along with the rest of the team's data. The strength coach aggregates the data and passes it along to your physician.",
+	"sender": "s:strength coach",
+	"purpose": "team readiness",
+	"recipient": "r:physician"
+},{
+	"id": "1192",
+	"value": "You send your menstrual cycle data to your team's sports scientist, along with the rest of the team's data. The sports scientist aggregates the data and passes it along to your physician.",
+	"sender": "s:sports scientist",
+	"purpose": "team readiness",
+	"recipient": "r:physician"
+},{
+	"id": "1193",
+	"value": "You send your menstrual cycle data to your team's physician. The physician evaluates the data for a health concern and passes it along to your athletic trainer.",
+	"sender": "s:physician",
+	"purpose": "health concern",
+	"recipient": "r:athletic trainer"
+},{
+	"id": "1194",
+	"value": "You send your menstrual cycle data to your team's athletic trainer. The athletic trainer evaluates the data for a health concern and does not share the information further.",
+	"sender": "s:athletic trainer",
+	"purpose": "health concern",
+	"recipient": "r:athletic trainer"
+},{
+	"id": "1195",
+	"value": "You send your menstrual cycle data to your team's strength coach. The strength coach evaluates the data to decide whether to increase or reduce your training load that day and passes it along to your athletic trainer.",
+	"sender": "s:strength coach",
+	"purpose": "load management",
+	"recipient": "r:athletic trainer"
+},{
+	"id": "1196",
+	"value": "You send your menstrual cycle data to your team's sports scientist. The sports scientist evaluates the data to decide whether to increase or reduce your training load that day and passes it along to your athletic trainer.",
+	"sender": "s:sports scientist",
+	"purpose": "load management",
+	"recipient": "r:athletic trainer"
+},{
+	"id": "1197",
+	"value": "You send your menstrual cycle data to your team's head coach. The head coach evaluates the data to decide whether to increase or reduce your training load that day and passes it along to your athletic trainer.",
+	"sender": "s:head coach",
+	"purpose": "load management",
+	"recipient": "r:athletic trainer"
+},{
+	"id": "1198",
+	"value": "You send your menstrual cycle data to your team's strength coach, along with the rest of the team's data. The strength coach aggregates the data and passes it along to your athletic trainer.",
+	"sender": "s:strength coach",
+	"purpose": "team readiness",
+	"recipient": "r:athletic trainer"
+},{
+	"id": "1199",
+	"value": "You send your menstrual cycle data to your team's sports scientist, along with the rest of the team's data. The sports scientist aggregates the data and passes it along to your athletic trainer.",
+	"sender": "s:sports scientist",
+	"purpose": "team readiness",
+	"recipient": "r:athletic trainer"
+},{
+	"id": "1200",
+	"value": "You send your menstrual cycle data to your team's physician. The physician evaluates the data for a health concern and passes it along to your strength coach.", 
+	"sender": "s:physician",
+	"purpose": "health concern",
+	"recipient": "r:strength coach"
+},{
+	"id": "1201",
+	"value": "You send your menstrual cycle data to your team's athletic trainer. The athletic trainer evaluates the data for a health concern and passes it along to your strength coach.",
+	"sender": "s:athletic trainer",
+	"purpose": "health concern",
+	"recipient": "r:strength coach"
+},{
+	"id": "1202",
+	"value": "You send your menstrual cycle data to your team's strength coach. The strength coach evaluates the data to decide whether to increase or reduce your training load that day and does not share the information further.",
+	"sender": "s:strength coach",
+	"purpose": "load management",
+	"recipient": "r:strength coach"
+},{
+	"id": "1203",
+	"value": "You send your menstrual cycle data to your team's sports scientist. The sports scientist evaluates the data to decide whether to increase or reduce your training load that day and passes it along to your strength coach.",
+	"sender": "s:sports scientist",
+	"purpose": "load management",
+	"recipient": "r:strength coach"
+},{
+	"id": "1204",
+	"value": "You send your menstrual cycle data to your team's head coach. The head coach evaluates the data to decide whether to increase or reduce your training load that day and passes it along to your strength coach.",
+	"sender": "s:head coach",
+	"purpose": "load management",
+	"recipient": "r:strength coach"
+},{
+	"id": "1205",
+	"value": "You send your menstrual cycle data to your team's strength coach, along with the rest of the team's data. The strength coach aggregates the data and does not share the information further.",
+	"sender": "s:strength coach",
+	"purpose": "team readiness",
+	"recipient": "r:strength coach"
+},{
+	"id": "1206",
+	"value": "You send your menstrual cycle data to your team's sports scientist, along with the rest of the team's data. The sports scientist aggregates the data and passes it along to your strength coach.",
+	"sender": "s:sports scientist",
+	"purpose": "team readiness",
+	"recipient": "r:strength coach"
+},{
+	"id": "1207",
+	"value": "You send your menstrual cycle data to your team's strength coach. The strength coach evaluates the data to decide whether to increase or reduce your training load that day and passes it along to your sports scientist.",
+	"sender": "s:strength coach",
+	"purpose": "load management",
+	"recipient": "r:sports scientist"
+},{
+	"id": "1208",
+	"value": "You send your menstrual cycle data to your team's sports scientist. The sports scientist evaluates the data to decide whether to increase or reduce your training load that day and does not share the information further.", 
+	"sender": "s:sports scientist",
+	"purpose": "load management",
+	"recipient": "r:sports scientist"
+},{
+	"id": "1209",
+	"value": "You send your menstrual cycle data to your team's head coach. The head coach evaluates the data to decide whether to increase or reduce your training load that day and passes it along to your sports scientist.",
+	"sender": "s:head coach",
+	"purpose": "load management",
+	"recipient": "r:sports scientist"
+},{
+	"id": "1210",
+	"value": "You send your menstrual cycle data to your team's strength coach, along with the rest of the team's data. The strength coach aggregates the data and passes it along to your sports scientist.", 
+	"sender": "s:strength coach",
+	"purpose": "team readiness",
+	"recipient": "r:sports scientist"
+},{
+	"id": "1211",
+	"value": "You send your menstrual cycle data to your team's sports scientist, along with the rest of the team's data. The sports scientist aggregates the data and does not share the information further.", 
+	"sender": "s:sports scientist",
+	"purpose": "team readiness",
+	"recipient": "r:sports scientist"
+},{
+	"id": "1212",
+	"value": "You send your menstrual cycle data to your team's physician. The physician evaluates the data for a health concern and passes it along to your head coach.", 
+	"sender": "s:physician",
+	"purpose": "health concern",
+	"recipient": "r:head coach"
+},{
+	"id": "1213",
+	"value": "You send your menstrual cycle data to your team's athletic trainer. The athletic trainer evaluates the data for a health concern and passes it along to your head coach.",
+	"sender": "s:athletic trainer",
+	"purpose": "health concern",
+	"recipient": "r:head coach"
+},{
+	"id": "1214",
+	"value": "You send your menstrual cycle data to your team's strength coach. The strength coach evaluates the data to decide whether to increase or reduce your training load that day and passes it along to your head coach.",
+	"sender": "s:strength coach",
+	"purpose": "load management",
+	"recipient": "r:head coach"
+},{
+	"id": "1215",
+	"value": "You send your menstrual cycle data to your team's sports scientist. The sports scientist evaluates the data to decide whether to increase or reduce your training load that day and passes it along to your head coach.", 
+	"sender": "s:sports scientist",
+	"purpose": "load management",
+	"recipient": "r:head coach"
+},{
+	"id": "1216",
+	"value": "You send your menstrual cycle data to your team's head coach. The head coach evaluates the data to decide whether to increase or reduce your training load that day and does not share the information further.",
+	"sender": "s:head coach",
+	"purpose": "team readiness",
+	"recipient": "r:head coach"
+},{
+	"id": "1217",
+	"value": "You send your menstrual cycle data to your team's strength coach, along with the rest of the team's data. The strength coach aggregates the data and passes it along to your head coach.",
+	"sender": "s:strength coach",
+	"purpose": "team readiness",
+	"recipient": "r:head coach"
+},{
+	"id": "1218",
+	"value": "You send your menstrual cycle data to your team's sports scientist, along with the rest of the team's data. The sports scientist aggregates the data and passes it along to your head coach.", 
+	"sender": "s:sports scientist",
+	"purpose": "team readiness",
+	"recipient": "r:head coach"
+},{
+	"id": "1219",
+	"value": "You send your menstrual cycle data to your team's strength coach, along with the rest of the team's data. The strength coach aggregates the data and passes it along to your whole team.",
+	"sender": "s:strength coach",
+	"purpose": "team readiness",
+	"recipient": "r:whole team"
+},{
+	"id": "1220", 
+	"value": "You send your menstrual cycle data to your team's sports scientist, along with the rest of the team's data. The sports scientist aggregates the data and passes it along to your whole team.",
+	"sender": "s:sports scientist",
+	"purpose": "team readiness",
+	"recipient": "r:whole team"
+}]
